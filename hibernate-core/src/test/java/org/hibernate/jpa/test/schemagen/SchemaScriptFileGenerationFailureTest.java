@@ -30,12 +30,9 @@ import org.hibernate.testing.TestForIssue;
 import org.junit.Before;
 import org.junit.Test;
 
-import org.mockito.Mockito;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
-import static org.mockito.Mockito.doThrow;
 
 /**
  * @author Vlad Mihalcea
@@ -44,10 +41,26 @@ public class SchemaScriptFileGenerationFailureTest {
 	private Writer writer;
 	private EntityManagerFactoryBuilder entityManagerFactoryBuilder;
 
+
 	@Before
 	public void setUp() throws IOException {
-		writer = Mockito.mock( Writer.class );
-		doThrow( new IOException( "Expected" ) ).when( writer ).flush();
+		writer = new Writer() {
+			@Override
+			public void write(char[] cbuf, int off, int len) throws IOException {
+
+			}
+
+			@Override
+			public void flush() throws IOException {
+				throw new IOException( "Expected" );
+			}
+
+			@Override
+			public void close() throws IOException {
+
+			}
+		};
+
 
 		entityManagerFactoryBuilder = Bootstrap.getEntityManagerFactoryBuilder(
 				buildPersistenceUnitDescriptor(),
