@@ -105,26 +105,37 @@ dependencies {
 
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	// Java 9 ftw!
-	if ( JavaVersion.current().isJava9Compatible() ) {
+	if ( JavaVersion.current().isJava9Compatible()) {
 		// The JDK used to run Gradle is Java 9+, and we assume that that is the same
 		//		JDK for executing tasks
+		if ( project.name.equals( "hibernate-core" ) ||  project.name.equals( "hibernate-jpamodelgen" )) {
+			apply plugin: 'org.hibernate.build.gradle.xjc'
+			xjc( 'com.sun.xml.bind:jaxb-impl:2.2.11' )
+			xjc( 'org.glassfish.jaxb:jaxb-xjc:2.2.11' )
+			xjc( 'org.jvnet.jaxb2_commons:jaxb2-basics:0.11.0' )
+			xjc( 'org.jvnet.jaxb2_commons:jaxb2-basics-ant:0.11.0' )
+			xjc( 'javax.activation:javax.activation-api:1.2.0' )
+			xjc( 'javax.annotation:jsr250-api:1.0' )
+		}
+
 		compile( 'com.sun.xml.bind:jaxb-impl:2.2.11' )
 		compile( 'org.glassfish.jaxb:jaxb-xjc:2.2.11' )
 		compile( 'org.jvnet.jaxb2_commons:jaxb2-basics:0.11.0' )
 		compile( 'org.jvnet.jaxb2_commons:jaxb2-basics-ant:0.11.0' )
-		compile( 'javax:javaee-api:7.0' )
+		compile( 'javax.activation:javax.activation-api:1.2.0' )
+		compile( 'javax.annotation:jsr250-api:1.0' )
 
 		testCompile( 'com.sun.xml.bind:jaxb-impl:2.2.11' )
 		testCompile( 'org.glassfish.jaxb:jaxb-xjc:2.2.11' )
 		testCompile( 'org.jvnet.jaxb2_commons:jaxb2-basics:0.11.0' )
 		testCompile( 'org.jvnet.jaxb2_commons:jaxb2-basics-ant:0.11.0' )
-		testCompile( 'javax:javaee-api:7.0' )
+		testCompile( 'javax.activation:javax.activation-api:1.2.0' )
+		testCompile( 'javax.annotation:jsr250-api:1.0' )
 
 		testRuntime( 'com.sun.xml.bind:jaxb-impl:2.2.11' )
 		testRuntime( 'org.glassfish.jaxb:jaxb-xjc:2.2.11' )
 		testRuntime( 'org.jvnet.jaxb2_commons:jaxb2-basics:0.11.0' )
 		testRuntime( 'org.jvnet.jaxb2_commons:jaxb2-basics-ant:0.11.0' )
-		testRuntime( 'javax:javaee-api:7.0' )
 	}
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
