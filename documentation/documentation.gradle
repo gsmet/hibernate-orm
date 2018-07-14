@@ -121,6 +121,12 @@ task aggregateJavadocs(type: Javadoc) {
 		bottom = "Copyright &copy; 2001-$currentYear <a href=\"http://redhat.com\">Red Hat, Inc.</a>  All Rights Reserved."
 		use = true
 		options.encoding = 'UTF-8'
+		// use the -quiet trick to work around a Gradle limitation
+		options.addStringOption( 'XD-Xmaxerrs=2000', '-quiet' )
+		options.addStringOption( 'tag "apiNote:a:API note:"', '-quiet' )
+		options.addStringOption( 'tag "implNote:a:Implementation note:"', '-quiet' )
+		options.addStringOption( 'tag "implSpec:a:Implementation requirements:"', '-quiet' )
+		options.addStringOption( 'tag "todo:a:TODO:"', '-quiet' )
 
 		links = [
 				'https://docs.oracle.com/javase/8/docs/api/',
