@@ -20,7 +20,7 @@ class SDOBooleanType extends BooleanType {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * <p/>
+	 * <p>
 	 * This type's name is <tt>sdo_boolean</tt>
 	 */
 	public String getName() {

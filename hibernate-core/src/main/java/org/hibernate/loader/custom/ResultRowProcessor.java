@@ -42,7 +42,7 @@ public class ResultRowProcessor {
 
 	/**
 	 * Build a logical result row.
-	 * <p/>
+	 * <p>
 	 * At this point, Loader has already processed all non-scalar result data.  We
 	 * just need to account for scalar result data here...
 	 *

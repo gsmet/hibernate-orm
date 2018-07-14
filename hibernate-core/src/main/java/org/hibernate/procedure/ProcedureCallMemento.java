@@ -51,7 +51,7 @@ public interface ProcedureCallMemento {
 
 	/**
 	 * Access to any hints associated with the memento.
-	 * <p/>
+	 * <p>
 	 * IMPL NOTE : exposed separately because only HEM needs access to this.
 	 *
 	 * @return The hints.

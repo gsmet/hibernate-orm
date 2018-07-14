@@ -106,7 +106,7 @@ public final class TwoPhaseLoad {
 	/**
 	 * Perform the second step of 2-phase load. Fully initialize the entity
 	 * instance.
-	 * <p/>
+	 * <p>
 	 * After processing a JDBC result set, we "resolve" all the associations
 	 * between the entities which were instantiated and had their state
 	 * "hydrated" into an array

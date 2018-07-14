@@ -23,7 +23,7 @@ import org.jboss.logging.Logger;
 /**
  * Centralizes the commonality regarding binding of parameter values into PreparedStatements as this logic is
  * used in many places.
- * <p/>
+ * <p>
  * Ideally would like to move to the parameter handling as it is done in the hql.ast package.
  *
  * @author Steve Ebersole

@@ -22,7 +22,7 @@ import org.hibernate.type.descriptor.WrapperOptions;
 
 /**
  * Descriptor for {@link Clob} handling.
- * <p/>
+ * <p>
  * Note, {@link Clob clobs} really are mutable (their internal state can in fact be mutated).  We simply
  * treat them as immutable because we cannot properly check them for changes nor deep copy them.
  *

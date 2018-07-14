@@ -21,7 +21,7 @@ import org.hibernate.type.StandardBasicTypes;
 
 /**
  * An SQL dialect targeting Sybase Adaptive Server Enterprise (ASE) 15.7 and higher.
- * <p/>
+ * <p>
  *
  * @author Junyan Ren
  */

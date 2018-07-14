@@ -63,7 +63,7 @@ public interface Projection extends Serializable {
 
 	/**
 	 * Get the return types for a particular user-visible alias.
-	 * <p/>
+	 * <p>
 	 * Differs from {@link #getTypes(org.hibernate.Criteria, CriteriaQuery)} in that here we are only interested in
 	 * the types related to the given criteria-level alias.
 	 *

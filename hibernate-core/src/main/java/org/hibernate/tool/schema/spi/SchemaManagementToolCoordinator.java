@@ -36,7 +36,7 @@ import static org.hibernate.cfg.AvailableSettings.HBM2DDL_SCRIPTS_DROP_TARGET;
 /**
  * Responsible for coordinating SchemaManagementTool execution(s) for auto-tooling whether
  * from JPA or hbm2ddl.auto.
- * <p/>
+ * <p>
  * The main entry point is {@link #process}
  *
  * @author Steve Ebersole

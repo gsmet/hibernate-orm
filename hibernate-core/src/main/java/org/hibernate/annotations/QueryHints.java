@@ -98,7 +98,7 @@ public class QueryHints {
 	/**
 	 * Available to apply lock mode to a native SQL query since JPA requires that
 	 * {@link javax.persistence.Query#setLockMode} throw an IllegalStateException if called for a native query.
-	 * <p/>
+	 * <p>
 	 * Accepts a {@link javax.persistence.LockModeType} or a {@link org.hibernate.LockMode}
 	 */
 	public static final String NATIVE_LOCKMODE = "org.hibernate.lockMode";

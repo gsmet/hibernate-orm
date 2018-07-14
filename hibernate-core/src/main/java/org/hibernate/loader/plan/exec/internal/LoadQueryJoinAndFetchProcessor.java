@@ -54,7 +54,7 @@ import org.jboss.logging.Logger;
 /**
  * Helper for implementors of entity and collection based query building based on LoadPlans providing common
  * functionality, especially in regards to handling QuerySpace {@link Join}s and {@link Fetch}es.
- * <p/>
+ * <p>
  * Exposes 2 main methods:<ol>
  *     <li>{@link #processQuerySpaceJoins(QuerySpace, SelectStatementBuilder)}</li>
  *     <li>{@link #processFetches(FetchSource, SelectStatementBuilder, org.hibernate.loader.plan.exec.process.spi.ReaderCollector)}li>

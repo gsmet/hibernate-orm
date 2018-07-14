@@ -110,7 +110,7 @@ public class InLogicOperatorNode extends BinaryLogicOperatorNode implements Bina
 	 * a series of ORen and ANDed predicates.  This allows multi-column type comparisons
 	 * and explicit row-value-constructor in "in" list syntax even on databases which do
 	 * not support row-value-constructor in "in" list.
-	 * <p/>
+	 * <p>
 	 * For example, here we'd mutate "... where (col1, col2) in ( ('val1', 'val2'), ('val3', 'val4') ) ..." to
 	 * "... where (col1 = 'val1' and col2 = 'val2') or (col1 = 'val3' and val2 = 'val4') ..."
 	 *

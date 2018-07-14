@@ -191,12 +191,12 @@ import static org.hibernate.cfg.AvailableSettings.JPA_SHARED_CACHE_STORE_MODE;
 
 /**
  * Concrete implementation of a Session.
- * <p/>
+ * <p>
  * Exposes two interfaces:<ul>
  * <li>{@link org.hibernate.Session} to the application</li>
  * <li>{@link org.hibernate.engine.spi.SessionImplementor} to other Hibernate components (SPI)</li>
  * </ul>
- * <p/>
+ * <p>
  * This class is not thread-safe.
  *
  * @author Gavin King

@@ -12,7 +12,7 @@ import org.jboss.logging.annotations.MessageLogger;
 /**
  * The jboss-logging {@link MessageLogger} for the hibernate-envers module.  It reserves message ids ranging from
  * 25001 to 30000 inclusively.
- * <p/>
+ * <p>
  * New messages must be added after the last message defined to ensure message codes are unique.
  */
 @MessageLogger(projectCode = "HHH")

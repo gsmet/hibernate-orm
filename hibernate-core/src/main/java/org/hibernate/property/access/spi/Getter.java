@@ -54,7 +54,7 @@ public interface Getter extends Serializable {
 	/**
 	 * Retrieve the member to which this property maps.  This might be the
 	 * field or it might be the getter method.
-	 * <p/>
+	 * <p>
 	 * Optional operation (may return {@code null})
 	 *
 	 * @return The mapped member, or {@code null}.
@@ -63,7 +63,7 @@ public interface Getter extends Serializable {
 
 	/**
 	 * Retrieve the getter-method name.
-	 * <p/>
+	 * <p>
 	 * Optional operation (may return {@code null})
 	 *
 	 * @return The name of the getter method, or {@code null}.
@@ -72,7 +72,7 @@ public interface Getter extends Serializable {
 
 	/**
 	 * Retrieve the getter-method.
-	 * <p/>
+	 * <p>
 	 * Optional operation (may return {@code null})
 	 *
 	 * @return The getter method, or {@code null}.

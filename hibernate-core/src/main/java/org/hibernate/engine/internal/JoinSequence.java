@@ -25,7 +25,7 @@ import org.hibernate.type.AssociationType;
 /**
  * A sequence of {@link Join} delegates to make it "easier" to work with joins.  The "easier" part is obviously
  * subjective ;)
- * <p/>
+ * <p>
  * Additionally JoinSequence is a directed graph of other JoinSequence instances, as represented by the
  * {@link #next} ({@link #setNext(JoinSequence)}) pointer.
  *

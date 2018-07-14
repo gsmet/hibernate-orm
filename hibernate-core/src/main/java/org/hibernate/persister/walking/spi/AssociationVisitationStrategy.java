@@ -11,9 +11,9 @@ import org.hibernate.loader.plan.spi.FetchSource;
 /**
  * Strategy for walking associations as defined by the Hibernate metamodel.  Is essentially a callback listener for
  * interesting events while walking a metamodel graph
- * <p/>
+ * <p>
  * {@link #start()} and {@link #finish()} are called at the start and at the finish of the process.
- * <p/>
+ * <p>
  * Walking might start with an entity or a collection depending on where the walker is asked to start.  When starting
  * with an entity, {@link #startingEntity}/{@link #finishingEntity} ()} will be the outer set of calls.  When starting
  * with a collection, {@link #startingCollection}/{@link #finishingCollection} will be the outer set of calls.

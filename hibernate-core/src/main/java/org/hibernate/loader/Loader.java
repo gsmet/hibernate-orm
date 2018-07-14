@@ -1436,7 +1436,7 @@ public abstract class Loader {
 	/**
 	 * Read a row of <tt>Key</tt>s from the <tt>ResultSet</tt> into the given array.
 	 * Warning: this method is side-effecty.
-	 * <p/>
+	 * <p>
 	 * If an <tt>id</tt> is given, don't bother going to the <tt>ResultSet</tt>.
 	 */
 	private EntityKey getKeyFromResultSet(
@@ -2069,7 +2069,7 @@ public abstract class Loader {
 
 	/**
 	 * Bind positional parameter values to the JDBC prepared statement.
-	 * <p/>
+	 * <p>
 	 * Positional parameters are those specified by JDBC-style ? parameters
 	 * in the source query.  It is (currently) expected that these come
 	 * before any named parameters in the source query.
@@ -2101,7 +2101,7 @@ public abstract class Loader {
 
 	/**
 	 * Bind named parameters to the JDBC prepared statement.
-	 * <p/>
+	 * <p>
 	 * This is a generic implementation, the problem being that in the
 	 * general case we do not know enough information about the named
 	 * parameters to perform this in a complete manner here.  Thus this

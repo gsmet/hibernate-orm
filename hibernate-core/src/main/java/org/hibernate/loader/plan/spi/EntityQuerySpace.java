@@ -10,7 +10,7 @@ import org.hibernate.persister.entity.EntityPersister;
 
 /**
  * Models a QuerySpace specific to an entity (EntityPersister).
- * <p/>
+ * <p>
  * It's {@link #getDisposition()} result will be {@link Disposition#ENTITY}
  *
  * @author Steve Ebersole

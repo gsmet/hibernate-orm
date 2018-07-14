@@ -10,7 +10,7 @@ import org.hibernate.internal.util.StringHelper;
 
 /**
  * Generates class/table/column aliases during semantic analysis and SQL rendering.
- * <p/>
+ * <p>
  * Its essential purpose is to keep an internal counter to ensure that the
  * generated aliases are unique.
  */

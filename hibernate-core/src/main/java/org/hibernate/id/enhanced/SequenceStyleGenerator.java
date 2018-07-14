@@ -38,13 +38,13 @@ import org.jboss.logging.Logger;
  * Variations range from actually using a sequence to using a table to mimic
  * a sequence.  These variations are encapsulated by the {@link DatabaseStructure}
  * interface internally.
- * <p/>
+ * <p>
  * <b>NOTE</b> that by default we utilize a single database sequence for all
  * generators.  The configuration parameter {@link #CONFIG_PREFER_SEQUENCE_PER_ENTITY}
  * can be used to create dedicated sequence for each entity based on its name.
  * Sequence suffix can be controlled with {@link #CONFIG_SEQUENCE_PER_ENTITY_SUFFIX}
  * option.
- * <p/>
+ * <p>
  * General configuration parameters:
  * <table>
  * 	 <tr>
@@ -78,7 +78,7 @@ import org.jboss.logging.Logger;
  *     <td>Allows explicit definition of which optimization strategy to use</td>
  *   </tr>
  * </table>
- * <p/>
+ * <p>
  * Configuration parameters used specifically when the underlying structure is a table:
  * <table>
  * 	 <tr>
@@ -265,7 +265,7 @@ public class SequenceStyleGenerator
 	/**
 	 * Determine the name of the sequence (or table if this resolves to a physical table)
 	 * to use.
-	 * <p/>
+	 * <p>
 	 * Called during {@link #configure configuration}.
 	 *
 	 * @param params The params supplied in the generator config (plus some standard useful extras).
@@ -319,7 +319,7 @@ public class SequenceStyleGenerator
 	/**
 	 * Determine the name of the column used to store the generator value in
 	 * the db.
-	 * <p/>
+	 * <p>
 	 * Called during {@link #configure configuration} <b>when resolving to a
 	 * physical table</b>.
 	 *
@@ -337,7 +337,7 @@ public class SequenceStyleGenerator
 	 * Determine the initial sequence value to use.  This value is used when
 	 * initializing the {@link #getDatabaseStructure() database structure}
 	 * (i.e. sequence/table).
-	 * <p/>
+	 * <p>
 	 * Called during {@link #configure configuration}.
 	 *
 	 * @param params The params supplied in the generator config (plus some standard useful extras).
@@ -351,7 +351,7 @@ public class SequenceStyleGenerator
 	/**
 	 * Determine the increment size to be applied.  The exact implications of
 	 * this value depends on the {@link #getOptimizer() optimizer} being used.
-	 * <p/>
+	 * <p>
 	 * Called during {@link #configure configuration}.
 	 *
 	 * @param params The params supplied in the generator config (plus some standard useful extras).
@@ -364,7 +364,7 @@ public class SequenceStyleGenerator
 
 	/**
 	 * Determine the optimizer to use.
-	 * <p/>
+	 * <p>
 	 * Called during {@link #configure configuration}.
 	 *
 	 * @param params The params supplied in the generator config (plus some standard useful extras).

@@ -13,7 +13,7 @@ import com.vividsolutions.jts.geom.GeometryCollection;
 
 /**
  * This class tests for the equality between geometries.
- * <p/>
+ * <p>
  * The notion of geometric equality can differ slightly between
  * spatial databases.
  */

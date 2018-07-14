@@ -79,11 +79,11 @@ public interface Query<R> extends TypedQuery<R>, CommonQueryContract {
 	/**
 	 * The position of the first query result to be retrieved, previously set by
 	 * {@link #setFirstResult(int)} or {@link #setHibernateFirstResult(int)}.
-	 * <p/>
+	 * <p>
 	 * If the value was not initialized by {@link #setFirstResult(int)} or
 	 * {@link #setHibernateFirstResult(int)}, then {@code null} is returned, resulting
 	 * in pagination starting from position 0.
-	 * <p/>
+	 * <p>
 	 * If {@link #setHibernateFirstResult(int)} was called with a negative value, then 0
 	 * is returned.
 	 *
@@ -122,10 +122,10 @@ public interface Query<R> extends TypedQuery<R>, CommonQueryContract {
 	/**
 	 * The maximum number of query results to be retrieved, previously set by
 	 * {@link #setMaxResults(int)} or {@link #setHibernateMaxResults(int)}.
-	 * <p/>
+	 * <p>
 	 * If the value was not initialized by {@link #setMaxResults(int)} or
 	 * {@link #setHibernateMaxResults(int)}, then {@code null} is returned
-	 * <p/>
+	 * <p>
 	 * If {@link #setHibernateMaxResults(int)} was called with a value less than
 	 * or equal to 0, the value is considered to be uninitialized, and {@code null}
 	 * is returned, resulting in no limit on the number of results.

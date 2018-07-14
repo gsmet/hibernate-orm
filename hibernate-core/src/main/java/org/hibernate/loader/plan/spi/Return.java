@@ -8,7 +8,7 @@ package org.hibernate.loader.plan.spi;
 
 /**
  * Represents a return value in the query results.  Not the same as a result (column) in the JDBC ResultSet!
- * <p/>
+ * <p>
  * Return is distinctly different from a {@link org.hibernate.loader.plan.spi.Fetch} and so modeled as completely separate hierarchy.
  *
  * @see ScalarReturn

@@ -25,7 +25,7 @@ public final class MetamodelDrivenLoadPlanBuilder {
 
 	/**
 	 * Coordinates building a LoadPlan that defines just a single root entity return (may have fetches).
-	 * <p/>
+	 * <p>
 	 * Typically this includes building load plans for entity loading or cascade loading.
 	 *
 	 * @param strategy The strategy defining the load plan shaping

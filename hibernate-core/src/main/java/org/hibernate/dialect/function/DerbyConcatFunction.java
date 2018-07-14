@@ -20,7 +20,7 @@ import org.hibernate.type.Type;
  *     <li>we translate to use the concat operator ('||')</li>
  *     <li>wrap dynamic parameters in CASTs to VARCHAR</li>
  * </ol>
- * <p/>
+ * <p>
  * This last spec is to deal with a limitation on DB2 and variants (e.g. Derby)
  * where dynamic parameters cannot be used in concatenation unless they are being
  * concatenated with at least one non-dynamic operand.  And even then, the rules
@@ -32,7 +32,7 @@ import org.hibernate.type.Type;
 public class DerbyConcatFunction implements SQLFunction {
 	/**
 	 * {@inheritDoc}
-	 * <p/>
+	 * <p>
 	 * Here we always return <tt>true</tt>
 	 */
 	@Override
@@ -42,7 +42,7 @@ public class DerbyConcatFunction implements SQLFunction {
 
 	/**
 	 * {@inheritDoc}
-	 * <p/>
+	 * <p>
 	 * Here we always return <tt>true</tt>
 	 */
 	@Override
@@ -52,7 +52,7 @@ public class DerbyConcatFunction implements SQLFunction {
 
 	/**
 	 * {@inheritDoc}
-	 * <p/>
+	 * <p>
 	 * Here we always return {@link StandardBasicTypes#STRING}.
 	 */
 	@Override
@@ -62,7 +62,7 @@ public class DerbyConcatFunction implements SQLFunction {
 
 	/**
 	 * {@inheritDoc}
-	 * <p/>
+	 * <p>
 	 * Here's the meat..  The whole reason we have a separate impl for this for Derby is to re-define
 	 * this method.  The logic here says that if not all the incoming args are dynamic parameters
 	 * (i.e. <tt>?</tt>) then we simply use the Derby concat operator (<tt>||</tt>) on the unchanged

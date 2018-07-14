@@ -272,7 +272,7 @@ public interface SessionFactoryImplementor extends Mapping, SessionFactory, Quer
 
 	/**
 	 * Get the SQL dialect.
-	 * <p/>
+	 * <p>
 	 * Shorthand for {@code getJdbcServices().getDialect()}
 	 *
 	 * @return The dialect

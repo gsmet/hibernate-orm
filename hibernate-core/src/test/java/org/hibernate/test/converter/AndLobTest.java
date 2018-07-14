@@ -31,7 +31,7 @@ import static org.junit.Assert.assertEquals;
 
 /**
  * Test mapping a model with an attribute combining {@code @Lob} with an AttributeConverter.
- * <p/>
+ * <p>
  * Originally developed to diagnose HHH-9615
  *
  * @author Steve Ebersole

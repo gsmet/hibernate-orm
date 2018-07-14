@@ -23,9 +23,9 @@ import org.hibernate.internal.util.collections.CollectionHelper;
 
 /**
  * Specialized encapsulating of the state pertaining to each Executable list.
- * <p/>
+ * <p>
  * Manages sorting the executables (lazily)
- * <p/>
+ * <p>
  * Manages the querySpaces affected by the executables in the list, and caches this too.
  *
  * @author Steve Ebersole

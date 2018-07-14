@@ -86,7 +86,7 @@ import org.hibernate.type.descriptor.sql.SqlTypeDescriptor;
 /**
  * Base class for SharedSessionContract/SharedSessionContractImplementor
  * implementations.  Intended for Session and StatelessSession implementations
- * <P/>
+ * <p>
  * NOTE: This implementation defines access to a number of instance state values
  * in a manner that is not exactly concurrent-access safe.  However, a Session/EntityManager
  * is never intended to be used concurrently; therefore the condition is not expected

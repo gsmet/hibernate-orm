@@ -585,7 +585,7 @@ public class DotNode extends FromReferenceNode implements DisplayableNode, Selec
 	/**
 	 * Is the given property name a reference to the primary key of the associated
 	 * entity construed by the given entity type?
-	 * <p/>
+	 * <p>
 	 * For example, consider a fragment like order.customer.id
 	 * (where order is a from-element alias).  Here, we'd have:
 	 * propertyName = "id" AND

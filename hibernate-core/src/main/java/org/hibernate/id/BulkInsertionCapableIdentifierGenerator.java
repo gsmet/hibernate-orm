@@ -17,7 +17,7 @@ import org.hibernate.dialect.Dialect;
 public interface BulkInsertionCapableIdentifierGenerator extends IdentifierGenerator {
 	/**
 	 * Given the configuration of this generator, is identifier generation as part of bulk insertion supported?
-	 * <p/>
+	 * <p>
 	 * IMPL NOTE : Mainly here to allow stuff like SequenceStyleGenerator which *can* support this based on
 	 * configuration
 	 *

@@ -35,72 +35,72 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 
 	/**
 	 * The name of the {@link javax.persistence.spi.PersistenceProvider} implementor
-	 * <p/>
+	 * <p>
 	 * See JPA 2 sections 9.4.3 and 8.2.1.4
 	 */
 	String JPA_PERSISTENCE_PROVIDER = "javax.persistence.provider";
 
 	/**
 	 * The type of transactions supported by the entity managers.
-	 * <p/>
+	 * <p>
 	 * See JPA 2 sections 9.4.3 and 8.2.1.2
 	 */
 	String JPA_TRANSACTION_TYPE = "javax.persistence.transactionType";
 
 	/**
 	 * The JNDI name of a JTA {@link javax.sql.DataSource}.
-	 * <p/>
+	 * <p>
 	 * See JPA 2 sections 9.4.3 and 8.2.1.5
 	 */
 	String JPA_JTA_DATASOURCE = "javax.persistence.jtaDataSource";
 
 	/**
 	 * The JNDI name of a non-JTA {@link javax.sql.DataSource}.
-	 * <p/>
+	 * <p>
 	 * See JPA 2 sections 9.4.3 and 8.2.1.5
 	 */
 	String JPA_NON_JTA_DATASOURCE = "javax.persistence.nonJtaDataSource";
 
 	/**
 	 * The name of a JDBC driver to use to connect to the database.
-	 * <p/>
+	 * <p>
 	 * Used in conjunction with {@link #JPA_JDBC_URL}, {@link #JPA_JDBC_USER} and {@link #JPA_JDBC_PASSWORD}
 	 * to define how to make connections to the database in lieu of
 	 * a datasource (either {@link #JPA_JTA_DATASOURCE} or {@link #JPA_NON_JTA_DATASOURCE}).
-	 * <p/>
+	 * <p>
 	 * See section 8.2.1.9
 	 */
 	String JPA_JDBC_DRIVER = "javax.persistence.jdbc.driver";
 
 	/**
 	 * The JDBC connection url to use to connect to the database.
-	 * <p/>
+	 * <p>
 	 * Used in conjunction with {@link #JPA_JDBC_DRIVER}, {@link #JPA_JDBC_USER} and {@link #JPA_JDBC_PASSWORD}
 	 * to define how to make connections to the database in lieu of
 	 * a datasource (either {@link #JPA_JTA_DATASOURCE} or {@link #JPA_NON_JTA_DATASOURCE}).
-	 * <p/>
+	 * <p>
 	 * See section 8.2.1.9
 	 */
 	String JPA_JDBC_URL = "javax.persistence.jdbc.url";
 
 	/**
 	 * The JDBC connection user name.
-	 * <p/>
+	 * <p>
 	 * Used in conjunction with {@link #JPA_JDBC_DRIVER}, {@link #JPA_JDBC_URL} and {@link #JPA_JDBC_PASSWORD}
 	 * to define how to make connections to the database in lieu of
 	 * a datasource (either {@link #JPA_JTA_DATASOURCE} or {@link #JPA_NON_JTA_DATASOURCE}).
-	 * <p/>
+	 * <p>
 	 * See section 8.2.1.9
 	 */
 	String JPA_JDBC_USER = "javax.persistence.jdbc.user";
 
 	/**
 	 * The JDBC connection password.
-	 * <p/>
+	 * <p>
 	 * Used in conjunction with {@link #JPA_JDBC_DRIVER}, {@link #JPA_JDBC_URL} and {@link #JPA_JDBC_USER}
 	 * to define how to make connections to the database in lieu of
 	 * a datasource (either {@link #JPA_JTA_DATASOURCE} or {@link #JPA_NON_JTA_DATASOURCE}).
-	 * <p/>
+	 * <p>
 	 * See JPA 2 section 8.2.1.9
 	 */
 	String JPA_JDBC_PASSWORD = "javax.persistence.jdbc.password";
@@ -108,7 +108,7 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	/**
 	 * Used to indicate whether second-level (what JPA terms shared cache) caching is
 	 * enabled as per the rules defined in JPA 2 section 3.1.7.
-	 * <p/>
+	 * <p>
 	 * See JPA 2 sections 9.4.3 and 8.2.1.7
 	 * @see javax.persistence.SharedCacheMode
 	 */
@@ -116,7 +116,7 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 
 	/**
 	 * NOTE : Not a valid EMF property...
-	 * <p/>
+	 * <p>
 	 * Used to indicate if the provider should attempt to retrieve requested data
 	 * in the shared cache.
 	 *
@@ -126,7 +126,7 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 
 	/**
 	 * NOTE : Not a valid EMF property...
-	 * <p/>
+	 * <p>
 	 * Used to indicate if the provider should attempt to store data loaded from the database
 	 * in the shared cache.
 	 *
@@ -137,7 +137,7 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	/**
 	 * Used to indicate what form of automatic validation is in effect as per rules defined
 	 * in JPA 2 section 3.6.1.1
-	 * <p/>
+	 * <p>
 	 * See JPA 2 sections 9.4.3 and 8.2.1.8
 	 * @see javax.persistence.ValidationMode
 	 */
@@ -150,35 +150,35 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 
 	/**
 	 * Used to coordinate with bean validators
-	 * <p/>
+	 * <p>
 	 * See JPA 2 section 8.2.1.9
 	 */
 	String JPA_PERSIST_VALIDATION_GROUP = "javax.persistence.validation.group.pre-persist";
 
 	/**
 	 * Used to coordinate with bean validators
-	 * <p/>
+	 * <p>
 	 * See JPA 2 section 8.2.1.9
 	 */
 	String JPA_UPDATE_VALIDATION_GROUP = "javax.persistence.validation.group.pre-update";
 
 	/**
 	 * Used to coordinate with bean validators
-	 * <p/>
+	 * <p>
 	 * See JPA 2 section 8.2.1.9
 	 */
 	String JPA_REMOVE_VALIDATION_GROUP = "javax.persistence.validation.group.pre-remove";
 
 	/**
 	 * Used to request (hint) a pessimistic lock scope.
-	 * <p/>
+	 * <p>
 	 * See JPA 2 sections 8.2.1.9 and 3.4.4.3
 	 */
 	String JPA_LOCK_SCOPE = "javax.persistence.lock.scope";
 
 	/**
 	 * Used to request (hint) a pessimistic lock timeout (in milliseconds).
-	 * <p/>
+	 * <p>
 	 * See JPA 2 sections 8.2.1.9 and 3.4.4.3
 	 */
 	String JPA_LOCK_TIMEOUT = "javax.persistence.lock.timeout";
@@ -318,7 +318,7 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	 *     <li>a {@code Class<? extends ConnectionProvider>} reference</li>
 	 *     <li>a {@code Class<? extends ConnectionProvider>} FQN</li>
 	 * </ul>
-	 * <p/>
+	 * <p>
 	 * The term {@code "class"} appears in the setting name due to legacy reasons; however it can accept instances.
 	 */
 	String CONNECTION_PROVIDER ="hibernate.connection.provider_class";
@@ -379,7 +379,7 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	 * ConnectionProvider will already have auto-commit disabled when we acquire them from
 	 * the provider.  When we get connections already in auto-commit, this allows us to circumvent
 	 * some operations in the interest of performance.
-	 * <p/>
+	 * <p>
 	 * Default value is {@code false} - do not skip, aka call setAutocommit
 	 *
 	 * @since 5.2.10
@@ -443,7 +443,7 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	/**
 	 * Names the implementation of {@link TransactionCoordinatorBuilder} to use for
 	 * creating {@link TransactionCoordinator} instances.
-	 * <p/>
+	 * <p>
 	 * Can be<ul>
 	 *     <li>TransactionCoordinatorBuilder instance</li>
 	 *     <li>TransactionCoordinatorBuilder implementation {@link Class} reference</li>
@@ -541,7 +541,7 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	/**
 	 * Setting which indicates whether or not the new {@link org.hibernate.id.IdentifierGenerator} are used
 	 * for AUTO, TABLE and SEQUENCE.
-	 * <p/>
+	 * <p>
 	 * Default is {@code true}.  Existing applications may want to disable this (set it {@code false}) for
 	 * upgrade compatibility.
 	 *
@@ -558,13 +558,13 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	 * The legacy behavior of Hibernate is to not use discriminators for joined inheritance (Hibernate does not need
 	 * the discriminator...).  However, some JPA providers do need the discriminator for handling joined inheritance.
 	 * In the interest of portability this capability has been added to Hibernate too.
-	 * <p/>
+	 * <p>
 	 * However, we want to make sure that legacy applications continue to work as well.  Which puts us in a bind in
 	 * terms of how to handle "implicit" discriminator mappings.  The solution is to assume that the absence of
 	 * discriminator metadata means to follow the legacy behavior *unless* this setting is enabled.  With this setting
 	 * enabled, Hibernate will interpret the absence of discriminator metadata as an indication to use the JPA
 	 * defined defaults for these absent annotations.
-	 * <p/>
+	 * <p>
 	 * See Hibernate Jira issue HHH-6911 for additional background info.
 	 *
 	 * @see MetadataBuilder#enableImplicitDiscriminatorsForJoinedSubclassSupport
@@ -576,11 +576,11 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	 * The legacy behavior of Hibernate is to not use discriminators for joined inheritance (Hibernate does not need
 	 * the discriminator...).  However, some JPA providers do need the discriminator for handling joined inheritance.
 	 * In the interest of portability this capability has been added to Hibernate too.
-	 * <p/>
+	 * <p>
 	 * Existing applications rely (implicitly or explicitly) on Hibernate ignoring any DiscriminatorColumn declarations
 	 * on joined inheritance hierarchies.  This setting allows these applications to maintain the legacy behavior
 	 * of DiscriminatorColumn annotations being ignored when paired with joined inheritance.
-	 * <p/>
+	 * <p>
 	 * See Hibernate Jira issue HHH-6911 for additional background info.
 	 *
 	 * @see MetadataBuilder#enableExplicitDiscriminatorsForJoinedSubclassSupport
@@ -620,7 +620,7 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	 *     <li>a reference to a Class that implements ArchiveDescriptorFactory</li>
 	 *     <li>a fully qualified name (String) of a Class that implements ArchiveDescriptorFactory</li>
 	 * </ul>
-	 * <p/>
+	 * <p>
 	 * See information on {@link org.hibernate.boot.archive.scan.spi.Scanner}
 	 * about expected constructor forms.
 	 *
@@ -673,7 +673,7 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	/**
 	 * Used to specify the order in which metadata sources should be processed.  Value
 	 * is a delimited-list whose elements are defined by {@link org.hibernate.cfg.MetadataSourceType}.
-	 * <p/>
+	 * <p>
 	 * Default is {@code "hbm,class"} which indicates to process {@code hbm.xml} files followed by
 	 * annotations (combined with {@code orm.xml} mappings).
 	 *
@@ -872,14 +872,14 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 
 	/**
 	 * Should named queries be checked during startup (the default is enabled).
-	 * <p/>
+	 * <p>
 	 * Mainly intended for test environments.
 	 */
 	String QUERY_STARTUP_CHECKING = "hibernate.query.startup_check";
 
 	/**
 	 * Setting which indicates whether or not Java constant follow the Java Naming conventions.
-	 * <p/>
+	 * <p>
 	 * Default is {@code true}. Existing applications may want to disable this (set it {@code false}) if non-conventional Java constants are used.
 	 * However, there is a significant performance overhead for using non-conventional Java constants since Hibernate cannot determine if aliases
 	 * should be treated as Java constants or not.
@@ -1117,7 +1117,7 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	 * Assuming {@link #GLOBALLY_QUOTED_IDENTIFIERS}, this allows such global quoting
 	 * to skip column-definitions as defined by {@link javax.persistence.Column},
 	 * {@link javax.persistence.JoinColumn}, etc.
-	 * <p/>
+	 * <p>
 	 * JPA states that column-definitions are subject to global quoting, so by default this setting
 	 * is {@code false} for JPA compliance.  Set to {@code true} to avoid column-definitions
 	 * being quoted due to global quoting (they will still be quoted if explicitly quoted in the
@@ -1203,7 +1203,7 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	 * Setting to perform SchemaManagementTool actions automatically as part of
 	 * the SessionFactory lifecycle.  Valid options are defined by the
 	 * {@link org.hibernate.tool.schema.Action} enum.
-	 * <p/>
+	 * <p>
 	 * Interpreted in combination with {@link #HBM2DDL_DATABASE_ACTION} and
 	 * {@link #HBM2DDL_SCRIPTS_ACTION}.  If no value is specified, the default
 	 * is "none" ({@link org.hibernate.tool.schema.Action#NONE}).
@@ -1216,7 +1216,7 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	 * Setting to perform SchemaManagementTool actions against the database directly via JDBC
 	 * automatically as part of the SessionFactory lifecycle.  Valid options are defined by the
 	 * {@link org.hibernate.tool.schema.Action} enum.
-	 * <p/>
+	 * <p>
 	 * Interpreted in combination with {@link #HBM2DDL_AUTO}.  If no value is specified, the default
 	 * is "none" ({@link org.hibernate.tool.schema.Action#NONE}).
 	 *
@@ -1227,7 +1227,7 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	/**
 	 * Setting to perform SchemaManagementTool actions writing the commands into a DDL script file.
 	 * Valid options are defined by the {@link org.hibernate.tool.schema.Action} enum.
-	 * <p/>
+	 * <p>
 	 * Interpreted in combination with {@link #HBM2DDL_AUTO}.  If no value is specified, the default
 	 * is "none" ({@link org.hibernate.tool.schema.Action#NONE}).
 	 *
@@ -1237,7 +1237,7 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 
 	/**
 	 * Allows passing a specific {@link java.sql.Connection} instance to be used by SchemaManagementTool.
-	 * <p/>
+	 * <p>
 	 * May also be used to determine the values for {@value #HBM2DDL_DB_NAME},
 	 * {@value #HBM2DDL_DB_MAJOR_VERSION} and {@value #HBM2DDL_DB_MINOR_VERSION}.
 	 */
@@ -1247,10 +1247,10 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	 * Specifies the name of the database provider in cases where a Connection to the underlying database is
 	 * not available (aka, mainly in generating scripts).  In such cases, a value for this setting
 	 * *must* be specified.
-	 * <p/>
+	 * <p>
 	 * The value of this setting is expected to match the value returned by
 	 * {@link java.sql.DatabaseMetaData#getDatabaseProductName()} for the target database.
-	 * <p/>
+	 * <p>
 	 * Additionally specifying {@value #HBM2DDL_DB_MAJOR_VERSION} and/or {@value #HBM2DDL_DB_MINOR_VERSION}
 	 * may be required to understand exactly how to generate the required schema commands.
 	 *
@@ -1318,7 +1318,7 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	/**
 	 * Specifies the CREATE script file as either a {@link java.io.Reader} configured for reading of the DDL script
 	 * file or a string designating a file {@link java.net.URL} for the DDL script.
-	 * <p/>
+	 * <p>
 	 * Hibernate historically also accepted {@link #HBM2DDL_IMPORT_FILES} for a similar purpose.  This setting
 	 * should be preferred over {@link #HBM2DDL_IMPORT_FILES} moving forward
 	 *
@@ -1362,12 +1362,12 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	 * during the SessionFactory creation.
 	 * File order matters, the statements of a give file are executed before the statements of the
 	 * following files.
-	 * <p/>
+	 * <p>
 	 * These statements are only executed if the schema is created ie if <tt>hibernate.hbm2ddl.auto</tt>
 	 * is set to <tt>create</tt> or <tt>create-drop</tt>.
-	 * <p/>
+	 * <p>
 	 * The default value is <tt>/import.sql</tt>
-	 * <p/>
+	 * <p>
 	 * {@link #HBM2DDL_CREATE_SCRIPT_SOURCE} / {@link #HBM2DDL_DROP_SCRIPT_SOURCE} should be preferred
 	 * moving forward
 	 */
@@ -1375,10 +1375,10 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 
 	/**
 	 * JPA variant of {@link #HBM2DDL_IMPORT_FILES}
-	 * <p/>
+	 * <p>
 	 * Specifies a {@link java.io.Reader} configured for reading of the SQL load script or a string designating the
 	 * file {@link java.net.URL} for the SQL load script.
-	 * <p/>
+	 * <p>
 	 * A "SQL load script" is a script that performs some database initialization (INSERT, etc).
 	 */
 	String HBM2DDL_LOAD_SCRIPT_SOURCE = "javax.persistence.sql-load-script-source";
@@ -1387,11 +1387,11 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	 * Reference to the {@link org.hibernate.tool.hbm2ddl.ImportSqlCommandExtractor} implementation class
 	 * to use for parsing source/import files as defined by {@link #HBM2DDL_CREATE_SCRIPT_SOURCE},
 	 * {@link #HBM2DDL_DROP_SCRIPT_SOURCE} or {@link #HBM2DDL_IMPORT_FILES}.
-	 * <p/>
+	 * <p>
 	 * Reference may refer to an instance, a Class implementing ImportSqlCommandExtractor of the FQN
 	 * of the ImportSqlCommandExtractor implementation.  If the FQN is given, the implementation
 	 * must provide a no-arg constructor.
-	 * <p/>
+	 * <p>
 	 * The default value is {@link org.hibernate.tool.hbm2ddl.SingleLineSqlCommandExtractor}.
 	 */
 	String HBM2DDL_IMPORT_FILES_SQL_EXTRACTOR = "hibernate.hbm2ddl.import_files_sql_extractor";
@@ -1406,7 +1406,7 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 
 	/**
 	 * The JPA variant of {@link #HBM2DLL_CREATE_NAMESPACES}
-	 * <p/>
+	 * <p>
 	 * Specifies whether the persistence provider is to create the database schema(s) in addition to creating
 	 * database objects (tables, sequences, constraints, etc).  The value of this boolean property should be set
 	 * to {@code true} if the persistence provider is to create schemas in the database or to generate DDL that
@@ -1487,7 +1487,7 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 
 	/**
 	 * Names a {@link org.hibernate.context.spi.CurrentTenantIdentifierResolver} implementation to use.
-	 * <p/>
+	 * <p>
 	 * Can be<ul>
 	 *     <li>CurrentTenantIdentifierResolver instance</li>
 	 *     <li>CurrentTenantIdentifierResolver implementation {@link Class} reference</li>
@@ -1503,9 +1503,9 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	 * {@link org.hibernate.SessionFactory} and propagated to each Session created from the SessionFactory.
 	 * This setting identifies an Interceptor which is effectively a singleton across all the Sessions
 	 * opened from the SessionFactory to which it is applied; the same instance will be passed to each Session.
-	 * <p/>
+	 * <p>
 	 * See {@link #SESSION_SCOPED_INTERCEPTOR} for an approach to create unique Interceptor instances for each Session
-	 * <p/>
+	 * <p>
 	 * Can reference<ul>
 	 *     <li>Interceptor instance</li>
 	 *     <li>Interceptor implementation {@link Class} reference</li>
@@ -1522,7 +1522,7 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	 * This setting identifies an Interceptor implementation that is to be applied to every Session opened
 	 * from the SessionFactory, but unlike {@link #INTERCEPTOR} a unique instance of the Interceptor is
 	 * used for each Session.
-	 * <p/>
+	 * <p>
 	 * Can reference<ul>
 	 *     <li>Interceptor implementation {@link Class} reference</li>
 	 *     <li>Interceptor implementation class name</li>
@@ -1645,10 +1645,10 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	 * procedure/function calls as part of {@link org.hibernate.procedure.ProcedureCall}
 	 * handling.  Implicitly Hibernate will not pass the NULL, the intention being to allow
 	 * any default argument values to be applied.
-	 * <p/>
+	 * <p>
 	 * This defines a global setting, which can them be controlled per parameter via
 	 * {@link org.hibernate.procedure.ParameterRegistration#enablePassingNulls(boolean)}
-	 * <p/>
+	 * <p>
 	 * Values are {@code true} (pass the NULLs) or {@code false} (do not pass the NULLs).
 	 *
 	 * @deprecated (5.3) Hibernate determines it implicitly
@@ -1660,7 +1660,7 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	 * [EXPERIMENTAL] Enable instantiation of composite/embedded objects when all of its attribute values are {@code null}.
 	 * The default (and historical) behavior is that a {@code null} reference will be used to represent the
 	 * composite when all of its attributes are {@code null}
-	 * <p/>
+	 * <p>
 	 * This is an experimental feature that has known issues. It should not be used in production
 	 * until it is stabilized. See Hibernate Jira issue HHH-11936 for details.
 	 *
@@ -1671,9 +1671,9 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	/**
 	 * Setting that allows access to the underlying {@link org.hibernate.Transaction}, even
 	 * when using a JTA since normal JPA operations prohibit this behavior.
-	 * <p/>
+	 * <p>
 	 * Values are {@code true} grants access, {@code false} does not.
-	 * <p/>
+	 * <p>
 	 * The default behavior is to allow access unless the session is bootstrapped via JPA.
 	 */
 	String ALLOW_JTA_TRANSACTION_ACCESS = "hibernate.jta.allowTransactionAccess";
@@ -1683,9 +1683,9 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	 *
 	 * Since version 5.2 Hibernate conforms with the JPA specification and does not allow anymore
 	 * to flush any update out of a transaction boundary.
-	 * <p/>
+	 * <p>
 	 * Values are: {@code true} to allow flush operations out of a transaction, {@code false} to disallow.
-	 * <p/>
+	 * <p>
 	 * The default behavior is {@code false}
 	 *
 	 * @since 5.2
@@ -1694,7 +1694,7 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 
 	/**
 	 * Setting which indicates whether or not the new JOINS over collection tables should be rewritten to subqueries.
-	 * <p/>
+	 * <p>
 	 * Default is {@code true}.  Existing applications may want to disable this (set it {@code false}) for
 	 * upgrade compatibility.
 	 *
@@ -1707,9 +1707,9 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	 * or {@link org.hibernate.Session#refresh(Object)} on a detached entity instance when the {@link org.hibernate.Session} is obtained from
 	 * a JPA {@link javax.persistence.EntityManager}).
 	 * <p>
-	 * <p/>
+	 * <p>
 	 * Values are {@code true} permits the refresh, {@code false} does not permit the detached instance refresh and an {@link IllegalArgumentException} is thrown.
-	 * <p/>
+	 * <p>
 	 * The default value is {@code false} when the Session is bootstrapped via JPA {@link javax.persistence.EntityManagerFactory}, otherwise is {@code true}
 	 *
 	 * @since 5.2
@@ -1718,7 +1718,7 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 
 	/**
 	 * Setting that specifies how Hibernate will respond when multiple representations of the same persistent entity ("entity copy") is detected while merging.
-	 * <p/>
+	 * <p>
 	 * The possible values are:
 	 *
 	 * <ul>
@@ -1729,7 +1729,7 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	 *     </li>
 	 * </ul>
 	 *
-	 * <p/>
+	 * <p>
 	 * In addition, the application may customize the behavior by providing an implementation of {@link org.hibernate.event.spi.EntityCopyObserver} and setting {@code hibernate.event.merge.entity_copy_observer} to the class name.
 	 * When this property is set to {@code allow} or {@code log}, Hibernate will merge each entity copy detected while cascading the merge operation.
 	 * In the process of merging each entity copy, Hibernate will cascade the merge operation from each entity copy to its associations with {@code CascadeType.MERGE} or {@code CascadeType.ALL}.

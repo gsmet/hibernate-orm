@@ -13,7 +13,7 @@ import org.hibernate.type.descriptor.sql.TimeTypeDescriptor;
 
 /**
  * A type mapping {@link java.sql.Types#TIME TIME} and {@link Calendar}.
- * <p/>
+ * <p>
  * For example, a Calendar attribute annotated with {@link javax.persistence.Temporal} and specifying
  * {@link javax.persistence.TemporalType#TIME}
  *

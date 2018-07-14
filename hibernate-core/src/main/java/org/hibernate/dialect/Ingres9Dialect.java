@@ -20,7 +20,7 @@ import org.hibernate.type.StandardBasicTypes;
 
 /**
  * A SQL dialect for Ingres 9.3 and later versions.
- * <p/>
+ * <p>
  * Changes:
  * <ul>
  * <li>Support for the SQL functions current_time, current_timestamp and current_date added</li>

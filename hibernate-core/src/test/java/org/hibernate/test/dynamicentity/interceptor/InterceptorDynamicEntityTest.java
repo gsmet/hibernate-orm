@@ -23,7 +23,7 @@ import static org.junit.Assert.assertNotNull;
 /**
  * Demonstrates custom interpretation of entity-name through
  * an Interceptor.
- * <p/>
+ * <p>
  * Here, we are generating dynamic
  * {@link java.lang.reflect.Proxy proxies} on the fly to represent
  * our entities.  Because of this, Hibernate would not be able to

@@ -15,7 +15,7 @@ import org.hibernate.cfg.AttributeConverterDefinition;
 /**
  * Represents the result of the first step of the process of building {@link org.hibernate.boot.MetadataSources}
  * reference into a {@link org.hibernate.boot.Metadata} reference.
- * <p/>
+ * <p>
  * Essentially it represents thecombination of:<ol>
  *     <li>domain classes, packages and mapping files defined via MetadataSources</li>
  *     <li>attribute converters defined via MetadataBuildingOptions</li>

@@ -11,7 +11,7 @@ import org.hibernate.type.descriptor.sql.NClobTypeDescriptor;
 
 /**
  * A type that maps between {@link java.sql.Types#NCLOB NCLOB} and {@link Character Character[]}
- * <p/>
+ * <p>
  * Essentially a {@link org.hibernate.type.MaterializedNClobType} but represented as a Character[] in Java rather than String.
  *
  * @author Emmanuel Bernard

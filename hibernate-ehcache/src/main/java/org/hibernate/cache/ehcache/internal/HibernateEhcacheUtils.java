@@ -34,7 +34,7 @@ public final class HibernateEhcacheUtils {
 
 	/**
 	 * Create a cache manager configuration from the supplied url, correcting it for Hibernate compatibility.
-	 * <p/>
+	 * <p>
 	 * Currently "correcting" for Hibernate compatibility means simply switching any identity based value modes
 	 * to serialization.
 	 *

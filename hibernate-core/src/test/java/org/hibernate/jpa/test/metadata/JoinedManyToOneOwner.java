@@ -12,7 +12,7 @@ import javax.persistence.ManyToOne;
 
 /**
  * An entity that defines a @ManyToOne @JoinTable
- * <p/>
+ * <p>
  * See HHH-4720 for details
  *
  * @author Steve Ebersole

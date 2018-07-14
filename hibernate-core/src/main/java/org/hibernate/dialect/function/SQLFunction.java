@@ -42,7 +42,7 @@ public interface SQLFunction {
 	/**
 	 * The return type of the function.  May be either a concrete type which is preset, or variable depending upon
 	 * the type of the first function argument.
-	 * <p/>
+	 * <p>
 	 * Note, the 'firstArgumentType' parameter should match the one passed into {@link #render}
 	 *
 	 * @param firstArgumentType The type of the first argument
@@ -56,7 +56,7 @@ public interface SQLFunction {
 
 	/**
 	 * Render the function call as SQL fragment.
-	 * <p/>
+	 * <p>
 	 * Note, the 'firstArgumentType' parameter should match the one passed into {@link #getReturnType}
 	 *
 	 * @param firstArgumentType The type of the first argument

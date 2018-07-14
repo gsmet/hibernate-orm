@@ -33,11 +33,11 @@ import java.util.Collection;
  * via TCCL is still required in a few cases where we call out to external libs.  An OSGi
  * bundle manually creating a SessionFactory would require numerous ClassLoader
  * tricks (or may be impossible altogether).
- * <p/>
+ * <p>
  * In order to fully control the TCCL issues and shield users from the
  * knowledge, we're requiring that bundles use this OSGi ServiceFactory.  It
  * configures and provides a SessionFactory as an OSGi service.
- * <p/>
+ * <p>
  * Note that an OSGi ServiceFactory differs from a Service.  The ServiceFactory
  * allows individual instances of Services to be created and provided to
  * multiple client Bundles.

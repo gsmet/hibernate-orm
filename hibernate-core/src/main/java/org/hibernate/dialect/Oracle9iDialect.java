@@ -19,7 +19,7 @@ import org.hibernate.sql.CaseFragment;
 
 /**
  * A dialect for Oracle 9i databases.
- * <p/>
+ * <p>
  * Specifies to not use "ANSI join syntax" because 9i does not seem to properly handle it in all cases.
  *
  * @author Steve Ebersole
@@ -188,7 +188,7 @@ public class Oracle9iDialect extends Oracle8iDialect {
 	/**
 	 * HHH-4907, I don't know if oracle 8 supports this syntax, so I'd think it is better add this 
 	 * method here. Reopen this issue if you found/know 8 supports it.
-	 * <p/>
+	 * <p>
 	 * {@inheritDoc}
 	 */
 	@Override

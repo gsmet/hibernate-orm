@@ -23,7 +23,7 @@ import org.hibernate.sql.SimpleSelect;
 
 /**
  * A locking strategy where the locks are obtained through select statements.
- * <p/>
+ * <p>
  * For non-read locks, this is achieved through the Dialect's specific
  * SELECT ... FOR UPDATE syntax.
  *

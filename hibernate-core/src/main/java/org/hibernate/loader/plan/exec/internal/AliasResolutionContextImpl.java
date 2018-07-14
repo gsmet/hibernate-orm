@@ -90,7 +90,7 @@ public class AliasResolutionContextImpl implements AliasResolutionContext {
 	/**
 	 * Generate the entity reference aliases for a particular {@link org.hibernate.loader.plan.spi.EntityReference}
 	 * and register the generated value using the query space UID.
-	 * <p/>
+	 * <p>
 	 * Once generated, there are two methods that can be used to do look ups by the specified
 	 * query space UID:
 	 * <ul>
@@ -146,7 +146,7 @@ public class AliasResolutionContextImpl implements AliasResolutionContext {
 	/**
 	 * Generate the collection reference aliases for a particular {@link org.hibernate.loader.plan.spi.CollectionReference}
 	 * and register the generated value using the query space UID.
-	 * <p/>
+	 * <p>
 	 * Once generated, there are two methods that can be used to do look ups by the specified
 	 * query space UID:
 	 * <ul>

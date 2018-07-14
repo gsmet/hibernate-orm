@@ -13,10 +13,10 @@ import org.hibernate.cache.CacheException;
  * Contract for a named "region".  The concept of a Region might not
  * necessarily correlate to a specific concept in the underlying caching
  * provider - it is just a thing that can be referenced by name later.
- * <p/>
+ * <p>
  * A region's name is "unqualified"; i.e. it is not prefixed by
  * {@link SessionFactoryOptions#getCacheRegionPrefix()}.
- * <p/>
+ * <p>
  * Region is the base contract defining some common characteristics
  * regardless of the type of data intended to be stored within this
  * Region.  The more specific sub-types are {@link DomainDataRegion}

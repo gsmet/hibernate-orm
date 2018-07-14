@@ -27,7 +27,7 @@ import org.hibernate.type.Type;
 /**
  * Compiles a JPA criteria query into an executable {@link TypedQuery}.  Its single contract is the {@link #compile}
  * method.
- * <p/>
+ * <p>
  * NOTE : This is a temporary implementation which simply translates the criteria query into a JPAQL query string.  A
  * better, long-term solution is being implemented as part of refactoring the JPAQL/HQL translator.
  *

@@ -19,7 +19,7 @@ import org.hibernate.persister.entity.Lockable;
 
 /**
  * An optimistic locking strategy that verifies that the version hasn't changed (prior to transaction commit).
- * <p/>
+ * <p>
  * This strategy is valid for LockMode.OPTIMISTIC
  *
  * @author Scott Marlow

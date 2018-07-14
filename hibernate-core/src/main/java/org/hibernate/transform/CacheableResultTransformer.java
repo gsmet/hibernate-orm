@@ -168,7 +168,7 @@ public class CacheableResultTransformer implements ResultTransformer {
 	 * Each element of the list is re-transformed in place (i.e, List
 	 * elements are replaced with re-transformed values) and the original
 	 * List is returned.
-	 * <p/>
+	 * <p>
 	 * If re-transformation is unnecessary, the original List is returned
 	 * unchanged.
 	 *
@@ -222,10 +222,10 @@ public class CacheableResultTransformer implements ResultTransformer {
 	 * Each element of the list is untransformed in place (i.e, List
 	 * elements are replaced with untransformed values) and the original
 	 * List is returned.
-	 * <p/>
+	 * <p>
 	 * If not unnecessary, the original List is returned
 	 * unchanged.
-	 * <p/>
+	 * <p>
 	 * NOTE: If transformed values are a subset of the original
 	 *       tuple, then, on return, elements corresponding to
 	 *       excluded tuple elements will be null.

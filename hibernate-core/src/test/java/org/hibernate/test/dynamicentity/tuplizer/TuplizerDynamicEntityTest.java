@@ -29,7 +29,7 @@ import static org.junit.Assert.assertNotNull;
  * Demonstrates use of Tuplizers to allow the use of JDK
  * {@link java.lang.reflect.Proxy dynamic proxies} as our
  * domain model.
- * <p/>
+ * <p>
  * Here we plug a custom Interceptor into the session simply to
  * allow us to not have to explicitly supply the appropriate entity
  * name to the Session calls.

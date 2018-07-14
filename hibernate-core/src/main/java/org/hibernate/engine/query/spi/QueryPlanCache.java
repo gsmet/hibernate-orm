@@ -113,7 +113,7 @@ public class QueryPlanCache implements Serializable {
 
 	/**
 	 * Obtain the parameter metadata for given native-sql query.
-	 * <p/>
+	 * <p>
 	 * for native-sql queries, the param metadata is determined outside any relation to a query plan, because
 	 * query plan creation and/or retrieval for a native-sql query depends on all of the return types having been
 	 * set, which might not be the case up-front when param metadata would be most useful

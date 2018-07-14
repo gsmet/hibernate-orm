@@ -34,7 +34,7 @@ import java.util.List;
  *
  * It reproduces the following issues:
  * https://hibernate.atlassian.net/browse/HHH-9512
- * <p/>
+ * <p>
  * This tests that cascades are done properly from each entity.
  *
  * @author Alex Belyaev (based on code by Pavol Zibrita and Gail Badner)

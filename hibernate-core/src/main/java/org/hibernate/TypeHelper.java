@@ -13,7 +13,7 @@ import org.hibernate.type.Type;
 
 /**
  * Provides access to the various {@link Type} instances associated with the {@link SessionFactory}.
- * <p/>
+ * <p>
  * This is intended for use by application developers.
  *
  * @author Steve Ebersole
@@ -46,7 +46,7 @@ public interface TypeHelper {
 
 	/**
 	 * Uses heuristics to deduce the proper {@link Type} given a string naming the type or Java class.
-	 * <p/>
+	 * <p>
 	 * See {@link org.hibernate.type.TypeResolver#heuristicType(java.lang.String)} for a discussion of the
 	 * heuristic algorithm.
 	 *

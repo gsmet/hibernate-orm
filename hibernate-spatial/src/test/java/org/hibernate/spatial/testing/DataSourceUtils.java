@@ -59,7 +59,7 @@ public class DataSourceUtils {
 
 	/**
 	 * Constructor for the DataSourceUtils object.
-	 * <p/>
+	 * <p>
 	 * <p>The following entities are required in the property file:
 	 * <il>
 	 * <li> jdbcUrl: jdbc connection URL</li>
@@ -279,7 +279,7 @@ public class DataSourceUtils {
 
 	/**
 	 * Executes a SQL statement.
-	 * <p/>
+	 * <p>
 	 * This is used e.g. to drop/create a spatial index, or update the
 	 * geometry metadata statements.
 	 *
@@ -375,7 +375,7 @@ public class DataSourceUtils {
 
 	/**
 	 * Returns the JTS geometries that are expected of a decoding of the testsuite-suite object's geometry.
-	 * <p/>
+	 * <p>
 	 * <p>This method reads the WKT of the testsuite-suite objects and returns the result.</p>
 	 *
 	 * @param type type of geometry

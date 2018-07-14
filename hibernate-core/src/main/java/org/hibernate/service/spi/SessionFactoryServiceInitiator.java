@@ -19,7 +19,7 @@ import org.hibernate.service.Service;
 public interface SessionFactoryServiceInitiator<R extends Service> extends ServiceInitiator<R>{
 	/**
 	 * Initiates the managed service.
-	 * <p/>
+	 * <p>
 	 * Note for implementors: signature is guaranteed to change once redesign of SessionFactory building is complete
 	 *
 	 * @param context Access to initialization contextual info
@@ -36,7 +36,7 @@ public interface SessionFactoryServiceInitiator<R extends Service> extends Servi
 
 	/**
 	 * Initiates the managed service.
-	 * <p/>
+	 * <p>
 	 * Note for implementors: signature is guaranteed to change once redesign of SessionFactory building is complete
 	 *
 	 * @param sessionFactory The session factory.  Note the the session factory is still in flux; care needs to be taken

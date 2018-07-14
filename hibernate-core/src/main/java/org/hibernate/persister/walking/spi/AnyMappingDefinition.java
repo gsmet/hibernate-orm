@@ -41,7 +41,7 @@ public interface AnyMappingDefinition {
 	/**
 	 * Access to the type of the value that makes up the discriminator portion of the AnyType.  The discriminator is
 	 * historically called the "meta".
-	 * <p/>
+	 * <p>
 	 * NOTE : If explicit discriminator mappings are given, the type here will be a {@link org.hibernate.type.MetaType}.
 	 *
 	 * @return The discriminator type

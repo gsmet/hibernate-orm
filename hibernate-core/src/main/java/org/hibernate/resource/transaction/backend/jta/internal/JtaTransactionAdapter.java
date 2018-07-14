@@ -10,7 +10,7 @@ import org.hibernate.resource.transaction.spi.TransactionStatus;
 
 /**
  * Adapter for abstracting the physical means of interacting with JTA transactions.
- * <p/>
+ * <p>
  * JTA transactions can concretely be interacted with through {@link javax.transaction.UserTransaction}
  * or {@link javax.transaction.Transaction} depending on environment and situation.  This adapter hides
  * this difference.

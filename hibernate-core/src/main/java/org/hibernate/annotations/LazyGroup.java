@@ -12,7 +12,7 @@ import java.lang.annotation.RetentionPolicy;
 
 /**
  * For use with bytecode-enhanced lazy-loading support.
- * <p/>
+ * <p>
  * Identifies grouping for performing lazy attribute loading.  By default all
  * non-collection attributes are loaded in one group named {@code "DEFAULT"}.
  * This annotation allows defining different groups of attributes to be

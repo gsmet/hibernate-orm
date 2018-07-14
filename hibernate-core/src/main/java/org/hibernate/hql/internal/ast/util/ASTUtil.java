@@ -35,7 +35,7 @@ public final class ASTUtil {
 
 	/**
 	 * Creates a single node AST.
-	 * <p/>
+	 * <p>
 	 * TODO : this is silly, remove it...
 	 *
 	 * @param astFactory The factory.
@@ -406,7 +406,7 @@ public final class ASTUtil {
 
 	/**
 	 * Get the name of a constant defined on the given class which has the given value.
-	 * <p/>
+	 * <p>
 	 * Note, if multiple constants have this value, the first will be returned which is known to be different
 	 * on different JVM implementations.
 	 *

@@ -23,7 +23,7 @@ public interface ExpandingQuerySpaces extends QuerySpaces {
 
 	/**
 	 * Generate a unique ID to be used when creating an {@link ExpandingQuerySpace}.
-	 * <p/>
+	 * <p>
 	 * Using this method to generate a unique ID ensures that this object
 	 * does not contain a {@link org.hibernate.loader.plan.spi.QuerySpace} with the returned unique ID.
 	 *

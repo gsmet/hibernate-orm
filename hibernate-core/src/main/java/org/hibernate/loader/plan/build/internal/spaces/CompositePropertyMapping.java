@@ -14,10 +14,10 @@ import org.hibernate.type.Type;
 
 /**
  * A PropertyMapping for handling composites!  Woohoo!
- * <p/>
+ * <p>
  * TODO : Consider moving this into the attribute/association walking SPI (org.hibernate.persister.walking) and
  * having the notion of PropertyMapping built and exposed there
- * <p/>
+ * <p>
  * There is duplication here too wrt {@link org.hibernate.hql.internal.ast.tree.ComponentJoin.ComponentPropertyMapping}.
  * like above, consider moving to a singly-defined CompositePropertyMapping in the attribute/association walking SPI
  *
@@ -84,9 +84,9 @@ public class CompositePropertyMapping implements PropertyMapping {
 	/**
 	 * Builds the relative path.  Used to delegate {@link #toType(String)},
 	 * {@link #toColumns(String, String)} and {@link #toColumns(String)} calls out to {@link #parentPropertyMapping}.
-	 * <p/>
+	 * <p>
 	 * Called from {@link #toParentPropertyPath}.
-	 * <p/>
+	 * <p>
 	 * Override this to adjust how the relative property path is built for this mapping.
 	 *
 	 * @param propertyName The incoming property name to "path append".

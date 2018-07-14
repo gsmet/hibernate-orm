@@ -21,9 +21,9 @@ import org.jboss.logging.Logger;
 
 /**
  * UniqueEntityLoader implementation that is the main functionality for LoadPlan-based Entity loading.
- * <p/>
+ * <p>
  * Can handle batch-loading as well as non-pk, unique-key loading,
- * <p/>
+ * <p>
  * Much is ultimately delegated to its superclass, AbstractLoadPlanBasedEntityLoader.  However:
  *
  * Loads an entity instance using outerjoin fetching to fetch associated entities.

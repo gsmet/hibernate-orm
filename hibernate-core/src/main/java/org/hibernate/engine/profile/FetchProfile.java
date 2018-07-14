@@ -17,7 +17,7 @@ import org.hibernate.type.Type;
 /**
  * A 'fetch profile' allows a user to dynamically modify the fetching strategy used for particular associations at
  * runtime, whereas that information was historically only statically defined in the metadata.
- * <p/>
+ * <p>
  * This class defines the runtime representation of this data.
  *
  * @author Steve Ebersole

@@ -203,7 +203,7 @@ public class TypeHelper {
 	/**
 	 * Apply the {@link Type#replace} operation across a series of values, as long as the corresponding
 	 * {@link Type} is an association.
-	 * <p/>
+	 * <p>
 	 * If the corresponding type is a component type, then apply {@link Type#replace} across the component
 	 * subtypes but do not replace the component value itself.
 	 *
@@ -253,7 +253,7 @@ public class TypeHelper {
 	/**
 	 * Determine if any of the given field values are dirty, returning an array containing
 	 * indices of the dirty fields.
-	 * <p/>
+	 * <p>
 	 * If it is determined that no fields are dirty, null is returned.
 	 *
 	 * @param properties The property definitions
@@ -281,7 +281,7 @@ public class TypeHelper {
 	/**
 	 * Determine if any of the given field values are dirty, returning an array containing
 	 * indices of the dirty fields.
-	 * <p/>
+	 * <p>
 	 * If it is determined that no fields are dirty, null is returned.
 	 *
 	 * @param properties The property definitions
@@ -328,7 +328,7 @@ public class TypeHelper {
 	/**
 	 * Determine if any of the given field values are modified, returning an array containing
 	 * indices of the modified fields.
-	 * <p/>
+	 * <p>
 	 * If it is determined that no fields are dirty, null is returned.
 	 *
 	 * @param properties The property definitions
@@ -359,7 +359,7 @@ public class TypeHelper {
 	/**
 	 * Determine if any of the given field values are modified, returning an array containing
 	 * indices of the modified fields.
-	 * <p/>
+	 * <p>
 	 * If it is determined that no fields are dirty, null is returned.
 	 *
 	 * @param properties The property definitions

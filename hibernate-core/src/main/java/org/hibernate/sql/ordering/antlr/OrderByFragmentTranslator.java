@@ -26,7 +26,7 @@ public class OrderByFragmentTranslator {
 
 	/**
 	 * Perform the translation of the user-supplied fragment, returning the translation.
-	 * <p/>
+	 * <p>
 	 * The important distinction to this split between (1) translating and (2) resolving aliases is that
 	 * both happen at different times
 	 *

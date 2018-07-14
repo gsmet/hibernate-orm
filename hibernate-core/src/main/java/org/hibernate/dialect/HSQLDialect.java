@@ -55,9 +55,9 @@ import java.sql.DatabaseMetaData;
 
 /**
  * An SQL dialect compatible with HSQLDB (HyperSQL).
- * <p/>
+ * <p>
  * Note this version supports HSQLDB version 1.8 and higher, only.
- * <p/>
+ * <p>
  * Enhancements to version 3.5.0 GA to provide basic support for both HSQLDB 1.8.x and 2.x
  * Does not works with Hibernate 3.2 - 3.4 without alteration.
  *
@@ -548,7 +548,7 @@ public class HSQLDialect extends Dialect {
 	 * be treated as a callable statement. It is equivalent to
 	 * "select current_timestamp from dual" in some databases.
 	 * HSQLDB 2.0 also supports VALUES CURRENT_TIMESTAMP
-	 * <p/>
+	 * <p>
 	 * {@inheritDoc}
 	 */
 	@Override
@@ -575,7 +575,7 @@ public class HSQLDialect extends Dialect {
 	/**
 	 * For HSQLDB 2.0, this is a copy of the base class implementation.
 	 * For HSQLDB 1.8, only READ_UNCOMMITTED is supported.
-	 * <p/>
+	 * <p>
 	 * {@inheritDoc}
 	 */
 	@Override

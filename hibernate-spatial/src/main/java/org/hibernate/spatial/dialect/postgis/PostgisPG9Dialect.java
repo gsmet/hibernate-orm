@@ -52,7 +52,7 @@ public class PostgisPG9Dialect extends PostgreSQL9Dialect implements SpatialDial
 	 * Returns the SQL fragment for the SQL WHERE-clause when parsing
 	 * <code>org.hibernatespatial.criterion.SpatialRelateExpression</code>s
 	 * into prepared statements.
-	 * <p/>
+	 * <p>
 	 *
 	 * @param columnName The name of the geometry-typed column to which the relation is
 	 * applied

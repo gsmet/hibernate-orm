@@ -77,7 +77,7 @@ public class FrontBaseDialect extends Dialect {
 
 	/**
 	 * FrontBase doesn't support this syntax, which was dropped with SQL92.
-	 * <p/>
+	 * <p>
 	 * {@inheritDoc}
 	 */
 	@Override

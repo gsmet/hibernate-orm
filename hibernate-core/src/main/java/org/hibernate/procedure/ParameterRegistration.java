@@ -63,12 +63,12 @@ public interface ParameterRegistration<T> extends ProcedureParameter<T> {
 	 *     <li>bind the NULL to the parameter</li>
 	 *     <li>do not bind the NULL to the parameter</li>
 	 * </ul>
-	 * <p/>
+	 * <p>
 	 * The reason for the distinction comes from default values defined on the corresponding
 	 * database procedure/function argument.  Any time a value (including NULL) is bound to the
 	 * argument, its default value will not be used.  So effectively this setting controls
 	 * whether the NULL should be interpreted as "pass the NULL" or as "apply the argument default".
-	 * <p/>
+	 * <p>
 	 * The (global) default this setting is defined by {@link org.hibernate.cfg.AvailableSettings#PROCEDURE_NULL_PARAM_PASSING}
 	 *
 	 * @param enabled {@code true} indicates that the NULL should be passed; {@code false} indicates it should not.

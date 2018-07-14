@@ -12,7 +12,7 @@ import org.hibernate.type.Type;
 
 /**
  * Contract for associations that are being fetched.
- * <p/>
+ * <p>
  * NOTE : can represent components/embeddables
  *
  * @author Steve Ebersole

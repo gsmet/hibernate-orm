@@ -25,7 +25,7 @@ import org.jboss.logging.Logger;
 /**
  * The base contract for UniqueEntityLoader implementations capable of performing batch-fetch loading of entities
  * using multiple primary key values in the SQL <tt>WHERE</tt> clause.
- * <p/>
+ * <p>
  * Typically these are
  *
  * @author Gavin King

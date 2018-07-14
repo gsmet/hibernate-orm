@@ -49,7 +49,7 @@ public interface JdbcRecommendedSqlTypeMappingContext {
 
 	/**
 	 * When mapping a boolean type to the database what is the preferred SQL type code to use?
-	 * <p/>
+	 * <p>
 	 * Specifically names the key into the
 	 * {@link org.hibernate.type.descriptor.sql.spi.SqlTypeDescriptorRegistry}.
 	 */

@@ -10,7 +10,7 @@ import org.hibernate.loader.EntityAliases;
 
 /**
  * Represents a return which names a "root" entity.
- * <p/>
+ * <p>
  * A root entity means it is explicitly a "column" in the result, as opposed to
  * a fetched association.
  *

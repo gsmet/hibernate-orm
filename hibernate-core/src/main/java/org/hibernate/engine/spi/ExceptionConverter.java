@@ -28,7 +28,7 @@ public interface ExceptionConverter {
 	/**
 	 * Converts a Hibernate-specific exception into a JPA-specified exception; note that the JPA sepcification makes use
 	 * of exceptions outside its exception hierarchy, though they are all runtime exceptions.
-	 * <p/>
+	 * <p>
 	 *
 	 * @param e The Hibernate excepton.
 	 * @param lockOptions The lock options in effect at the time of exception (can be null)
@@ -40,7 +40,7 @@ public interface ExceptionConverter {
 	/**
 	 * Converts a Hibernate-specific exception into a JPA-specified exception; note that the JPA sepcification makes use
 	 * of exceptions outside its exception hierarchy, though they are all runtime exceptions.
-	 * <p/>
+	 * <p>
 	 *
 	 * @param e The Hibernate excepton.
 	 *

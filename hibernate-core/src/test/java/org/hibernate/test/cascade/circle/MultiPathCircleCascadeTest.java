@@ -45,7 +45,7 @@ import static org.junit.Assert.fail;
  * It reproduced the following issues:
  * http://opensource.atlassian.com/projects/hibernate/browse/HHH-3046
  * http://opensource.atlassian.com/projects/hibernate/browse/HHH-3810
- * <p/>
+ * <p>
  * This tests that cascades are done properly from each entity.
  *
  * @author Pavol Zibrita, Gail Badner

@@ -62,7 +62,7 @@ import org.hibernate.usertype.UserType;
 /**
  * Represents one approach for bootstrapping Hibernate.  In fact, historically this was
  * <b>the</b> way to bootstrap Hibernate.
- * <p/>
+ * <p>
  * The approach here is to define all configuration and mapping sources in one API
  * and to then build the {@link org.hibernate.SessionFactory} in one-shot.  The configuration
  * and mapping sources defined here are just held here until the SessionFactory is built.  This
@@ -71,7 +71,7 @@ import org.hibernate.usertype.UserType;
  * change in behavior is that users can add configuration and mapping sources here, but they can
  * no longer query the in-flight state of mappings ({@link org.hibernate.mapping.PersistentClass},
  * {@link org.hibernate.mapping.Collection}, etc) here.
- * <p/>
+ * <p>
  * Note: Internally this class uses the new bootstrapping approach when asked to build the
  * SessionFactory.
  *
@@ -394,7 +394,7 @@ public class Configuration {
 
 	/**
 	 * <b>INTENDED FOR TESTSUITE USE ONLY!</b>
-	 * <p/>
+	 * <p>
 	 * Much like {@link #addCacheableFile(File)} except that here we will fail immediately if
 	 * the cache version cannot be found or used for whatever reason
 	 *
@@ -543,7 +543,7 @@ public class Configuration {
 
 	/**
 	 * Read all mappings from a jar file
-	 * <p/>
+	 * <p>
 	 * Assumes that any file named <tt>*.hbm.xml</tt> is a mapping document.
 	 *
 	 * @param jar a jar file
@@ -558,7 +558,7 @@ public class Configuration {
 
 	/**
 	 * Read all mapping documents from a directory tree.
-	 * <p/>
+	 * <p>
 	 * Assumes that any file named <tt>*.hbm.xml</tt> is a mapping document.
 	 *
 	 * @param dir The directory

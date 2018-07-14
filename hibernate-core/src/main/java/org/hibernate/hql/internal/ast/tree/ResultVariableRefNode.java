@@ -16,7 +16,7 @@ import antlr.SemanticException;
  * <code>
  * select v as value from tab1 order by value
  * </code>
- * <p/>
+ * <p>
  * "value" used in the order by clause is a reference to the
  * result_variable, "value", defined in the select clause.
  *

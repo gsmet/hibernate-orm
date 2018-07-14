@@ -10,13 +10,13 @@ import org.hibernate.type.Type;
 
 /**
  * Contract for all things that know how to map a property to the needed bits of SQL.
- * <p/>
+ * <p>
  * The column/formula fragments that represent a property in the table defining the property be obtained by
  * calling either {@link #toColumns(String, String)} or {@link #toColumns(String)} to obtain SQL-aliased
  * column/formula fragments aliased or un-aliased, respectively.
  *
  *
- * <p/>
+ * <p>
  * Note, the methods here are generally ascribed to accept "property paths".  That is a historical necessity because
  * of how Hibernate originally understood composites (embeddables) internally.  That is in the process of changing
  * as Hibernate has added {@link org.hibernate.loader.plan.build.internal.spaces.CompositePropertyMapping}

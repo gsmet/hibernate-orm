@@ -16,7 +16,7 @@ import org.hibernate.type.Type;
 /**
  * Represents HQL functions that can have different representations in different SQL dialects where that
  * difference can be handled via a template/pattern.
- * <p/>
+ * <p>
  * E.g. in HQL we can define function <code>concat(?1, ?2)</code> to concatenate two strings
  * p1 and p2.  Dialects would register different versions of this class *using the same name* (concat) but with
  * different templates or patterns; <code>(?1 || ?2)</code> for Oracle, <code>concat(?1, ?2)</code> for MySql,

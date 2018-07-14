@@ -41,7 +41,7 @@ public abstract class AbstractType<X> implements Type<X>, Serializable {
 
 	/**
 	 * {@inheritDoc}
-	 * <p/>
+	 * <p>
 	 * IMPL NOTE : The Hibernate version may return {@code null} here in the case of either dynamic models or
 	 * entity classes mapped multiple times using entity-name.  In these cases, the {@link #getTypeName()} value
 	 * should be used.

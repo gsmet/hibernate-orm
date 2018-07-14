@@ -13,7 +13,7 @@ import org.hibernate.type.descriptor.sql.SqlTypeDescriptor;
 
 /**
  * Centralizes access to the standard set of basic {@link Type types}.
- * <p/>
+ * <p>
  * Type mappings can be adjusted per {@link org.hibernate.SessionFactory}.  These adjusted mappings can be accessed
  * from the {@link org.hibernate.TypeHelper} instance obtained via {@link org.hibernate.SessionFactory#getTypeHelper()}
  *
@@ -285,7 +285,7 @@ public final class StandardBasicTypes {
 
 	/**
 	 * The standard Hibernate type for mapping {@link String} to JDBC {@link java.sql.Types#LONGVARCHAR LONGVARCHAR}.
-	 * <p/>
+	 * <p>
 	 * Similar to a {@link #MATERIALIZED_CLOB}
 	 *
 	 * @see TextType
@@ -294,7 +294,7 @@ public final class StandardBasicTypes {
 
 	/**
 	 * The standard Hibernate type for mapping {@link String} to JDBC {@link java.sql.Types#LONGNVARCHAR LONGNVARCHAR}.
-	 * <p/>
+	 * <p>
 	 * Similar to a {@link #MATERIALIZED_NCLOB}
 	 *
 	 * @see NTextType
@@ -337,7 +337,7 @@ public final class StandardBasicTypes {
 
 	/**
 	 * The standard Hibernate type for mapping {@link java.io.Serializable} to JDBC {@link java.sql.Types#VARBINARY VARBINARY}.
-	 * <p/>
+	 * <p>
 	 * See especially the discussion wrt {@link ClassLoader} determination on {@link SerializableType}
 	 *
 	 * @see SerializableType

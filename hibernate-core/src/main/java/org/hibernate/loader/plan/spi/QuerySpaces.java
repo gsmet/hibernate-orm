@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  * Models a collection of {@link QuerySpace} references and exposes the ability to find a {@link QuerySpace} by its UID
- * <p/>
+ * <p>
  * todo : make this hierarchical... that would be needed to truly work for hql parser
  *
  * @author Steve Ebersole

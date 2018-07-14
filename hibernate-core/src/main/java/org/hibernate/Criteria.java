@@ -83,7 +83,7 @@ public interface Criteria extends CriteriaSpecification {
 	/**
 	 * Used to specify that the query results will be a projection (scalar in
 	 * nature).  Implicitly specifies the {@link #PROJECTION} result transformer.
-	 * <p/>
+	 * <p>
 	 * The individual components contained within the given
 	 * {@link Projection projection} determines the overall "shape" of the
 	 * query result.
@@ -148,7 +148,7 @@ public interface Criteria extends CriteriaSpecification {
 
 	/**
 	 * Join an association, assigning an alias to the joined association.
-	 * <p/>
+	 * <p>
 	 * Functionally equivalent to {@link #createAlias(String, String, JoinType )} using
 	 * {@link JoinType#INNER_JOIN} for the joinType.
 	 *
@@ -164,7 +164,7 @@ public interface Criteria extends CriteriaSpecification {
 	/**
 	 * Join an association using the specified join-type, assigning an alias
 	 * to the joined association.
-	 * <p/>
+	 * <p>
 	 * The joinType is expected to be one of {@link JoinType#INNER_JOIN} (the default),
 	 * {@link JoinType#FULL_JOIN}, or {@link JoinType#LEFT_OUTER_JOIN}.
 	 *
@@ -181,7 +181,7 @@ public interface Criteria extends CriteriaSpecification {
 	/**
 	 * Join an association using the specified join-type, assigning an alias
 	 * to the joined association.
-	 * <p/>
+	 * <p>
 	 * The joinType is expected to be one of {@link #INNER_JOIN} (the default),
 	 * {@link #FULL_JOIN}, or {@link #LEFT_JOIN}.
 	 *
@@ -200,7 +200,7 @@ public interface Criteria extends CriteriaSpecification {
 	/**
 	 * Join an association using the specified join-type, assigning an alias
 	 * to the joined association.
-	 * <p/>
+	 * <p>
 	 * The joinType is expected to be one of {@link JoinType#INNER_JOIN} (the default),
 	 * {@link JoinType#FULL_JOIN}, or {@link JoinType#LEFT_OUTER_JOIN}.
 	 *
@@ -218,7 +218,7 @@ public interface Criteria extends CriteriaSpecification {
 	/**
 	 * Join an association using the specified join-type, assigning an alias
 	 * to the joined association.
-	 * <p/>
+	 * <p>
 	 * The joinType is expected to be one of {@link #INNER_JOIN} (the default),
 	 * {@link #FULL_JOIN}, or {@link #LEFT_JOIN}.
 	 *
@@ -237,7 +237,7 @@ public interface Criteria extends CriteriaSpecification {
 
 	/**
 	 * Create a new <tt>Criteria</tt>, "rooted" at the associated entity.
-	 * <p/>
+	 * <p>
 	 * Functionally equivalent to {@link #createCriteria(String, org.hibernate.sql.JoinType)} using
 	 * {@link JoinType#INNER_JOIN} for the joinType.
 	 *
@@ -280,7 +280,7 @@ public interface Criteria extends CriteriaSpecification {
 	/**
 	 * Create a new <tt>Criteria</tt>, "rooted" at the associated entity,
 	 * assigning the given alias.
-	 * <p/>
+	 * <p>
 	 * Functionally equivalent to {@link #createCriteria(String, String, org.hibernate.sql.JoinType)} using
 	 * {@link JoinType#INNER_JOIN} for the joinType.
 	 *

@@ -13,7 +13,7 @@ import org.hibernate.query.QueryProducer;
 
 /**
  * Contract methods shared between {@link Session} and {@link StatelessSession}.
- * <p/>
+ * <p>
  * NOTE : Poorly named.  "shared" simply indicates that its a unified contract between {@link Session} and
  * {@link StatelessSession}.
  * 

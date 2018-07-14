@@ -101,7 +101,7 @@ public class BinaryLogicOperatorNode extends AbstractSelectExpression implements
 	 * a series of ANDed predicates.  This allows multi-column type comparisons
 	 * and explicit row-value-constructor syntax even on databases which do
 	 * not support row-value-constructor.
-	 * <p/>
+	 * <p>
 	 * For example, here we'd mutate "... where (col1, col2) = ('val1', 'val2) ..." to
 	 * "... where col1 = 'val1' and col2 = 'val2' ..."
 	 *

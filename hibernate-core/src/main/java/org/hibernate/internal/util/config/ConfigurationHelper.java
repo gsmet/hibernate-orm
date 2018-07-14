@@ -283,7 +283,7 @@ public final class ConfigurationHelper {
 
 	/**
 	 * Extract a property value by name from the given properties object.
-	 * <p/>
+	 * <p>
 	 * Both <tt>null</tt> and <tt>empty string</tt> are viewed as the same, and return null.
 	 *
 	 * @param propertyName The name of the property for which to extract value
@@ -303,7 +303,7 @@ public final class ConfigurationHelper {
 	}
 	/**
 	 * Extract a property value by name from the given properties object.
-	 * <p/>
+	 * <p>
 	 * Both <tt>null</tt> and <tt>empty string</tt> are viewed as the same, and return null.
 	 *
 	 * @param propertyName The name of the property for which to extract value
@@ -324,7 +324,7 @@ public final class ConfigurationHelper {
 
 	/**
 	 * Constructs a map from a property value.
-	 * <p/>
+	 * <p>
 	 * The exact behavior here is largely dependant upon what is passed in as
 	 * the delimiter.
 	 *
@@ -349,7 +349,7 @@ public final class ConfigurationHelper {
 
 	/**
 	 * Constructs a map from a property value.
-	 * <p/>
+	 * <p>
 	 * The exact behavior here is largely dependant upon what is passed in as
 	 * the delimiter.
 	 *

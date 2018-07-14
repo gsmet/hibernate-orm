@@ -450,7 +450,7 @@ public final class QueryParameters {
 	 * Should entities and proxies loaded by the Query be put in read-only mode?  If the
 	 * read-only/modifiable setting was not initialized (i.e., QueryParameters#isReadOnlyInitialized() == false),
 	 * then the default read-only/modifiable setting for the persistence context is returned instead.
-	 * <p/>
+	 * <p>
 	 * The read-only/modifiable setting has no impact on entities/proxies returned by the
 	 * query that existed in the session before the query was executed.
 	 *
@@ -475,7 +475,7 @@ public final class QueryParameters {
 
 	/**
 	 * Set the read-only/modifiable mode for entities and proxies loaded by the query.
-	 * <p/>
+	 * <p>
 	 * The read-only/modifiable setting has no impact on entities/proxies returned by the
 	 * query that existed in the session before the query was executed.
 	 *

@@ -46,10 +46,10 @@ import org.hibernate.type.Type;
 
 /**
  * <strong>Make this go away in 6.0</strong> :)
- * <p/>
+ * <p>
  * Needed because atm we render a JPA Criteria query into a HQL/JPQL query String and some metadata, and then
  * compile into a Query.  This class wraps the compiled HQL/JPQL query and adds an extra layer of metadata.
- * <p/>
+ * <p>
  * But the move to SQM in 6.0 allows us to do away with the "wrapping".
  *
  * Essentially

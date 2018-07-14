@@ -114,7 +114,7 @@ public interface BootstrapContext {
 	/**
 	 * Access to the Jandex index passed by call to
 	 * {@link org.hibernate.boot.MetadataBuilder#applyIndexView(org.jboss.jandex.IndexView)}, if any.
-	 * <p/>
+	 * <p>
 	 * Note that Jandex is currently not used.  See https://github.com/hibernate/hibernate-orm/wiki/Roadmap7.0
 	 *
 	 * @return The Jandex index
@@ -124,7 +124,7 @@ public interface BootstrapContext {
 	/**
 	 * Access to any SQL functions explicitly registered with the MetadataBuilder.  This
 	 * does not include Dialect defined functions, etc.
-	 * <p/>
+	 * <p>
 	 * Should never return {@code null}
 	 *
 	 * @return The SQLFunctions registered through MetadataBuilder
@@ -134,7 +134,7 @@ public interface BootstrapContext {
 	/**
 	 * Access to any AuxiliaryDatabaseObject explicitly registered with the MetadataBuilder.  This
 	 * does not include AuxiliaryDatabaseObject defined in mappings.
-	 * <p/>
+	 * <p>
 	 * Should never return {@code null}
 	 *
 	 * @return The AuxiliaryDatabaseObject registered through MetadataBuilder
@@ -143,7 +143,7 @@ public interface BootstrapContext {
 
 	/**
 	 * Access to collected AttributeConverter definitions.
-	 * <p/>
+	 * <p>
 	 * Should never return {@code null}
 	 *
 	 * @return The AttributeConverterInfo registered through MetadataBuilder
@@ -152,7 +152,7 @@ public interface BootstrapContext {
 
 	/**
 	 * Access to all explicit cache region mappings.
-	 * <p/>
+	 * <p>
 	 * Should never return {@code null}
 	 *
 	 * @return Explicit cache region mappings
@@ -161,7 +161,7 @@ public interface BootstrapContext {
 
 	/**
 	 * Releases the "bootstrap only" resources held by this BootstrapContext.
-	 * <p/>
+	 * <p>
 	 * Only one call to this method is supported, after we have completed the process of
 	 * building the (non-inflight) Metadata impl.  We may want to delay this until we
 	 * get into SF building.  Not sure yet.

@@ -9,9 +9,9 @@ package org.hibernate.boot.model.naming;
 /**
  * Pluggable strategy for applying implicit naming rules when an
  * explicit name is not given.
- * <p/>
+ * <p>
  * NOTE: the method names here mostly favor the JPA naming (aka, secondary table rather than join)
- * <p/>
+ * <p>
  * Methods fall into 2 main categories:<ul>
  *     <li>
  *         Table naming<ul>

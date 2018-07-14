@@ -34,7 +34,7 @@ import java.util.Map;
  *         either directly or through bytecode enhancement.
  *     </li>
  * </ul>
- * <p/>
+ * <p>
  *
  * @author Steve Ebersole
  */

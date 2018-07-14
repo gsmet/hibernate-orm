@@ -71,7 +71,7 @@ public abstract class BasicExtractor<J> implements ValueExtractor<J> {
 
 	/**
 	 * Perform the extraction.
-	 * <p/>
+	 * <p>
 	 * Called from {@link #extract}.  Null checking of the value (as well as consulting {@link ResultSet#wasNull}) is
 	 * done there.
 	 *
@@ -114,7 +114,7 @@ public abstract class BasicExtractor<J> implements ValueExtractor<J> {
 
 	/**
 	 * Perform the extraction.
-	 * <p/>
+	 * <p>
 	 * Called from {@link #extract}.  Null checking of the value (as well as consulting {@link ResultSet#wasNull}) is
 	 * done there.
 	 *
@@ -161,7 +161,7 @@ public abstract class BasicExtractor<J> implements ValueExtractor<J> {
 
 	/**
 	 * Perform the extraction.
-	 * <p/>
+	 * <p>
 	 * Called from {@link #extract}.  Null checking of the value (as well as consulting {@link ResultSet#wasNull}) is
 	 * done there.
 	 *

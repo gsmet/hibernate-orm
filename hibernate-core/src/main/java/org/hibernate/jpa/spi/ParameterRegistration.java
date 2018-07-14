@@ -15,7 +15,7 @@ import javax.persistence.TemporalType;
  * Hibernate specific extension to the JPA {@link javax.persistence.Parameter} contract as known to the
  * {@link javax.persistence.Query} and {@link javax.persistence.StoredProcedureQuery} implementations.  Used to track
  * information known about the parameter.
- * <p/>
+ * <p>
  * For parameter information as known to JPA criteria queries, see {@link org.hibernate.query.criteria.internal.expression.ParameterExpressionImpl}
  * instead.
  *

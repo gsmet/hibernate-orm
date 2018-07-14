@@ -31,7 +31,7 @@ public class GeoDBDialect extends H2Dialect implements SpatialDialect {
 	/**
 	 * Constructor. Registers OGC simple feature functions (see
 	 * http://portal.opengeospatial.org/files/?artifact_id=829 for details).
-	 * <p/>
+	 * <p>
 	 * Note for the registerfunction method: it registers non-standard database
 	 * functions: first argument is the internal (OGC standard) function name,
 	 * second the name as it occurs in the spatial dialect

@@ -41,7 +41,7 @@ public class HibernatePersistenceProvider implements PersistenceProvider {
 	
 	/**
 	 * {@inheritDoc}
-	 * <p/>
+	 * <p>
 	 * Note: per-spec, the values passed as {@code properties} override values found in {@code persistence.xml}
 	 */
 	@Override
@@ -131,7 +131,7 @@ public class HibernatePersistenceProvider implements PersistenceProvider {
 
 	/**
 	 * {@inheritDoc}
-	 * <p/>
+	 * <p>
 	 * Note: per-spec, the values passed as {@code properties} override values found in {@link PersistenceUnitInfo}
 	 */
 	@Override

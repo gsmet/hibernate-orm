@@ -33,7 +33,7 @@ public interface PredicateImplementor extends Predicate, Renderable {
 	/**
 	 * Form of {@link Renderable#render} used when the predicate is wrapped in a negated wrapper.  Allows passing
 	 * down the negation flag.
-	 * <p/>
+	 * <p>
 	 * Note that this form is no-op in compound (junction) predicates.  The reason being that compound predicates
 	 * are more complex and the negation is applied during its creation.
 	 *

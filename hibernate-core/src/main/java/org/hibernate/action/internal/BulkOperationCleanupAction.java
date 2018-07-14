@@ -29,7 +29,7 @@ import org.hibernate.persister.entity.Queryable;
 /**
  * An {@link org.hibernate.engine.spi.ActionQueue} {@link org.hibernate.action.spi.Executable} for ensuring
  * shared cache cleanup in relation to performed bulk HQL queries.
- * <p/>
+ * <p>
  * NOTE: currently this executes for <tt>INSERT</tt> queries as well as
  * <tt>UPDATE</tt> and <tt>DELETE</tt> queries.  For <tt>INSERT</tt> it is
  * really not needed as we'd have no invalid entity/collection data to

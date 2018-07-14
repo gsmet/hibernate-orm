@@ -23,7 +23,7 @@ import org.hibernate.type.descriptor.WrapperOptions;
 
 /**
  * Descriptor for {@link Blob} handling.
- * <p/>
+ * <p>
  * Note, {@link Blob blobs} really are mutable (their internal state can in fact be mutated).  We simply
  * treat them as immutable because we cannot properly check them for changes nor deep copy them.
  *

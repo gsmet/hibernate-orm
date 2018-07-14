@@ -30,7 +30,7 @@ public final class FetchStrategyHelper {
 
 	/**
 	 * Determine the fetch-style (if one) explicitly set for this association via fetch profiles.
-	 * <p/>
+	 * <p>
 	 * Note that currently fetch profiles only allow specifying join fetching, so this method currently
 	 * returns either (a) FetchStyle.JOIN or (b) null
 	 *

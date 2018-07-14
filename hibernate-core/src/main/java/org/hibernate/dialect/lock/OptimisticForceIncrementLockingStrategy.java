@@ -19,7 +19,7 @@ import org.hibernate.persister.entity.Lockable;
 /**
  * An optimistic locking strategy that forces an increment of the version (after verifying that version hasn't changed).
  * This takes place just prior to transaction commit.
- * <p/>
+ * <p>
  * This strategy is valid for LockMode.OPTIMISTIC_FORCE_INCREMENT
  *
  * @author Scott Marlow

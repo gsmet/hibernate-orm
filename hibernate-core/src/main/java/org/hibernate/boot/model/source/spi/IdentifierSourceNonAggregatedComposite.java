@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * Additional contract describing the source of an identifier mapping whose {@link #getNature() nature} is
  * {@link org.hibernate.id.EntityIdentifierNature#NON_AGGREGATED_COMPOSITE }.
- * <p/>
+ * <p>
  * Think {@link javax.persistence.IdClass}
  *
  * @author Steve Ebersole

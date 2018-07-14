@@ -19,7 +19,7 @@ import org.hibernate.type.Type;
  * A {@link org.hibernate.dialect.function.SQLFunction} providing support for implementing TRIM functionality
  * (as defined by both the ANSI SQL and JPA specs) in cases where the dialect may not support the full <tt>trim</tt>
  * function itself.
- * <p/>
+ * <p>
  * Follows the <a href="http://en.wikipedia.org/wiki/Template_method_pattern">template</a> pattern in order to implement
  * the {@link #render} method.
  *
@@ -151,7 +151,7 @@ public abstract class AbstractAnsiTrimEmulationFunction implements SQLFunction {
 
 	/**
 	 * Resolve the function definition which should be used to trim both leading and trailing spaces.
-	 * <p/>
+	 * <p>
 	 * In this form, the imput arguments is missing the <tt>FROM</tt> keyword.
 	 *
 	 * @return The sql function
@@ -160,7 +160,7 @@ public abstract class AbstractAnsiTrimEmulationFunction implements SQLFunction {
 
 	/**
 	 * Resolve the function definition which should be used to trim both leading and trailing spaces.
-	 * <p/>
+	 * <p>
 	 * The same as {#link resolveBothSpaceTrimFunction} except that here the<tt>FROM</tt> is included and
 	 * will need to be accounted for during {@link SQLFunction#render} processing.
 	 * 

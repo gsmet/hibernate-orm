@@ -15,7 +15,7 @@ import org.hibernate.dialect.identity.Ingres10IdentityColumnSupport;
 
 /**
  * A SQL dialect for Ingres 10 and later versions.
- * <p/>
+ * <p>
  * Changes:
  * <ul>
  * <li>Add native BOOLEAN type support</li>

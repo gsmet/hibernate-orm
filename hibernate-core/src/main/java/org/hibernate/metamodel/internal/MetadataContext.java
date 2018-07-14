@@ -35,10 +35,10 @@ import org.hibernate.mapping.Property;
 
 /**
  * Defines a context for storing information during the building of the {@link MetamodelImpl}.
- * <p/>
+ * <p>
  * This contextual information includes data needing to be processed in a second pass as well as
  * cross-references into the built metamodel classes.
- * <p/>
+ * <p>
  * At the end of the day, clients are interested in the {@link #getEntityTypeMap} and {@link #getEmbeddableTypeMap}
  * results, which represent all the registered {@linkplain #registerEntityType entities} and
  * {@linkplain #registerEmbeddedableType embeddables} respectively.

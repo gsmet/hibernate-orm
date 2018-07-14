@@ -67,9 +67,9 @@ import org.jboss.logging.Logger;
  * The following method is intended to be used by a merge event listener (and other
  * classes) in the same package to add a merge entity and its corresponding
  * managed entity to a MergeContext and indicate if the merge operation is
- * being performed on the merge entity yet.<p/>
+ * being performed on the merge entity yet.<p>
  * {@link MergeContext#put(Object mergeEntity, Object managedEntity, boolean isOperatedOn)}
- * <p/>
+ * <p>
  * The following method is intended to be used by a merge event listener (and other
  * classes) in the same package to indicate whether the merge operation is being
  * performed on a merge entity already in the MergeContext:
@@ -191,11 +191,11 @@ class MergeContext implements Map {
 	 * If this MergeContext already contains a cross-reference for <code>mergeEntity</code> when this
 	 * method is called, then <code>managedEntity</code> must be the same as what is already associated
 	 * with <code>mergeEntity</code>.
-	 * <p/>
+	 * <p>
 	 * This method assumes that the merge process is not yet operating on <code>mergeEntity</code>.
 	 * Later when <code>mergeEntity</code> enters the merge process, {@link #setOperatedOn(Object, boolean)}
 	 * should be called.
-	 * <p/>
+	 * <p>
 	 * @param mergeEntity the merge entity; must be non-null
 	 * @param managedEntity the managed entity result; must be non-null
 	 * @return previous managed entity associated with specified merge entity, or null if

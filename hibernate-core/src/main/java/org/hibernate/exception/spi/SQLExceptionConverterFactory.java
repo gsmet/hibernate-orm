@@ -35,7 +35,7 @@ public class SQLExceptionConverterFactory {
 
 	/**
 	 * Build a SQLExceptionConverter instance.
-	 * <p/>
+	 * <p>
 	 * First, looks for a {@link Environment#SQL_EXCEPTION_CONVERTER} property to see
 	 * if the configuration specified the class of a specific converter to use.  If this
 	 * property is set, attempt to construct an instance of that class.  If not set, or

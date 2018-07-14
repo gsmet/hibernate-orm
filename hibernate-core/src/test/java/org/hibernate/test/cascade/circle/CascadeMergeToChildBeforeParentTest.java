@@ -29,7 +29,7 @@ import org.junit.Test;
  *   -------- (1 : N) ---- Vehicle--(1 : N)------------
  *
  * Arrows indicate the direction of cascade-merge.
- * <p/>
+ * <p>
  * I believe it reproduces the following issue:
  * http://opensource.atlassian.com/projects/hibernate/browse/HHH-3544
  *

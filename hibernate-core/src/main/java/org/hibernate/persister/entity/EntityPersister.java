@@ -38,9 +38,9 @@ import org.hibernate.type.VersionType;
 /**
  * Contract describing mapping information and persistence logic for a particular strategy of entity mapping.  A given
  * persister instance corresponds to a given mapped entity class.
- * <p/>
+ * <p>
  * Implementations must be thread-safe (preferably immutable).
- * <p/>
+ * <p>
  * Unless a custom {@link org.hibernate.persister.spi.PersisterFactory} is used, it is expected
  * that implementations of EntityPersister define a constructor accepting the following arguments:<ol>
  *     <li>
@@ -82,7 +82,7 @@ public interface EntityPersister extends EntityDefinition {
 	/**
 	 * Finish the initialization of this object. {@link #generateEntityDefinition()}
 	 * must be called for all entity persisters before calling this method.
-	 * <p/>
+	 * <p>
 	 * Called only once per {@link org.hibernate.SessionFactory} lifecycle,
 	 * after all entity persisters have been instantiated.
 	 *
@@ -146,7 +146,7 @@ public interface EntityPersister extends EntityDefinition {
 	/**
 	 * Returns an array of objects that identify spaces in which properties of
 	 * this entity are persisted, for instances of this class only.
-	 * <p/>
+	 * <p>
 	 * For most implementations, this returns the complete set of table names
 	 * to which instances of the mapped entity are persisted (not accounting
 	 * for superclass entity mappings).
@@ -158,7 +158,7 @@ public interface EntityPersister extends EntityDefinition {
 	/**
 	 * Returns an array of objects that identify spaces in which properties of
 	 * this entity are persisted, for instances of this class and its subclasses.
-	 * <p/>
+	 * <p>
 	 * Much like {@link #getPropertySpaces()}, except that here we include subclass
 	 * entity spaces.
 	 *
@@ -273,7 +273,7 @@ public interface EntityPersister extends EntityDefinition {
 	/**
 	 * Determine whether detached instances of this entity carry their own
 	 * identifier value.
-	 * <p/>
+	 * <p>
 	 * The other option is the deprecated feature where users could supply
 	 * the id during session calls.
 	 *
@@ -635,7 +635,7 @@ public interface EntityPersister extends EntityDefinition {
 	 * back from the database, injecting these generated values into the
 	 * given entity as well as writing this state to the
 	 * {@link org.hibernate.engine.spi.PersistenceContext}.
-	 * <p/>
+	 * <p>
 	 * Note, that because we update the PersistenceContext here, callers
 	 * need to take care that they have already written the initial snapshot
 	 * to the PersistenceContext before calling this method.
@@ -651,7 +651,7 @@ public interface EntityPersister extends EntityDefinition {
 	 * back from the database, injecting these generated values into the
 	 * given entity as well as writing this state to the
 	 * {@link org.hibernate.engine.spi.PersistenceContext}.
-	 * <p/>
+	 * <p>
 	 * Note, that because we update the PersistenceContext here, callers
 	 * need to take care that they have already written the initial snapshot
 	 * to the PersistenceContext before calling this method.
@@ -776,11 +776,11 @@ public interface EntityPersister extends EntityDefinition {
 	 * A request has already identified the entity-name of this persister as the mapping for the given instance.
 	 * However, we still need to account for possible subclassing and potentially re-route to the more appropriate
 	 * persister.
-	 * <p/>
+	 * <p>
 	 * For example, a request names <tt>Animal</tt> as the entity-name which gets resolved to this persister.  But the
 	 * actual instance is really an instance of <tt>Cat</tt> which is a subclass of <tt>Animal</tt>.  So, here the
 	 * <tt>Animal</tt> persister is being asked to return the persister specific to <tt>Cat</tt>.
-	 * <p/>
+	 * <p>
 	 * It is also possible that the instance is actually an <tt>Animal</tt> instance in the above example in which
 	 * case we would return <tt>this</tt> from this method.
 	 *

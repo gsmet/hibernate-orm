@@ -323,7 +323,7 @@ public abstract class AbstractLoadPlanBasedLoader {
 
 	/**
 	 * Bind positional parameter values to the JDBC prepared statement.
-	 * <p/>
+	 * <p>
 	 * Positional parameters are those specified by JDBC-style ? parameters
 	 * in the source query.  It is (currently) expected that these come
 	 * before any named parameters in the source query.
@@ -353,7 +353,7 @@ public abstract class AbstractLoadPlanBasedLoader {
 
 	/**
 	 * Bind named parameters to the JDBC prepared statement.
-	 * <p/>
+	 * <p>
 	 * This is a generic implementation, the problem being that in the
 	 * general case we do not know enough information about the named
 	 * parameters to perform this in a complete manner here.  Thus this

@@ -15,10 +15,10 @@ import org.hibernate.JDBCException;
  * Defines a contract for implementations that know how to convert a SQLException
  * into Hibernate's JDBCException hierarchy.  Inspired by Spring's
  * SQLExceptionTranslator.
- * <p/>
+ * <p>
  * Implementations <b>must</b> have a constructor which takes a
  * {@link ViolatedConstraintNameExtracter} parameter.
- * <p/>
+ * <p>
  * Implementations may implement {@link org.hibernate.exception.spi.Configurable} if they need to perform
  * configuration steps prior to first use.
  *

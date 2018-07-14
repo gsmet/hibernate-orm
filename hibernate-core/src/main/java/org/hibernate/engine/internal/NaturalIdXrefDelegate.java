@@ -28,7 +28,7 @@ import org.jboss.logging.Logger;
 /**
  * Maintains a {@link org.hibernate.engine.spi.PersistenceContext}-level 2-way cross-reference (xref) between the 
  * identifiers and natural ids of entities associated with the PersistenceContext.
- * <p/>
+ * <p>
  * Most operations resolve the proper {@link NaturalIdResolutionCache} to use based on the persister and 
  * simply delegate calls there.
  * 

@@ -439,12 +439,12 @@ public abstract class Dialect implements ConversionContext {
 
 	/**
 	 * Allows the dialect to override a {@link SqlTypeDescriptor}.
-	 * <p/>
+	 * <p>
 	 * If the passed {@code sqlTypeDescriptor} allows itself to be remapped (per
 	 * {@link org.hibernate.type.descriptor.sql.SqlTypeDescriptor#canBeRemapped()}), then this method uses
 	 * {@link #getSqlTypeDescriptorOverride}  to get an optional override based on the SQL code returned by
 	 * {@link SqlTypeDescriptor#getSqlType()}.
-	 * <p/>
+	 * <p>
 	 * If this dialect does not provide an override or if the {@code sqlTypeDescriptor} does not allow itself to be
 	 * remapped, then this method simply returns the original passed {@code sqlTypeDescriptor}
 	 *
@@ -741,7 +741,7 @@ public abstract class Dialect implements ConversionContext {
 	/**
 	 * The class (which implements {@link org.hibernate.id.IdentifierGenerator})
 	 * which acts as this dialects native generation strategy.
-	 * <p/>
+	 * <p>
 	 * Comes into play whenever the user specifies the native generator.
 	 *
 	 * @return The native generator class.
@@ -759,7 +759,7 @@ public abstract class Dialect implements ConversionContext {
 
 	/**
 	 * Resolves the native generation strategy associated to this dialect.
-	 * <p/>
+	 * <p>
 	 * Comes into play whenever the user specifies the native generator.
 	 *
 	 * @return The native generator strategy.
@@ -811,7 +811,7 @@ public abstract class Dialect implements ConversionContext {
 	/**
 	 * Generate the appropriate select statement to to retrieve the next value
 	 * of a sequence.
-	 * <p/>
+	 * <p>
 	 * This should be a "stand alone" select statement.
 	 *
 	 * @param sequenceName the name of the sequence
@@ -825,7 +825,7 @@ public abstract class Dialect implements ConversionContext {
 	/**
 	 * Generate the select expression fragment that will retrieve the next
 	 * value of a sequence as part of another (typically DML) statement.
-	 * <p/>
+	 * <p>
 	 * This differs from {@link #getSequenceNextValString(String)} in that this
 	 * should return an expression usable within another statement.
 	 *
@@ -867,7 +867,7 @@ public abstract class Dialect implements ConversionContext {
 	 * Typically dialects which support sequences can create a sequence
 	 * with a single command.  This is convenience form of
 	 * {@link #getCreateSequenceStrings} to help facilitate that.
-	 * <p/>
+	 * <p>
 	 * Dialects which support sequences and can create a sequence in a
 	 * single command need *only* override this method.  Dialects
 	 * which support sequences but require multiple commands to create
@@ -920,7 +920,7 @@ public abstract class Dialect implements ConversionContext {
 	 * Typically dialects which support sequences can drop a sequence
 	 * with a single command.  This is convenience form of
 	 * {@link #getDropSequenceStrings} to help facilitate that.
-	 * <p/>
+	 * <p>
 	 * Dialects which support sequences and can drop a sequence in a
 	 * single command need *only* override this method.  Dialects
 	 * which support sequences but require multiple commands to drop
@@ -958,7 +958,7 @@ public abstract class Dialect implements ConversionContext {
 
 	/**
 	 * Get the command used to select a GUID from the underlying database.
-	 * <p/>
+	 * <p>
 	 * Optional operation.
 	 *
 	 * @return The appropriate command.
@@ -1042,7 +1042,7 @@ public abstract class Dialect implements ConversionContext {
 	/**
 	 * Does the <tt>LIMIT</tt> clause take a "maximum" row number instead
 	 * of a total number of returned rows?
-	 * <p/>
+	 * <p>
 	 * This is easiest understood via an example.  Consider you have a table
 	 * with 20 rows, but you only want to retrieve rows number 11 through 20.
 	 * Generally, a limit with offset would say that the offset = 11 and the
@@ -1050,7 +1050,7 @@ public abstract class Dialect implements ConversionContext {
 	 * total number of returned rows.  Some dialects require that we instead
 	 * specify offset = 11 and limit = 20, where 20 is the "last" row we want
 	 * relative to offset (i.e. total number of rows = 20 - 11 = 9)
-	 * <p/>
+	 * <p>
 	 * So essentially, is limit relative from offset?  Or is limit absolute?
 	 *
 	 * @return True if limit is relative from offset; false otherwise.
@@ -1089,12 +1089,12 @@ public abstract class Dialect implements ConversionContext {
 
 	/**
 	 * Apply s limit clause to the query.
-	 * <p/>
+	 * <p>
 	 * Typically dialects utilize {@link #supportsVariableLimit() variable}
 	 * limit clauses when they support limits.  Thus, when building the
 	 * select command we do not actually need to know the limit or the offest
 	 * since we will just be using placeholders.
-	 * <p/>
+	 * <p>
 	 * Here we do still pass along whether or not an offset was specified
 	 * so that dialects not supporting offsets can generate proper exceptions.
 	 * In general, dialects will override one or the other of this method and
@@ -1113,7 +1113,7 @@ public abstract class Dialect implements ConversionContext {
 	/**
 	 * Hibernate APIs explicitly state that setFirstResult() should be a zero-based offset. Here we allow the
 	 * Dialect a chance to convert that value based on what the underlying db or driver will expect.
-	 * <p/>
+	 * <p>
 	 * NOTE: what gets passed into {@link #getLimitString(String,int,int)} is the zero-based offset.  Dialects which
 	 * do not {@link #supportsVariableLimit} should take care to perform any needed first-row-conversion calls prior
 	 * to injecting the limit values into the SQL string.
@@ -1396,7 +1396,7 @@ public abstract class Dialect implements ConversionContext {
 	/**
 	 * Some dialects support an alternative means to <tt>SELECT FOR UPDATE</tt>,
 	 * whereby a "lock hint" is appends to the table name in the from clause.
-	 * <p/>
+	 * <p>
 	 * contributed by <a href="http://sourceforge.net/users/heschulz">Helge Schulz</a>
 	 *
 	 * @param mode The lock mode to apply
@@ -1411,7 +1411,7 @@ public abstract class Dialect implements ConversionContext {
 	/**
 	 * Some dialects support an alternative means to <tt>SELECT FOR UPDATE</tt>,
 	 * whereby a "lock hint" is appends to the table name in the from clause.
-	 * <p/>
+	 * <p>
 	 * contributed by <a href="http://sourceforge.net/users/heschulz">Helge Schulz</a>
 	 *
 	 * @param lockOptions The lock options to apply
@@ -1425,7 +1425,7 @@ public abstract class Dialect implements ConversionContext {
 	/**
 	 * Modifies the given SQL by applying the appropriate updates for the specified
 	 * lock modes and key columns.
-	 * <p/>
+	 * <p>
 	 * The behavior here is that of an ANSI SQL <tt>SELECT FOR UPDATE</tt>.  This
 	 * method is really intended to allow dialects which do not support
 	 * <tt>SELECT FOR UPDATE</tt> to achieve this in their own fashion.
@@ -1471,7 +1471,7 @@ public abstract class Dialect implements ConversionContext {
 	 * Slight variation on {@link #getCreateTableString}.  Here, we have the
 	 * command used to create a table when there is no primary key and
 	 * duplicate rows are expected.
-	 * <p/>
+	 * <p>
 	 * Most databases do not care about the distinction; originally added for
 	 * Teradata support which does care.
 	 *
@@ -1627,7 +1627,7 @@ public abstract class Dialect implements ConversionContext {
 	/**
 	 * Build an instance of the SQLExceptionConverter preferred by this dialect for
 	 * converting SQLExceptions into Hibernate's JDBCException hierarchy.
-	 * <p/>
+	 * <p>
 	 * The preferred method is to not override this method; if possible,
 	 * {@link #buildSQLExceptionConversionDelegate()} should be overridden
 	 * instead.
@@ -1642,7 +1642,7 @@ public abstract class Dialect implements ConversionContext {
 	 *     <li>a delegate that interprets SQLState codes for either X/Open or SQL-2003 codes,
 	 *         depending on java.sql.DatabaseMetaData#getSQLStateType</li>
 	 * </ol>
-	 * <p/>
+	 * <p>
 	 * If this method is overridden, it is strongly recommended that the
 	 * returned {@link SQLExceptionConverter} interpret SQL errors based on
 	 * vendor-specific error codes rather than the SQLState since the
@@ -1663,7 +1663,7 @@ public abstract class Dialect implements ConversionContext {
 	/**
 	 * Build an instance of a {@link SQLExceptionConversionDelegate} for
 	 * interpreting dialect-specific error or SQLState codes.
-	 * <p/>
+	 * <p>
 	 * When {@link #buildSQLExceptionConverter} returns null, the default 
 	 * {@link SQLExceptionConverter} is used to interpret SQLState and
 	 * error codes. If this method is overridden to return a non-null value,
@@ -1675,11 +1675,11 @@ public abstract class Dialect implements ConversionContext {
 	 *     <li>a delegate that interprets SQLState codes for either X/Open or SQL-2003 codes,
 	 *         depending on java.sql.DatabaseMetaData#getSQLStateType</li>
 	 * </ol>
-	 * <p/>
+	 * <p>
 	 * It is strongly recommended that specific Dialect implementations override this
 	 * method, since interpretation of a SQL error is much more accurate when based on
 	 * the a vendor-specific ErrorCode rather than the SQLState.
-	 * <p/>
+	 * <p>
 	 * Specific Dialects may override to return whatever is most appropriate for that vendor.
 	 *
 	 * @return The SQLExceptionConversionDelegate for this dialect
@@ -1704,7 +1704,7 @@ public abstract class Dialect implements ConversionContext {
 	/**
 	 * Given a {@link java.sql.Types} type code, determine an appropriate
 	 * null value to use in a select clause.
-	 * <p/>
+	 * <p>
 	 * One thing to consider here is that certain databases might
 	 * require proper casting for the nulls here since the select here
 	 * will be part of a UNION/UNION ALL.
@@ -1793,7 +1793,7 @@ public abstract class Dialect implements ConversionContext {
 	/**
 	 * Meant as a means for end users to affect the select strings being sent
 	 * to the database and perhaps manipulate them in some fashion.
-	 * <p/>
+	 * <p>
 	 * The recommend approach is to instead use
 	 * {@link org.hibernate.Interceptor#onPrepareStatement(String)}.
 	 *
@@ -1806,7 +1806,7 @@ public abstract class Dialect implements ConversionContext {
 
 	/**
 	 * What is the maximum length Hibernate can use for generated aliases?
-	 * <p/>
+	 * <p>
 	 * The maximum here should account for the fact that Hibernate often needs to append "uniqueing" information
 	 * to the end of generated aliases.  That "uniqueing" information will be added to the end of a identifier
 	 * generated to the length specified here; so be sure to leave some room (generally speaking 5 positions will
@@ -1851,13 +1851,13 @@ public abstract class Dialect implements ConversionContext {
 	 * Returning {@code null} is allowed and indicates that Hibernate should fallback to building a
 	 * "standard" helper.  In the fallback path, any changes made to the IdentifierHelperBuilder
 	 * during this call will still be incorporated into the built IdentifierHelper.
-	 * <p/>
+	 * <p>
 	 * The incoming builder will have the following set:<ul>
 	 *     <li>{@link IdentifierHelperBuilder#isGloballyQuoteIdentifiers()}</li>
 	 *     <li>{@link IdentifierHelperBuilder#getUnquotedCaseStrategy()} - initialized to UPPER</li>
 	 *     <li>{@link IdentifierHelperBuilder#getQuotedCaseStrategy()} - initialized to MIXED</li>
 	 * </ul>
-	 * <p/>
+	 * <p>
 	 * By default Hibernate will do the following:<ul>
 	 *     <li>Call {@link IdentifierHelperBuilder#applyIdentifierCasing(DatabaseMetaData)}
 	 *     <li>Call {@link IdentifierHelperBuilder#applyReservedWords(DatabaseMetaData)}
@@ -1912,7 +1912,7 @@ public abstract class Dialect implements ConversionContext {
 
 	/**
 	 * Apply dialect-specific quoting.
-	 * <p/>
+	 * <p>
 	 * By default, the incoming value is checked to see if its first character
 	 * is the back-tick (`).  If so, the dialect specific quoting is applied.
 	 *
@@ -2215,7 +2215,7 @@ public abstract class Dialect implements ConversionContext {
 
 	/**
 	 * For dropping a table, can the phrase "if exists" be applied before the table name?
-	 * <p/>
+	 * <p>
 	 * NOTE : Only one or the other (or neither) of this and {@link #supportsIfExistsAfterTableName} should return true
 	 *
 	 * @return {@code true} if the "if exists" can be applied before the table name
@@ -2226,7 +2226,7 @@ public abstract class Dialect implements ConversionContext {
 
 	/**
 	 * For dropping a table, can the phrase "if exists" be applied after the table name?
-	 * <p/>
+	 * <p>
 	 * NOTE : Only one or the other (or neither) of this and {@link #supportsIfExistsBeforeTableName} should return true
 	 *
 	 * @return {@code true} if the "if exists" can be applied after the table name
@@ -2237,7 +2237,7 @@ public abstract class Dialect implements ConversionContext {
 
 	/**
 	 * For dropping a constraint with an "alter table", can the phrase "if exists" be applied before the constraint name?
-	 * <p/>
+	 * <p>
 	 * NOTE : Only one or the other (or neither) of this and {@link #supportsIfExistsAfterConstraintName} should return true
 	 *
 	 * @return {@code true} if the "if exists" can be applied before the constraint name
@@ -2248,7 +2248,7 @@ public abstract class Dialect implements ConversionContext {
 
 	/**
 	 * For dropping a constraint with an "alter table", can the phrase "if exists" be applied after the constraint name?
-	 * <p/>
+	 * <p>
 	 * NOTE : Only one or the other (or neither) of this and {@link #supportsIfExistsBeforeConstraintName} should return true
 	 *
 	 * @return {@code true} if the "if exists" can be applied after the constraint name
@@ -2326,9 +2326,9 @@ public abstract class Dialect implements ConversionContext {
 
 	/**
 	 * Returns the separator to use for defining cross joins when translating HQL queries.
-	 * <p/>
+	 * <p>
 	 * Typically this will be either [<tt> cross join </tt>] or [<tt>, </tt>]
-	 * <p/>
+	 * <p>
 	 * Note that the spaces are important!
 	 *
 	 * @return The cross join separator
@@ -2346,7 +2346,7 @@ public abstract class Dialect implements ConversionContext {
 
 	/**
 	 * Does this dialect support empty IN lists?
-	 * <p/>
+	 * <p>
 	 * For example, is [where XYZ in ()] a supported construct?
 	 *
 	 * @return True if empty in lists are supported; false otherwise.
@@ -2358,7 +2358,7 @@ public abstract class Dialect implements ConversionContext {
 
 	/**
 	 * Are string comparisons implicitly case insensitive.
-	 * <p/>
+	 * <p>
 	 * In other words, does [where 'XYZ' = 'xyz'] resolve to true?
 	 *
 	 * @return True if comparisons are case insensitive.
@@ -2371,7 +2371,7 @@ public abstract class Dialect implements ConversionContext {
 	/**
 	 * Is this dialect known to support what ANSI-SQL terms "row value
 	 * constructor" syntax; sometimes called tuple syntax.
-	 * <p/>
+	 * <p>
 	 * Basically, does it support syntax like
 	 * "... where (FIRST_NAME, LAST_NAME) = ('Steve', 'Ebersole') ...".
 	 *
@@ -2387,7 +2387,7 @@ public abstract class Dialect implements ConversionContext {
 	/**
 	 * If the dialect supports {@link #supportsRowValueConstructorSyntax() row values},
 	 * does it offer such support in IN lists as well?
-	 * <p/>
+	 * <p>
 	 * For example, "... where (FIRST_NAME, LAST_NAME) IN ( (?, ?), (?, ?) ) ..."
 	 *
 	 * @return True if this SQL dialect is known to support "row value
@@ -2478,7 +2478,7 @@ public abstract class Dialect implements ConversionContext {
 	 * {@link java.sql.ResultSet#isAfterLast} and
 	 * {@link java.sql.ResultSet#isBeforeFirst}.  Certain drivers do not
 	 * allow access to these methods for forward only cursors.
-	 * <p/>
+	 * <p>
 	 * NOTE : this is highly driver dependent!
 	 *
 	 * @return True if methods like {@link java.sql.ResultSet#isAfterLast} and
@@ -2505,7 +2505,7 @@ public abstract class Dialect implements ConversionContext {
 	/**
 	 * Are subselects supported as the left-hand-side (LHS) of
 	 * IN-predicates.
-	 * <p/>
+	 * <p>
 	 * In other words, is syntax like "... <subquery> IN (1, 2, 3) ..." supported?
 	 *
 	 * @return True if subselects can appear as the LHS of an in-predicate;
@@ -2520,7 +2520,7 @@ public abstract class Dialect implements ConversionContext {
 	 * Expected LOB usage pattern is such that I can perform an insert
 	 * via prepared statement with a parameter binding for a LOB value
 	 * without crazy casting to JDBC driver implementation-specific classes...
-	 * <p/>
+	 * <p>
 	 * Part of the trickiness here is the fact that this is largely
 	 * driver dependent.  For example, Oracle (which is notoriously bad with
 	 * LOB support in their drivers historically) actually does a pretty good
@@ -2539,20 +2539,20 @@ public abstract class Dialect implements ConversionContext {
 	 * values back to the database?  Talking about mutating the
 	 * internal value of the locator as opposed to supplying a new
 	 * locator instance...
-	 * <p/>
+	 * <p>
 	 * For BLOBs, the internal value might be changed by:
 	 * {@link java.sql.Blob#setBinaryStream},
 	 * {@link java.sql.Blob#setBytes(long, byte[])},
 	 * {@link java.sql.Blob#setBytes(long, byte[], int, int)},
 	 * or {@link java.sql.Blob#truncate(long)}.
-	 * <p/>
+	 * <p>
 	 * For CLOBs, the internal value might be changed by:
 	 * {@link java.sql.Clob#setAsciiStream(long)},
 	 * {@link java.sql.Clob#setCharacterStream(long)},
 	 * {@link java.sql.Clob#setString(long, String)},
 	 * {@link java.sql.Clob#setString(long, String, int, int)},
 	 * or {@link java.sql.Clob#truncate(long)}.
-	 * <p/>
+	 * <p>
 	 * NOTE : I do not know the correct answer currently for
 	 * databases which (1) are not part of the cruise control process
 	 * or (2) do not {@link #supportsExpectedLobUsagePattern}.
@@ -2569,10 +2569,10 @@ public abstract class Dialect implements ConversionContext {
 	/**
 	 * Is it supported to materialize a LOB locator outside the transaction in
 	 * which it was created?
-	 * <p/>
+	 * <p>
 	 * Again, part of the trickiness here is the fact that this is largely
 	 * driver dependent.
-	 * <p/>
+	 * <p>
 	 * NOTE: all database I have tested which {@link #supportsExpectedLobUsagePattern()}
 	 * also support the ability to materialize a LOB outside the owning transaction...
 	 *
@@ -2588,7 +2588,7 @@ public abstract class Dialect implements ConversionContext {
 	 * a subquery.  The "table being mutated" is the table referenced in
 	 * an UPDATE or a DELETE query.  And so can that table then be
 	 * referenced in a subquery of said UPDATE/DELETE query.
-	 * <p/>
+	 * <p>
 	 * For example, would the following two syntaxes be supported:<ul>
 	 * <li>delete from TABLE_A where ID not in ( select ID from TABLE_A )</li>
 	 * <li>update TABLE_A set NON_ID = 'something' where ID in ( select ID from TABLE_A)</li>

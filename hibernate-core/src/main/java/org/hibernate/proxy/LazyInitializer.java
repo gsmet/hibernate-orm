@@ -139,7 +139,7 @@ public interface LazyInitializer {
 
 	/**
 	 * Associate the proxy with the given session.
-	 * <p/>
+	 * <p>
 	 * Care should be given to make certain that the proxy is added to the session's persistence context as well
 	 * to maintain the symetry of the association.  That must be done seperately as this method simply sets an
 	 * internal reference.  We do also check that if there is already an associated session that the proxy
@@ -154,7 +154,7 @@ public interface LazyInitializer {
 	/**
 	 * Unset this initializer's reference to session.  It is assumed that the caller is also taking care or
 	 * cleaning up the owning proxy's reference in the persistence context.
-	 * <p/>
+	 * <p>
 	 * Generally speaking this is intended to be called only during {@link org.hibernate.Session#evict} and
 	 * {@link org.hibernate.Session#clear} processing; most other use-cases should call {@link #setSession} instead.
 	 */

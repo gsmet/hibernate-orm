@@ -26,7 +26,7 @@ import org.hibernate.loader.plan.spi.ScalarReturn;
 
 /**
  * Prints a {@link Return} graph as a tree structure.
- * <p/>
+ * <p>
  * Intended for use in debugging, logging, etc.
  *
  * @author Steve Ebersole

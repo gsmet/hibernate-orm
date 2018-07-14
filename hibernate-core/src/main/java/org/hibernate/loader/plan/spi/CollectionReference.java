@@ -36,9 +36,9 @@ public interface CollectionReference {
 	 *     <li>the collection is not indexed</li>
 	 *     <li>the index is not a composite, entity, or "any" (cannot act as a FetchSource)</li>
 	 * </ul>
-	 * <p/>
+	 * <p>
 	 * Works only for map keys, since a List index (int type) cannot act as a FetchSource.
-	 * <p/>
+	 * <p>
 	 *
 	 * @return The collection index metadata as a FetchSource, or {@code null}.
 	 */
@@ -48,7 +48,7 @@ public interface CollectionReference {
 	 * Retrieve the metadata about the elements of this collection *as a FetchSource*.  Will return
 	 * {@code null} when the element is not a composite, entity, or "any" (cannot act as a FetchSource).
 	 * Works only for map keys, since a List index cannot be anything other than an int which cannot be a FetchSource.
-	 * <p/>
+	 * <p>
 	 *
 	 * @return The collection element metadata as a FetchSource, or {@code null}.
 	 */

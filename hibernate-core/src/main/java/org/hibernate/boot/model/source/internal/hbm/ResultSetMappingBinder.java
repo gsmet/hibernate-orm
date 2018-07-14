@@ -47,7 +47,7 @@ import org.hibernate.type.Type;
 public abstract class ResultSetMappingBinder {
 	/**
 	 * Build a ResultSetMappingDefinition given a containing element for the "return-XXX" elements.
-	 * <p/>
+	 * <p>
 	 * This form is used for ResultSet mappings defined outside the context of any specific entity.
 	 * For {@code hbm.xml} this means at the root of the document.  For annotations, this means at
 	 * the package level.

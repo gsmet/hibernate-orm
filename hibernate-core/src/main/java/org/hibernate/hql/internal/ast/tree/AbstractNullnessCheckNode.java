@@ -16,7 +16,7 @@ import antlr.collections.AST;
 
 /**
  * Base class for nodes dealing 'is null' and 'is not null' operators.
- * <p/>
+ * <p>
  * todo : a good deal of this is copied from BinaryLogicOperatorNode; look at consolidating these code fragments
  *
  * @author Steve Ebersole

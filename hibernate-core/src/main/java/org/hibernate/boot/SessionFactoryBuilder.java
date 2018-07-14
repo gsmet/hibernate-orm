@@ -440,7 +440,7 @@ public interface SessionFactoryBuilder {
 	/**
 	 * Should we strictly adhere to JPA Query Language (JPQL) syntax, or more broadly support
 	 * all of Hibernate's superset (HQL)?
-	 * <p/>
+	 * <p>
 	 * Setting this to {@code true} may cause valid HQL to throw an exception because it violates
 	 * the JPQL subset.
 	 *
@@ -518,7 +518,7 @@ public interface SessionFactoryBuilder {
 	 * if that data already exists.  For some caches (mainly distributed caches) this can have a
 	 * major adverse performance impact.  For these caches, it is best to enable this "minimal puts"
 	 * feature.
-	 * <p/>
+	 * <p>
 	 * Cache integrations also report whether "minimal puts" should be enabled by default.  So its is
 	 * very rare that users need to set this, generally speaking.
 	 *
@@ -569,7 +569,7 @@ public interface SessionFactoryBuilder {
 	 * it is expected that both sides of the association are managed (actually that is true of
 	 * all bi-directional associations).  However, in this case, if the user forgets to manage the
 	 * one-to-many side stale data can be left in the second-level cache.
-	 * <p/>
+	 * <p>
 	 * Warning: enabling this will have a performance impact.  Hence why it is disabled by default
 	 * (for good citizens) and is an opt-in setting.
 	 *
@@ -710,7 +710,7 @@ public interface SessionFactoryBuilder {
 
 	/**
 	 * Apply a SQLFunction to the underlying {@link org.hibernate.dialect.function.SQLFunctionRegistry}.
-	 * <p/>
+	 * <p>
 	 * TODO : Ultimately I would like this to move to {@link org.hibernate.boot.MetadataBuilder} in conjunction with allowing mappings to reference SQLFunctions.
 	 * today mappings can only name SQL functions directly, not through the SQLFunctionRegistry indirection
 	 *
@@ -725,7 +725,7 @@ public interface SessionFactoryBuilder {
 
 	/**
 	 * Should resources held by {@link javax.persistence.EntityManager} instance be released immediately on close?
-	 * <p/>
+	 * <p>
 	 * The other option is to release them as part of an after-transaction callback.
 	 *
 	 */

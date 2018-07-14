@@ -290,7 +290,7 @@ public class DB2Dialect extends Dialect {
 
 	/**
 	 * {@inheritDoc}
-	 * <p/>
+	 * <p>
 	 *
 	 * DB2 does have a one-based offset, however this was actually already handled in the limit string building
 	 * (the '?+1' bit).  To not mess up inheritors, I'll leave that part alone and not touch the offset here.
@@ -422,7 +422,7 @@ public class DB2Dialect extends Dialect {
 
 	/**
 	 * {@inheritDoc}
-	 * <p/>
+	 * <p>
 	 * NOTE : DB2 is know to support parameters in the <tt>SELECT</tt> clause, but only in casted form
 	 * (see {@link #requiresCastingOfParametersInSelectClause()}).
 	 */
@@ -433,7 +433,7 @@ public class DB2Dialect extends Dialect {
 
 	/**
 	 * {@inheritDoc}
-	 * <p/>
+	 * <p>
 	 * DB2 in fact does require that parameters appearing in the select clause be wrapped in cast() calls
 	 * to tell the DB parser the type of the select value.
 	 */

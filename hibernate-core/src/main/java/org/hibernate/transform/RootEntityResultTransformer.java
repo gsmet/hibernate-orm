@@ -11,7 +11,7 @@ import org.hibernate.internal.util.collections.ArrayHelper;
 /**
  * {@link ResultTransformer} implementation which limits the result tuple
  * to only the "root entity".
- * <p/>
+ * <p>
  * Since this transformer is stateless, all instances would be considered equal.
  * So for optimization purposes we limit it to a single, singleton {@link #INSTANCE instance}.
  *

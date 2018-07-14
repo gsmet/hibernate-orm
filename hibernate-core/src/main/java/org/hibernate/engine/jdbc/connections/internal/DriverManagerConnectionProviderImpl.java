@@ -34,9 +34,9 @@ import org.hibernate.service.spi.Stoppable;
 /**
  * A connection provider that uses the {@link java.sql.DriverManager} directly to open connections and provides
  * a very rudimentary connection pool.
- * <p/>
+ * <p>
  * IMPL NOTE : not intended for production use!
- * <p/>
+ * <p>
  * Thanks to Oleg Varaksin and his article on object pooling using the {@link java.util.concurrent} package, from
  * which much of the pooling code here is derived.  See http://ovaraksin.blogspot.com/2013/08/simple-and-lightweight-pool.html
  *

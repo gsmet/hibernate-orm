@@ -74,7 +74,7 @@ public abstract class AbstractPreDatabaseOperationEvent
 	/**
 	 * Getter for property 'source'.  This is the session from which the event
 	 * originated.
-	 * <p/>
+	 * <p>
 	 * Some of the pre-* events had previous exposed the event source using
 	 * getSource() because they had not originally extended from
 	 * {@link AbstractEvent}.

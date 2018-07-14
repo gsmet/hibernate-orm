@@ -15,7 +15,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 /**
  * For updating, should this entity use dynamic sql generation where only changed columns get referenced in the
  * prepared sql statement?
- * <p/>
+ * <p>
  * Note, for re-attachment of detached entities this is not possible without select-before-update being enabled.
  *
  * @author Steve Ebersole

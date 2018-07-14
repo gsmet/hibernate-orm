@@ -22,18 +22,18 @@ import org.jboss.logging.Logger;
 /**
  * Implements metamodel graph walking.  In layman terms, we are walking the graph of the users domain model as
  * defined/understood by mapped associations.
- * <p/>
+ * <p>
  * Initially grew as a part of the re-implementation of the legacy JoinWalker functionality to instead build LoadPlans.
  * But this is really quite simple walking.  Interesting events are handled by calling out to
  * implementations of {@link AssociationVisitationStrategy} which really provide the real functionality of what we do
  * as we walk.
- * <p/>
+ * <p>
  * The visitor will walk the entire metamodel graph (the parts reachable from the given root)!!!  It is up to the
  * provided AssociationVisitationStrategy to tell it when to stop.  The walker provides the walking; the strategy
  * provides the semantics of what happens at certain points.  Its really very similar to parsers and how parsing is
  * generally split between syntax and semantics.  Walker walks the syntax (associations, identifiers, etc) and when it
  * calls out to the strategy the strategy then decides the semantics (literally, the meaning).
- * <p/>
+ * <p>
  * The visitor will, however, stop if it sees a "duplicate" AssociationKey.  In such a case, the walker would call
  * {@link AssociationVisitationStrategy#foundCircularAssociation} and stop walking any further down that graph any
  * further.

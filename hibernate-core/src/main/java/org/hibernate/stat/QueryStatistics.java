@@ -10,7 +10,7 @@ import java.io.Serializable;
 
 /**
  * Query statistics (HQL and SQL)
- * <p/>
+ * <p>
  * Note that for a cached query, the cache miss is equals to the db count
  *
  * @author Gavin King

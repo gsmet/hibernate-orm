@@ -18,7 +18,7 @@ import org.jboss.logging.Logger;
 
 /**
  * Helper for resolving XML Schema references locally.
- * <p/>
+ * <p>
  * Note that *by design* we always use our ClassLoader to perform the lookups here.
  *
  * @author Steve Ebersole

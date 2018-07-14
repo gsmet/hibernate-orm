@@ -57,7 +57,7 @@ public class OneToOneCacheTest extends LegacyTestCase {
 
 	/**
 	 * creates a new MainObject
-	 * <p/>
+	 * <p>
 	 * one hibernate transaction !
 	 */
 	private void createMainObject() throws HibernateException {
@@ -76,7 +76,7 @@ public class OneToOneCacheTest extends LegacyTestCase {
 	/**
 	 * loads the newly created MainObject
 	 * and adds a new Object2 to it
-	 * <p/>
+	 * <p>
 	 * one hibernate transaction
 	 */
 	private void addObject2() throws HibernateException {
@@ -99,7 +99,7 @@ public class OneToOneCacheTest extends LegacyTestCase {
 	/**
 	 * reads the newly created MainObject
 	 * and its Object2 if it exists
-	 * <p/>
+	 * <p>
 	 * one hibernate transaction
 	 */
 	private MainObject readMainObject() throws HibernateException {

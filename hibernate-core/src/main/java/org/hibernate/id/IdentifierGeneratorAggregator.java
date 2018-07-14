@@ -11,7 +11,7 @@ import org.hibernate.boot.model.relational.ExportableProducer;
 /**
  * Identifies {@link IdentifierGenerator generators} which potentially aggregate other
  * {@link PersistentIdentifierGenerator} generators.
- * <p/>
+ * <p>
  * Initially this is limited to {@link CompositeNestedGeneratedValueGenerator}
  *
  * @author Steve Ebersole

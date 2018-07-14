@@ -25,7 +25,7 @@ import org.jboss.logging.Logger;
 
 /**
  * A pessimistic locking strategy where the locks are obtained through update statements.
- * <p/>
+ * <p>
  * This strategy is valid for LockMode.PESSIMISTIC_WRITE
  *
  * This class is a clone of UpdateLockingStrategy.

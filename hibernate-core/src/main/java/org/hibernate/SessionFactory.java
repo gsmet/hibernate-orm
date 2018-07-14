@@ -24,11 +24,11 @@ import org.hibernate.stat.Statistics;
  * The main contract here is the creation of {@link Session} instances.  Usually
  * an application has a single {@link SessionFactory} instance and threads
  * servicing client requests obtain {@link Session} instances from this factory.
- * <p/>
+ * <p>
  * The internal state of a {@link SessionFactory} is immutable.  Once it is created
  * this internal state is set.  This internal state includes all of the metadata
  * about Object/Relational Mapping.
- * <p/>
+ * <p>
  * Implementors <strong>must</strong> be threadsafe.
  *
  * @see org.hibernate.cfg.Configuration
@@ -53,7 +53,7 @@ public interface SessionFactory extends EntityManagerFactory, HibernateEntityMan
 
 	/**
 	 * Open a {@link Session}.
-	 * <p/>
+	 * <p>
 	 * JDBC {@link Connection connection(s} will be obtained from the
 	 * configured {@link org.hibernate.engine.jdbc.connections.spi.ConnectionProvider} as needed
 	 * to perform requested work.
@@ -68,7 +68,7 @@ public interface SessionFactory extends EntityManagerFactory, HibernateEntityMan
 	 * Obtains the current session.  The definition of what exactly "current"
 	 * means controlled by the {@link org.hibernate.context.spi.CurrentSessionContext} impl configured
 	 * for use.
-	 * <p/>
+	 * <p>
 	 * Note that for backwards compatibility, if a {@link org.hibernate.context.spi.CurrentSessionContext}
 	 * is not configured but JTA is configured this will default to the {@link org.hibernate.context.internal.JTASessionContext}
 	 * impl.
@@ -113,11 +113,11 @@ public interface SessionFactory extends EntityManagerFactory, HibernateEntityMan
 	/**
 	 * Destroy this <tt>SessionFactory</tt> and release all resources (caches,
 	 * connection pools, etc).
-	 * <p/>
+	 * <p>
 	 * It is the responsibility of the application to ensure that there are no
 	 * open {@link Session sessions} before calling this method as the impact
 	 * on those {@link Session sessions} is indeterminate.
-	 * <p/>
+	 * <p>
 	 * No-ops if already {@link #isClosed closed}.
 	 *
 	 * @throws HibernateException Indicates an issue closing the factory.

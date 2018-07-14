@@ -28,10 +28,10 @@ import org.hibernate.type.Type;
  * A generator which combines sequence generation with immediate retrieval
  * through JDBC3 {@link java.sql.Connection#prepareStatement(String, String[]) getGeneratedKeys}.
  * In this respect it works much like ANSI-SQL IDENTITY generation.
- * <p/>
+ * <p>
  * This generator only known to work with newer Oracle drivers compiled for
  * JDK 1.4 (JDBC3).
- * <p/>
+ * <p>
  * Note: Due to a bug in Oracle drivers, sql comments on these insert statements
  * are completely disabled.
  *

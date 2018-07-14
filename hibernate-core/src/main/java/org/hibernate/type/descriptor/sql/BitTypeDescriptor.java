@@ -19,7 +19,7 @@ import org.hibernate.type.descriptor.java.JavaTypeDescriptor;
 
 /**
  * Descriptor for {@link Types#BIT BIT} handling.
- * <p/>
+ * <p>
  * Note that JDBC is very specific about its use of the type BIT to mean a single binary digit, whereas
  * SQL defines BIT having a parameterized length.
  *

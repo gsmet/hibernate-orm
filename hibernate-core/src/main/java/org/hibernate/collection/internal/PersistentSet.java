@@ -36,7 +36,7 @@ public class PersistentSet extends AbstractPersistentCollection implements java.
 
 	/**
 	 * Empty constructor.
-	 * <p/>
+	 * <p>
 	 * Note: this form is not ever ever ever used by Hibernate; it is, however,
 	 * needed for SOAP libraries and other such marshalling code.
 	 */

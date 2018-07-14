@@ -25,7 +25,7 @@ import org.jboss.logging.Logger;
 
 /**
  * A locking strategy where the locks are obtained through update statements.
- * <p/>
+ * <p>
  * This strategy is not valid for read style locks.
  *
  * @author Steve Ebersole

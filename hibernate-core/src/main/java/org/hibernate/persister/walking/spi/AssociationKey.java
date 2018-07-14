@@ -15,7 +15,7 @@ import java.util.Arrays;
  * since the Hibernate runtime metamodel (persisters) do not inherently know this information.  For example, consider
  * the Order -> Customer and Customer -> Order(s) bi-directional association; both would be mapped to the
  * {@code ORDER_TABLE.CUST_ID} column.  That is the purpose of this struct.
- * <p/>
+ * <p>
  * Bit of a misnomer to call this an association attribute.  But this follows the legacy use of AssociationKey
  * from old JoinWalkers to denote circular join detection
  *

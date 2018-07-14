@@ -8,7 +8,7 @@ package org.hibernate.jpa;
 
 /**
  * Defines the available HEM settings, both JPA-defined as well as Hibernate-specific
- * <p/>
+ * <p>
  * NOTE : Does *not* include {@link org.hibernate.cfg.Environment} values.
  *
  * @author Steve Ebersole
@@ -264,11 +264,11 @@ public interface AvailableSettings {
 	/**
 	 * Query hint (aka {@link javax.persistence.Query#setHint}) for applying
 	 * an alias specific lock mode (aka {@link org.hibernate.Query#setLockMode}).
-	 * <p/>
+	 * <p>
 	 * Either {@link org.hibernate.LockMode} or {@link javax.persistence.LockModeType}
 	 * are accepted.  Also the String names of either are accepted as well.  <tt>null</tt>
 	 * is additionally accepted as meaning {@link org.hibernate.LockMode#NONE}.
-	 * <p/>
+	 * <p>
 	 * Usage is to concatenate this setting name and the alias name together, separated
 	 * by a dot.  For example<code>Query.setHint( "org.hibernate.lockMode.a", someLockMode )</code>
 	 * would apply <code>someLockMode</code> to the alias <code>"a"</code>.
@@ -371,9 +371,9 @@ public interface AvailableSettings {
 	/**
 	 * Setting that allows access to the underlying {@link org.hibernate.Transaction}, even
 	 * when using a JTA since normal JPA operations prohibit this behavior.
-	 * <p/>
+	 * <p>
 	 * Values are {@code true} grants access, {@code false} does not.
-	 * <p/>
+	 * <p>
 	 * The default behavior is to allow access unless the session is bootstrapped via JPA.
 	 */
 	String ALLOW_JTA_TRANSACTION_ACCESS = "hibernate.jta.allowTransactionAccess";

@@ -18,10 +18,10 @@ import org.hibernate.type.StandardBasicTypes;
  * will render "substr" or "substring", depending on the last argument being used. If the last
  * argument is a string unit ("CODEUNITS16", "CODEUNITS32", or "OCTETS"), then the function
  * will be rendered as "substring"; otherwise, it will be rendered as "substr".
- * <p/>
+ * <p>
  * ANSI SQL-92 standard defines "substring" without string units, which is more similar to DB2's "substr",
  * so it makes sense to use DB2's "substr" function when string units are not provided.
- * <p/>
+ * <p>
  * Background: DB2 has both "substr" and "substring", which are different functions that are not
  * interchangeable. Prior to DB2 11.1, DB2's "substring" function requires an argument for string
  * units; without this argument, DB2 throws an exception. DB2's "substr" function throws an exception

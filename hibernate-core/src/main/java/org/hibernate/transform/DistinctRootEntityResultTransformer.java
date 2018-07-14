@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * Much like {@link RootEntityResultTransformer}, but we also distinct
  * the entity in the final result.
- * <p/>
+ * <p>
  * Since this transformer is stateless, all instances would be considered equal.
  * So for optimization purposes we limit it to a single, singleton {@link #INSTANCE instance}.
  *

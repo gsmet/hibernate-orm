@@ -23,7 +23,7 @@ import org.jboss.logging.Logger;
  * <tt>dbtimestamp</tt>: An extension of {@link TimestampType} which
  * maps to the database's current timestamp, rather than the jvm's
  * current timestamp.
- * <p/>
+ * <p>
  * Note: May/may-not cause issues on dialects which do not properly support
  * a true notion of timestamp (Oracle < 8, for example, where only its DATE
  * datatype is supported).  Depends on the frequency of DML operations...

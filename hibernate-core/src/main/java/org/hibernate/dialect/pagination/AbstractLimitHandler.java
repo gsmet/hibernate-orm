@@ -65,7 +65,7 @@ public abstract class AbstractLimitHandler implements LimitHandler {
 	/**
 	 * Does the <tt>LIMIT</tt> clause take a "maximum" row number instead
 	 * of a total number of returned rows?
-	 * <p/>
+	 * <p>
 	 * This is easiest understood via an example.  Consider you have a table
 	 * with 20 rows, but you only want to retrieve rows number 11 through 20.
 	 * Generally, a limit with offset would say that the offset = 11 and the
@@ -73,7 +73,7 @@ public abstract class AbstractLimitHandler implements LimitHandler {
 	 * total number of returned rows.  Some dialects require that we instead
 	 * specify offset = 11 and limit = 20, where 20 is the "last" row we want
 	 * relative to offset (i.e. total number of rows = 20 - 11 = 9)
-	 * <p/>
+	 * <p>
 	 * So essentially, is limit relative from offset?  Or is limit absolute?
 	 *
 	 * @return True if limit is relative from offset; false otherwise.
@@ -95,7 +95,7 @@ public abstract class AbstractLimitHandler implements LimitHandler {
 	/**
 	 * Hibernate APIs explicitly state that setFirstResult() should be a zero-based offset. Here we allow the
 	 * Dialect a chance to convert that value based on what the underlying db or driver will expect.
-	 * <p/>
+	 * <p>
 	 * NOTE: what gets passed into {@link AbstractLimitHandler#processSql(String, org.hibernate.engine.spi.RowSelection)}
      * is the zero-based offset. Dialects which do not {@link #supportsVariableLimit} should take care to perform
      * any needed first-row-conversion calls prior to injecting the limit values into the SQL string.

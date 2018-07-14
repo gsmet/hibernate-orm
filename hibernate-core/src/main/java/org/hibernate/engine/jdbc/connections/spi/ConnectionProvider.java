@@ -13,9 +13,9 @@ import org.hibernate.service.spi.Wrapped;
 
 /**
  * A contract for obtaining JDBC connections.
- * <p/>
+ * <p>
  * Implementors might also implement connection pooling.
- * <p/>
+ * <p>
  * Implementors should provide a public default constructor.
  *
  * @author Gavin King
@@ -45,11 +45,11 @@ public interface ConnectionProvider extends Service, Wrapped {
 	/**
 	 * Does this connection provider support aggressive release of JDBC
 	 * connections and re-acquisition of those connections (if need be) later?
-	 * <p/>
+	 * <p>
 	 * This is used in conjunction with {@link org.hibernate.cfg.Environment#RELEASE_CONNECTIONS}
 	 * to aggressively release JDBC connections.  However, the configured ConnectionProvider
 	 * must support re-acquisition of the same underlying connection for that semantic to work.
-	 * <p/>
+	 * <p>
 	 * Typically, this is only true in managed environments where a container
 	 * tracks connections by transaction or thread.
 	 *

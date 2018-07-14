@@ -20,7 +20,7 @@ import org.hibernate.tuple.Tuplizer;
 /**
  * Defines further responsibilities reagarding tuplization based on
  * a mapped entity.
- * <p/>
+ * <p>
  * EntityTuplizer implementations should have the following constructor signatures:
  *      (org.hibernate.tuple.entity.EntityMetamodel, org.hibernate.mapping.PersistentClass)
  *      (org.hibernate.tuple.entity.EntityMetamodel, org.hibernate.metamodel.binding.EntityBinding)
@@ -221,7 +221,7 @@ public interface EntityTuplizer extends Tuplizer {
 
 	/**
 	 * Returns the java class to which generated proxies will be typed.
-	 * <p/>
+	 * <p>
 	 * todo : look at fully encapsulating {@link org.hibernate.engine.spi.PersistenceContext#narrowProxy} here,
 	 * since that is the only external use of this method
 	 *
@@ -241,12 +241,12 @@ public interface EntityTuplizer extends Tuplizer {
 	 * This is called in situations where we already know an entity name for the given entityInstance; we are being
 	 * asked to determine if there is a more appropriate entity-name to use, specifically within an inheritence
 	 * hierarchy.
-	 * <p/>
+	 * <p>
 	 * For example, consider a case where a user calls <tt>session.update( "Animal", cat );</tt>.  Here, the
 	 * user has explicitly provided <tt>Animal</tt> as the entity-name.  However, they have passed in an instance
 	 * of <tt>Cat</tt> which is a subclass of <tt>Animal</tt>.  In this case, we would return <tt>Cat</tt> as the
 	 * entity-name.
-	 * <p/>
+	 * <p>
 	 * <tt>null</tt> may be returned from calls to this method.  The meaining of <tt>null</tt> in that case is assumed
 	 * to be that we should use whatever explicit entity-name the user provided (<tt>Animal</tt> rather than <tt>Cat</tt>
 	 * in the example above).

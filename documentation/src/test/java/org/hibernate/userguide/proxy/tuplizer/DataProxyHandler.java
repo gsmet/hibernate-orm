@@ -16,7 +16,7 @@ import java.util.Map;
 /**
  * A simple {@link InvocationHandler} to act as the handler for our generated
  * {@link java.lang.reflect.Proxy}-based entity instances.
- * <p/>
+ * <p>
  * This is a trivial impl which simply keeps the property values into
  * a Map.
  *

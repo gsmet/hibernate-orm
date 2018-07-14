@@ -18,7 +18,7 @@ import org.hibernate.type.descriptor.sql.TinyIntTypeDescriptor;
 
 /**
  * An SQL dialect targeting Sybase Adaptive Server Enterprise (ASE) 15 and higher.
- * <p/>
+ * <p>
  * TODO : verify if this also works with 12/12.5
  *
  * @author Gavin King
@@ -389,10 +389,10 @@ public class SybaseASE15Dialect extends SybaseDialect {
 
 	/**
 	 * By default, Sybase string comparisons are case-insensitive.
-	 * <p/>
+	 * <p>
 	 * If the DB is configured to be case-sensitive, then this return
 	 * value will be incorrect.
-	 * <p/>
+	 * <p>
 	 * {@inheritDoc}
 	 */
 	@Override
@@ -409,7 +409,7 @@ public class SybaseASE15Dialect extends SybaseDialect {
 	 * Actually Sybase does not support LOB locators at al.
 	 *
 	 * @return false.
-	 * <p/>
+	 * <p>
 	 * {@inheritDoc}
 	 */
 	@Override

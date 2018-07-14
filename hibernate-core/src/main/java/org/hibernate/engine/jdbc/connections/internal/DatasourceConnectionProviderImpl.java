@@ -22,7 +22,7 @@ import org.hibernate.service.spi.Stoppable;
 
 /**
  * A {@link org.hibernate.engine.jdbc.connections.spi.ConnectionProvider} that manages connections from an underlying {@link DataSource}.
- * <p/>
+ * <p>
  * The {@link DataSource} to use may be specified by either:<ul>
  * <li>injection via {@link #setDataSource}</li>
  * <li>decaring the {@link DataSource} instance using the {@link Environment#DATASOURCE} config property</li>

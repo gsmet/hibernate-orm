@@ -28,7 +28,7 @@ import antlr.collections.AST;
  * Convenience base class for {@link MultiTableBulkIdStrategy.UpdateHandler}
  * and {@link MultiTableBulkIdStrategy.DeleteHandler} implementations through
  * {@link TableBasedUpdateHandlerImpl} and {@link TableBasedDeleteHandlerImpl} respectively.
- * <p/>
+ * <p>
  * Mainly supports common activities like:<ul>
  *     <li>processing the original {@code WHERE} clause (if one) - {@link #processWhereClause}</li>
  *     <li>generating the proper {@code SELECT} clause for the id-table insert - {@link #generateIdInsertSelect}</li>

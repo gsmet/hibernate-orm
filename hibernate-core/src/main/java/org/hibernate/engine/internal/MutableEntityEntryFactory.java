@@ -19,7 +19,7 @@ import org.hibernate.persister.entity.EntityPersister;
 
 /**
  * Factory for the safe approach implementation of {@link org.hibernate.engine.spi.EntityEntry}.
- * <p/>
+ * <p>
  * Smarter implementations could store less state.
  *
  * @author Emmanuel Bernard

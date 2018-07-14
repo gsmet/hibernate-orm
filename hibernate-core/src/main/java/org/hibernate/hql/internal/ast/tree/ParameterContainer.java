@@ -10,13 +10,13 @@ import org.hibernate.param.ParameterSpecification;
 /**
  * Currently this is needed in order to deal with {@link FromElement FromElements} which
  * contain "hidden" JDBC parameters from applying filters.
- * <p/>
+ * <p>
  * Would love for this to go away, but that would require that Hibernate's
  * internal {@link org.hibernate.engine.internal.JoinSequence join handling} be able to either:<ul>
  * <li>render the same AST structures</li>
  * <li>render structures capable of being converted to these AST structures</li>
  * </ul>
- * <p/>
+ * <p>
  * In the interim, this allows us to at least treat these "hidden" parameters properly which is
  * the most pressing need.
  *

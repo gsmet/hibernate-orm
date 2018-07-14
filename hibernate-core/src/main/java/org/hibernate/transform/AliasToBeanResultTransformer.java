@@ -19,7 +19,7 @@ import org.hibernate.property.access.spi.Setter;
  * Result transformer that allows to transform a result to
  * a user specified class which will be populated via setter
  * methods or fields matching the alias names.
- * <p/>
+ * <p>
  * <pre>
  * List resultWithAliasedBean = s.createCriteria(Enrolment.class)
  * 			.createAlias("student", "st")
@@ -29,7 +29,7 @@ import org.hibernate.property.access.spi.Setter;
  * 			)
  * 			.setResultTransformer( new AliasToBeanResultTransformer(StudentDTO.class) )
  * 			.list();
- * <p/>
+ * <p>
  *  StudentDTO dto = (StudentDTO)resultWithAliasedBean.get(0);
  * 	</pre>
  *

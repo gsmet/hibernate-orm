@@ -27,7 +27,7 @@ import org.jboss.logging.Logger;
 
 /**
  * Implements Hibernate's built-in support for native SQL queries.
- * <p/>
+ * <p>
  * This support is built on top of the notion of "custom queries"...
  *
  * @author Gavin King

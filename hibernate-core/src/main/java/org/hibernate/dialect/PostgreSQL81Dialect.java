@@ -47,7 +47,7 @@ import org.hibernate.type.descriptor.sql.SqlTypeDescriptor;
 
 /**
  * An SQL dialect for Postgres
- * <p/>
+ * <p>
  * For discussion of BLOB support in Postgres, as of 8.4, have a peek at
  * <a href="http://jdbc.postgresql.org/documentation/84/binary-data.html">http://jdbc.postgresql.org/documentation/84/binary-data.html</a>.
  * For the effects in regards to Hibernate see <a href="http://in.relation.to/15492.lace">http://in.relation.to/15492.lace</a>
@@ -346,7 +346,7 @@ public class PostgreSQL81Dialect extends Dialect {
 
 	/**
 	 * Workaround for postgres bug #1453
-	 * <p/>
+	 * <p>
 	 * {@inheritDoc}
 	 */
 	@Override
@@ -482,7 +482,7 @@ public class PostgreSQL81Dialect extends Dialect {
 
 	/**
 	 * only necessary for postgre < 7.4  See http://anoncvs.postgresql.org/cvsweb.cgi/pgsql/doc/src/sgml/ref/create_sequence.sgml
-	 * <p/>
+	 * <p>
 	 * {@inheritDoc}
 	 */
 	@Override

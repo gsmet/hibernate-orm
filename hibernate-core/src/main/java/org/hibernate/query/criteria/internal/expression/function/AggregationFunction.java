@@ -69,7 +69,7 @@ public class AggregationFunction<T>
 
 	/**
 	 * Implementation of a <tt>COUNT</tt> function providing convenience in construction.
-	 * <p/>
+	 * <p>
 	 * Parameterized as {@link Long} because thats what JPA states
 	 * that the return from <tt>COUNT</tt> should be.
 	 */
@@ -116,7 +116,7 @@ public class AggregationFunction<T>
 
 	/**
      * Implementation of a <tt>AVG</tt> function providing convenience in construction.
-     * <p/>
+     * <p>
      * Parameterized as {@link Double} because thats what JPA states that the return from <tt>AVG</tt> should be.
 	 */
 	public static class AVG extends AggregationFunction<Double> {
@@ -129,7 +129,7 @@ public class AggregationFunction<T>
 
 	/**
 	 * Implementation of a <tt>SUM</tt> function providing convenience in construction.
-	 * <p/>
+	 * <p>
 	 * Parameterized as {@link Number N extends Number} because thats what JPA states
 	 * that the return from <tt>SUM</tt> should be.
 	 */
@@ -152,7 +152,7 @@ public class AggregationFunction<T>
 
 	/**
 	 * Implementation of a <tt>MIN</tt> function providing convenience in construction.
-	 * <p/>
+	 * <p>
 	 * Parameterized as {@link Number N extends Number} because thats what JPA states
 	 * that the return from <tt>MIN</tt> should be.
 	 */
@@ -167,7 +167,7 @@ public class AggregationFunction<T>
 
 	/**
 	 * Implementation of a <tt>MAX</tt> function providing convenience in construction.
-	 * <p/>
+	 * <p>
 	 * Parameterized as {@link Number N extends Number} because thats what JPA states
 	 * that the return from <tt>MAX</tt> should be.
 	 */

@@ -12,7 +12,7 @@ import org.hibernate.HibernateException;
 /**
  * Indicates an internal attempt to mark a column as non-nullable (because its part
  * of a PK, etc) but we cannot force that column to be non-nullable.
- * <p/>
+ * <p>
  * Typically this indicates that the "column" is actually a formula.
  *
  * @author Steve Ebersole

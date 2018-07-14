@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * {@link ResultTransformer} implementation which builds a map for each "row",
  * made up  of each aliased value where the alias is the map key.
- * <p/>
+ * <p>
  * Since this transformer is stateless, all instances would be considered equal.
  * So for optimization purposes we limit it to a single, singleton {@link #INSTANCE instance}.
  *

@@ -11,7 +11,7 @@ import org.hibernate.SQLQuery;
 /**
  * Contract for things that can produce Query instances.  Expected implementors include
  * Session and StatelessSession.
- * <p/>
+ * <p>
  * It defines these query creation methods in the signature defined by EntityManager.  In a way
  * it defines a subset of the EntityManager contract to be reused by both Session and StatelessSession.
  *

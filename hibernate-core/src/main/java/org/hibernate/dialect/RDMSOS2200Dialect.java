@@ -36,7 +36,7 @@ import org.jboss.logging.Logger;
  * This is the Hibernate dialect for the Unisys 2200 Relational Database (RDMS).
  * This dialect was developed for use with Hibernate 3.0.5. Other versions may
  * require modifications to the dialect.
- * <p/>
+ * <p>
  * Version History:
  * Also change the version displayed below in the constructor
  * 1.1
@@ -257,7 +257,7 @@ public class RDMSOS2200Dialect extends Dialect {
 
 	/**
 	 * RDMS does not support qualifing index names with the schema name.
-	 * <p/>
+	 * <p>
 	 * {@inheritDoc}
 	 */
 	@Override
@@ -270,7 +270,7 @@ public class RDMSOS2200Dialect extends Dialect {
 	 * driver does not support this feature, so a false is return.
 	 * The base dialect also returns a false, but we will leave this over-ride
 	 * in to make sure it stays false.
-	 * <p/>
+	 * <p>
 	 * {@inheritDoc}
 	 */
 	@Override
@@ -283,7 +283,7 @@ public class RDMSOS2200Dialect extends Dialect {
 	 * set to an empty string. Whenever, the driver does support this feature,
 	 * the returned string should be " FOR UPDATE OF". Note that RDMS does not
 	 * support the string 'FOR UPDATE' string.
-	 * <p/>
+	 * <p>
 	 * {@inheritDoc}
 	 */
 	@Override
@@ -297,7 +297,7 @@ public class RDMSOS2200Dialect extends Dialect {
 	/**
 	 * RDMS does not support Cascade Deletes.
 	 * Need to review this in the future when support is provided.
-	 * <p/>
+	 * <p>
 	 * {@inheritDoc}
 	 */
 	@Override
@@ -308,7 +308,7 @@ public class RDMSOS2200Dialect extends Dialect {
 	/**
 	 * Currently, RDMS-JDBC does not support ForUpdate.
 	 * Need to review this in the future when support is provided.
-	 * <p/>
+	 * <p>
 	 * {@inheritDoc}
 	 */
 	@Override

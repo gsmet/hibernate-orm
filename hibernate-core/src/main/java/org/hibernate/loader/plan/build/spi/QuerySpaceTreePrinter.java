@@ -24,7 +24,7 @@ import org.hibernate.loader.plan.spi.QuerySpaces;
 
 /**
  * Prints a {@link QuerySpaces} graph as a tree structure.
- * <p/>
+ * <p>
  * Intended for use in debugging, logging, etc.
  *
  * @author Steve Ebersole

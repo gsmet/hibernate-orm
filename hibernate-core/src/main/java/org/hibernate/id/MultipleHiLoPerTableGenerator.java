@@ -54,14 +54,14 @@ import org.hibernate.type.Type;
  * case a <tt>SequenceHiLoGenerator</tt> would be a better choice (where
  * supported).<br>
  * <br>
- * <p/>
+ * <p>
  * A hilo <tt>IdentifierGenerator</tt> that uses a database
  * table to store the last generated values. A table can contains
  * several hi values. They are distinct from each other through a key
- * <p/>
+ * <p>
  * <p>This implementation is not compliant with a user connection</p>
- * <p/>
- * <p/>
+ * <p>
+ * <p>
  * <p>Allowed parameters (all of them are optional):</p>
  * <ul>
  * <li>table: table name (default <tt>hibernate_sequences</tt>)</li>

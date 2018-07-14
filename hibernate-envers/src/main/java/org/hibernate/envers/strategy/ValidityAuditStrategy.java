@@ -54,7 +54,7 @@ import static org.hibernate.envers.internal.entities.mapper.relation.query.Query
  * <li>Queries are retrieved using 'between start and end revision', instead of a subquery.</li>
  * </ul>
  * </p>
- * <p/>
+ * <p>
  * <p>
  * This has a few important consequences that need to be judged against against each other:
  * <ul>

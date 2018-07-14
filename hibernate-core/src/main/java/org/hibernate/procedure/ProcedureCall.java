@@ -126,7 +126,7 @@ public interface ProcedureCall extends BasicQueryContract<CommonQueryContract>, 
 	/**
 	 * Retrieves access to outputs of this procedure call.  Can be called multiple times, returning the same
 	 * ProcedureOutputs instance each time.
-	 * <p/>
+	 * <p>
 	 * If the procedure call has not actually be executed yet, it will be executed and then the ProcedureOutputs
 	 * will be returned.
 	 *

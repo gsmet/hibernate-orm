@@ -17,7 +17,7 @@ import org.hibernate.hql.internal.classic.ClassicQueryTranslatorFactory;
 /**
  * Some simple test queries using the classic translator explicitly
  * to ensure that code is not broken in changes for the new translator.
- * <p/>
+ * <p>
  * Only really checking translation and syntax, not results.
  *
  * @author Steve Ebersole

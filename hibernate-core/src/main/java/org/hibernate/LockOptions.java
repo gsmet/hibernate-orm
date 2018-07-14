@@ -78,7 +78,7 @@ public class LockOptions implements Serializable {
 
 	/**
 	 * Retrieve the overall lock mode in effect for this set of options.
-	 * <p/>
+	 * <p>
 	 * In certain contexts (hql and criteria), lock-modes can be defined in an
 	 * even more granular {@link #setAliasSpecificLockMode(String, LockMode) per-alias} fashion
 	 *
@@ -123,7 +123,7 @@ public class LockOptions implements Serializable {
 	/**
 	 * Get the {@link LockMode} explicitly specified for the given alias via
 	 * {@link #setAliasSpecificLockMode}
-	 * <p/>
+	 * <p>
 	 * Differs from {@link #getEffectiveLockMode} in that here we only return
 	 * explicitly specified alias-specific lock modes.
 	 *
@@ -143,7 +143,7 @@ public class LockOptions implements Serializable {
 	 * mode was explicitly {@link #setAliasSpecificLockMode set}, the
 	 * {@link #getLockMode overall mode} is returned.  If the overall lock mode is
 	 * <tt>null</tt> as well, {@link LockMode#NONE} is returned.
-	 * <p/>
+	 * <p>
 	 * Differs from {@link #getAliasSpecificLockMode} in that here we fallback to we only return
 	 * the overall lock mode.
 	 *
@@ -228,10 +228,10 @@ public class LockOptions implements Serializable {
 
 	/**
 	 * Retrieve the current timeout setting.
-	 * <p/>
+	 * <p>
 	 * The timeout is the amount of time, in milliseconds, we should instruct the database
 	 * to wait for any requested pessimistic lock acquisition.
-	 * <p/>
+	 * <p>
 	 * {@link #NO_WAIT}, {@link #WAIT_FOREVER} or {@link #SKIP_LOCKED} represent 3 "magic" values.
 	 *
 	 * @return timeout in milliseconds, {@link #NO_WAIT}, {@link #WAIT_FOREVER} or {@link #SKIP_LOCKED}
@@ -242,7 +242,7 @@ public class LockOptions implements Serializable {
 
 	/**
 	 * Set the timeout setting.
-	 * <p/>
+	 * <p>
 	 * See {@link #getTimeOut} for a discussion of meaning.
 	 *
 	 * @param timeout The new timeout setting.
@@ -260,7 +260,7 @@ public class LockOptions implements Serializable {
 
 	/**
 	 * Retrieve the current lock scope setting.
-	 * <p/>
+	 * <p>
 	 * "scope" is a JPA defined term.  It is basically a cascading of the lock to associations.
 	 *
 	 * @return true if locking will be extended to owned associations

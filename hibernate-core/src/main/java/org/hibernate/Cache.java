@@ -10,7 +10,7 @@ import java.io.Serializable;
 
 /**
  * Provides an API for querying/managing the second level cache regions.
- * <p/>
+ * <p>
  * CAUTION: None of these methods respect any isolation or transactional
  * semantics associated with the underlying caches.  Specifically, evictions
  * perform an immediate "hard" removal outside any transactions and/or locking
@@ -34,7 +34,7 @@ public interface Cache extends javax.persistence.Cache {
 
 	/**
 	 * Determine whether the cache contains data for the given entity "instance".
-	 * <p/>
+	 * <p>
 	 * The semantic here is whether the cache contains data visible for the
 	 * current call context.
 	 *
@@ -48,7 +48,7 @@ public interface Cache extends javax.persistence.Cache {
 
 	/**
 	 * Determine whether the cache contains data for the given entity "instance".
-	 * <p/>
+	 * <p>
 	 * The semantic here is whether the cache contains data visible for the
 	 * current call context.
 	 *
@@ -144,7 +144,7 @@ public interface Cache extends javax.persistence.Cache {
 
 	/**
 	 * Determine whether the cache contains data for the given collection.
-	 * <p/>
+	 * <p>
 	 * The semantic here is whether the cache contains data visible for the
 	 * current call context.
 	 *
@@ -193,7 +193,7 @@ public interface Cache extends javax.persistence.Cache {
 
 	/**
 	 * Determine whether the cache contains data for the given query.
-	 * <p/>
+	 * <p>
 	 * The semantic here is whether the cache contains any data for the given
 	 * region name since query result caches are not transactionally isolated.
 	 *

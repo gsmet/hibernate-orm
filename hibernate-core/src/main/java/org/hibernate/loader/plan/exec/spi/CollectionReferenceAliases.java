@@ -21,7 +21,7 @@ public interface CollectionReferenceAliases {
 
 	/**
 	 * Obtain the alias of the table that contains the collection element values.
-	 * <p/>
+	 * <p>
 	 * Unlike in the legacy Loader case, CollectionReferences in the LoadPlan code refer to both the
 	 * collection and the elements *always*.  In Loader the elements were handled by EntityPersister associations
 	 * entries for one-to-many and many-to-many.  In LoadPlan we need to describe the collection table/columns

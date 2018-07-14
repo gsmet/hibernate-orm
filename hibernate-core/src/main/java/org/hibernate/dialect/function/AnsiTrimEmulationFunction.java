@@ -60,7 +60,7 @@ public class AnsiTrimEmulationFunction extends AbstractAnsiTrimEmulationFunction
 
 	/**
 	 * A template for the series of calls required to trim non-space chars from the beginning of text.
-	 * <p/>
+	 * <p>
 	 * NOTE : essentially we:<ol>
 	 * <li>replace all space chars with the text '${space}$'</li>
 	 * <li>replace all the actual replacement chars with space chars</li>
@@ -92,7 +92,7 @@ public class AnsiTrimEmulationFunction extends AbstractAnsiTrimEmulationFunction
 
 	/**
 	 * A template for the series of calls required to trim non-space chars from the end of text.
-	 * <p/>
+	 * <p>
 	 * NOTE: essentially the same series of calls as outlined in {@link #LEADING_TRIM_TEMPLATE} except that here,
 	 * instead of left-trimming the added spaces, we right-trim them to remove them from the end of the text.
 	 */
@@ -119,7 +119,7 @@ public class AnsiTrimEmulationFunction extends AbstractAnsiTrimEmulationFunction
 
 	/**
 	 * A template for the series of calls required to trim non-space chars from both the beginning and the end of text.
-	 * <p/>
+	 * <p>
 	 * NOTE: again, we have a series of calls that is essentially the same as outlined in {@link #LEADING_TRIM_TEMPLATE}
 	 * except that here we perform both left (leading) and right (trailing) trimming.
 	 */

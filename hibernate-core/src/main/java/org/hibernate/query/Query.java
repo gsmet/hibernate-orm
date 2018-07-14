@@ -58,7 +58,7 @@ import org.hibernate.type.Type;
 /**
  * Represents an HQL/JPQL query or a compiled Criteria query.  Also acts as the Hibernate
  * extension to the JPA Query/TypedQuery contract
- * <p/>
+ * <p>
  * NOTE: {@link org.hibernate.Query} is deprecated, and slated for removal in 6.0.
  * For the time being we leave all methods defined on {@link org.hibernate.Query}
  * rather than here because it was previously the public API so we want to leave that
@@ -79,7 +79,7 @@ public interface Query<R> extends TypedQuery<R>, org.hibernate.Query<R>, CommonQ
 
 	/**
 	 * Retrieve a Stream over the query results.
-	 * <p/>
+	 * <p>
 	 * In the initial implementation (5.2) this returns a simple sequential Stream.  The plan
 	 * is to return a a smarter stream in 6.x leveraging the SQM model.
 	 *

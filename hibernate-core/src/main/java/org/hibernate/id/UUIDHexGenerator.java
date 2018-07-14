@@ -24,7 +24,7 @@ import org.hibernate.type.Type;
  * This string will consist of only hex digits. Optionally,
  * the string may be generated with separators between each
  * component of the UUID.
- * <p/>
+ * <p>
  * Mapping parameters supported: separator.
  *
  * @author Gavin King

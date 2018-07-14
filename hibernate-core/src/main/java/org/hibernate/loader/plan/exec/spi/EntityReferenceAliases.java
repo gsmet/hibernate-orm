@@ -18,7 +18,7 @@ import org.hibernate.loader.EntityAliases;
 public interface EntityReferenceAliases {
 	/**
 	 * Obtain the table alias used for referencing the table of the EntityReference.
-	 * <p/>
+	 * <p>
 	 * Note that this currently just returns the "root alias" whereas sometimes an entity reference covers
 	 * multiple tables.  todo : to help manage this, consider a solution like TableAliasRoot from the initial ANTLR re-work
 	 * see http://anonsvn.jboss.org/repos/hibernate/core/branches/antlr3/src/main/java/org/hibernate/sql/ast/alias/TableAliasGenerator.java

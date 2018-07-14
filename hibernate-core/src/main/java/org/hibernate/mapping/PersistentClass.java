@@ -423,7 +423,7 @@ public abstract class PersistentClass implements AttributeContainer, Serializabl
 
 	/**
 	 * Given a property path, locate the appropriate referenceable property reference.
-	 * <p/>
+	 * <p>
 	 * A referenceable property is a property  which can be a target of a foreign-key
 	 * mapping (e.g. {@code @ManyToOne}, {@code @OneToOne}).
 	 *
@@ -714,10 +714,10 @@ public abstract class PersistentClass implements AttributeContainer, Serializabl
 	 * Build an iterator over the properties defined on this class.  The returned
 	 * iterator only accounts for "normal" properties (i.e. non-identifier
 	 * properties).
-	 * <p/>
+	 * <p>
 	 * Differs from {@link #getUnjoinedPropertyIterator} in that the returned iterator
 	 * will include properties defined as part of a join.
-	 * <p/>
+	 * <p>
 	 * Differs from {@link #getReferenceablePropertyIterator} in that the properties
 	 * defined in superclasses of the mapping inheritance are not included.
 	 *

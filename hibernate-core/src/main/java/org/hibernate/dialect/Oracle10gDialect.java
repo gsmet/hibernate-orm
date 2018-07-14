@@ -16,7 +16,7 @@ import org.hibernate.sql.JoinFragment;
 
 /**
  * A dialect specifically for use with Oracle 10g.
- * <p/>
+ * <p>
  * The main difference between this dialect and {@link Oracle9iDialect}
  * is the use of "ANSI join syntax".
  *

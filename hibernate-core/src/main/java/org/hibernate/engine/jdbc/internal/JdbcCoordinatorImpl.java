@@ -48,7 +48,7 @@ import org.hibernate.resource.transaction.backend.jdbc.spi.JdbcResourceTransacti
 
 /**
  * Standard Hibernate implementation of {@link JdbcCoordinator}
- * <p/>
+ * <p>
  * IMPL NOTE : Custom serialization handling!
  *
  * @author Steve Ebersole

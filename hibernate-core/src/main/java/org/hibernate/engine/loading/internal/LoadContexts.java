@@ -24,7 +24,7 @@ import org.hibernate.pretty.MessageHelper;
 
 /**
  * Maps {@link ResultSet result-sets} to specific contextual data related to processing that result set
- * <p/>
+ * <p>
  * Considering the JDBC-redesign work, would further like this contextual info not mapped separately, but available
  * based on the result set being processed.  This would also allow maintaining a single mapping as we could reliably
  * get notification of the result-set closing...
@@ -68,7 +68,7 @@ public class LoadContexts {
 
  	/**
 	 * Release internal state associated with the given result set.
-	 * <p/>
+	 * <p>
 	 * This should be called when we are done with processing said result set,
 	 * ideally as the result set is being closed.
 	 *
@@ -88,7 +88,7 @@ public class LoadContexts {
 
 	/**
 	 * Release internal state associated with *all* result sets.
-	 * <p/>
+	 * <p>
 	 * This is intended as a "failsafe" process to make sure we get everything
 	 * cleaned up and released.
 	 */
@@ -184,11 +184,11 @@ public class LoadContexts {
 
 	/**
 	 * Register a loading collection xref.
-	 * <p/>
+	 * <p>
 	 * This xref map is used because sometimes a collection is in process of
 	 * being loaded from one result set, but needs to be accessed from the
 	 * context of another "nested" result set processing.
-	 * <p/>
+	 * <p>
 	 * Implementation note: package protected, as this is meant solely for use
 	 * by {@link CollectionLoadContext} to be able to locate collections
 	 * being loaded by other {@link CollectionLoadContext}s/{@link ResultSet}s.
@@ -207,11 +207,11 @@ public class LoadContexts {
 	 * The inverse of {@link #registerLoadingCollectionXRef}.  Here, we are done
 	 * processing the said collection entry, so we remove it from the
 	 * load context.
-	 * <p/>
+	 * <p>
 	 * The idea here is that other loading collections can now reference said
 	 * collection directly from the {@link PersistenceContext} because it
 	 * has completed its load cycle.
-	 * <p/>
+	 * <p>
 	 * Implementation note: package protected, as this is meant solely for use
 	 * by {@link CollectionLoadContext} to be able to locate collections
 	 * being loaded by other {@link CollectionLoadContext}s/{@link ResultSet}s.
@@ -234,7 +234,7 @@ public class LoadContexts {
 	/**
 	 * Locate the LoadingCollectionEntry within *any* of the tracked
 	 * {@link CollectionLoadContext}s.
-	 * <p/>
+	 * <p>
 	 * Implementation note: package protected, as this is meant solely for use
 	 * by {@link CollectionLoadContext} to be able to locate collections
 	 * being loaded by other {@link CollectionLoadContext}s/{@link ResultSet}s.

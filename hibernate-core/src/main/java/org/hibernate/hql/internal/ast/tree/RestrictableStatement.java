@@ -33,7 +33,7 @@ public interface RestrictableStatement extends Statement {
 	/**
 	 * Retrieve the where-clause defining the restriction(s) in effect for
 	 * this statement.
-	 * <p/>
+	 * <p>
 	 * Note that this will generate a where-clause if one was not found, so caution
 	 * needs to taken prior to calling this that restrictions will actually exist
 	 * in the resulting statement tree (otherwise "unexpected end of subtree" errors

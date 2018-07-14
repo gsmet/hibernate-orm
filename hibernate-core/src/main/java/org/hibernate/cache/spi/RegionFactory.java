@@ -20,7 +20,7 @@ import org.hibernate.service.spi.Stoppable;
 
 /**
  * Contract for building second level cache regions.
- * <p/>
+ * <p>
  * Implementors should define a constructor in one of two forms:<ul>
  *     <li>MyRegionFactoryImpl({@link java.util.Properties})</li>
  *     <li>MyRegionFactoryImpl()</li>

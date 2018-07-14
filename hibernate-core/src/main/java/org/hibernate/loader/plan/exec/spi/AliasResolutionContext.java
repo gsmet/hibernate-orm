@@ -18,7 +18,7 @@ public interface AliasResolutionContext {
 	/**
 	 * Resolve the given QuerySpace UID to the EntityReferenceAliases representing the SQL aliases used in
 	 * building the SQL query.
-	 * <p/>
+	 * <p>
 	 * Assumes that a QuerySpace has already been registered.  As such this method simply returns {@code null}  if
 	 * no QuerySpace with that UID has yet been resolved in the context.
 	 *
@@ -31,7 +31,7 @@ public interface AliasResolutionContext {
 	/**
 	 * Resolve the given QuerySpace UID to the CollectionReferenceAliases representing the SQL aliases used in
 	 * building the SQL query.
-	 * <p/>
+	 * <p>
 	 * Assumes that a QuerySpace has already been registered.  As such this method simply returns {@code null}  if
 	 * no QuerySpace with that UID has yet been resolved in the context.
 	 *

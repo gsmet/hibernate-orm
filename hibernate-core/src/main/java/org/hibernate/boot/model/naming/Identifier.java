@@ -22,9 +22,9 @@ public class Identifier implements Comparable<Identifier> {
 
 	/**
 	 * Means to generate an {@link Identifier} instance from its simple text form.
-	 * <p/>
+	 * <p>
 	 * If passed text is {@code null}, {@code null} is returned.
-	 * <p/>
+	 * <p>
 	 * If passed text is surrounded in quote markers, the generated Identifier
 	 * is considered quoted.  Quote markers include back-ticks (`), and
 	 * double-quotes (").
@@ -49,9 +49,9 @@ public class Identifier implements Comparable<Identifier> {
 
 	/**
 	 * Means to generate an {@link Identifier} instance from its simple text form.
-	 * <p/>
+	 * <p>
 	 * If passed text is {@code null}, {@code null} is returned.
-	 * <p/>
+	 * <p>
 	 * If passed text is surrounded in quote markers, the generated Identifier
 	 * is considered quoted.  Quote markers include back-ticks (`), and
 	 * double-quotes (").
@@ -82,7 +82,7 @@ public class Identifier implements Comparable<Identifier> {
 	 *     <li>{@code [name]}</li>
 	 *     <li>{@code "name"}</li>
 	 * </ul>
-	 * <p/>
+	 * <p>
 	 * That final form using double-quote (") is the JPA-defined quoting pattern.  Although
 	 * it is the standard, it makes for ugly declarations.
 	 *

@@ -27,7 +27,7 @@ import java.util.List;
  *         multiple returns of mixed type (though all implementing {@link org.hibernate.loader.plan.spi.Return}).  Again, may possibly define fetches.
  *     </li>
  * </ul>
- * <p/>
+ * <p>
  * todo : would also like to see "call back" style access for handling "subsequent actions" such as...<ul>
  *     <li>follow-on locking</li>
  *     <li>join fetch conversions to subselect fetches</li>
@@ -58,7 +58,7 @@ public interface LoadPlan {
 	 *         {@link org.hibernate.loader.plan.spi.ScalarReturn} elements, but no {@link org.hibernate.loader.plan.spi.CollectionReturn}.
 	 *     </li>
 	 * </ul>
-	 * <p/>
+	 * <p>
 	 * When generating SQL, the Returns provide columns/formulas used in the "select clause".
 	 *
 	 * @return The Returns for this LoadPlan.
@@ -71,7 +71,7 @@ public interface LoadPlan {
 	 * Gets the {@link QuerySpaces} for the load plan, which contains a {@link QuerySpace}
 	 * reference for each non-scalar return and for each entity, collection, and composite
 	 * {@link FetchSource}.
-	 * <p/>
+	 * <p>
 	 * When generating SQL, the query spaces provide data for the "from clause" including joins.
 	 *
 	 * @return The QuerySpaces
@@ -80,13 +80,13 @@ public interface LoadPlan {
 
 	/**
 	 * Does this load plan indicate that lazy attributes are to be force fetched?
-	 * <p/>
+	 * <p>
 	 * Here we are talking about laziness in regards to the legacy bytecode enhancement which adds support for
 	 * partial selects of an entity's state (e.g., skip loading a lob initially, wait until/if it is needed)
-	 * <p/>
+	 * <p>
 	 * This one would effect the SQL that needs to get generated as well as how the result set would be read.
 	 * Therefore we make this part of the LoadPlan contract.
-	 * <p/>
+	 * <p>
 	 * NOTE that currently this is only relevant for HQL loaders when the HQL has specified the {@code FETCH ALL PROPERTIES}
 	 * key-phrase.  In all other cases, this returns false.
 

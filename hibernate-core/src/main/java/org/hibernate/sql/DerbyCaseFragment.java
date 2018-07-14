@@ -16,7 +16,7 @@ public class DerbyCaseFragment extends CaseFragment {
 
 	/**
 	 * From http://www.jroller.com/comments/kenlars99/Weblog/cloudscape_soon_to_be_derby
-	 * <p/>
+	 * <p>
 	 * The problem we had, was when Hibernate does a select with a case statement, for joined subclasses.
 	 * This seems to be because there was no else at the end of the case statement (other dbs seem to not mind).
 	 */

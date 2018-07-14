@@ -40,7 +40,7 @@ import org.hibernate.type.Type;
  * elements.<br>
  * <br>
  * May be considered an immutable view of the mapping object
- * <p/>
+ * <p>
  * Unless a customer {@link org.hibernate.persister.spi.PersisterFactory} is used, it is expected
  * that implementations of CollectionDefinition define a constructor accepting the following arguments:<ol>
  *     <li>

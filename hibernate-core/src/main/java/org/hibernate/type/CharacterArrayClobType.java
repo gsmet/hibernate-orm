@@ -10,7 +10,7 @@ import org.hibernate.type.descriptor.sql.ClobTypeDescriptor;
 
 /**
  * A type that maps between {@link java.sql.Types#CLOB CLOB} and {@link Character Character[]}
- * <p/>
+ * <p>
  * Essentially a {@link MaterializedClobType} but represented as a Character[] in Java rather than String.
  *
  * @author Emmanuel Bernard

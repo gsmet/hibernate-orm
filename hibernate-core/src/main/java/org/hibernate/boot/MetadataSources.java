@@ -342,7 +342,7 @@ public class MetadataSources implements Serializable {
 
 	/**
 	 * <b>INTENDED FOR TESTSUITE USE ONLY!</b>
-	 * <p/>
+	 * <p>
 	 * Much like {@link #addCacheableFile(java.io.File)} except that here we will fail immediately if
 	 * the cache version cannot be found or used for whatever reason
 	 *
@@ -413,7 +413,7 @@ public class MetadataSources implements Serializable {
 
 	/**
 	 * Read all mappings from a jar file.
-	 * <p/>
+	 * <p>
 	 * Assumes that any file named <tt>*.hbm.xml</tt> is a mapping document.
 	 *
 	 * @param jar a jar file
@@ -453,7 +453,7 @@ public class MetadataSources implements Serializable {
 
 	/**
 	 * Read all mapping documents from a directory tree.
-	 * <p/>
+	 * <p>
 	 * Assumes that any file named <tt>*.hbm.xml</tt> is a mapping document.
 	 *
 	 * @param dir The directory

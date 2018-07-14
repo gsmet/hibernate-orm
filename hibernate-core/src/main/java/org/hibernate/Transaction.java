@@ -15,13 +15,13 @@ import org.hibernate.resource.transaction.spi.TransactionStatus;
  * Defines the contract for abstracting applications from the configured underlying means of transaction management.
  * Allows the application to define units of work, while maintaining abstraction from the underlying transaction
  * implementation (eg. JTA, JDBC).
- * <p/>
+ * <p>
  * A transaction is associated with a {@link Session} and is usually initiated by a call to
  * {@link org.hibernate.Session#beginTransaction()}.  A single session might span multiple transactions since
  * the notion of a session (a conversation between the application and the datastore) is of coarser granularity than
  * the notion of a transaction.  However, it is intended that there be at most one uncommitted transaction associated
  * with a particular {@link Session} at any time.
- * <p/>
+ * <p>
  * Implementers are not intended to be thread-safe.
  *
  * @author Anton van Straaten
@@ -30,7 +30,7 @@ import org.hibernate.resource.transaction.spi.TransactionStatus;
 public interface Transaction extends EntityTransaction {
 	/**
 	 * Get the current local status of this transaction.
-	 * <p/>
+	 * <p>
 	 * This only accounts for the local view of the transaction status.  In other words it does not check the status
 	 * of the actual underlying transaction.
 	 *

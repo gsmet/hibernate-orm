@@ -8,7 +8,7 @@
 /**
  * Contains the internal implementations of the building blocks that make up a metamodel-driven LoadPlan.
  *.
- * <p/>
+ * <p>
  * The SPI is defined by org.hibernate.loader.plan.spi.
  */
 package org.hibernate.loader.plan.build.internal.returns;

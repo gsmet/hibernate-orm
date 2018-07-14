@@ -93,7 +93,7 @@ public class TypeResolver implements Serializable {
 
 	/**
 	 * Uses heuristics to deduce the proper {@link Type} given a string naming the type or Java class.
-	 * <p/>
+	 * <p>
 	 * The search goes as follows:<ol>
 	 * 	<li>search for a basic type with 'typeName' as a registration key</li>
 	 * 	<li>

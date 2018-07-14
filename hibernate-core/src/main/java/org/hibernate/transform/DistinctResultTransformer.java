@@ -18,7 +18,7 @@ import static org.hibernate.internal.CoreLogging.messageLogger;
 /**
  * Distinctions the result tuples in the final result based on the defined
  * equality of the tuples.
- * <p/>
+ * <p>
  * Since this transformer is stateless, all instances would be considered equal.
  * So for optimization purposes we limit it to a single, singleton {@link #INSTANCE instance}.
  *

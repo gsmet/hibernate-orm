@@ -22,9 +22,9 @@ import org.jboss.logging.Logger;
 /**
  * Prints a {@link org.hibernate.loader.plan.spi.LoadPlan} graph and its
  * {@link org.hibernate.loader.plan.spi.QuerySpaces} graph as tree structures.
- * <p/>
+ * <p>
  * Intended for use in debugging, logging, etc.
- * <p/>
+ * <p>
  * Aggregates calls to the {@link QuerySpaceTreePrinter} and {@link ReturnGraphTreePrinter}
  *
  * @author Steve Ebersole

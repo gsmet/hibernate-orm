@@ -28,7 +28,7 @@ public class StandardSQLFunction implements SQLFunction {
 	 * Construct a standard SQL function definition with a variable return type;
 	 * the actual return type will depend on the types to which the function
 	 * is applied.
-	 * <p/>
+	 * <p>
 	 * Using this form, the return type is considered non-static and assumed
 	 * to be the type of the first argument.
 	 *

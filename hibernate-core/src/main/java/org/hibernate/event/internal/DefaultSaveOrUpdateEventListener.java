@@ -151,7 +151,7 @@ public class DefaultSaveOrUpdateEventListener extends AbstractSaveEventListener 
 
 	/**
 	 * The given save-update event named a transient entity.
-	 * <p/>
+	 * <p>
 	 * Here, we will perform the save processing.
 	 *
 	 * @param event The save event to be handled.
@@ -200,7 +200,7 @@ public class DefaultSaveOrUpdateEventListener extends AbstractSaveEventListener 
 
 	/**
 	 * The given save-update event named a detached entity.
-	 * <p/>
+	 * <p>
 	 * Here, we will perform the update processing.
 	 *
 	 * @param event The update event to be handled.

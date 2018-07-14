@@ -192,7 +192,7 @@ public class DerbyDialect extends DB2Dialect {
 
 	/**
 	 * {@inheritDoc}
-	 * <p/>
+	 * <p>
 	 * From Derby 10.5 Docs:
 	 * <pre>
 	 * Query
@@ -276,7 +276,7 @@ public class DerbyDialect extends DB2Dialect {
 	private final class DerbyLimitHandler extends AbstractLimitHandler {
 		/**
 		 * {@inheritDoc}
-		 * <p/>
+		 * <p>
 		 * From Derby 10.5 Docs:
 		 * <pre>
 		 * Query

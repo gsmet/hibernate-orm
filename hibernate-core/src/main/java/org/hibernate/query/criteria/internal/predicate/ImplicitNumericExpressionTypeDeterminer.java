@@ -19,7 +19,7 @@ public final class ImplicitNumericExpressionTypeDeterminer {
 	/**
 	 * Determine the appropriate runtime result type for a numeric expression according to
 	 * section "6.5.7.1 Result Types of Expressions" of the JPA spec.
-	 * <p/>
+	 * <p>
 	 * Note that it is expected that the caveats about quotient handling have already been handled.
 	 *
 	 * @param types The argument/expression types

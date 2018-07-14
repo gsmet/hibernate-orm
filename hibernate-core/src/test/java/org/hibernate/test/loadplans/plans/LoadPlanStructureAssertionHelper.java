@@ -23,7 +23,7 @@ import org.hibernate.persister.entity.OuterJoinLoadable;
 
 /**
  * Perform assertions based on a LoadPlan, specifically against the outputs/expectations of the legacy Loader approach.
- * <p/>
+ * <p>
  * Mainly this is intended to be a transitory set of help since it is expected that Loader will go away replaced by
  * LoadPlans, QueryBuilders and ResultSetProcessors.  For now I want to make sure that the outputs (e.g., the SQL,
  * the extraction aliases) are the same given the same input.  That makes sure we have the best possibility of success

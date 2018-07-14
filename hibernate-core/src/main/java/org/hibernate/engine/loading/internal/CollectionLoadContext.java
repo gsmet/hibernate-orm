@@ -37,7 +37,7 @@ import org.hibernate.pretty.MessageHelper;
 /**
  * Represents state associated with the processing of a given {@link ResultSet}
  * in regards to loading collections.
- * <p/>
+ * <p>
  * Another implementation option to consider is to not expose {@link ResultSet}s
  * directly (in the JDBC redesign) but to always "wrap" them and apply a
  * [series of] context[s] to that wrapper.
@@ -73,7 +73,7 @@ public class CollectionLoadContext {
 	/**
 	 * Retrieve the collection that is being loaded as part of processing this
 	 * result set.
-	 * <p/>
+	 * <p>
 	 * Basically, there are two valid return values from this method:<ul>
 	 * <li>an instance of {@link org.hibernate.collection.spi.PersistentCollection} which indicates to
 	 * continue loading the result set row data into that returned collection

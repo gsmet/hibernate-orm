@@ -50,7 +50,7 @@ import static java.util.Collections.unmodifiableMap;
  * in a way that prevents all access.  This class is fully
  * interoperable with <tt>Hashtable</tt> in programs that rely on its
  * thread safety but not on its synchronization details.
- * <p/>
+ * <p>
  * <p> Retrieval operations (including <tt>get</tt>) generally do not
  * block, so may overlap with update operations (including
  * <tt>put</tt> and <tt>remove</tt>). Retrievals reflect the results
@@ -62,7 +62,7 @@ import static java.util.Collections.unmodifiableMap;
  * at some point at or since the creation of the iterator/enumeration.
  * They do <em>not</em> throw {@link java.util.ConcurrentModificationException}.
  * However, iterators are designed to be used by only one thread at a time.
- * <p/>
+ * <p>
  * <p> The allowed concurrency among update operations is guided by
  * the optional <tt>concurrencyLevel</tt> constructor argument
  * (default <tt>16</tt>), which is used as a hint for internal sizing.  The
@@ -80,17 +80,17 @@ import static java.util.Collections.unmodifiableMap;
  * hash table is a relatively slow operation, so, when possible, it is
  * a good idea to provide estimates of expected table sizes in
  * constructors.
- * <p/>
+ * <p>
  * <p>This class and its views and iterators implement all of the
  * <em>optional</em> methods of the {@link Map} and {@link Iterator}
  * interfaces.
- * <p/>
+ * <p>
  * <p>This class is copied from Infinispan, and was originally written
  * by Doug Lea with assistance from members of JCP JSR-166 Expert Group and
  * released to the public domain, as explained at
  * http://creativecommons.org/licenses/publicdomain</p>
- * <p/>
- * <p/>
+ * <p>
+ * <p>
  * <p> Like {@link java.util.Hashtable} but unlike {@link HashMap}, this class
  * does <em>not</em> allow <tt>null</tt> to be used as a key or value.
  *
@@ -208,7 +208,7 @@ public class BoundedConcurrentHashMap<K, V> extends AbstractMap<K, V>
 	/**
 	 * ConcurrentHashMap list entry. Note that this is never exported
 	 * out as a user-visible Map.Entry.
-	 * <p/>
+	 * <p>
 	 * Because the value field is volatile, not final, it is legal wrt
 	 * the Java Memory Model for an unsynchronized reader to see null
 	 * instead of initial value when read via a data race.  Although a
@@ -310,8 +310,8 @@ public class BoundedConcurrentHashMap<K, V> extends AbstractMap<K, V>
 
 		/**
 		 * Invokes eviction policy algorithm and returns set of evicted entries.
-		 * <p/>
-		 * <p/>
+		 * <p>
+		 * <p>
 		 * Set cannot be null but could possibly be an empty set.
 		 *
 		 * @return set of evicted entries.
@@ -331,7 +331,7 @@ public class BoundedConcurrentHashMap<K, V> extends AbstractMap<K, V>
 		/**
 		 * Invoked to notify EvictionPolicy implementation that an entry in Segment has been
 		 * accessed. Returns true if batching threshold has been reached, false otherwise.
-		 * <p/>
+		 * <p>
 		 * Note that this method is potentially invoked without holding a lock on Segment.
 		 *
 		 * @param e accessed entry in Segment
@@ -363,7 +363,7 @@ public class BoundedConcurrentHashMap<K, V> extends AbstractMap<K, V>
 
 		/**
 		 * Returns true if batching threshold has expired, false otherwise.
-		 * <p/>
+		 * <p>
 		 * Note that this method is potentially invoked without holding a lock on Segment.
 		 *
 		 * @return true if batching threshold has expired, false otherwise.
@@ -936,14 +936,14 @@ public class BoundedConcurrentHashMap<K, V> extends AbstractMap<K, V>
 		 * The accessQueue for reducing lock contention
 		 * See "BP-Wrapper: a system framework making any replacement algorithms
 		 * (almost) lock contention free"
-		 * <p/>
+		 * <p>
 		 * http://www.cse.ohio-state.edu/hpcs/WWW/HTML/publications/abs09-1.html
 		 */
 		private final ConcurrentLinkedQueue<LIRSHashEntry<K, V>> accessQueue;
 
 		/**
 		 * The maxBatchQueueSize
-		 * <p/>
+		 * <p>
 		 * See "BP-Wrapper: a system framework making any replacement algorithms (almost) lock
 		 * contention free"
 		 */
@@ -959,7 +959,7 @@ public class BoundedConcurrentHashMap<K, V> extends AbstractMap<K, V>
 
 		/**
 		 * This header encompasses two data structures:
-		 * <p/>
+		 * <p>
 		 * <ul>
 		 * <li>The LIRS stack, S, which is maintains recency information. All hot
 		 * entries are on the stack. All cold and non-resident entries which are more
@@ -968,7 +968,7 @@ public class BoundedConcurrentHashMap<K, V> extends AbstractMap<K, V>
 		 * accessed more recently than the last hot entry are present in the stack).
 		 * The stack is ordered by recency, with its most recently accessed entry
 		 * at the top, and its least recently accessed entry at the bottom.</li>
-		 * <p/>
+		 * <p>
 		 * <li>The LIRS queue, Q, which enqueues all cold entries for eviction. Cold
 		 * entries (by definition in the queue) may be absent from the stack (due to
 		 * pruning of the stack). Cold entries are added to the end of the queue
@@ -1838,7 +1838,7 @@ public class BoundedConcurrentHashMap<K, V> extends AbstractMap<K, V>
 	/**
 	 * Returns the value to which the specified key is mapped,
 	 * or {@code null} if this map contains no mapping for the key.
-	 * <p/>
+	 * <p>
 	 * <p>More formally, if this map contains a mapping from a key
 	 * {@code k} to a value {@code v} such that {@code key.equals(k)},
 	 * then this method returns {@code v}; otherwise it returns
@@ -1964,7 +1964,7 @@ public class BoundedConcurrentHashMap<K, V> extends AbstractMap<K, V>
 	/**
 	 * Maps the specified key to the specified value in this table.
 	 * Neither the key nor the value can be null.
-	 * <p/>
+	 * <p>
 	 * <p> The value can be retrieved by calling the <tt>get</tt> method
 	 * with a key that is equal to the original key.
 	 *
@@ -2097,7 +2097,7 @@ public class BoundedConcurrentHashMap<K, V> extends AbstractMap<K, V>
 	 * <tt>removeAll</tt>, <tt>retainAll</tt>, and <tt>clear</tt>
 	 * operations.  It does not support the <tt>add</tt> or
 	 * <tt>addAll</tt> operations.
-	 * <p/>
+	 * <p>
 	 * <p>The view's <tt>iterator</tt> is a "weakly consistent" iterator
 	 * that will never throw {@link java.util.ConcurrentModificationException},
 	 * and guarantees to traverse elements as they existed upon
@@ -2119,7 +2119,7 @@ public class BoundedConcurrentHashMap<K, V> extends AbstractMap<K, V>
 	 * <tt>Collection.remove</tt>, <tt>removeAll</tt>,
 	 * <tt>retainAll</tt>, and <tt>clear</tt> operations.  It does not
 	 * support the <tt>add</tt> or <tt>addAll</tt> operations.
-	 * <p/>
+	 * <p>
 	 * <p>The view's <tt>iterator</tt> is a "weakly consistent" iterator
 	 * that will never throw {@link java.util.ConcurrentModificationException},
 	 * and guarantees to traverse elements as they existed upon
@@ -2141,7 +2141,7 @@ public class BoundedConcurrentHashMap<K, V> extends AbstractMap<K, V>
 	 * <tt>removeAll</tt>, <tt>retainAll</tt>, and <tt>clear</tt>
 	 * operations.  It does not support the <tt>add</tt> or
 	 * <tt>addAll</tt> operations.
-	 * <p/>
+	 * <p>
 	 * <p>The view's <tt>iterator</tt> is a "weakly consistent" iterator
 	 * that will never throw {@link java.util.ConcurrentModificationException},
 	 * and guarantees to traverse elements as they existed upon

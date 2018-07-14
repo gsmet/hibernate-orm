@@ -9,7 +9,7 @@ package org.hibernate.loader.plan.spi;
 /**
  * Represents the circular side of a bi-directional entity association. Wraps a reference to the associated
  * (target) EntityReference.
- * <p/>
+ * <p>
  * The {@link org.hibernate.loader.plan.exec.spi.EntityReferenceAliases} for this object is the same as
  * for its target EntityReference, and can be looked up via
  * {@link org.hibernate.loader.plan.exec.spi.AliasResolutionContext#resolveEntityReferenceAliases(String)}

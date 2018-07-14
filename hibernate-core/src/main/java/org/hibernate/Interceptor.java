@@ -40,7 +40,7 @@ public interface Interceptor {
 	 * Called just before an object is initialized. The interceptor may change the <tt>state</tt>, which will
 	 * be propagated to the persistent object. Note that when this method is called, <tt>entity</tt> will be
 	 * an empty uninitialized instance of the class.
-	 * <p/>
+	 * <p>
 	 * NOTE: The indexes across the <tt>state</tt>, <tt>propertyNames</tt> and <tt>types</tt> arrays match.
 	 *
 	 * @param entity The entity instance being loaded
@@ -61,7 +61,7 @@ public interface Interceptor {
 	 * Note that not all flushes end in actual synchronization with the database, in which case the
 	 * new <tt>currentState</tt> will be propagated to the object, but not necessarily (immediately) to
 	 * the database. It is strongly recommended that the interceptor <b>not</b> modify the <tt>previousState</tt>.
-	 * <p/>
+	 * <p>
 	 * NOTE: The indexes across the <tt>currentState</tt>, <tt>previousState</tt>, <tt>propertyNames</tt> and
 	 * <tt>types</tt> arrays match.
 	 *

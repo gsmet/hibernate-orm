@@ -12,7 +12,7 @@ import java.sql.Connection;
 
 /**
  * A command-oriented API for performing bulk operations against a database.
- * <p/>
+ * <p>
  * A stateless session does not implement a first-level cache nor interact
  * with any second-level cache, nor does it implement transactional
  * write-behind or automatic dirty checking, nor do operations cascade to
@@ -20,7 +20,7 @@ import java.sql.Connection;
  * Operations performed via a stateless session bypass Hibernate's event model
  * and interceptors.  Stateless sessions are vulnerable to data aliasing
  * effects, due to the lack of a first-level cache.
- * <p/>
+ * <p>
  * For certain kinds of transactions, a stateless session may perform slightly
  * faster than a stateful session.
  *

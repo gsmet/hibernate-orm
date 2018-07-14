@@ -77,7 +77,7 @@ public interface QuerySpace {
 	/**
 	 * Obtain all joins which originate from this QuerySpace, in other words, all the joins which this QuerySpace is
 	 * the left-hand-side of.
-	 * <p/>
+	 * <p>
 	 * For all the joins returned here, {@link Join#getLeftHandSide()} should point back to this QuerySpace such that
 	 * <code>
 	 *     space.getJoins().forEach{ join -> join.getLeftHandSide() == space }

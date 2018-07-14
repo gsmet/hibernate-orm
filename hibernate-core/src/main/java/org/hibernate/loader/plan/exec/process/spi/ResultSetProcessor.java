@@ -19,7 +19,7 @@ import org.hibernate.transform.ResultTransformer;
 /**
  * Contract for processing JDBC ResultSets.  Separated because ResultSets can be chained and we'd really like to
  * reuse this logic across all result sets.
- * <p/>
+ * <p>
  * todo : investigate having this work with non-JDBC results; maybe just typed as Object? or a special Result contract?
  *
  * @author Steve Ebersole

@@ -23,11 +23,11 @@ import org.hibernate.engine.spi.SharedSessionContractImplementor;
  * Defines a mapping between a Java type and one or more JDBC {@linkplain java.sql.Types types}, as well
  * as describing the in-memory semantics of the given java type (how do we check it for 'dirtiness', how do
  * we copy values, etc).
- * <p/>
+ * <p>
  * Application developers needing custom types can implement this interface (either directly or via subclassing an
  * existing impl) or by the (slightly more stable, though more limited) {@link org.hibernate.usertype.UserType}
  * interface.
- * <p/>
+ * <p>
  * Implementations of this interface must certainly be thread-safe.  It is recommended that they be immutable as
  * well, though that is difficult to achieve completely given the no-arg constructor requirement for custom types.
  *
@@ -47,7 +47,7 @@ public interface Type extends Serializable {
 	/**
 	 * Return true if the implementation is castable to {@link CollectionType}. Essentially a polymorphic version of
 	 * {@code (type instanceof CollectionType.class)}
-	 * <p/>
+	 * <p>
 	 * A {@link CollectionType} is additionally an {@link AssociationType}; so if this method returns true,
 	 * {@link #isAssociationType()} should also return true.
 	 *
@@ -58,7 +58,7 @@ public interface Type extends Serializable {
 	/**
 	 * Return true if the implementation is castable to {@link EntityType}. Essentially a polymorphic
 	 * version of {@code (type instanceof EntityType.class)}.
-	 * <p/>
+	 * <p>
 	 * An {@link EntityType} is additionally an {@link AssociationType}; so if this method returns true,
 	 * {@link #isAssociationType()} should also return true.
 	 *
@@ -69,7 +69,7 @@ public interface Type extends Serializable {
 	/**
 	 * Return true if the implementation is castable to {@link AnyType}. Essentially a polymorphic
 	 * version of {@code (type instanceof AnyType.class)}.
-	 * <p/>
+	 * <p>
 	 * An {@link AnyType} is additionally an {@link AssociationType}; so if this method returns true,
 	 * {@link #isAssociationType()} should also return true.
 	 *
@@ -99,7 +99,7 @@ public interface Type extends Serializable {
 
 	/**
 	 * Return the JDBC types codes (per {@link java.sql.Types}) for the columns mapped by this type.
-	 * <p/>
+	 * <p>
 	 * NOTE: The number of elements in this array matches the return from {@link #getColumnSpan}.
 	 *
 	 * @param mapping The mapping object :/
@@ -113,7 +113,7 @@ public interface Type extends Serializable {
 	/**
 	 * Return the column sizes dictated by this type.  For example, the mapping for a {@code char}/{@link Character} would
 	 * have a dictated length limit of 1; for a string-based {@link java.util.UUID} would have a size limit of 36; etc.
-	 * <p/>
+	 * <p>
 	 * NOTE: The number of elements in this array matches the return from {@link #getColumnSpan}.
 	 *
 	 * @param mapping The mapping object :/
@@ -128,7 +128,7 @@ public interface Type extends Serializable {
 	/**
 	 * Defines the column sizes to use according to this type if the user did not explicitly say (and if no
 	 * {@link #dictatedSizes} were given).
-	 * <p/>
+	 * <p>
 	 * NOTE: The number of elements in this array matches the return from {@link #getColumnSpan}.
 	 *
 	 * @param mapping The mapping object :/
@@ -151,7 +151,7 @@ public interface Type extends Serializable {
 	/**
 	 * Compare two instances of the class mapped by this type for persistence "equality" (equality of persistent
 	 * state) taking a shortcut for entity references.
-	 * <p/>
+	 * <p>
 	 * For most types this should equate to an {@link Object#equals equals} check on the values.  For associations
 	 * the implication is a bit different.  For most types it is conceivable to simply delegate to {@link #isEqual}
 	 *
@@ -167,7 +167,7 @@ public interface Type extends Serializable {
 	/**
 	 * Compare two instances of the class mapped by this type for persistence "equality" (equality of persistent
 	 * state).
-	 * <p/>
+	 * <p>
 	 * This should always equate to some form of comparison of the value's internal state.  As an example, for
 	 * something like a date the comparison should be based on its internal "time" state based on the specific portion
 	 * it is meant to represent (timestamp, date, time).
@@ -184,7 +184,7 @@ public interface Type extends Serializable {
 	/**
 	 * Compare two instances of the class mapped by this type for persistence "equality" (equality of persistent
 	 * state).
-	 * <p/>
+	 * <p>
 	 * This should always equate to some form of comparison of the value's internal state.  As an example, for
 	 * something like a date the comparison should be based on its internal "time" state based on the specific portion
 	 * it is meant to represent (timestamp, date, time).

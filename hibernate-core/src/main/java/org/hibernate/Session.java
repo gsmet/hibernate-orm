@@ -95,7 +95,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 	 * unit of work, before committing the transaction and closing the
 	 * session (depending on {@link #setFlushMode(FlushMode)},
 	 * {@link Transaction#commit()} calls this method).
-	 * <p/>
+	 * <p>
 	 * <i>Flushing</i> is the process of synchronizing the underlying persistent
 	 * store with persistable state held in memory.
 	 *
@@ -106,11 +106,11 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 
 	/**
 	 * Set the flush mode for this session.
-	 * <p/>
+	 * <p>
 	 * The flush mode determines the points at which the session is flushed.
 	 * <i>Flushing</i> is the process of synchronizing the underlying persistent
 	 * store with persistable state held in memory.
-	 * <p/>
+	 * <p>
 	 * For a logically "read only" session, it is reasonable to set the session's
 	 * flush mode to {@link FlushMode#MANUAL} at the start of the session (in
 	 * order to achieve some extra performance).
@@ -124,7 +124,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 
 	/**
 	 * {@inheritDoc}
-	 * <p/>
+	 * <p>
 	 * For users of the Hibernate native APIs, we've had to rename this method
 	 * as defined by Hibernate historically because the JPA contract defines a method of the same
 	 * name, but returning the JPA {@link FlushModeType} rather than Hibernate's {@link FlushMode}.  For
@@ -137,11 +137,11 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 
 	/**
 	 * Set the flush mode for this session.
-	 * <p/>
+	 * <p>
 	 * The flush mode determines the points at which the session is flushed.
 	 * <i>Flushing</i> is the process of synchronizing the underlying persistent
 	 * store with persistable state held in memory.
-	 * <p/>
+	 * <p>
 	 * For a logically "read only" session, it is reasonable to set the session's
 	 * flush mode to {@link FlushMode#MANUAL} at the start of the session (in
 	 * order to achieve some extra performance).
@@ -159,7 +159,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 
 	/**
 	 * Set the cache mode.
-	 * <p/>
+	 * <p>
 	 * Cache mode determines the manner in which this session can interact with
 	 * the second level cache.
 	 *
@@ -184,7 +184,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 
 	/**
 	 * Cancel the execution of the current query.
-	 * <p/>
+	 * <p>
 	 * This is the sole method on session which may be safely called from
 	 * another thread.
 	 *
@@ -278,7 +278,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 	/**
 	 * Return the persistent instance of the given entity class with the given identifier,
 	 * obtaining the specified lock mode, assuming the instance exists.
-	 * <p/>
+	 * <p>
 	 * Convenient form of {@link #load(Class, Serializable, LockOptions)}
 	 *
 	 * @param theClass a persistent class
@@ -305,7 +305,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 	/**
 	 * Return the persistent instance of the given entity class with the given identifier,
 	 * obtaining the specified lock mode, assuming the instance exists.
-	 * <p/>
+	 * <p>
 	 * Convenient form of {@link #load(String, Serializable, LockOptions)}
 	 *
 	 * @param entityName a persistent class
@@ -421,7 +421,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 	 * Either {@link #save(Object)} or {@link #update(Object)} the given
 	 * instance, depending upon resolution of the unsaved-value checks (see the
 	 * manual for discussion of unsaved-value checking).
-	 * <p/>
+	 * <p>
 	 * This operation cascades to associated instances if the association is mapped
 	 * with {@code cascade="save-update"}
 	 *
@@ -436,7 +436,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 	 * Either {@link #save(String, Object)} or {@link #update(String, Object)}
 	 * the given instance, depending upon resolution of the unsaved-value checks
 	 * (see the manual for discussion of unsaved-value checking).
-	 * <p/>
+	 * <p>
 	 * This operation cascades to associated instances if the association is mapped
 	 * with {@code cascade="save-update"}
 	 *
@@ -477,7 +477,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 	 * instance. The given instance does not become associated with the session.
 	 * This operation cascades to associated instances if the association is mapped
 	 * with {@code cascade="merge"}
-	 * <p/>
+	 * <p>
 	 * The semantics of this method are defined by JSR-220.
 	 *
 	 * @param object a detached instance with state to be copied
@@ -494,7 +494,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 	 * instance. The given instance does not become associated with the session.
 	 * This operation cascades to associated instances if the association is mapped
 	 * with {@code cascade="merge"}
-	 * <p/>
+	 * <p>
 	 * The semantics of this method are defined by JSR-220.
 	 *
 	 * @param entityName The entity name
@@ -507,7 +507,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 	/**
 	 * Make a transient instance persistent. This operation cascades to associated
 	 * instances if the association is mapped with {@code cascade="persist"}
-	 * <p/>
+	 * <p>
 	 * The semantics of this method are defined by JSR-220.
 	 *
 	 * @param object a transient instance to be made persistent
@@ -516,7 +516,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 	/**
 	 * Make a transient instance persistent. This operation cascades to associated
 	 * instances if the association is mapped with {@code cascade="persist"}
-	 * <p/>
+	 * <p>
 	 * The semantics of this method are defined by JSR-220.
 	 *
 	 * @param entityName The entity name
@@ -553,7 +553,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 	 * lock (<tt>LockMode.PESSIMISTIC_WRITE</tt>), or to simply reassociate a transient instance
 	 * with a session (<tt>LockMode.NONE</tt>). This operation cascades to associated
 	 * instances if the association is mapped with <tt>cascade="lock"</tt>.
-	 * <p/>
+	 * <p>
 	 * Convenient form of {@link LockRequest#lock(Object)} via {@link #buildLockRequest(LockOptions)}
 	 *
 	 * @param object a persistent or transient instance
@@ -570,7 +570,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 	 * lock (<tt>LockMode.PESSIMISTIC_WRITE</tt>), or to simply reassociate a transient instance
 	 * with a session (<tt>LockMode.NONE</tt>). This operation cascades to associated
 	 * instances if the association is mapped with <tt>cascade="lock"</tt>.
-	 * <p/>
+	 * <p>
 	 * Convenient form of {@link LockRequest#lock(String, Object)} via {@link #buildLockRequest(LockOptions)}
 	 *
 	 * @param entityName The name of the entity
@@ -586,7 +586,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 	 * Build a LockRequest that specifies the LockMode, pessimistic lock timeout and lock scope.
 	 * timeout and scope is ignored for optimistic locking.  After building the LockRequest,
 	 * call LockRequest.lock to perform the requested locking. 
-	 * <p/>
+	 * <p>
 	 * Example usage:
 	 * {@code session.buildLockRequest().setLockMode(LockMode.PESSIMISTIC_WRITE).setTimeOut(60000).lock(entity);}
 	 *
@@ -632,7 +632,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 	 * the given <tt>LockMode</tt>. It is inadvisable to use this to implement
 	 * long-running sessions that span many business tasks. This method is, however,
 	 * useful in certain special circumstances.
-	 * <p/>
+	 * <p>
 	 * Convenient form of {@link #refresh(Object, LockOptions)}
 	 *
 	 * @param object a persistent or detached instance
@@ -713,7 +713,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 	 * or null if there is no such persistent instance. (If the instance is already associated
 	 * with the session, return that instance. This method never returns an uninitialized instance.)
 	 * Obtain the specified lock mode if the instance exists.
-	 * <p/>
+	 * <p>
 	 * Convenient form of {@link #get(Class, Serializable, LockOptions)}
 	 *
 	 * @param entityType The entity type
@@ -757,7 +757,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 	 * or null if there is no such persistent instance. (If the instance is already associated
 	 * with the session, return that instance. This method never returns an uninitialized instance.)
 	 * Obtain the specified lock mode if the instance exists.
-	 * <p/>
+	 * <p>
 	 * Convenient form of {@link #get(String, Serializable, LockOptions)}
 	 *
 	 * @param entityName the entity name
@@ -981,10 +981,10 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 	/**
 	 * Disconnect the session from its underlying JDBC connection.  This is intended for use in cases where the
 	 * application has supplied the JDBC connection to the session and which require long-sessions (aka, conversations).
-	 * <p/>
+	 * <p>
 	 * It is considered an error to call this method on a session which was not opened by supplying the JDBC connection
 	 * and an exception will be thrown.
-	 * <p/>
+	 * <p>
 	 * For non-user-supplied scenarios, normal transaction management already handles disconnection and reconnection
 	 * automatically.
 	 *
@@ -1041,7 +1041,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 
 	/**
 	 * Convenience access to the {@link TypeHelper} associated with this session's {@link SessionFactory}.
-	 * <p/>
+	 * <p>
 	 * Equivalent to calling {@link #getSessionFactory()}.{@link SessionFactory#getTypeHelper getTypeHelper()}
 	 *
 	 * @return The {@link TypeHelper} associated with this session's {@link SessionFactory}
