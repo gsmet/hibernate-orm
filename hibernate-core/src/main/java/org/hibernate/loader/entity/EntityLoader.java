@@ -18,8 +18,8 @@ import org.hibernate.type.Type;
 /**
  * Loads an entity instance using outerjoin fetching to fetch associated entities.
  * <br>
- * The <tt>EntityPersister</tt> must implement <tt>Loadable</tt>. For other entities,
- * create a customized subclass of <tt>Loader</tt>.
+ * The {@code EntityPersister} must implement {@code Loadable}. For other entities,
+ * create a customized subclass of {@code Loader}.
  *
  * @author Gavin King
  */

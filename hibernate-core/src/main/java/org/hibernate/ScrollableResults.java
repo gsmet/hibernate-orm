@@ -20,10 +20,10 @@ import org.hibernate.type.Type;
 
 /**
  * A result iterator that allows moving around within the results
- * by arbitrary increments. The <tt>Query</tt> / <tt>ScrollableResults</tt>
- * pattern is very similar to the JDBC <tt>PreparedStatement</tt>/
- * <tt>ResultSet</tt> pattern and the semantics of methods of this interface
- * are similar to the similarly named methods on <tt>ResultSet</tt>.<br>
+ * by arbitrary increments. The {@code Query} / {@code ScrollableResults}
+ * pattern is very similar to the JDBC {@code PreparedStatement}/
+ * {@code ResultSet} pattern and the semantics of methods of this interface
+ * are similar to the similarly named methods on {@code ResultSet}.<br>
  * <br>
  * Contrary to JDBC, columns of results are numbered from zero.
  *
@@ -126,7 +126,7 @@ public interface ScrollableResults extends AutoCloseable, Closeable {
 	Object[] get();
 
 	/**
-	 * Get the <tt>i</tt>th object in the current row of results, without
+	 * Get the {@code i}th object in the current row of results, without
 	 * initializing any other results in the row. This method may be used
 	 * safely, regardless of the type of the column (ie. even for scalar
 	 * results).
@@ -140,7 +140,7 @@ public interface ScrollableResults extends AutoCloseable, Closeable {
 	Object get(int i);
 
 	/**
-	 * Get the type of the <tt>i</tt>th column of results.
+	 * Get the type of the {@code i}th column of results.
 	 *
 	 * @param i the column, numbered from zero
 	 *

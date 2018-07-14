@@ -66,7 +66,7 @@ import org.hibernate.type.EntityType;
 import org.hibernate.type.Type;
 
 /**
- * An instance of <tt>QueryTranslator</tt> translates a Hibernate
+ * An instance of {@code QueryTranslator} translates a Hibernate
  * query string to SQL.
  */
 public class QueryTranslatorImpl extends BasicLoader implements FilterTranslator {
@@ -277,9 +277,9 @@ public class QueryTranslatorImpl extends BasicLoader implements FilterTranslator
 	}
 
 	/**
-	 * Persisters for the return values of a <tt>find()</tt> style query.
+	 * Persisters for the return values of a {@code find()} style query.
 	 *
-	 * @return an array of <tt>EntityPersister</tt>s.
+	 * @return an array of {@code EntityPersister}s.
 	 */
 	@Override
 	protected Loadable[] getEntityPersisters() {
@@ -287,9 +287,9 @@ public class QueryTranslatorImpl extends BasicLoader implements FilterTranslator
 	}
 
 	/**
-	 * Types of the return values of an <tt>iterate()</tt> style query.
+	 * Types of the return values of an {@code iterate()} style query.
 	 *
-	 * @return an array of <tt>Type</tt>s.
+	 * @return an array of {@code Type}s.
 	 */
 	public Type[] getReturnTypes() {
 		return actualReturnTypes;

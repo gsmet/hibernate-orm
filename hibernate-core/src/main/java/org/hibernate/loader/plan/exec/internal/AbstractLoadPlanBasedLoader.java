@@ -204,8 +204,8 @@ public abstract class AbstractLoadPlanBasedLoader {
 	}
 
 	/**
-	 * Obtain a <tt>PreparedStatement</tt> with all parameters pre-bound.
-	 * Bind JDBC-style <tt>?</tt> parameters, named parameters, and
+	 * Obtain a {@code PreparedStatement} with all parameters pre-bound.
+	 * Bind JDBC-style {@code ?} parameters, named parameters, and
 	 * limit parameters.
 	 */
 	protected final PreparedStatement prepareQueryStatement(
@@ -405,7 +405,7 @@ public abstract class AbstractLoadPlanBasedLoader {
 	}
 
 	/**
-	 * Execute given <tt>PreparedStatement</tt>, advance to the first result and return SQL <tt>ResultSet</tt>.
+	 * Execute given {@code PreparedStatement}, advance to the first result and return SQL {@code ResultSet}.
 	 */
 	protected final ResultSet getResultSet(
 			final PreparedStatement st,
@@ -436,7 +436,7 @@ public abstract class AbstractLoadPlanBasedLoader {
 	}
 
 	/**
-	 * Advance the cursor to the first required row of the <tt>ResultSet</tt>
+	 * Advance the cursor to the first required row of the {@code ResultSet}
 	 */
 	protected void advance(final ResultSet rs, final RowSelection selection) throws SQLException {
 		final int firstRow = LimitHelper.getFirstRow( selection );

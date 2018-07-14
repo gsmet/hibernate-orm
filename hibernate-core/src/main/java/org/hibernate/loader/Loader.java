@@ -85,9 +85,9 @@ import org.hibernate.type.VersionType;
  * Abstract superclass of object loading (and querying) strategies. This class implements
  * useful common functionality that concrete loaders delegate to. It is not intended that this
  * functionality would be directly accessed by client code. (Hence, all methods of this class
- * are declared <tt>protected</tt> or <tt>private</tt>.) This class relies heavily upon the
- * <tt>Loadable</tt> interface, which is the contract between this class and
- * <tt>EntityPersister</tt>s that may be loaded by it.<br>
+ * are declared {@code protected} or {@code private}.) This class relies heavily upon the
+ * {@code Loadable} interface, which is the contract between this class and
+ * {@code EntityPersister}s that may be loaded by it.<br>
  * <br>
  * The present implementation is able to load any number of columns of entities and at most
  * one collection role per query.
@@ -192,7 +192,7 @@ public abstract class Loader {
 	protected abstract LockMode[] getLockModes(LockOptions lockOptions);
 
 	/**
-	 * Append <tt>FOR UPDATE OF</tt> clause, if necessary. This
+	 * Append {@code FOR UPDATE OF} clause, if necessary. This
 	 * empty superclass implementation merely returns its first
 	 * argument.
 	 */
@@ -300,7 +300,7 @@ public abstract class Loader {
 
 	/**
 	 * Execute an SQL query and attempt to instantiate instances of the class mapped by the given
-	 * persister from each row of the <tt>ResultSet</tt>. If an object is supplied, will attempt to
+	 * persister from each row of the {@code ResultSet}. If an object is supplied, will attempt to
 	 * initialize that object. If a collection is supplied, attempt to initialize that collection.
 	 */
 	public List doQueryAndInitializeNonLazyCollections(
@@ -1434,10 +1434,10 @@ public abstract class Loader {
 	}
 
 	/**
-	 * Read a row of <tt>Key</tt>s from the <tt>ResultSet</tt> into the given array.
+	 * Read a row of {@code Key}s from the {@code ResultSet} into the given array.
 	 * Warning: this method is side-effecty.
 	 * <p>
-	 * If an <tt>id</tt> is given, don't bother going to the <tt>ResultSet</tt>.
+	 * If an {@code id} is given, don't bother going to the {@code ResultSet}.
 	 */
 	private EntityKey getKeyFromResultSet(
 			final int i,
@@ -1477,7 +1477,7 @@ public abstract class Loader {
 	}
 
 	/**
-	 * Check the version of the object in the <tt>ResultSet</tt> against
+	 * Check the version of the object in the {@code ResultSet} against
 	 * the object version in the session cache, throwing an exception
 	 * if the version numbers are different
 	 */
@@ -1511,8 +1511,8 @@ public abstract class Loader {
 
 	/**
 	 * Resolve any IDs for currently loaded objects, duplications within the
-	 * <tt>ResultSet</tt>, etc. Instantiate empty objects to be initialized from the
-	 * <tt>ResultSet</tt>. Return an array of objects (a row of results) and an
+	 * {@code ResultSet}, etc. Instantiate empty objects to be initialized from the
+	 * {@code ResultSet}. Return an array of objects (a row of results) and an
 	 * array of booleans (by side-effect) that determine whether the corresponding
 	 * object should be initialized.
 	 */
@@ -1694,7 +1694,7 @@ public abstract class Loader {
 
 
 	/**
-	 * Hydrate the state an object from the SQL <tt>ResultSet</tt>, into
+	 * Hydrate the state an object from the SQL {@code ResultSet}, into
 	 * an array or "hydrated" values (do not resolve associations yet),
 	 * and pass the hydrates state to the session.
 	 */
@@ -1792,7 +1792,7 @@ public abstract class Loader {
 	}
 
 	/**
-	 * Determine the concrete class of an instance in the <tt>ResultSet</tt>
+	 * Determine the concrete class of an instance in the {@code ResultSet}
 	 */
 	private String getInstanceClass(
 			final ResultSet rs,
@@ -1831,7 +1831,7 @@ public abstract class Loader {
 	}
 
 	/**
-	 * Advance the cursor to the first required row of the <tt>ResultSet</tt>
+	 * Advance the cursor to the first required row of the {@code ResultSet}
 	 */
 	private void advance(final ResultSet rs, final RowSelection selection) throws SQLException {
 
@@ -1963,8 +1963,8 @@ public abstract class Loader {
 	}
 
 	/**
-	 * Obtain a <tt>PreparedStatement</tt> with all parameters pre-bound.
-	 * Bind JDBC-style <tt>?</tt> parameters, named parameters, and
+	 * Obtain a {@code PreparedStatement} with all parameters pre-bound.
+	 * Bind JDBC-style {@code ?} parameters, named parameters, and
 	 * limit parameters.
 	 */
 	protected final PreparedStatement prepareQueryStatement(
@@ -2155,7 +2155,7 @@ public abstract class Loader {
 	}
 
 	/**
-	 * Execute given <tt>PreparedStatement</tt>, advance to the first result and return SQL <tt>ResultSet</tt>.
+	 * Execute given {@code PreparedStatement}, advance to the first result and return SQL {@code ResultSet}.
 	 */
 	protected final ResultSet getResultSet(
 			final PreparedStatement st,
@@ -2176,7 +2176,7 @@ public abstract class Loader {
 	}
 
 	/**
-	 * Execute given <tt>CallableStatement</tt>, advance to the first result and return SQL <tt>ResultSet</tt>.
+	 * Execute given {@code CallableStatement}, advance to the first result and return SQL {@code ResultSet}.
 	 */
 	protected final ResultSet getResultSet(
 			final CallableStatement st,
@@ -2732,7 +2732,7 @@ public abstract class Loader {
 	}
 
 	/**
-	 * Return the query results, as an instance of <tt>ScrollableResults</tt>
+	 * Return the query results, as an instance of {@code ScrollableResults}
 	 *
 	 * @param queryParameters The parameters with which the query should be executed.
 	 * @param returnTypes The expected return types of the query

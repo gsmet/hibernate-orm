@@ -502,7 +502,7 @@ public class OneToManyPersister extends AbstractCollectionPersister {
 	}
 
 	/**
-	 * Create the <tt>OneToManyLoader</tt>
+	 * Create the {@code OneToManyLoader}
 	 *
 	 * @see org.hibernate.loader.collection.OneToManyLoader
 	 */

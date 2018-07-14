@@ -20,8 +20,8 @@ import org.hibernate.type.EntityType;
 import org.hibernate.type.Type;
 
 /**
- * An implementation of <tt>java.util.Iterator</tt> that is
- * returned by <tt>iterate()</tt> query execution methods.
+ * An implementation of {@code java.util.Iterator} that is
+ * returned by {@code iterate()} query execution methods.
  *
  * @author Gavin King
  */

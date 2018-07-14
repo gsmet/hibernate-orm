@@ -12,7 +12,7 @@ import javax.persistence.criteria.Expression;
 import org.hibernate.query.criteria.internal.CriteriaBuilderImpl;
 
 /**
- * Models the ANSI SQL <tt>LENGTH</tt> function.
+ * Models the ANSI SQL {@code LENGTH} function.
  *
  * @author Steve Ebersole
  */

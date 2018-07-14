@@ -12,7 +12,7 @@ import org.hibernate.internal.util.StringHelper;
 
 
 /**
- * A simple SQL <tt>SELECT</tt> statement
+ * A simple SQL {@code SELECT} statement
  * @author Gavin King
  */
 public class Select {
@@ -35,7 +35,7 @@ public class Select {
 	}
 
 	/**
-	 * Construct an SQL <tt>SELECT</tt> statement from the given clauses
+	 * Construct an SQL {@code SELECT} statement from the given clauses
 	 */
 	public String toStatementString() {
 		StringBuilder buf = new StringBuilder(guesstimatedBufferSize);

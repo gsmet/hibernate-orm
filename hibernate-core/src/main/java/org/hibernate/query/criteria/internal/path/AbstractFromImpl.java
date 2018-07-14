@@ -130,7 +130,7 @@ public abstract class AbstractFromImpl<Z, X>
 	private JoinScope<X> joinScope = new BasicJoinScope();
 
 	/**
-	 * Helper contract used to define who/what keeps track of joins and fetches made from this <tt>FROM</tt>.
+	 * Helper contract used to define who/what keeps track of joins and fetches made from this {@code FROM}.
 	 */
 	public static interface JoinScope<X> extends Serializable {
 		public void addJoin(Join<X, ?> join);

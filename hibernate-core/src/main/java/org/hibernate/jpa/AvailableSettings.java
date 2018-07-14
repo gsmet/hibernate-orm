@@ -266,7 +266,7 @@ public interface AvailableSettings {
 	 * an alias specific lock mode (aka {@link org.hibernate.Query#setLockMode}).
 	 * <p>
 	 * Either {@link org.hibernate.LockMode} or {@link javax.persistence.LockModeType}
-	 * are accepted.  Also the String names of either are accepted as well.  <tt>null</tt>
+	 * are accepted.  Also the String names of either are accepted as well.  {@code null}
 	 * is additionally accepted as meaning {@link org.hibernate.LockMode#NONE}.
 	 * <p>
 	 * Usage is to concatenate this setting name and the alias name together, separated

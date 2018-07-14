@@ -24,9 +24,9 @@ public class SortSpecification extends NodeSupport {
 	}
 
 	/**
-	 * Locate the specified <tt>collation specification</tt>, if one.
+	 * Locate the specified {@code collation specification}, if one.
 	 *
-	 * @return The <tt>collation specification</tt>, or null if none was specified.
+	 * @return The {@code collation specification}, or null if none was specified.
 	 */
 	public CollationSpecification getCollation() {
 		AST possible = getSortKey().getNextSibling();
@@ -36,9 +36,9 @@ public class SortSpecification extends NodeSupport {
 	}
 
 	/**
-	 * Locate the specified <tt>ordering specification</tt>, if one.
+	 * Locate the specified {@code ordering specification}, if one.
 	 *
-	 * @return The <tt>ordering specification</tt>, or null if none was specified.
+	 * @return The {@code ordering specification}, or null if none was specified.
 	 */
 	public OrderingSpecification getOrdering() {
 		// IMPL NOTE : the ordering-spec would be either the 2nd or 3rd child (of the overall sort-spec), if it existed,

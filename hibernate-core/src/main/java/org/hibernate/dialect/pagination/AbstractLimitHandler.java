@@ -53,8 +53,8 @@ public abstract class AbstractLimitHandler implements LimitHandler {
 	}
 
 	/**
-	 * Does the <tt>LIMIT</tt> clause come at the start of the
-	 * <tt>SELECT</tt> statement, rather than at the end?
+	 * Does the {@code LIMIT} clause come at the start of the
+	 * {@code SELECT} statement, rather than at the end?
 	 *
 	 * @return true if limit parameters should come before other parameters
 	 */
@@ -63,7 +63,7 @@ public abstract class AbstractLimitHandler implements LimitHandler {
 	}
 
 	/**
-	 * Does the <tt>LIMIT</tt> clause take a "maximum" row number instead
+	 * Does the {@code LIMIT} clause take a "maximum" row number instead
 	 * of a total number of returned rows?
 	 * <p>
 	 * This is easiest understood via an example.  Consider you have a table

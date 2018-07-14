@@ -166,11 +166,11 @@ public class AnsiTrimEmulationFunction extends AbstractAnsiTrimEmulationFunction
 	}
 
 	/**
-	 * Constructs a <tt>trim()</tt> emulation function definition using the specified function calls.
+	 * Constructs a {@code trim()} emulation function definition using the specified function calls.
 	 *
-	 * @param ltrimFunctionName The <tt>left trim</tt> function to use.
-	 * @param rtrimFunctionName The <tt>right trim</tt> function to use.
-	 * @param replaceFunctionName The <tt>replace</tt> function to use.
+	 * @param ltrimFunctionName The {@code left trim} function to use.
+	 * @param rtrimFunctionName The {@code right trim} function to use.
+	 * @param replaceFunctionName The {@code replace} function to use.
 	 */
 	public AnsiTrimEmulationFunction(String ltrimFunctionName, String rtrimFunctionName, String replaceFunctionName) {
 		leadingSpaceTrim = new SQLFunctionTemplate(

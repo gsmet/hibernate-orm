@@ -11,10 +11,10 @@ import org.hibernate.boot.model.relational.ExportableProducer;
 import org.hibernate.dialect.Dialect;
 
 /**
- * An <tt>IdentifierGenerator</tt> that requires creation of database objects.
+ * An {@code IdentifierGenerator} that requires creation of database objects.
  * <br><br>
- * All <tt>PersistentIdentifierGenerator</tt>s that also implement
- * <tt>Configurable</tt> have access to a special mapping parameter: schema
+ * All {@code PersistentIdentifierGenerator}s that also implement
+ * {@code Configurable} have access to a special mapping parameter: schema
  *
  * @author Gavin King
  * @author Steve Ebersole

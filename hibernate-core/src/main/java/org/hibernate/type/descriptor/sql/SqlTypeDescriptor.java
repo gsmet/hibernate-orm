@@ -15,7 +15,7 @@ import org.hibernate.type.descriptor.java.JavaTypeDescriptor;
 import org.hibernate.type.spi.TypeConfiguration;
 
 /**
- * Descriptor for the <tt>SQL</tt>/<tt>JDBC</tt> side of a value mapping.
+ * Descriptor for the {@code SQL}/{@code JDBC} side of a value mapping.
  * <p>
  * NOTE : Implementations should be registered with the {@link SqlTypeDescriptor}.  The built-in Hibernate
  * implementations register themselves on construction.

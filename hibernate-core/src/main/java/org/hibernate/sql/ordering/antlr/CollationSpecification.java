@@ -7,7 +7,7 @@
 package org.hibernate.sql.ordering.antlr;
 
 /**
- * Models a collation specification (<tt>COLLATE</tt> using a specific character-set) within a
+ * Models a collation specification ({@code COLLATE} using a specific character-set) within a
  * {@link SortSpecification}.
  *
  * @author Steve Ebersole

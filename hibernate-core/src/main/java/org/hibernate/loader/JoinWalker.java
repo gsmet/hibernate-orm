@@ -44,7 +44,7 @@ import org.hibernate.type.Type;
 
 /**
  * Walks the metamodel, searching for joins, and collecting
- * together information needed by <tt>OuterJoinLoader</tt>.
+ * together information needed by {@code OuterJoinLoader}.
  *
  * @author Gavin King, Jon Lipsky
  * @see OuterJoinLoader
@@ -868,7 +868,7 @@ public class JoinWalker {
 	}
 
 	/**
-	 * Generate a sequence of <tt>LEFT OUTER JOIN</tt> clauses for the given associations.
+	 * Generate a sequence of {@code LEFT OUTER JOIN} clauses for the given associations.
 	 */
 	protected final JoinFragment mergeOuterJoins(List associations)
 			throws MappingException {

@@ -12,7 +12,7 @@ import java.sql.Time;
 import org.hibernate.query.criteria.internal.CriteriaBuilderImpl;
 
 /**
- * Models the ANSI SQL <tt>CURRENT_TIME</tt> function.
+ * Models the ANSI SQL {@code CURRENT_TIME} function.
  *
  * @author Steve Ebersole
  */

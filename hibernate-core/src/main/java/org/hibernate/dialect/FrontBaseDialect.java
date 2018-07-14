@@ -20,7 +20,7 @@ import org.hibernate.persister.entity.Lockable;
 
 /**
  * An SQL Dialect for Frontbase.  Assumes you're using the latest version
- * of the FrontBase JDBC driver, available from <tt>http://frontbase.com/</tt>
+ * of the FrontBase JDBC driver, available from {@code http://frontbase.com/}
  * <p>
  * <b>NOTE</b>: The latest JDBC driver is not always included with the
  * latest release of FrontBase.  Download the driver separately, and enjoy
@@ -30,9 +30,9 @@ import org.hibernate.persister.entity.Lockable;
  * contains a bug that causes batches of updates to fail.  (The bug should be
  * fixed in the next release of the JDBC driver.)  If you are using JDBC driver
  * 2.3.1, you can work-around this problem by setting the following in your
- * <tt>hibernate.properties</tt> file: <tt>hibernate.jdbc.batch_size=15</tt>
+ * {@code hibernate.properties} file: {@code hibernate.jdbc.batch_size=15}
  *
- * @author Ron Lussier <tt>rlussier@lenscraft.com</tt>
+ * @author Ron Lussier {@code rlussier@lenscraft.com}
  */
 public class FrontBaseDialect extends Dialect {
 

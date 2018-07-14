@@ -637,14 +637,14 @@ public final class Template {
 	}
 
 	/**
-	 * Performs order-by template rendering without {@link ColumnMapper column mapping}.  An <tt>ORDER BY</tt> template
+	 * Performs order-by template rendering without {@link ColumnMapper column mapping}.  An {@code ORDER BY} template
 	 * has all column references "qualified" with a placeholder identified by {@link Template#TEMPLATE}
 	 *
 	 * @param orderByFragment The order-by fragment to render.
 	 * @param dialect The SQL dialect being used.
 	 * @param functionRegistry The SQL function registry
 	 *
-	 * @return The rendered <tt>ORDER BY</tt> template.
+	 * @return The rendered {@code ORDER BY} template.
 	 *
 	 * @deprecated Use {@link #translateOrderBy} instead
 	 */
@@ -685,7 +685,7 @@ public final class Template {
 	};
 
 	/**
-	 * Performs order-by template rendering allowing {@link ColumnMapper column mapping}.  An <tt>ORDER BY</tt> template
+	 * Performs order-by template rendering allowing {@link ColumnMapper column mapping}.  An {@code ORDER BY} template
 	 * has all column references "qualified" with a placeholder identified by {@link Template#TEMPLATE} which can later
 	 * be used to easily inject the SQL alias.
 	 *
@@ -695,7 +695,7 @@ public final class Template {
 	 * @param dialect The SQL dialect being used.
 	 * @param functionRegistry The SQL function registry
 	 *
-	 * @return The rendered <tt>ORDER BY</tt> template.
+	 * @return The rendered {@code ORDER BY} template.
 	 */
 	public static OrderByTranslation translateOrderBy(
 			String orderByFragment,

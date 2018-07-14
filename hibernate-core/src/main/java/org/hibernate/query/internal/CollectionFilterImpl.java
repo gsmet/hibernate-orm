@@ -19,7 +19,7 @@ import org.hibernate.query.spi.ScrollableResultsImplementor;
 import org.hibernate.type.Type;
 
 /**
- * implementation of the <tt>Query</tt> interface for collection filters
+ * implementation of the {@code Query} interface for collection filters
  *
  * @author Gavin King
  */

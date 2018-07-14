@@ -11,9 +11,9 @@ import org.hibernate.id.factory.IdentifierGeneratorFactory;
 import org.hibernate.type.Type;
 
 /**
- * Defines operations common to "compiled" mappings (ie. <tt>SessionFactory</tt>)
- * and "uncompiled" mappings (ie. <tt>Configuration</tt>) that are used by
- * implementors of <tt>Type</tt>.
+ * Defines operations common to "compiled" mappings (ie. {@code SessionFactory})
+ * and "uncompiled" mappings (ie. {@code Configuration}) that are used by
+ * implementors of {@code Type}.
  *
  * @see org.hibernate.type.Type
  * @see org.hibernate.internal.SessionFactoryImpl

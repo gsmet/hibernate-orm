@@ -16,7 +16,7 @@ import org.hibernate.query.criteria.internal.compile.RenderingContext;
 import org.hibernate.query.criteria.internal.expression.LiteralExpression;
 
 /**
- * Models SQL aggregation functions (<tt>MIN</tt>, <tt>MAX</tt>, <tt>COUNT</tt>, etc).
+ * Models SQL aggregation functions ({@code MIN}, {@code MAX}, {@code COUNT}, etc).
  *
  * @author Steve Ebersole
  */
@@ -68,10 +68,10 @@ public class AggregationFunction<T>
 	}
 
 	/**
-	 * Implementation of a <tt>COUNT</tt> function providing convenience in construction.
+	 * Implementation of a {@code COUNT} function providing convenience in construction.
 	 * <p>
 	 * Parameterized as {@link Long} because thats what JPA states
-	 * that the return from <tt>COUNT</tt> should be.
+	 * that the return from {@code COUNT} should be.
 	 */
 	public static class COUNT extends AggregationFunction<Long> {
 		public static final String NAME = "count";
@@ -115,9 +115,9 @@ public class AggregationFunction<T>
 	}
 
 	/**
-     * Implementation of a <tt>AVG</tt> function providing convenience in construction.
+     * Implementation of a {@code AVG} function providing convenience in construction.
      * <p>
-     * Parameterized as {@link Double} because thats what JPA states that the return from <tt>AVG</tt> should be.
+     * Parameterized as {@link Double} because thats what JPA states that the return from {@code AVG} should be.
 	 */
 	public static class AVG extends AggregationFunction<Double> {
 		public static final String NAME = "avg";
@@ -128,10 +128,10 @@ public class AggregationFunction<T>
 	}
 
 	/**
-	 * Implementation of a <tt>SUM</tt> function providing convenience in construction.
+	 * Implementation of a {@code SUM} function providing convenience in construction.
 	 * <p>
 	 * Parameterized as {@link Number N extends Number} because thats what JPA states
-	 * that the return from <tt>SUM</tt> should be.
+	 * that the return from {@code SUM} should be.
 	 */
 	public static class SUM<N extends Number> extends AggregationFunction<N> {
 		public static final String NAME = "sum";
@@ -151,10 +151,10 @@ public class AggregationFunction<T>
 	}
 
 	/**
-	 * Implementation of a <tt>MIN</tt> function providing convenience in construction.
+	 * Implementation of a {@code MIN} function providing convenience in construction.
 	 * <p>
 	 * Parameterized as {@link Number N extends Number} because thats what JPA states
-	 * that the return from <tt>MIN</tt> should be.
+	 * that the return from {@code MIN} should be.
 	 */
 	public static class MIN<N extends Number> extends AggregationFunction<N> {
 		public static final String NAME = "min";
@@ -166,10 +166,10 @@ public class AggregationFunction<T>
 	}
 
 	/**
-	 * Implementation of a <tt>MAX</tt> function providing convenience in construction.
+	 * Implementation of a {@code MAX} function providing convenience in construction.
 	 * <p>
 	 * Parameterized as {@link Number N extends Number} because thats what JPA states
-	 * that the return from <tt>MAX</tt> should be.
+	 * that the return from {@code MAX} should be.
 	 */
 	public static class MAX<N extends Number> extends AggregationFunction<N> {
 		public static final String NAME = "max";
@@ -181,7 +181,7 @@ public class AggregationFunction<T>
 	}
 
 	/**
-	 * Models  the <tt>MIN</tt> function in terms of non-numeric expressions.
+	 * Models  the {@code MIN} function in terms of non-numeric expressions.
 	 *
 	 * @see MIN
 	 */
@@ -195,7 +195,7 @@ public class AggregationFunction<T>
 	}
 
 	/**
-	 * Models  the <tt>MAX</tt> function in terms of non-numeric expressions.
+	 * Models  the {@code MAX} function in terms of non-numeric expressions.
 	 *
 	 * @see MAX
 	 */

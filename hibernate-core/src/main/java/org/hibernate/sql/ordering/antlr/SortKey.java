@@ -8,7 +8,7 @@ package org.hibernate.sql.ordering.antlr;
 
 
 /**
- * Models the container node for the <tt>sort key</tt>, which is the term given by the ANSI SQL specification to the
+ * Models the container node for the {@code sort key}, which is the term given by the ANSI SQL specification to the
  * expression upon which to sort for each {@link SortSpecification}
  *
  * @author Steve Ebersole

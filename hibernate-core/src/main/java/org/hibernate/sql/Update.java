@@ -13,7 +13,7 @@ import org.hibernate.dialect.Dialect;
 import org.hibernate.type.LiteralType;
 
 /**
- * An SQL <tt>UPDATE</tt> statement
+ * An SQL {@code UPDATE} statement
  *
  * @author Gavin King
  */

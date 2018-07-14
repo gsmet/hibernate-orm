@@ -14,7 +14,7 @@ import org.hibernate.type.StandardBasicTypes;
 import org.hibernate.type.Type;
 
 /**
- * Emulation of <tt>locate()</tt> on Sybase
+ * Emulation of {@code locate()} on Sybase
  *
  * @author Nathan Moon
  */

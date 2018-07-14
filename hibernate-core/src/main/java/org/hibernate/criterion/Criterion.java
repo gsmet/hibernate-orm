@@ -14,8 +14,8 @@ import org.hibernate.engine.spi.TypedValue;
 
 /**
  * An object-oriented representation of a query criterion that may be used 
- * as a restriction in a <tt>Criteria</tt> query.
- * Built-in criterion types are provided by the <tt>Restrictions</tt> factory 
+ * as a restriction in a {@code Criteria} query.
+ * Built-in criterion types are provided by the {@code Restrictions} factory 
  * class. This interface might be implemented by application classes that 
  * define custom restriction criteria.
  *

@@ -20,7 +20,7 @@ import org.hibernate.type.Type;
 @Deprecated
 public final class Expression extends Restrictions {
 	/**
-	 * Apply a constraint expressed in SQL, with JDBC parameters.  Any occurrences of <tt>{alias}</tt> will be
+	 * Apply a constraint expressed in SQL, with JDBC parameters.  Any occurrences of {@code {alias}} will be
 	 * replaced by the table alias.
 	 *
 	 * @param sql The sql
@@ -37,7 +37,7 @@ public final class Expression extends Restrictions {
 	}
 
 	/**
-	 * Apply a constraint expressed in SQL, with a JDBC parameter.  Any occurrences of <tt>{alias}</tt> will be
+	 * Apply a constraint expressed in SQL, with a JDBC parameter.  Any occurrences of {@code {alias}} will be
 	 * replaced by the table alias.
 	 *
 	 * @param sql The sql
@@ -54,7 +54,7 @@ public final class Expression extends Restrictions {
 	}
 
 	/**
-	 * Apply a constraint expressed in SQL with no parameters.  Any occurrences of <tt>{alias}</tt> will be
+	 * Apply a constraint expressed in SQL with no parameters.  Any occurrences of {@code {alias}} will be
 	 * replaced by the table alias.
 	 *
 	 * @param sql The sql

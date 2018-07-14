@@ -20,7 +20,7 @@ import org.hibernate.type.Type;
 /**
  * <b>seqhilo</b><br>
  * <br>
- * An <tt>IdentifierGenerator</tt> that combines a hi/lo algorithm with an underlying
+ * An {@code IdentifierGenerator} that combines a hi/lo algorithm with an underlying
  * oracle-style sequence that generates hi values. The user may specify a
  * maximum lo value to determine how often new hi values are fetched.<br>
  * <br>

@@ -35,7 +35,7 @@ import org.hibernate.type.Type;
  * Implements persistence of a collection instance while the instance is
  * referenced in a particular role.<br>
  * <br>
- * This class is highly coupled to the <tt>PersistentCollection</tt>
+ * This class is highly coupled to the {@code PersistentCollection}
  * hierarchy, since double dispatch is used to load and update collection
  * elements.<br>
  * <br>
@@ -82,7 +82,7 @@ public interface CollectionPersister extends CollectionDefinition {
 	 */
 	CacheEntryStructure getCacheEntryStructure();
 	/**
-	 * Get the associated <tt>Type</tt>
+	 * Get the associated {@code Type}
 	 */
 	CollectionType getCollectionType();
 	/**
@@ -102,12 +102,12 @@ public interface CollectionPersister extends CollectionDefinition {
 	 */
 	Class getElementClass();
 	/**
-	 * Read the key from a row of the JDBC <tt>ResultSet</tt>
+	 * Read the key from a row of the JDBC {@code ResultSet}
 	 */
 	Object readKey(ResultSet rs, String[] keyAliases, SharedSessionContractImplementor session)
 		throws HibernateException, SQLException;
 	/**
-	 * Read the element from a row of the JDBC <tt>ResultSet</tt>
+	 * Read the element from a row of the JDBC {@code ResultSet}
 	 */
 	Object readElement(
 			ResultSet rs,
@@ -116,12 +116,12 @@ public interface CollectionPersister extends CollectionDefinition {
 			SharedSessionContractImplementor session)
 		throws HibernateException, SQLException;
 	/**
-	 * Read the index from a row of the JDBC <tt>ResultSet</tt>
+	 * Read the index from a row of the JDBC {@code ResultSet}
 	 */
 	Object readIndex(ResultSet rs, String[] columnAliases, SharedSessionContractImplementor session)
 		throws HibernateException, SQLException;
 	/**
-	 * Read the identifier from a row of the JDBC <tt>ResultSet</tt>
+	 * Read the identifier from a row of the JDBC {@code ResultSet}
 	 */
 	Object readIdentifier(
 			ResultSet rs,

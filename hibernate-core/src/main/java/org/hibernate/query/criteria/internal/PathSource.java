@@ -19,7 +19,7 @@ public interface PathSource<X> extends Path<X> {
 
 	/**
 	 * Get the string representation of this path as a navigation from one of the
-	 * queries <tt>identification variables</tt>
+	 * queries {@code identification variables}
 	 *
 	 * @return The path's identifier.
 	 */

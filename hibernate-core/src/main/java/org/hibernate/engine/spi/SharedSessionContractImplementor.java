@@ -80,7 +80,7 @@ public interface SharedSessionContractImplementor
 	//		5) #disableTransactionAutoJoin
 
 	/**
-	 * Get the creating <tt>SessionFactoryImplementor</tt>
+	 * Get the creating {@code SessionFactoryImplementor}
 	 */
 	SessionFactoryImplementor getFactory();
 
@@ -175,7 +175,7 @@ public interface SharedSessionContractImplementor
 	CacheTransactionSynchronization getCacheTransactionSynchronization();
 
 	/**
-	 * Does this <tt>Session</tt> have an active Hibernate transaction
+	 * Does this {@code Session} have an active Hibernate transaction
 	 * or is there a JTA transaction in progress?
 	 */
 	boolean isTransactionInProgress();
@@ -221,14 +221,14 @@ public interface SharedSessionContractImplementor
 	/**
 	 * Load an instance without checking if it was deleted.
 	 * <p>
-	 * When <tt>nullable</tt> is disabled this method may create a new proxy or
+	 * When {@code nullable} is disabled this method may create a new proxy or
 	 * return an existing proxy; if it does not exist, throw an exception.
 	 * <p>
-	 * When <tt>nullable</tt> is enabled, the method does not create new proxies
+	 * When {@code nullable} is enabled, the method does not create new proxies
 	 * (but might return an existing proxy); if it does not exist, return
-	 * <tt>null</tt>.
+	 * {@code null}.
 	 * <p>
-	 * When <tt>eager</tt> is enabled, the object is eagerly fetched
+	 * When {@code eager} is enabled, the object is eagerly fetched
 	 */
 	Object internalLoad(String entityName, Serializable id, boolean eager, boolean nullable)
 			throws HibernateException;
@@ -240,17 +240,17 @@ public interface SharedSessionContractImplementor
 	Object immediateLoad(String entityName, Serializable id) throws HibernateException;
 
 	/**
-	 * Execute a <tt>find()</tt> query
+	 * Execute a {@code find()} query
 	 */
 	List list(String query, QueryParameters queryParameters) throws HibernateException;
 
 	/**
-	 * Execute an <tt>iterate()</tt> query
+	 * Execute an {@code iterate()} query
 	 */
 	Iterator iterate(String query, QueryParameters queryParameters) throws HibernateException;
 
 	/**
-	 * Execute a <tt>scroll()</tt> query
+	 * Execute a {@code scroll()} query
 	 */
 	ScrollableResultsImplementor scroll(String query, QueryParameters queryParameters) throws HibernateException;
 
@@ -276,7 +276,7 @@ public interface SharedSessionContractImplementor
 			throws HibernateException;
 
 	/**
-	 * Get the <tt>EntityPersister</tt> for any instance
+	 * Get the {@code EntityPersister} for any instance
 	 *
 	 * @param entityName optional entity name
 	 * @param object the entity instance
@@ -284,7 +284,7 @@ public interface SharedSessionContractImplementor
 	EntityPersister getEntityPersister(String entityName, Object object) throws HibernateException;
 
 	/**
-	 * Get the entity instance associated with the given <tt>Key</tt>,
+	 * Get the entity instance associated with the given {@code Key},
 	 * calling the Interceptor if necessary
 	 */
 	Object getEntityUsingInterceptor(EntityKey key) throws HibernateException;

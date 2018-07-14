@@ -20,7 +20,7 @@ import org.hibernate.internal.CoreMessageLogger;
 import org.jboss.logging.Logger;
 
 /**
- * <tt>dbtimestamp</tt>: An extension of {@link TimestampType} which
+ * {@code dbtimestamp}: An extension of {@link TimestampType} which
  * maps to the database's current timestamp, rather than the jvm's
  * current timestamp.
  * <p>

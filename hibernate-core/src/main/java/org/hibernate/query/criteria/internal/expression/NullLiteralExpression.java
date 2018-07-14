@@ -14,7 +14,7 @@ import org.hibernate.query.criteria.internal.compile.RenderingContext;
 import org.hibernate.query.criteria.internal.expression.function.CastFunction;
 
 /**
- * Represents a <tt>NULL</tt>literal expression.
+ * Represents a {@code NULL}literal expression.
  *
  * @author Steve Ebersole
  */

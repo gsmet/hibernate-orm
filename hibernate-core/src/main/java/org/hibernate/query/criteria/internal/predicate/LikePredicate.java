@@ -16,7 +16,7 @@ import org.hibernate.query.criteria.internal.compile.RenderingContext;
 import org.hibernate.query.criteria.internal.expression.LiteralExpression;
 
 /**
- * Models a SQL <tt>LIKE</tt> expression.
+ * Models a SQL {@code LIKE} expression.
  *
  * @author Steve Ebersole
  */

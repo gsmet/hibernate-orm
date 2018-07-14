@@ -42,7 +42,7 @@ import org.hibernate.service.spi.ServiceRegistryImplementor;
 import org.hibernate.type.Type;
 
 /**
- * Basic <tt>templated</tt> support for {@link org.hibernate.id.factory.IdentifierGeneratorFactory} implementations.
+ * Basic {@code templated} support for {@link org.hibernate.id.factory.IdentifierGeneratorFactory} implementations.
  *
  * @author Steve Ebersole
  */

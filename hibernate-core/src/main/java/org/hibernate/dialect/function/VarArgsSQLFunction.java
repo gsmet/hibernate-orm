@@ -26,7 +26,7 @@ public class VarArgsSQLFunction implements SQLFunction {
 
 	/**
 	 * Constructs a VarArgsSQLFunction instance with a 'static' return type.  An example of a 'static'
-	 * return type would be something like an <tt>UPPER</tt> function which is always returning
+	 * return type would be something like an {@code UPPER} function which is always returning
 	 * a SQL VARCHAR and thus a string type.
 	 *
 	 * @param registeredType The return type.
@@ -44,7 +44,7 @@ public class VarArgsSQLFunction implements SQLFunction {
 	/**
 	 * Constructs a VarArgsSQLFunction instance with a 'dynamic' return type.  For a dynamic return type,
 	 * the type of the arguments are used to resolve the type.  An example of a function with a
-	 * 'dynamic' return would be <tt>MAX</tt> or <tt>MIN</tt> which return a double or an integer etc
+	 * 'dynamic' return would be {@code MAX} or {@code MIN} which return a double or an integer etc
 	 * based on the types of the arguments.
 	 *
 	 * @param begin The beginning of the function templating.

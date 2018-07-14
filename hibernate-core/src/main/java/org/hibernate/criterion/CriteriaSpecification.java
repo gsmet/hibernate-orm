@@ -26,7 +26,7 @@ public interface CriteriaSpecification {
 	public static final String ROOT_ALIAS = "this";
 
 	/**
-	 * Each row of results is a <tt>Map</tt> from alias to entity instance
+	 * Each row of results is a {@code Map} from alias to entity instance
 	 */
 	public static final ResultTransformer ALIAS_TO_ENTITY_MAP = AliasToEntityMapResultTransformer.INSTANCE;
 
@@ -41,7 +41,7 @@ public interface CriteriaSpecification {
 	public static final ResultTransformer DISTINCT_ROOT_ENTITY = DistinctRootEntityResultTransformer.INSTANCE;
 
 	/**
-	 * This result transformer is selected implicitly by calling <tt>setProjection()</tt>
+	 * This result transformer is selected implicitly by calling {@code setProjection()}
 	 */
 	public static final ResultTransformer PROJECTION = PassThroughResultTransformer.INSTANCE;
 

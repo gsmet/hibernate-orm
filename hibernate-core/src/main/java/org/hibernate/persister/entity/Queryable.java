@@ -8,7 +8,7 @@ package org.hibernate.persister.entity;
 import org.hibernate.sql.SelectFragment;
 
 /**
- * Extends the generic <tt>EntityPersister</tt> contract to add
+ * Extends the generic {@code EntityPersister} contract to add
  * operations required by the Hibernate Query Language
  *
  * @author Gavin King

@@ -33,8 +33,8 @@ import org.jboss.logging.Logger;
 /**
  * <b>sequence</b><br>
  * <br>
- * Generates <tt>long</tt> values using an oracle-style sequence. A higher
- * performance algorithm is <tt>SequenceHiLoGenerator</tt>.<br>
+ * Generates {@code long} values using an oracle-style sequence. A higher
+ * performance algorithm is {@code SequenceHiLoGenerator}.<br>
  * <br>
  * Mapping parameters supported: sequence, parameters.
  *
@@ -56,7 +56,7 @@ public class SequenceGenerator
 
 	/**
 	 * The parameters parameter, appended to the create sequence DDL.
-	 * For example (Oracle): <tt>INCREMENT BY 1 START WITH 1 MAXVALUE 100 NOCACHE</tt>.
+	 * For example (Oracle): {@code INCREMENT BY 1 START WITH 1 MAXVALUE 100 NOCACHE}.
 	 *
 	 * @deprecated No longer supported.  To specify initial-value or increment use the
 	 * org.hibernate.id.enhanced.SequenceStyleGenerator generator instead.

@@ -16,7 +16,7 @@ import java.io.Serializable;
  */
 public interface MutabilityPlan<T> extends Serializable {
 	/**
-	 * Can the internal state of instances of <tt>T</tt> be changed?
+	 * Can the internal state of instances of {@code T} be changed?
 	 *
 	 * @return True if the internal state can be changed; false otherwise.
 	 */

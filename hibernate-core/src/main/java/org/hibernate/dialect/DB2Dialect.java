@@ -423,7 +423,7 @@ public class DB2Dialect extends Dialect {
 	/**
 	 * {@inheritDoc}
 	 * <p>
-	 * NOTE : DB2 is know to support parameters in the <tt>SELECT</tt> clause, but only in casted form
+	 * NOTE : DB2 is know to support parameters in the {@code SELECT} clause, but only in casted form
 	 * (see {@link #requiresCastingOfParametersInSelectClause()}).
 	 */
 	@Override

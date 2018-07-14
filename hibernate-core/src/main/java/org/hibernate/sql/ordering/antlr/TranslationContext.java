@@ -17,16 +17,16 @@ import org.hibernate.engine.spi.SessionFactoryImplementor;
 */
 public interface TranslationContext {
 	/**
-	 * Retrieves the <tt>session factory</tt> for this context.
+	 * Retrieves the {@code session factory} for this context.
 	 *
-	 * @return The <tt>session factory</tt>
+	 * @return The {@code session factory}
 	 */
 	public SessionFactoryImplementor getSessionFactory();
 
 	/**
-	 * Retrieves the <tt>dialect</tt> for this context.
+	 * Retrieves the {@code dialect} for this context.
 	 *
-	 * @return The <tt>dialect</tt>
+	 * @return The {@code dialect}
 	 */
 	public Dialect getDialect();
 
@@ -38,9 +38,9 @@ public interface TranslationContext {
 	public SQLFunctionRegistry getSqlFunctionRegistry();
 
 	/**
-	 * Retrieves the <tt>column mapper</tt> for this context.
+	 * Retrieves the {@code column mapper} for this context.
 	 *
-	 * @return The <tt>column mapper</tt>
+	 * @return The {@code column mapper}
 	 */
 	public ColumnMapper getColumnMapper();
 }

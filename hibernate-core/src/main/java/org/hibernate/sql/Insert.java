@@ -13,7 +13,7 @@ import org.hibernate.dialect.Dialect;
 import org.hibernate.type.LiteralType;
 
 /**
- * An SQL <tt>INSERT</tt> statement
+ * An SQL {@code INSERT} statement
  *
  * @author Gavin King
  */

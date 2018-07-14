@@ -19,49 +19,49 @@ public interface ExpressionImplementor<T> extends SelectionImplementor<T>, Expre
 	/**
 	 * See {@link javax.persistence.criteria.CriteriaBuilder#toLong}
 	 *
-	 * @return <tt>this</tt> but as a long
+	 * @return {@code this} but as a long
 	 */
 	public ExpressionImplementor<Long> asLong();
 
 	/**
 	 * See {@link javax.persistence.criteria.CriteriaBuilder#toInteger}
 	 *
-	 * @return <tt>this</tt> but as an integer
+	 * @return {@code this} but as an integer
 	 */
 	public ExpressionImplementor<Integer> asInteger();
 
 	/**
 	 * See {@link javax.persistence.criteria.CriteriaBuilder#toFloat}
 	 *
-	 * @return <tt>this</tt> but as a float
+	 * @return {@code this} but as a float
 	 */
 	public ExpressionImplementor<Float> asFloat();
 
 	/**
 	 * See {@link javax.persistence.criteria.CriteriaBuilder#toDouble}
 	 *
-	 * @return <tt>this</tt> but as a double
+	 * @return {@code this} but as a double
 	 */
 	public ExpressionImplementor<Double> asDouble();
 
 	/**
 	 * See {@link javax.persistence.criteria.CriteriaBuilder#toBigDecimal}
 	 *
-	 * @return <tt>this</tt> but as a {@link BigDecimal}
+	 * @return {@code this} but as a {@link BigDecimal}
 	 */
 	public ExpressionImplementor<BigDecimal> asBigDecimal();
 
 	/**
 	 * See {@link javax.persistence.criteria.CriteriaBuilder#toBigInteger}
 	 *
-	 * @return <tt>this</tt> but as a {@link BigInteger}
+	 * @return {@code this} but as a {@link BigInteger}
 	 */
 	public ExpressionImplementor<BigInteger> asBigInteger();
 
 	/**
 	 * See {@link javax.persistence.criteria.CriteriaBuilder#toString}
 	 *
-	 * @return <tt>this</tt> but as a string
+	 * @return {@code this} but as a string
 	 */
 	public ExpressionImplementor<String> asString();
 }

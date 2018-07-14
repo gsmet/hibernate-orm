@@ -25,34 +25,34 @@ import org.hibernate.stat.SessionStatistics;
  * The main runtime interface between a Java application and Hibernate. This is the
  * central API class abstracting the notion of a persistence service.<br>
  * <br>
- * The lifecycle of a <tt>Session</tt> is bounded by the beginning and end of a logical
+ * The lifecycle of a {@code Session} is bounded by the beginning and end of a logical
  * transaction. (Long transactions might span several database transactions.)<br>
  * <br>
- * The main function of the <tt>Session</tt> is to offer create, read and delete operations
+ * The main function of the {@code Session} is to offer create, read and delete operations
  * for instances of mapped entity classes. Instances may exist in one of three states:<br>
  * <br>
- * <i>transient:</i> never persistent, not associated with any <tt>Session</tt><br>
- * <i>persistent:</i> associated with a unique <tt>Session</tt><br>
- * <i>detached:</i> previously persistent, not associated with any <tt>Session</tt><br>
+ * <i>transient:</i> never persistent, not associated with any {@code Session}<br>
+ * <i>persistent:</i> associated with a unique {@code Session}<br>
+ * <i>detached:</i> previously persistent, not associated with any {@code Session}<br>
  * <br>
- * Transient instances may be made persistent by calling <tt>save()</tt>,
- * <tt>persist()</tt> or <tt>saveOrUpdate()</tt>. Persistent instances may be made transient
- * by calling<tt> delete()</tt>. Any instance returned by a <tt>get()</tt> or
- * <tt>load()</tt> method is persistent. Detached instances may be made persistent
- * by calling <tt>update()</tt>, <tt>saveOrUpdate()</tt>, <tt>lock()</tt> or <tt>replicate()</tt>. 
+ * Transient instances may be made persistent by calling {@code save()},
+ * {@code persist()} or {@code saveOrUpdate()}. Persistent instances may be made transient
+ * by calling{@code  delete()}. Any instance returned by a {@code get()} or
+ * {@code load()} method is persistent. Detached instances may be made persistent
+ * by calling {@code update()}, {@code saveOrUpdate()}, {@code lock()} or {@code replicate()}. 
  * The state of a transient or detached instance may also be made persistent as a new
- * persistent instance by calling <tt>merge()</tt>.<br>
+ * persistent instance by calling {@code merge()}.<br>
  * <br>
- * <tt>save()</tt> and <tt>persist()</tt> result in an SQL <tt>INSERT</tt>, <tt>delete()</tt>
- * in an SQL <tt>DELETE</tt> and <tt>update()</tt> or <tt>merge()</tt> in an SQL <tt>UPDATE</tt>. 
+ * {@code save()} and {@code persist()} result in an SQL {@code INSERT}, {@code delete()}
+ * in an SQL {@code DELETE} and {@code update()} or {@code merge()} in an SQL {@code UPDATE}. 
  * Changes to <i>persistent</i> instances are detected at flush time and also result in an SQL
- * <tt>UPDATE</tt>. <tt>saveOrUpdate()</tt> and <tt>replicate()</tt> result in either an
- * <tt>INSERT</tt> or an <tt>UPDATE</tt>.<br>
+ * {@code UPDATE}. {@code saveOrUpdate()} and {@code replicate()} result in either an
+ * {@code INSERT} or an {@code UPDATE}.<br>
  * <br>
  * It is not intended that implementors be threadsafe. Instead each thread/transaction
- * should obtain its own instance from a <tt>SessionFactory</tt>.<br>
+ * should obtain its own instance from a {@code SessionFactory}.<br>
  * <br>
- * A <tt>Session</tt> instance is serializable if its persistent classes are serializable.<br>
+ * A {@code Session} instance is serializable if its persistent classes are serializable.<br>
  * <br>
  * A typical transaction should use the following idiom:
  * <pre>
@@ -73,8 +73,8 @@ import org.hibernate.stat.SessionStatistics;
  * }
  * </pre>
  * <br>
- * If the <tt>Session</tt> throws an exception, the transaction must be rolled back
- * and the session discarded. The internal state of the <tt>Session</tt> might not
+ * If the {@code Session} throws an exception, the transaction must be rolled back
+ * and the session discarded. The internal state of the {@code Session} might not
  * be consistent with the database after the exception occurs.
  *
  * @see SessionFactory
@@ -259,14 +259,14 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 	 * @param entityName The entity name
 	 * @param object an instance of a persistent class
 	 *
-	 * @return true if the given instance is associated with this <tt>Session</tt>
+	 * @return true if the given instance is associated with this {@code Session}
 	 */
 	boolean contains(String entityName, Object object);
 
 	/**
 	 * Remove this instance from the session cache. Changes to the instance will
 	 * not be synchronized with the database. This operation cascades to associated
-	 * instances if the association is mapped with <tt>cascade="evict"</tt>.
+	 * instances if the association is mapped with {@code cascade="evict"}.
 	 *
 	 * @param object The entity to evict
 	 *
@@ -335,7 +335,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 	 * assuming that the instance exists. This method might return a proxied instance that
 	 * is initialized on-demand, when a non-identifier method is accessed.
 	 * <br><br>
-	 * You should not use this method to determine if an instance exists (use <tt>get()</tt>
+	 * You should not use this method to determine if an instance exists (use {@code get()}
 	 * instead). Use this only to retrieve an instance that you assume exists, where non-existence
 	 * would be an actual error.
 	 *
@@ -351,7 +351,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 	 * assuming that the instance exists. This method might return a proxied instance that
 	 * is initialized on-demand, when a non-identifier method is accessed.
 	 * <br><br>
-	 * You should not use this method to determine if an instance exists (use <tt>get()</tt>
+	 * You should not use this method to determine if an instance exists (use {@code get()}
 	 * instead). Use this only to retrieve an instance that you assume exists, where non-existence
 	 * would be an actual error.
 	 *
@@ -394,7 +394,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 
 	/**
 	 * Persist the given transient instance, first assigning a generated identifier. (Or
-	 * using the current value of the identifier property if the <tt>assigned</tt>
+	 * using the current value of the identifier property if the {@code assigned}
 	 * generator is used.) This operation cascades to associated instances if the
 	 * association is mapped with {@code cascade="save-update"}
 	 *
@@ -406,7 +406,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 
 	/**
 	 * Persist the given transient instance, first assigning a generated identifier. (Or
-	 * using the current value of the identifier property if the <tt>assigned</tt>
+	 * using the current value of the identifier property if the {@code assigned}
 	 * generator is used.)  This operation cascades to associated instances if the
 	 * association is mapped with {@code cascade="save-update"}
 	 *
@@ -526,7 +526,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 
 	/**
 	 * Remove a persistent instance from the datastore. The argument may be
-	 * an instance associated with the receiving <tt>Session</tt> or a transient
+	 * an instance associated with the receiving {@code Session} or a transient
 	 * instance with an identifier associated with existing persistent state.
 	 * This operation cascades to associated instances if the association is mapped
 	 * with {@code cascade="delete"}
@@ -537,7 +537,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 
 	/**
 	 * Remove a persistent instance from the datastore. The <b>object</b> argument may be
-	 * an instance associated with the receiving <tt>Session</tt> or a transient
+	 * an instance associated with the receiving {@code Session} or a transient
 	 * instance with an identifier associated with existing persistent state.
 	 * This operation cascades to associated instances if the association is mapped
 	 * with {@code cascade="delete"}
@@ -549,10 +549,10 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 
 	/**
 	 * Obtain the specified lock level upon the given object. This may be used to
-	 * perform a version check (<tt>LockMode.READ</tt>), to upgrade to a pessimistic
-	 * lock (<tt>LockMode.PESSIMISTIC_WRITE</tt>), or to simply reassociate a transient instance
-	 * with a session (<tt>LockMode.NONE</tt>). This operation cascades to associated
-	 * instances if the association is mapped with <tt>cascade="lock"</tt>.
+	 * perform a version check ({@code LockMode.READ}), to upgrade to a pessimistic
+	 * lock ({@code LockMode.PESSIMISTIC_WRITE}), or to simply reassociate a transient instance
+	 * with a session ({@code LockMode.NONE}). This operation cascades to associated
+	 * instances if the association is mapped with {@code cascade="lock"}.
 	 * <p>
 	 * Convenient form of {@link LockRequest#lock(Object)} via {@link #buildLockRequest(LockOptions)}
 	 *
@@ -566,10 +566,10 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 
 	/**
 	 * Obtain the specified lock level upon the given object. This may be used to
-	 * perform a version check (<tt>LockMode.OPTIMISTIC</tt>), to upgrade to a pessimistic
-	 * lock (<tt>LockMode.PESSIMISTIC_WRITE</tt>), or to simply reassociate a transient instance
-	 * with a session (<tt>LockMode.NONE</tt>). This operation cascades to associated
-	 * instances if the association is mapped with <tt>cascade="lock"</tt>.
+	 * perform a version check ({@code LockMode.OPTIMISTIC}), to upgrade to a pessimistic
+	 * lock ({@code LockMode.PESSIMISTIC_WRITE}), or to simply reassociate a transient instance
+	 * with a session ({@code LockMode.NONE}). This operation cascades to associated
+	 * instances if the association is mapped with {@code cascade="lock"}.
 	 * <p>
 	 * Convenient form of {@link LockRequest#lock(String, Object)} via {@link #buildLockRequest(LockOptions)}
 	 *
@@ -604,7 +604,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 	 * <ul>
 	 * <li>where a database trigger alters the object state upon insert or update
 	 * <li>after executing direct SQL (eg. a mass update) in the same session
-	 * <li>after inserting a <tt>Blob</tt> or <tt>Clob</tt>
+	 * <li>after inserting a {@code Blob} or {@code Clob}
 	 * </ul>
 	 *
 	 * @param object a persistent or detached instance
@@ -619,7 +619,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 	 * <ul>
 	 * <li>where a database trigger alters the object state upon insert or update
 	 * <li>after executing direct SQL (eg. a mass update) in the same session
-	 * <li>after inserting a <tt>Blob</tt> or <tt>Clob</tt>
+	 * <li>after inserting a {@code Blob} or {@code Clob}
 	 * </ul>
 	 *
 	 * @param entityName a persistent class
@@ -629,7 +629,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 
 	/**
 	 * Re-read the state of the given instance from the underlying database, with
-	 * the given <tt>LockMode</tt>. It is inadvisable to use this to implement
+	 * the given {@code LockMode}. It is inadvisable to use this to implement
 	 * long-running sessions that span many business tasks. This method is, however,
 	 * useful in certain special circumstances.
 	 * <p>
@@ -644,7 +644,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 
 	/**
 	 * Re-read the state of the given instance from the underlying database, with
-	 * the given <tt>LockMode</tt>. It is inadvisable to use this to implement
+	 * the given {@code LockMode}. It is inadvisable to use this to implement
 	 * long-running sessions that span many business tasks. This method is, however,
 	 * useful in certain special circumstances.
 	 *
@@ -655,7 +655,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 
 	/**
 	 * Re-read the state of the given instance from the underlying database, with
-	 * the given <tt>LockMode</tt>. It is inadvisable to use this to implement
+	 * the given {@code LockMode}. It is inadvisable to use this to implement
 	 * long-running sessions that span many business tasks. This method is, however,
 	 * useful in certain special circumstances.
 	 *
@@ -692,7 +692,7 @@ public interface Session extends SharedSessionContract, EntityManager, Hibernate
 	/**
 	 * Completely clear the session. Evict all loaded instances and cancel all pending
 	 * saves, updates and deletions. Do not close open iterators or instances of
-	 * <tt>ScrollableResults</tt>.
+	 * {@code ScrollableResults}.
 	 */
 	void clear();
 

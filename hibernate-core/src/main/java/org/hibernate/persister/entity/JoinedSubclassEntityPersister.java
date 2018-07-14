@@ -52,7 +52,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * An <tt>EntityPersister</tt> implementing the normalized "table-per-subclass"
+ * An {@code EntityPersister} implementing the normalized "table-per-subclass"
  * mapping strategy
  *
  * @author Gavin King
@@ -811,8 +811,8 @@ public class JoinedSubclassEntityPersister extends AbstractEntityPersister {
 	}
 
 	/**
-	 * Load an instance using either the <tt>forUpdateLoader</tt> or the outer joining <tt>loader</tt>,
-	 * depending upon the value of the <tt>lock</tt> parameter
+	 * Load an instance using either the {@code forUpdateLoader} or the outer joining {@code loader},
+	 * depending upon the value of the {@code lock} parameter
 	 */
 	/*public Object load(Serializable id,	Object optionalObject, LockMode lockMode, SessionImplementor session)
 	throws HibernateException {

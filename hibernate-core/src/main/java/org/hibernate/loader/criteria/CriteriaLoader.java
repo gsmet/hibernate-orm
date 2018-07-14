@@ -37,8 +37,8 @@ import org.hibernate.transform.ResultTransformer;
 import org.hibernate.type.Type;
 
 /**
- * A <tt>Loader</tt> for <tt>Criteria</tt> queries. Note that criteria queries are
- * more like multi-object <tt>load()</tt>s than like HQL queries.
+ * A {@code Loader} for {@code Criteria} queries. Note that criteria queries are
+ * more like multi-object {@code load()}s than like HQL queries.
  *
  * @author Gavin King
  */

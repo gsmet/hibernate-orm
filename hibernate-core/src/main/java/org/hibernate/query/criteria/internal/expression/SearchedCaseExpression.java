@@ -19,7 +19,7 @@ import org.hibernate.query.criteria.internal.Renderable;
 import org.hibernate.query.criteria.internal.compile.RenderingContext;
 
 /**
- * Models what ANSI SQL terms a <tt>searched case expression</tt>.  This is a <tt>CASE</tt> expression
+ * Models what ANSI SQL terms a {@code searched case expression}.  This is a {@code CASE} expression
  * in the form<pre>
  * CASE
  *     WHEN [firstCondition] THEN [firstResult]

@@ -46,16 +46,16 @@ import org.hibernate.type.StringType;
 import org.hibernate.type.Type;
 
 /**
- * A hilo <tt>IdentifierGenerator</tt> that returns a <tt>Long</tt>, constructed using
+ * A hilo {@code IdentifierGenerator} that returns a {@code Long}, constructed using
  * a hi/lo algorithm. The hi value MUST be fetched in a seperate transaction
- * to the <tt>Session</tt> transaction so the generator must be able to obtain
+ * to the {@code Session} transaction so the generator must be able to obtain
  * a new connection and commit it. Hence this implementation may not
  * be used  when the user is supplying connections. In this
- * case a <tt>SequenceHiLoGenerator</tt> would be a better choice (where
+ * case a {@code SequenceHiLoGenerator} would be a better choice (where
  * supported).<br>
  * <br>
  * <p>
- * A hilo <tt>IdentifierGenerator</tt> that uses a database
+ * A hilo {@code IdentifierGenerator} that uses a database
  * table to store the last generated values. A table can contains
  * several hi values. They are distinct from each other through a key
  * <p>
@@ -64,9 +64,9 @@ import org.hibernate.type.Type;
  * <p>
  * <p>Allowed parameters (all of them are optional):</p>
  * <ul>
- * <li>table: table name (default <tt>hibernate_sequences</tt>)</li>
- * <li>primary_key_column: key column name (default <tt>sequence_name</tt>)</li>
- * <li>value_column: hi value column name(default <tt>sequence_next_hi_value</tt>)</li>
+ * <li>table: table name (default {@code hibernate_sequences})</li>
+ * <li>primary_key_column: key column name (default {@code sequence_name})</li>
+ * <li>value_column: hi value column name(default {@code sequence_next_hi_value})</li>
  * <li>primary_key_value: key value for the current entity (default to the entity's primary table name)</li>
  * <li>primary_key_length: length of the key column in DB represented as a varchar (default to 255)</li>
  * <li>max_lo: max low value before increasing hi (default to Short.MAX_VALUE)</li>

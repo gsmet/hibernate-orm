@@ -16,7 +16,7 @@ import org.hibernate.query.criteria.internal.expression.UnaryOperatorExpression;
 import org.hibernate.query.criteria.internal.path.PluralAttributePath;
 
 /**
- * Models an <tt>IS [NOT] EMPTY</tt> restriction
+ * Models an {@code IS [NOT] EMPTY} restriction
  *
  * @author Steve Ebersole
  */

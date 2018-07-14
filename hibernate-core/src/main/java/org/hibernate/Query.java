@@ -419,7 +419,7 @@ public interface Query<R> extends TypedQuery<R>, CommonQueryContract {
 	Query<R> setLockOptions(LockOptions lockOptions);
 
 	/**
-	 * Set the LockMode to use for specific alias (as defined in the query's <tt>FROM</tt> clause).
+	 * Set the LockMode to use for specific alias (as defined in the query's {@code FROM} clause).
 	 *
 	 * The alias-specific lock modes specified here are added to the query's internal
 	 * {@link #getLockOptions() LockOptions}.
@@ -469,9 +469,9 @@ public interface Query<R> extends TypedQuery<R>, CommonQueryContract {
 	Query<R> addQueryHint(String hint);
 
 	/**
-	 * Return the query results as an <tt>Iterator</tt>. If the query
+	 * Return the query results as an {@code Iterator}. If the query
 	 * contains multiple results per row, the results are returned in
-	 * an instance of <tt>Object[]</tt>.<br>
+	 * an instance of {@code Object[]}.<br>
 	 * <br>
 	 * Entities returned as results are initialized on demand. The first
 	 * SQL query returns identifiers only.<br>
@@ -481,13 +481,13 @@ public interface Query<R> extends TypedQuery<R>, CommonQueryContract {
 	Iterator<R> iterate();
 
 	/**
-	 * Return the query results as <tt>ScrollableResults</tt>. The
+	 * Return the query results as {@code ScrollableResults}. The
 	 * scrollability of the returned results depends upon JDBC driver
-	 * support for scrollable <tt>ResultSet</tt>s.
+	 * support for scrollable {@code ResultSet}s.
 	 *
 	 * <p>
 	 *
-	 * You should call {@link ScrollableResults#close()} after processing the <tt>ScrollableResults</tt>
+	 * You should call {@link ScrollableResults#close()} after processing the {@code ScrollableResults}
 	 * so that the underlying resources are deallocated right away.
 	 *
 	 * @see ScrollableResults
@@ -502,7 +502,7 @@ public interface Query<R> extends TypedQuery<R>, CommonQueryContract {
 	 *
 	 * <p>
 	 *
-	 * You should call {@link ScrollableResults#close()} after processing the <tt>ScrollableResults</tt>
+	 * You should call {@link ScrollableResults#close()} after processing the {@code ScrollableResults}
 	 * so that the underlying resources are deallocated right away.
 	 *
 	 * @param scrollMode The scroll mode
@@ -516,9 +516,9 @@ public interface Query<R> extends TypedQuery<R>, CommonQueryContract {
 	ScrollableResults scroll(ScrollMode scrollMode);
 
 	/**
-	 * Return the query results as a <tt>List</tt>. If the query contains
+	 * Return the query results as a {@code List}. If the query contains
 	 * multiple results per row, the results are returned in an instance
-	 * of <tt>Object[]</tt>.
+	 * of {@code Object[]}.
 	 *
 	 * @return the result list
 	 */
@@ -528,7 +528,7 @@ public interface Query<R> extends TypedQuery<R>, CommonQueryContract {
 	 * Convenience method to return a single instance that matches
 	 * the query, or {@code null} if the query returns no results.
 	 *
-	 * @return the single result or <tt>null</tt>
+	 * @return the single result or {@code null}
 	 *
 	 * @throws NonUniqueResultException if there is more than one matching result
 	 */
@@ -587,7 +587,7 @@ public interface Query<R> extends TypedQuery<R>, CommonQueryContract {
 	 * should be used instead
 	 *
 	 * @param position the position of the parameter in the query
-	 * string, numbered from <tt>0</tt>.
+	 * string, numbered from {@code 0}.
 	 * @param val the possibly-null parameter value
 	 *
 	 * @return {@code this}, for method chaining
@@ -621,7 +621,7 @@ public interface Query<R> extends TypedQuery<R>, CommonQueryContract {
 	 * Bind a value to a JDBC-style query parameter.
 	 *
 	 * @param position the position of the parameter in the query
-	 * string, numbered from <tt>0</tt>.
+	 * string, numbered from {@code 0}.
 	 * @param val the possibly-null parameter value
 	 * @param type the Hibernate type
 	 *
@@ -658,7 +658,7 @@ public interface Query<R> extends TypedQuery<R>, CommonQueryContract {
 	 * the indicated temporal-type.
 	 *
 	 * @param position the position of the parameter in the query
-	 * string, numbered from <tt>0</tt>.
+	 * string, numbered from {@code 0}.
 	 * @param val the possibly-null parameter value
 	 * @param temporalType the temporal-type to use in binding the date/time
 	 *
@@ -683,7 +683,7 @@ public interface Query<R> extends TypedQuery<R>, CommonQueryContract {
 	 * Bind multiple values to a query parameter using its inferred Type. The Hibernate type of the parameter values is
 	 * first detected via the usage/position in the query and if not sufficient secondly
 	 * guessed from the class of the first object in the collection. This is useful for binding a list of values
-	 * to an expression such as <tt>foo.bar in (:value_list)</tt>.
+	 * to an expression such as {@code foo.bar in (:value_list)}.
 	 *
 	 * @param parameter the parameter memento
 	 * @param values a collection of values to list
@@ -696,7 +696,7 @@ public interface Query<R> extends TypedQuery<R>, CommonQueryContract {
 	 * Bind multiple values to a named query parameter. The Hibernate type of the parameter is
 	 * first detected via the usage/position in the query and if not sufficient secondly
 	 * guessed from the class of the first object in the collection. This is useful for binding a list of values
-	 * to an expression such as <tt>foo.bar in (:value_list)</tt>.
+	 * to an expression such as {@code foo.bar in (:value_list)}.
 	 *
 	 * @param name the name of the parameter
 	 * @param values a collection of values to list
@@ -708,7 +708,7 @@ public interface Query<R> extends TypedQuery<R>, CommonQueryContract {
 
 	/**
 	 * Bind multiple values to a named query parameter. This is useful for binding
-	 * a list of values to an expression such as <tt>foo.bar in (:value_list)</tt>.
+	 * a list of values to an expression such as {@code foo.bar in (:value_list)}.
 	 *
 	 * @param name the name of the parameter
 	 * @param values a collection of values to list
@@ -721,7 +721,7 @@ public interface Query<R> extends TypedQuery<R>, CommonQueryContract {
 
 	/**
 	 * Bind multiple values to a named query parameter. This is useful for binding
-	 * a list of values to an expression such as <tt>foo.bar in (:value_list)</tt>.
+	 * a list of values to an expression such as {@code foo.bar in (:value_list)}.
 	 *
 	 * @param name the name of the parameter
 	 * @param values a collection of values to list
@@ -736,7 +736,7 @@ public interface Query<R> extends TypedQuery<R>, CommonQueryContract {
 	 * Bind multiple values to a named query parameter. The Hibernate type of the parameter is
 	 * first detected via the usage/position in the query and if not sufficient secondly
 	 * guessed from the class of the first object in the array. This is useful for binding a list of values
-	 * to an expression such as <tt>foo.bar in (:value_list)</tt>.
+	 * to an expression such as {@code foo.bar in (:value_list)}.
 	 *
 	 * @param name the name of the parameter
 	 * @param values a collection of values to list
@@ -1531,7 +1531,7 @@ public interface Query<R> extends TypedQuery<R>, CommonQueryContract {
 	 * Use {@link #setParameter(int, Object)} for null values.
 	 *
 	 * @param position the position of the parameter in the query
-	 * string, numbered from <tt>0</tt>.
+	 * string, numbered from {@code 0}.
 	 * @param val a non-null instance of a persistent class
 	 *
 	 * @return {@code this}, for method chaining

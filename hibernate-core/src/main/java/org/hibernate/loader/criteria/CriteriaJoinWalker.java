@@ -31,7 +31,7 @@ import org.hibernate.type.AssociationType;
 import org.hibernate.type.Type;
 
 /**
- * A <tt>JoinWalker</tt> for <tt>Criteria</tt> queries.
+ * A {@code JoinWalker} for {@code Criteria} queries.
  *
  * @author Gavin King
  * @see CriteriaLoader

@@ -28,8 +28,8 @@ import static org.hibernate.internal.CoreLogging.messageLogger;
  * Used internally to build instances of {@link Type}, specifically it builds instances of
  * <p>
  * <p>
- * Used internally to obtain instances of <tt>Type</tt>. Applications should use static methods
- * and constants on <tt>org.hibernate.Hibernate</tt>.
+ * Used internally to obtain instances of {@code Type}. Applications should use static methods
+ * and constants on {@code org.hibernate.Hibernate}.
  *
  * @author Gavin King
  * @author Steve Ebersole

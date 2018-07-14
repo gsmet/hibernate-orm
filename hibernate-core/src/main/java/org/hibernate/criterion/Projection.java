@@ -26,24 +26,24 @@ import org.hibernate.type.Type;
 public interface Projection extends Serializable {
 
 	/**
-	 * Render the SQL fragment to be used in the <tt>SELECT</tt> clause.
+	 * Render the SQL fragment to be used in the {@code SELECT} clause.
 	 *
 	 * @param criteria The local criteria to which this project is attached (for resolution).
-	 * @param position The number of columns rendered in the <tt>SELECT</tt> clause before this projection.  Generally
+	 * @param position The number of columns rendered in the {@code SELECT} clause before this projection.  Generally
 	 * speaking this is useful to ensure uniqueness of the individual columns aliases.
 	 * @param criteriaQuery The overall criteria query instance.
-	 * @return The SQL fragment to plug into the <tt>SELECT</tt>
+	 * @return The SQL fragment to plug into the {@code SELECT}
 	 * @throws HibernateException Indicates a problem performing the rendering
 	 */
 	public String toSqlString(Criteria criteria, int position, CriteriaQuery criteriaQuery)
 			throws HibernateException;
 
 	/**
-	 * Render the SQL fragment to be used in the <tt>GROUP BY</tt> clause
+	 * Render the SQL fragment to be used in the {@code GROUP BY} clause
 	 *
 	 * @param criteria The local criteria to which this project is attached (for resolution).
 	 * @param criteriaQuery The overall criteria query instance.
-	 * @return The SQL fragment to plug into the <tt>GROUP BY</tt>
+	 * @return The SQL fragment to plug into the {@code GROUP BY}
 	 * @throws HibernateException Indicates a problem performing the rendering
 	 */
 	public String toGroupSqlString(Criteria criteria, CriteriaQuery criteriaQuery)
@@ -79,7 +79,7 @@ public interface Projection extends Serializable {
 
 	/**
 	 * Get the SQL column aliases used by this projection for the columns it writes for inclusion into the
-	 * <tt>SELECT</tt> clause ({@link #toSqlString}.  Hibernate always uses column aliases to extract data from the
+	 * {@code SELECT} clause ({@link #toSqlString}.  Hibernate always uses column aliases to extract data from the
 	 * JDBC {@link java.sql.ResultSet}, so it is important that these be implemented correctly in order for
 	 * Hibernate to be able to extract these val;ues correctly.
 	 *
@@ -91,7 +91,7 @@ public interface Projection extends Serializable {
 
 	/**
 	 * Get the SQL column aliases used by this projection for the columns it writes for inclusion into the
-	 * <tt>SELECT</tt> clause ({@link #toSqlString} <i>for a particular criteria-level alias</i>.
+	 * {@code SELECT} clause ({@link #toSqlString} <i>for a particular criteria-level alias</i>.
 	 *
 	 * @param alias The criteria-level alias
 	 * @param position Just as in {@link #toSqlString}, represents the number of <b>columns</b> rendered
@@ -110,9 +110,9 @@ public interface Projection extends Serializable {
 	public String[] getAliases();
 
 	/**
-	 * Is this projection fragment (<tt>SELECT</tt> clause) also part of the <tt>GROUP BY</tt>
+	 * Is this projection fragment ({@code SELECT} clause) also part of the {@code GROUP BY}
 	 *
-	 * @return True if the projection is also part of the <tt>GROUP BY</tt>; false otherwise.
+	 * @return True if the projection is also part of the {@code GROUP BY}; false otherwise.
 	 */
 	public boolean isGrouped();
 

@@ -13,7 +13,7 @@ import org.hibernate.secure.spi.PermissionCheckEntityInformation;
 
 
 /**
- * Represents a <tt>pre-delete</tt> event, which occurs just prior to
+ * Represents a {@code pre-delete} event, which occurs just prior to
  * performing the deletion of an entity from the database.
  *
  * @author Gavin King

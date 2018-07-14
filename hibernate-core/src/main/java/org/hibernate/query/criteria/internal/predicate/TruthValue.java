@@ -8,11 +8,11 @@ package org.hibernate.query.criteria.internal.predicate;
 
 
 /**
- * Models what ANSI-SQL terms a <i>truth value</i>.  Specifically, ANSI-SQL defines <tt>TRUE</tt>, <tt>FALSE</tt> and
- * <tt>UNKNOWN</tt> as <i>truth values</i>.  These <i>truth values</i> are used to explicitly check the result of a
- * boolean expression (the syntax is like <tt>a > b IS TRUE</tt>.  <tt>IS TRUE</tt> is the assumed default.
+ * Models what ANSI-SQL terms a <i>truth value</i>.  Specifically, ANSI-SQL defines {@code TRUE}, {@code FALSE} and
+ * {@code UNKNOWN} as <i>truth values</i>.  These <i>truth values</i> are used to explicitly check the result of a
+ * boolean expression (the syntax is like {@code a > b IS TRUE}.  {@code IS TRUE} is the assumed default.
  * <p>
- * JPA defines support for only <tt>IS TRUE</tt> and <tt>IS FALSE</tt>, not <tt>IS UNKNOWN</tt> (<tt>a > NULL</tt>
+ * JPA defines support for only {@code IS TRUE} and {@code IS FALSE}, not {@code IS UNKNOWN} ({@code a > NULL}
  * is an example where the result would be UNKNOWN).  All 3 are provided here for completness.
  *
  * @author Steve Ebersole

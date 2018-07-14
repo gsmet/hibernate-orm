@@ -32,7 +32,7 @@ import org.hibernate.sql.JoinType;
 import org.hibernate.transform.ResultTransformer;
 
 /**
- * Implementation of the <tt>Criteria</tt> interface
+ * Implementation of the {@code Criteria} interface
  * @author Gavin King
  */
 public class CriteriaImpl implements Criteria, Serializable {

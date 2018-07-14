@@ -13,7 +13,7 @@ import org.hibernate.engine.spi.TypedValue;
 import org.hibernate.type.Type;
 
 /**
- * An instance of <tt>CriteriaQuery</tt> is passed to criterion, 
+ * An instance of {@code CriteriaQuery} is passed to criterion, 
  * order and projection instances when actually compiling and
  * executing the query. This interface is not used by application
  * code.

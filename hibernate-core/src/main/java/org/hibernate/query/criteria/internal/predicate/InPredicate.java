@@ -25,7 +25,7 @@ import org.hibernate.query.criteria.internal.expression.ParameterExpressionImpl;
 import org.hibernate.type.Type;
 
 /**
- * Models a <tt>[NOT] IN</tt> restriction
+ * Models a {@code [NOT] IN} restriction
  *
  * @author Steve Ebersole
  */
@@ -36,7 +36,7 @@ public class InPredicate<T>
 	private final List<Expression<? extends T>> values;
 
 	/**
-	 * Constructs an <tt>IN</tt> predicate against a given expression with an empty list of values.
+	 * Constructs an {@code IN} predicate against a given expression with an empty list of values.
 	 *
 	 * @param criteriaBuilder The query builder from which this originates.
 	 * @param expression The expression.
@@ -48,7 +48,7 @@ public class InPredicate<T>
 	}
 
 	/**
-	 * Constructs an <tt>IN</tt> predicate against a given expression with the given list of expression values.
+	 * Constructs an {@code IN} predicate against a given expression with the given list of expression values.
 	 *
 	 * @param criteriaBuilder The query builder from which this originates.
 	 * @param expression The expression.
@@ -62,7 +62,7 @@ public class InPredicate<T>
 	}
 
 	/**
-	 * Constructs an <tt>IN</tt> predicate against a given expression with the given list of expression values.
+	 * Constructs an {@code IN} predicate against a given expression with the given list of expression values.
 	 *
 	 * @param criteriaBuilder The query builder from which this originates.
 	 * @param expression The expression.
@@ -78,7 +78,7 @@ public class InPredicate<T>
 	}
 
 	/**
-	 * Constructs an <tt>IN</tt> predicate against a given expression with the given given literal value list.
+	 * Constructs an {@code IN} predicate against a given expression with the given given literal value list.
 	 *
 	 * @param criteriaBuilder The query builder from which this originates.
 	 * @param expression The expression.
@@ -92,7 +92,7 @@ public class InPredicate<T>
 	}
 
 	/**
-	 * Constructs an <tt>IN</tt> predicate against a given expression with the given literal value list.
+	 * Constructs an {@code IN} predicate against a given expression with the given literal value list.
 	 *
 	 * @param criteriaBuilder The query builder from which this originates.
 	 * @param expression The expression.

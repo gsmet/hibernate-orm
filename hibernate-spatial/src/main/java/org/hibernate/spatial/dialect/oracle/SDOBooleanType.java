@@ -21,7 +21,7 @@ class SDOBooleanType extends BooleanType {
 
 	/**
 	 * <p>
-	 * This type's name is <tt>sdo_boolean</tt>
+	 * This type's name is {@code sdo_boolean}
 	 */
 	public String getName() {
 		return "sdo_boolean";

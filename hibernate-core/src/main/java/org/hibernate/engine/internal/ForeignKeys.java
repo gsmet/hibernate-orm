@@ -170,7 +170,7 @@ public final class ForeignKeys {
 	/**
 	 * Is this instance persistent or detached?
 	 * <p>
-	 * If <tt>assumed</tt> is non-null, don't hit the database to make the determination, instead assume that
+	 * If {@code assumed} is non-null, don't hit the database to make the determination, instead assume that
 	 * value; the client code must be prepared to "recover" in the case that this assumed result is incorrect.
 	 *
 	 * @param entityName The name of the entity
@@ -198,7 +198,7 @@ public final class ForeignKeys {
 	/**
 	 * Is this instance, which we know is not persistent, actually transient?
 	 * <p>
-	 * If <tt>assumed</tt> is non-null, don't hit the database to make the determination, instead assume that
+	 * If {@code assumed} is non-null, don't hit the database to make the determination, instead assume that
 	 * value; the client code must be prepared to "recover" in the case that this assumed result is incorrect.
 	 *
 	 * @param entityName The name of the entity

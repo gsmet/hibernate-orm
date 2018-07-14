@@ -368,7 +368,7 @@ public class BasicCollectionPersister extends AbstractCollectionPersister {
 	}
 
 	/**
-	 * Create the <tt>CollectionLoader</tt>
+	 * Create the {@code CollectionLoader}
 	 *
 	 * @see org.hibernate.loader.collection.BasicCollectionLoader
 	 */

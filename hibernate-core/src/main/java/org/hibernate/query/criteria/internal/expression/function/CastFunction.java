@@ -14,7 +14,7 @@ import org.hibernate.query.criteria.internal.compile.RenderingContext;
 import org.hibernate.query.criteria.internal.expression.ExpressionImpl;
 
 /**
- * Models a <tt>CAST</tt> function.
+ * Models a {@code CAST} function.
  *
  * @param <T> The cast result type.
  * @param <Y> The type of the expression to be cast.

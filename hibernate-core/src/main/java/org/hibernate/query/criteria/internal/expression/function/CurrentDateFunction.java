@@ -12,7 +12,7 @@ import java.sql.Date;
 import org.hibernate.query.criteria.internal.CriteriaBuilderImpl;
 
 /**
- * Models the ANSI SQL <tt>CURRENT_DATE</tt> function.
+ * Models the ANSI SQL {@code CURRENT_DATE} function.
  *
  * @author Steve Ebersole
  */

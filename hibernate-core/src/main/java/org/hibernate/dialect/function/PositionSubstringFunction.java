@@ -14,7 +14,7 @@ import org.hibernate.type.StandardBasicTypes;
 import org.hibernate.type.Type;
 
 /**
- * Emulation of <tt>locate()</tt> on PostgreSQL
+ * Emulation of {@code locate()} on PostgreSQL
  *
  * @author Gavin King
  */

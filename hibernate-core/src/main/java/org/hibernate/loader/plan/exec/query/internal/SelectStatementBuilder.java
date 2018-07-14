@@ -179,9 +179,9 @@ public class SelectStatementBuilder {
 	}
 
 	/**
-	 * Construct an SQL <tt>SELECT</tt> statement from the given clauses.
+	 * Construct an SQL {@code SELECT} statement from the given clauses.
 	 *
-	 * @return the SQL <tt>SELECT</tt> statement.
+	 * @return the SQL {@code SELECT} statement.
 	 */
 	public String toStatementString() {
 		StringBuilder buf = new StringBuilder( guesstimatedBufferSize );

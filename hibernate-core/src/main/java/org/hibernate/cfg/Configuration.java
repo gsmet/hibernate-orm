@@ -232,11 +232,11 @@ public class Configuration {
 	}
 
 	/**
-	 * Use the mappings and properties specified in an application resource named <tt>hibernate.cfg.xml</tt>.
+	 * Use the mappings and properties specified in an application resource named {@code hibernate.cfg.xml}.
 	 *
 	 * @return this for method chaining
 	 *
-	 * @throws HibernateException Generally indicates we cannot find <tt>hibernate.cfg.xml</tt>
+	 * @throws HibernateException Generally indicates we cannot find {@code hibernate.cfg.xml}
 	 *
 	 * @see #configure(String)
 	 */
@@ -246,7 +246,7 @@ public class Configuration {
 
 	/**
 	 * Use the mappings and properties specified in the given application resource. The format of the resource is
-	 * defined in <tt>hibernate-configuration-3.0.dtd</tt>.
+	 * defined in {@code hibernate-configuration-3.0.dtd}.
 	 *
 	 * @param resource The resource to use
 	 *
@@ -271,7 +271,7 @@ public class Configuration {
 
 	/**
 	 * Use the mappings and properties specified in the given document. The format of the document is defined in
-	 * <tt>hibernate-configuration-3.0.dtd</tt>.
+	 * {@code hibernate-configuration-3.0.dtd}.
 	 *
 	 * @param url URL from which you wish to load the configuration
 	 *
@@ -287,7 +287,7 @@ public class Configuration {
 
 	/**
 	 * Use the mappings and properties specified in the given application file. The format of the file is defined in
-	 * <tt>hibernate-configuration-3.0.dtd</tt>.
+	 * {@code hibernate-configuration-3.0.dtd}.
 	 *
 	 * @param configFile File from which you wish to load the configuration
 	 *
@@ -374,12 +374,12 @@ public class Configuration {
 	/**
 	 * Add a cached mapping file.  A cached file is a serialized representation
 	 * of the DOM structure of a particular mapping.  It is saved from a previous
-	 * call as a file with the name <tt>xmlFile + ".bin"</tt> where xmlFile is
+	 * call as a file with the name {@code xmlFile + ".bin"} where xmlFile is
 	 * the name of the original mapping file.
 	 * </p>
-	 * If a cached <tt>xmlFile + ".bin"</tt> exists and is newer than
-	 * <tt>xmlFile</tt> the <tt>".bin"</tt> file will be read directly. Otherwise
-	 * xmlFile is read and then serialized to <tt>xmlFile + ".bin"</tt> for use
+	 * If a cached {@code xmlFile + ".bin"} exists and is newer than
+	 * {@code xmlFile} the {@code ".bin"} file will be read directly. Otherwise
+	 * xmlFile is read and then serialized to {@code xmlFile + ".bin"} for use
 	 * the next time.
 	 *
 	 * @param xmlFile The cacheable mapping file to be added.
@@ -435,7 +435,7 @@ public class Configuration {
 	}
 
 	/**
-	 * Read mappings from a <tt>URL</tt>
+	 * Read mappings from a {@code URL}
 	 *
 	 * @param url The url for the mapping document to be read.
 	 * @return this (for method chaining purposes)
@@ -448,7 +448,7 @@ public class Configuration {
 	}
 
 	/**
-	 * Read mappings from a DOM <tt>Document</tt>
+	 * Read mappings from a DOM {@code Document}
 	 *
 	 * @param doc The DOM document
 	 * @return this (for method chaining purposes)
@@ -501,7 +501,7 @@ public class Configuration {
 
 	/**
 	 * Read a mapping as an application resource using the convention that a class
-	 * named <tt>foo.bar.Foo</tt> is mapped by a file <tt>foo/bar/Foo.hbm.xml</tt>
+	 * named {@code foo.bar.Foo} is mapped by a file {@code foo/bar/Foo.hbm.xml}
 	 * which can be resolved as a classpath resource.
 	 *
 	 * @param persistentClass The mapped class
@@ -544,7 +544,7 @@ public class Configuration {
 	/**
 	 * Read all mappings from a jar file
 	 * <p>
-	 * Assumes that any file named <tt>*.hbm.xml</tt> is a mapping document.
+	 * Assumes that any file named {@code *.hbm.xml} is a mapping document.
 	 *
 	 * @param jar a jar file
 	 * @return this (for method chaining purposes)
@@ -559,7 +559,7 @@ public class Configuration {
 	/**
 	 * Read all mapping documents from a directory tree.
 	 * <p>
-	 * Assumes that any file named <tt>*.hbm.xml</tt> is a mapping document.
+	 * Assumes that any file named {@code *.hbm.xml} is a mapping document.
 	 *
 	 * @param dir The directory
 	 * @return this (for method chaining purposes)

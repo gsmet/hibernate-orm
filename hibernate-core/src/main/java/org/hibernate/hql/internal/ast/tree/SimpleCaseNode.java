@@ -16,7 +16,7 @@ import antlr.SemanticException;
 import antlr.collections.AST;
 
 /**
- * Models what ANSI SQL terms a simple case statement.  This is a <tt>CASE</tt> expression in the form<pre>
+ * Models what ANSI SQL terms a simple case statement.  This is a {@code CASE} expression in the form<pre>
  * CASE [expression]
  *     WHEN [firstCondition] THEN [firstResult]
  *     WHEN [secondCondition] THEN [secondResult]

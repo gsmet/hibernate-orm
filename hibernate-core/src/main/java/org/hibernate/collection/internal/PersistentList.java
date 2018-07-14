@@ -22,8 +22,8 @@ import org.hibernate.persister.collection.CollectionPersister;
 import org.hibernate.type.Type;
 
 /**
- * A persistent wrapper for a <tt>java.util.List</tt>. Underlying
- * collection is an <tt>ArrayList</tt>.
+ * A persistent wrapper for a {@code java.util.List}. Underlying
+ * collection is an {@code ArrayList}.
  *
  * @see java.util.ArrayList
  * @author Gavin King

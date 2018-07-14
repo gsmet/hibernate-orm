@@ -26,7 +26,7 @@ import org.hibernate.type.Type;
  */
 public class StandardAnsiSqlAggregationFunctions {
 	/**
-	 * Definition of a standard ANSI SQL compliant <tt>COUNT</tt> function
+	 * Definition of a standard ANSI SQL compliant {@code COUNT} function
 	 */
 	public static class CountFunction extends StandardSQLFunction {
 		/**
@@ -70,7 +70,7 @@ public class StandardAnsiSqlAggregationFunctions {
 	}
 
 	/**
-	 * Definition of a standard ANSI SQL compliant <tt>AVG</tt> function
+	 * Definition of a standard ANSI SQL compliant {@code AVG} function
 	 */
 	public static class AvgFunction extends StandardSQLFunction {
 		/**
@@ -112,7 +112,7 @@ public class StandardAnsiSqlAggregationFunctions {
 	}
 
 	/**
-	 * Definition of a standard ANSI SQL compliant <tt>MAX</tt> function
+	 * Definition of a standard ANSI SQL compliant {@code MAX} function
 	 */
 	public static class MaxFunction extends StandardSQLFunction {
 		/**
@@ -126,7 +126,7 @@ public class StandardAnsiSqlAggregationFunctions {
 	}
 
 	/**
-	 * Definition of a standard ANSI SQL compliant <tt>MIN</tt> function
+	 * Definition of a standard ANSI SQL compliant {@code MIN} function
 	 */
 	public static class MinFunction extends StandardSQLFunction {
 		/**
@@ -141,7 +141,7 @@ public class StandardAnsiSqlAggregationFunctions {
 
 
 	/**
-	 * Definition of a standard ANSI SQL compliant <tt>SUM</tt> function
+	 * Definition of a standard ANSI SQL compliant {@code SUM} function
 	 */
 	public static class SumFunction extends StandardSQLFunction {
 		/**

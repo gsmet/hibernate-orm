@@ -12,8 +12,8 @@ import java.util.Map;
 import org.hibernate.type.Type;
 
 /**
- * The <tt>criterion</tt> package may be used by applications as a framework for building
- * new kinds of <tt>Criterion</tt>. However, it is intended that most applications will
+ * The {@code criterion} package may be used by applications as a framework for building
+ * new kinds of {@code Criterion}. However, it is intended that most applications will
  * simply use the built-in criterion types via the static factory methods of this class.
  *
  * See also the {@link Projections} factory methods for generating {@link Projection} instances
@@ -132,7 +132,7 @@ public class Restrictions {
 	}
 
 	/**
-	 * A case-insensitive "like" (similar to Postgres <tt>ilike</tt> operator)
+	 * A case-insensitive "like" (similar to Postgres {@code ilike} operator)
 	 *
 	 * @param propertyName The name of the property
 	 * @param value The value to use in comparison
@@ -149,7 +149,7 @@ public class Restrictions {
 	}
 
 	/**
-	 * A case-insensitive "like" (similar to Postgres <tt>ilike</tt> operator) using the provided match mode
+	 * A case-insensitive "like" (similar to Postgres {@code ilike} operator) using the provided match mode
 	 *
 	 * @param propertyName The name of the property
 	 * @param value The value to use in comparison
@@ -433,7 +433,7 @@ public class Restrictions {
 	}
 
 	/**
-	 * Create a restriction expressed in SQL with JDBC parameters.  Any occurrences of <tt>{alias}</tt> will be
+	 * Create a restriction expressed in SQL with JDBC parameters.  Any occurrences of {@code {alias}} will be
 	 * replaced by the table alias.
 	 *
 	 * @param sql The SQL restriction
@@ -449,7 +449,7 @@ public class Restrictions {
 	}
 
 	/**
-	 * Create a restriction expressed in SQL with one JDBC parameter.  Any occurrences of <tt>{alias}</tt> will be
+	 * Create a restriction expressed in SQL with one JDBC parameter.  Any occurrences of {@code {alias}} will be
 	 * replaced by the table alias.
 	 *
 	 * @param sql The SQL restriction
@@ -465,7 +465,7 @@ public class Restrictions {
 	}
 
 	/**
-	 * Apply a constraint expressed in SQL with no JDBC parameters.  Any occurrences of <tt>{alias}</tt> will be
+	 * Apply a constraint expressed in SQL with no JDBC parameters.  Any occurrences of {@code {alias}} will be
 	 * replaced by the table alias.
 	 *
 	 * @param sql The SQL restriction
@@ -523,7 +523,7 @@ public class Restrictions {
 	}
 
 	/**
-	 * Apply an "equals" constraint to each property in the key set of a <tt>Map</tt>
+	 * Apply an "equals" constraint to each property in the key set of a {@code Map}
 	 *
 	 * @param propertyNameValues a map from property names to values
 	 *

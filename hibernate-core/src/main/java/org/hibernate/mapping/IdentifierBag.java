@@ -11,7 +11,7 @@ import org.hibernate.boot.spi.MetadataImplementor;
 import org.hibernate.type.CollectionType;
 
 /**
- * An <tt>IdentifierBag</tt> has a primary key consisting of
+ * An {@code IdentifierBag} has a primary key consisting of
  * just the identifier column
  */
 public class IdentifierBag extends IdentifierCollection {

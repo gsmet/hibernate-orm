@@ -9,7 +9,7 @@ package org.hibernate.type;
 
 /**
  * Additional contract for a {@link Type} may be used for a discriminator.  THis contract is used to process
- * the string representation as presented in metadata, especially in <tt>XML</tt> files.
+ * the string representation as presented in metadata, especially in {@code XML} files.
  *
  * @author Gavin King
  */
@@ -18,7 +18,7 @@ public interface IdentifierType<T> extends Type {
 	/**
 	 * Convert the value from the mapping file to a Java object.
 	 *
-	 * @param xml the value of <tt>discriminator-value</tt> or <tt>unsaved-value</tt> attribute
+	 * @param xml the value of {@code discriminator-value} or {@code unsaved-value} attribute
 	 * @return The converted value of the string representation.
 	 *
 	 * @throws Exception Indicates a problem converting from the string

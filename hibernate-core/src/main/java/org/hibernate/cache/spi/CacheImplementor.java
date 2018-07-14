@@ -84,7 +84,7 @@ public interface CacheImplementor extends Service, Cache, org.hibernate.engine.s
 	QueryResultsCache getDefaultQueryResultsCache();
 
 	/**
-	 * Get query cache by <tt>region name</tt> or create a new one if none exist.
+	 * Get query cache by {@code region name} or create a new one if none exist.
 	 *
 	 * If the region name is null, then default query cache region will be returned.
 	 *

@@ -24,7 +24,7 @@ import org.jboss.logging.Logger;
 
 /**
  * The base contract for loaders capable of performing batch-fetch loading of entities using multiple primary key
- * values in the SQL <tt>WHERE</tt> clause.
+ * values in the SQL {@code WHERE} clause.
  *
  * @author Gavin King
  * @author Steve Ebersole

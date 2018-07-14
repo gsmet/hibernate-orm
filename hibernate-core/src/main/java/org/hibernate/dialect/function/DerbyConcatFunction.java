@@ -33,7 +33,7 @@ public class DerbyConcatFunction implements SQLFunction {
 	/**
 	 * {@inheritDoc}
 	 * <p>
-	 * Here we always return <tt>true</tt>
+	 * Here we always return {@code true}
 	 */
 	@Override
 	public boolean hasArguments() {
@@ -43,7 +43,7 @@ public class DerbyConcatFunction implements SQLFunction {
 	/**
 	 * {@inheritDoc}
 	 * <p>
-	 * Here we always return <tt>true</tt>
+	 * Here we always return {@code true}
 	 */
 	@Override
 	public boolean hasParenthesesIfNoArguments() {
@@ -65,10 +65,10 @@ public class DerbyConcatFunction implements SQLFunction {
 	 * <p>
 	 * Here's the meat..  The whole reason we have a separate impl for this for Derby is to re-define
 	 * this method.  The logic here says that if not all the incoming args are dynamic parameters
-	 * (i.e. <tt>?</tt>) then we simply use the Derby concat operator (<tt>||</tt>) on the unchanged
+	 * (i.e. {@code ?}) then we simply use the Derby concat operator ({@code ||}) on the unchanged
 	 * arg elements.  However, if all the args are dynamic parameters, then we need to wrap the individual
-	 * arg elements in <tt>cast</tt> function calls, use the concatenation operator on the <tt>cast</tt>
-	 * returns, and then wrap that whole thing in a call to the Derby <tt>varchar</tt> function.
+	 * arg elements in {@code cast} function calls, use the concatenation operator on the {@code cast}
+	 * returns, and then wrap that whole thing in a call to the Derby {@code varchar} function.
 	 */
 	@Override
 	public String render(Type argumentType, List args, SessionFactoryImplementor factory) throws QueryException {

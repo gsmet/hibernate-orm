@@ -14,7 +14,7 @@ import org.hibernate.type.StandardBasicTypes;
 import org.hibernate.type.Type;
 
 /**
- * Defines the basic template support for <tt>TRIM</tt> functions
+ * Defines the basic template support for {@code TRIM} functions
  *
  * @author Steve Ebersole
  */

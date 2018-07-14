@@ -17,7 +17,7 @@ import org.hibernate.query.criteria.internal.compile.RenderingContext;
 import org.hibernate.query.criteria.internal.expression.LiteralExpression;
 
 /**
- * Models the ANSI SQL <tt>TRIM</tt> function.
+ * Models the ANSI SQL {@code TRIM} function.
  *
  * @author Steve Ebersole
  * @author Brett Meyer

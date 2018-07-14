@@ -17,15 +17,15 @@ import org.hibernate.transform.ResultTransformer;
 
 
 /**
- * <tt>Criteria</tt> is a simplified API for retrieving entities
- * by composing <tt>Criterion</tt> objects. This is a very
+ * {@code Criteria} is a simplified API for retrieving entities
+ * by composing {@code Criterion} objects. This is a very
  * convenient approach for functionality like "search" screens
  * where there is a variable number of conditions to be placed
  * upon the result set.<br>
  * <br>
- * The <tt>Session</tt> is a factory for <tt>Criteria</tt>.
- * <tt>Criterion</tt> instances are usually obtained via
- * the factory methods on <tt>Restrictions</tt>. eg.
+ * The {@code Session} is a factory for {@code Criteria}.
+ * {@code Criterion} instances are usually obtained via
+ * the factory methods on {@code Restrictions}. eg.
  * <pre>
  * List cats = session.createCriteria(Cat.class)
  *     .add( Restrictions.like("name", "Iz%") )
@@ -33,8 +33,8 @@ import org.hibernate.transform.ResultTransformer;
  *     .addOrder( Order.asc("age") )
  *     .list();
  * </pre>
- * You may navigate associations using <tt>createAlias()</tt> or
- * <tt>createCriteria()</tt>.
+ * You may navigate associations using {@code createAlias()} or
+ * {@code createCriteria()}.
  * <pre>
  * List cats = session.createCriteria(Cat.class)
  *     .createCriteria("kittens")
@@ -47,8 +47,8 @@ import org.hibernate.transform.ResultTransformer;
  *     .add( Restrictions.like("kit.name", "Iz%") )
  *     .list();
  * </pre>
- * You may specify projection and aggregation using <tt>Projection</tt>
- * instances obtained via the factory methods on <tt>Projections</tt>.
+ * You may specify projection and aggregation using {@code Projection}
+ * instances obtained via the factory methods on {@code Projections}.
  * <pre>
  * List cats = session.createCriteria(Cat.class)
  *     .setProjection( Projections.projectionList()
@@ -207,7 +207,7 @@ public interface Criteria extends CriteriaSpecification {
 	 * @param associationPath A dot-separated property path
 	 * @param alias The alias to assign to the joined association (for later reference).
 	 * @param joinType The type of join to use.
-	 * @param withClause The criteria to be added to the join condition (<tt>ON</tt> clause)
+	 * @param withClause The criteria to be added to the join condition ({@code ON} clause)
 	 *
 	 * @return this (for method chaining)
 	 *
@@ -225,7 +225,7 @@ public interface Criteria extends CriteriaSpecification {
 	 * @param associationPath A dot-separated property path
 	 * @param alias The alias to assign to the joined association (for later reference).
 	 * @param joinType The type of join to use.
-	 * @param withClause The criteria to be added to the join condition (<tt>ON</tt> clause)
+	 * @param withClause The criteria to be added to the join condition ({@code ON} clause)
 	 *
 	 * @return this (for method chaining)
 	 *
@@ -236,7 +236,7 @@ public interface Criteria extends CriteriaSpecification {
 	public Criteria createAlias(String associationPath, String alias, int joinType, Criterion withClause) throws HibernateException;
 
 	/**
-	 * Create a new <tt>Criteria</tt>, "rooted" at the associated entity.
+	 * Create a new {@code Criteria}, "rooted" at the associated entity.
 	 * <p>
 	 * Functionally equivalent to {@link #createCriteria(String, org.hibernate.sql.JoinType)} using
 	 * {@link JoinType#INNER_JOIN} for the joinType.
@@ -250,7 +250,7 @@ public interface Criteria extends CriteriaSpecification {
 	public Criteria createCriteria(String associationPath) throws HibernateException;
 
 	/**
-	 * Create a new <tt>Criteria</tt>, "rooted" at the associated entity, using the
+	 * Create a new {@code Criteria}, "rooted" at the associated entity, using the
 	 * specified join type.
 	 *
 	 * @param associationPath A dot-separated property path
@@ -263,7 +263,7 @@ public interface Criteria extends CriteriaSpecification {
 	public Criteria createCriteria(String associationPath, JoinType joinType) throws HibernateException;
 
 	/**
-	 * Create a new <tt>Criteria</tt>, "rooted" at the associated entity, using the
+	 * Create a new {@code Criteria}, "rooted" at the associated entity, using the
 	 * specified join type.
 	 *
 	 * @param associationPath A dot-separated property path
@@ -278,7 +278,7 @@ public interface Criteria extends CriteriaSpecification {
 	public Criteria createCriteria(String associationPath, int joinType) throws HibernateException;
 
 	/**
-	 * Create a new <tt>Criteria</tt>, "rooted" at the associated entity,
+	 * Create a new {@code Criteria}, "rooted" at the associated entity,
 	 * assigning the given alias.
 	 * <p>
 	 * Functionally equivalent to {@link #createCriteria(String, String, org.hibernate.sql.JoinType)} using
@@ -294,7 +294,7 @@ public interface Criteria extends CriteriaSpecification {
 	public Criteria createCriteria(String associationPath, String alias) throws HibernateException;
 
 	/**
-	 * Create a new <tt>Criteria</tt>, "rooted" at the associated entity,
+	 * Create a new {@code Criteria}, "rooted" at the associated entity,
 	 * assigning the given alias and using the specified join type.
 	 *
 	 * @param associationPath A dot-separated property path
@@ -308,7 +308,7 @@ public interface Criteria extends CriteriaSpecification {
 	public Criteria createCriteria(String associationPath, String alias, JoinType joinType) throws HibernateException;
 
 	/**
-	 * Create a new <tt>Criteria</tt>, "rooted" at the associated entity,
+	 * Create a new {@code Criteria}, "rooted" at the associated entity,
 	 * assigning the given alias and using the specified join type.
 	 *
 	 * @param associationPath A dot-separated property path
@@ -325,13 +325,13 @@ public interface Criteria extends CriteriaSpecification {
 
 
 	/**
-	 * Create a new <tt>Criteria</tt>, "rooted" at the associated entity,
+	 * Create a new {@code Criteria}, "rooted" at the associated entity,
 	 * assigning the given alias and using the specified join type.
 	 *
 	 * @param associationPath A dot-separated property path
 	 * @param alias The alias to assign to the joined association (for later reference).
 	 * @param joinType The type of join to use.
-	 * @param withClause The criteria to be added to the join condition (<tt>ON</tt> clause)
+	 * @param withClause The criteria to be added to the join condition ({@code ON} clause)
 	 *
 	 * @return the created "sub criteria"
 	 * 
@@ -340,13 +340,13 @@ public interface Criteria extends CriteriaSpecification {
 	public Criteria createCriteria(String associationPath, String alias, JoinType joinType, Criterion withClause) throws HibernateException;
 
 	/**
-	 * Create a new <tt>Criteria</tt>, "rooted" at the associated entity,
+	 * Create a new {@code Criteria}, "rooted" at the associated entity,
 	 * assigning the given alias and using the specified join type.
 	 *
 	 * @param associationPath A dot-separated property path
 	 * @param alias The alias to assign to the joined association (for later reference).
 	 * @param joinType The type of join to use.
-	 * @param withClause The criteria to be added to the join condition (<tt>ON</tt> clause)
+	 * @param withClause The criteria to be added to the join condition ({@code ON} clause)
 	 *
 	 * @return the created "sub criteria"
 	 *
@@ -381,7 +381,7 @@ public interface Criteria extends CriteriaSpecification {
 	/**
 	 * Set the first result to be retrieved.
 	 *
-	 * @param firstResult the first result to retrieve, numbered from <tt>0</tt>
+	 * @param firstResult the first result to retrieve, numbered from {@code 0}
 	 * @return this (for method chaining)
 	 */
 	public Criteria setFirstResult(int firstResult);
@@ -474,7 +474,7 @@ public interface Criteria extends CriteriaSpecification {
 	/**
 	 * Set the name of the cache region to use for query result caching.
 	 *
-	 * @param cacheRegion the name of a query cache region, or <tt>null</tt>
+	 * @param cacheRegion the name of a query cache region, or {@code null}
 	 * for the default query cache
 	 * @return this (for method chaining)
 	 *
@@ -558,7 +558,7 @@ public interface Criteria extends CriteriaSpecification {
 	 * Convenience method to return a single instance that matches
 	 * the query, or null if the query returns no results.
 	 *
-	 * @return the single result or <tt>null</tt>
+	 * @return the single result or {@code null}
 	 * @throws HibernateException if there is more than one matching result
 	 */
 	public Object uniqueResult() throws HibernateException;

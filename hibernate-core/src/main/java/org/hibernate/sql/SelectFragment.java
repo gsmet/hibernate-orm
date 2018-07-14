@@ -15,7 +15,7 @@ import java.util.List;
 import org.hibernate.internal.util.StringHelper;
 
 /**
- * A fragment of an SQL <tt>SELECT</tt> clause
+ * A fragment of an SQL {@code SELECT} clause
  *
  * @author Gavin King
  */

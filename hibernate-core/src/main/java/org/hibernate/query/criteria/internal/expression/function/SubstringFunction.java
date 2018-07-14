@@ -16,7 +16,7 @@ import org.hibernate.query.criteria.internal.compile.RenderingContext;
 import org.hibernate.query.criteria.internal.expression.LiteralExpression;
 
 /**
- * Models the ANSI SQL <tt>SUBSTRING</tt> function.
+ * Models the ANSI SQL {@code SUBSTRING} function.
  *
  * @author Steve Ebersole
  */

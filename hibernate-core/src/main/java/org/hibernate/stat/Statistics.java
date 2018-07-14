@@ -329,7 +329,7 @@ public interface Statistics {
 	long getCloseStatementCount();
 
 	/**
-	 * The number of <tt>StaleObjectStateException</tt>s 
+	 * The number of {@code StaleObjectStateException}s 
 	 * that occurred
 	 */
 	long getOptimisticFailureCount();

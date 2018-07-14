@@ -15,21 +15,21 @@ import org.hibernate.engine.spi.SharedSessionContractImplementor;
 import org.hibernate.type.Type;
 
 /**
- * A <tt>UserType</tt> that may be dereferenced in a query.
+ * A {@code UserType} that may be dereferenced in a query.
  * This interface allows a custom type to define "properties".
  * These need not necessarily correspond to physical JavaBeans
  * style properties.<br>
  * <br>
- * A <tt>CompositeUserType</tt> may be used in almost every way
+ * A {@code CompositeUserType} may be used in almost every way
  * that a component may be used. It may even contain many-to-one
  * associations.<br>
  * <br>
  * Implementors must be immutable and must declare a public
  * default constructor.<br>
  * <br>
- * Unlike <tt>UserType</tt>, cacheability does not depend upon
- * serializability. Instead, <tt>assemble()</tt> and
- * <tt>disassemble</tt> provide conversion to/from a cacheable
+ * Unlike {@code UserType}, cacheability does not depend upon
+ * serializability. Instead, {@code assemble()} and
+ * {@code disassemble} provide conversion to/from a cacheable
  * representation.
  *
  * @see UserType for more simple cases
@@ -74,7 +74,7 @@ public interface CompositeUserType {
 	void setPropertyValue(Object component, int property, Object value) throws HibernateException;
 
 	/**
-	 * The class returned by <tt>nullSafeGet()</tt>.
+	 * The class returned by {@code nullSafeGet()}.
 	 *
 	 * @return Class
 	 */
@@ -110,7 +110,7 @@ public interface CompositeUserType {
 	/**
 	 * Write an instance of the mapped class to a prepared statement. Implementors
 	 * should handle possibility of null values. A multi-column type should be written
-	 * to parameters starting from <tt>index</tt>.
+	 * to parameters starting from {@code index}.
 	 *
 	 * @param st a JDBC prepared statement
 	 * @param value the object to write

@@ -15,7 +15,7 @@ import org.hibernate.query.criteria.internal.Renderable;
 import org.hibernate.query.criteria.internal.compile.RenderingContext;
 
 /**
- * Models an ANSI SQL <tt>NULLIF</tt> expression.  <tt>NULLIF</tt> is a specialized <tt>CASE</tt> statement.
+ * Models an ANSI SQL {@code NULLIF} expression.  {@code NULLIF} is a specialized {@code CASE} statement.
  *
  * @author Steve Ebersole
  */

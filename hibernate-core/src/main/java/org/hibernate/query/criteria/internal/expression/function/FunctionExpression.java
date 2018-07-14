@@ -23,7 +23,7 @@ public interface FunctionExpression<T> extends Expression<T> {
 	public String getFunctionName();
 
 	/**
-	 * Is this function a value aggregator (like a <tt>COUNT</tt> or <tt>MAX</tt> function e.g.)?
+	 * Is this function a value aggregator (like a {@code COUNT} or {@code MAX} function e.g.)?
 	 *
 	 * @return True if this functions does aggregation.
 	 */

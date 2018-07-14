@@ -9,8 +9,8 @@ package org.hibernate.criterion;
 import org.hibernate.type.Type;
 
 /**
- * The <tt>criterion</tt> package may be used by applications as a framework for building
- * new kinds of <tt>Projection</tt>. However, it is intended that most applications will
+ * The {@code criterion} package may be used by applications as a framework for building
+ * new kinds of {@code Projection}. However, it is intended that most applications will
  * simply use the built-in projection types via the static factory methods of this class.
  *
  * The factory methods that take an alias allow the projected value to be referred to by 
@@ -84,7 +84,7 @@ public final class Projections {
 	}
 		
 	/**
-	 * The query row count, ie. <tt>count(*)</tt>
+	 * The query row count, ie. {@code count(*)}
 	 *
 	 * @return The projection representing the row count
 	 *

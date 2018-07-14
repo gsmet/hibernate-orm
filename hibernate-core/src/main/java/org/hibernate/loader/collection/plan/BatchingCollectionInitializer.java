@@ -12,7 +12,7 @@ import org.hibernate.persister.collection.QueryableCollection;
 
 /**
  * The base contract for loaders capable of performing batch-fetch loading of collections using multiple foreign key
- * values in the SQL <tt>WHERE</tt> clause.
+ * values in the SQL {@code WHERE} clause.
  *
  * @author Gavin King
  * @author Steve Ebersole

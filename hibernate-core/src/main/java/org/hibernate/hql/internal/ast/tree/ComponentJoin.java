@@ -15,7 +15,7 @@ import org.hibernate.type.CompositeType;
 import org.hibernate.type.Type;
 
 /**
- * Models an explicit join terminating at a component value (e.g. <tt>... from Person p join p.name as n ...</tt>)
+ * Models an explicit join terminating at a component value (e.g. {@code ... from Person p join p.name as n ...})
  *
  * @author Steve Ebersole
  */

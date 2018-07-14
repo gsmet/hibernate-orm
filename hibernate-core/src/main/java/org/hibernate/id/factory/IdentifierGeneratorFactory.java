@@ -12,7 +12,7 @@ import org.hibernate.id.IdentifierGenerator;
 import org.hibernate.type.Type;
 
 /**
- * Contract for a <tt>factory</tt> of {@link IdentifierGenerator} instances.
+ * Contract for a {@code factory} of {@link IdentifierGenerator} instances.
  *
  * @author Steve Ebersole
  */

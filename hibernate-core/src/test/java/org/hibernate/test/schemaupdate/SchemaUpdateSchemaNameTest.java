@@ -31,7 +31,7 @@ import org.hibernate.testing.TestForIssue;
 import org.hibernate.testing.junit4.BaseUnitTestCase;
 
 /**
- * Test to illustrate that the <tt>org.hibernate.mapping.Table#sqlAlterStrings</tt> method
+ * Test to illustrate that the {@code org.hibernate.mapping.Table#sqlAlterStrings} method
  * uses legacy logic for building table names and doesn't adequately specify the catalog
  * or schema name properly.
  *

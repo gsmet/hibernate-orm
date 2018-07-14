@@ -17,9 +17,9 @@ import org.hibernate.query.criteria.internal.expression.UnaryOperatorExpression;
 
 /**
  * Defines a {@link javax.persistence.criteria.Predicate} for checking the
- * nullness state of an expression, aka an <tt>IS [NOT] NULL</tt> predicate.
+ * nullness state of an expression, aka an {@code IS [NOT] NULL} predicate.
  * <p>
- * The <tt>NOT NULL</tt> form can be built by calling the constructor and then
+ * The {@code NOT NULL} form can be built by calling the constructor and then
  * calling {@link #not}.
  *
  * @author Steve Ebersole

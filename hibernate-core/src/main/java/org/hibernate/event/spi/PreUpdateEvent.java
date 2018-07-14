@@ -11,7 +11,7 @@ import java.io.Serializable;
 import org.hibernate.persister.entity.EntityPersister;
 
 /**
- * Represents a <tt>pre-update</tt> event, which occurs just prior to
+ * Represents a {@code pre-update} event, which occurs just prior to
  * performing the update of an entity in the database.
  *
  * @author Gavin King

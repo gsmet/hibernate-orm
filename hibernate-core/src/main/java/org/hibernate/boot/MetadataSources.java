@@ -414,7 +414,7 @@ public class MetadataSources implements Serializable {
 	/**
 	 * Read all mappings from a jar file.
 	 * <p>
-	 * Assumes that any file named <tt>*.hbm.xml</tt> is a mapping document.
+	 * Assumes that any file named {@code *.hbm.xml} is a mapping document.
 	 *
 	 * @param jar a jar file
 	 *
@@ -454,7 +454,7 @@ public class MetadataSources implements Serializable {
 	/**
 	 * Read all mapping documents from a directory tree.
 	 * <p>
-	 * Assumes that any file named <tt>*.hbm.xml</tt> is a mapping document.
+	 * Assumes that any file named {@code *.hbm.xml} is a mapping document.
 	 *
 	 * @param dir The directory
 	 *

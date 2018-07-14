@@ -20,7 +20,7 @@ import org.hibernate.type.Type;
 /**
  * <b>uuid</b><br>
  * <br>
- * A <tt>UUIDGenerator</tt> that returns a string of length 32,
+ * A {@code UUIDGenerator} that returns a string of length 32,
  * This string will consist of only hex digits. Optionally,
  * the string may be generated with separators between each
  * component of the UUID.

@@ -65,9 +65,9 @@ public class Teradata14Dialect extends TeradataDialect {
 
 	/**
 	 * Get the name of the database type associated with the given
-	 * <tt>java.sql.Types</tt> typecode.
+	 * {@code java.sql.Types} typecode.
 	 *
-	 * @param code <tt>java.sql.Types</tt> typecode
+	 * @param code {@code java.sql.Types} typecode
 	 * @param length the length or precision of the column
 	 * @param precision the precision of the column
 	 * @param scale the scale of the column

@@ -16,7 +16,7 @@ import org.hibernate.query.criteria.internal.compile.RenderingContext;
 import org.hibernate.query.criteria.internal.expression.LiteralExpression;
 
 /**
- * Models the ANSI SQL <tt>LOCATE</tt> function.
+ * Models the ANSI SQL {@code LOCATE} function.
  *
  * @author Steve Ebersole
  */

@@ -15,7 +15,7 @@ import org.hibernate.engine.spi.SharedSessionContractImplementor;
 
 /**
  * The general contract between a class that generates unique
- * identifiers and the <tt>Session</tt>. It is not intended that
+ * identifiers and the {@code Session}. It is not intended that
  * this interface ever be exposed to the application. It <b>is</b>
  * intended that users implement this interface to provide
  * custom identifier generation strategies.<br>
@@ -23,7 +23,7 @@ import org.hibernate.engine.spi.SharedSessionContractImplementor;
  * Implementors should provide a public default constructor.<br>
  * <br>
  * Implementations that accept configuration parameters should
- * also implement <tt>Configurable</tt>.
+ * also implement {@code Configurable}.
  * <br>
  * Implementors <em>must</em> be thread-safe
  *

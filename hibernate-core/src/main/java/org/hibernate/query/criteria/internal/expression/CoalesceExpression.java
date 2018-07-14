@@ -18,7 +18,7 @@ import org.hibernate.query.criteria.internal.Renderable;
 import org.hibernate.query.criteria.internal.compile.RenderingContext;
 
 /**
- * Models an ANSI SQL <tt>COALESCE</tt> expression.  <tt>COALESCE</tt> is a specialized <tt>CASE</tt> statement.
+ * Models an ANSI SQL {@code COALESCE} expression.  {@code COALESCE} is a specialized {@code CASE} statement.
  *
  * @author Steve Ebersole
  */

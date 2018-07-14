@@ -10,7 +10,7 @@ import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Order;
 
 /**
- * Represents an <tt>ORDER BY</tt> fragment.
+ * Represents an {@code ORDER BY} fragment.
  *
  * @author Steve Ebersole
  */

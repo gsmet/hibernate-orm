@@ -12,7 +12,7 @@ import javax.persistence.criteria.Expression;
 import org.hibernate.query.criteria.internal.CriteriaBuilderImpl;
 
 /**
- * Models the ANSI SQL <tt>ABS</tt> function.
+ * Models the ANSI SQL {@code ABS} function.
  *
  * @author Steve Ebersole
  */

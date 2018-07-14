@@ -1031,7 +1031,7 @@ public interface Query<R> extends TypedQuery<R>, org.hibernate.Query<R>, CommonQ
 	 * Use {@link #setParameter(int, Object)} for null values.
 	 *
 	 * @param position the position of the parameter in the query
-	 * string, numbered from <tt>0</tt>.
+	 * string, numbered from {@code 0}.
 	 * @param val a non-null instance of a persistent class
 	 *
 	 * @return {@code this}, for method chaining

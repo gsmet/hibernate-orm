@@ -334,9 +334,9 @@ public class QueryTranslatorImpl implements FilterTranslator {
 	}
 
 	/**
-	 * Types of the return values of an <tt>iterate()</tt> style query.
+	 * Types of the return values of an {@code iterate()} style query.
 	 *
-	 * @return an array of <tt>Type</tt>s.
+	 * @return an array of {@code Type}s.
 	 */
 	@Override
 	public Type[] getReturnTypes() {
@@ -437,7 +437,7 @@ public class QueryTranslatorImpl implements FilterTranslator {
 	}
 
 	/**
-	 * Return the query results, as an instance of <tt>ScrollableResults</tt>
+	 * Return the query results, as an instance of {@code ScrollableResults}
 	 */
 	@Override
 	public ScrollableResultsImplementor scroll(QueryParameters queryParameters, SharedSessionContractImplementor session)

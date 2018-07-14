@@ -24,7 +24,7 @@ import org.hibernate.type.spi.TypeConfiguration;
  * <br>
  * This interface
  * <ul>
- * <li>abstracts user code from future changes to the <tt>Type</tt>
+ * <li>abstracts user code from future changes to the {@code Type}
  * interface,</li>
  * <li>simplifies the implementation of custom types and</li>
  * <li>hides certain "internal" interfaces from user code.</li>
@@ -33,15 +33,15 @@ import org.hibernate.type.spi.TypeConfiguration;
  * Implementors must be immutable and must declare a public
  * default constructor.<br>
  * <br>
- * The actual class mapped by a <tt>UserType</tt> may be just
+ * The actual class mapped by a {@code UserType} may be just
  * about anything.<br>
  * <br>
- * <tt>CompositeUserType</tt> provides an extended version of
+ * {@code CompositeUserType} provides an extended version of
  * this interface that is useful for more complex cases.<br>
  * <br>
- * Alternatively, custom types could implement <tt>Type</tt>
+ * Alternatively, custom types could implement {@code Type}
  * directly or extend one of the abstract classes in
- * <tt>org.hibernate.type</tt>. This approach risks future
+ * {@code org.hibernate.type}. This approach risks future
  * incompatible changes to classes or interfaces in that
  * package.
  *
@@ -53,14 +53,14 @@ public interface UserType {
 
 	/**
 	 * Return the SQL type codes for the columns mapped by this type. The
-	 * codes are defined on <tt>java.sql.Types</tt>.
+	 * codes are defined on {@code java.sql.Types}.
 	 * @see java.sql.Types
 	 * @return int[] the typecodes
 	 */
 	int[] sqlTypes();
 
 	/**
-	 * The class returned by <tt>nullSafeGet()</tt>.
+	 * The class returned by {@code nullSafeGet()}.
 	 *
 	 * @return Class
 	 */
@@ -98,7 +98,7 @@ public interface UserType {
 	/**
 	 * Write an instance of the mapped class to a prepared statement. Implementors
 	 * should handle possibility of null values. A multi-column type should be written
-	 * to parameters starting from <tt>index</tt>.
+	 * to parameters starting from {@code index}.
 	 *
 	 *
 	 * @param st a JDBC prepared statement

@@ -391,7 +391,7 @@ public final class TwoPhaseLoad {
 
 	/**
 	 * Add an uninitialized instance of an entity class, as a placeholder to ensure object
-	 * identity. Must be called before <tt>postHydrate()</tt>.
+	 * identity. Must be called before {@code postHydrate()}.
 	 *
 	 * Create a "temporary" entry for a newly instantiated entity. The entity is uninitialized,
 	 * but we need the mapping from id to instance in order to guarantee uniqueness.

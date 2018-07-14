@@ -7,7 +7,7 @@
 package org.hibernate.sql.ordering.antlr;
 
 /**
- * Models an ordering specification (<tt>ASCENDING</tt> or <tt>DESCENDING</tt>) within a {@link SortSpecification}.
+ * Models an ordering specification ({@code ASCENDING} or {@code DESCENDING}) within a {@link SortSpecification}.
  *
  * @author Steve Ebersole
  */

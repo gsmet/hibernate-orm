@@ -59,7 +59,7 @@ import org.hibernate.type.Type;
 public interface SQLQuery<T> extends Query<T>, SynchronizeableQuery<T> {
 	/**
 	 * Use a predefined named result-set mapping.  This might be defined by a {@code <result-set/>} element in a
-	 * Hibernate <tt>hbm.xml</tt> file or through a {@link javax.persistence.SqlResultSetMapping} annotation.
+	 * Hibernate {@code hbm.xml} file or through a {@link javax.persistence.SqlResultSetMapping} annotation.
 	 *
 	 * @param name The name of the mapping to use.
 	 *
