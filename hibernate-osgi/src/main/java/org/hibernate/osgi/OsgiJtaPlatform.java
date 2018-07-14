@@ -20,18 +20,16 @@ import org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform;
  * Offers the JTA Platform provided by the OSGi container. The Enterprise
  * OSGi spec requires all containers to register UserTransaction
  * and TransactionManager OSGi services.
- * 
+ *
  * @author Brett Meyer
  */
 public class OsgiJtaPlatform implements JtaPlatform {
 	private static final long serialVersionUID = 1L;
-	
+
 	private OsgiServiceUtil osgiServiceUtil;
 
 	/**
 	 * Constructs a OsgiJtaPlatform
-	 *
-	 * @param bundleContext The OSGi bundle context
 	 */
 	public OsgiJtaPlatform(OsgiServiceUtil osgiServiceUtil) {
 		this.osgiServiceUtil = osgiServiceUtil;

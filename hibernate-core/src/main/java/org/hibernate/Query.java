@@ -66,7 +66,7 @@ public interface Query<R> extends TypedQuery<R>, CommonQueryContract {
 	String getQueryString();
 
 	/**
-	 * "QueryOptions" is a better name, I think, than "RowSelection" -> 6.0
+	 * "QueryOptions" is a better name, I think, than "RowSelection" -&gt; 6.0
 	 *
 	 * @todo 6.0 rename RowSelection to QueryOptions
 	 *

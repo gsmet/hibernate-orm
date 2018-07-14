@@ -13,7 +13,7 @@ import org.jboss.byteman.rule.helper.Helper;
 import org.jboss.logging.Logger;
 
 /**
- * @author Sanne Grinovero <sanne@hibernate.org> (C) 2011 Red Hat Inc.
+ * @author Sanne Grinovero &lt;sanne@hibernate.org&gt; (C) 2011 Red Hat Inc.
  * @author Hardy Ferentschik
  */
 public class BytemanHelper extends Helper {

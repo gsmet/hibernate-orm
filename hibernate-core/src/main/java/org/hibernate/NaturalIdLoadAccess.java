@@ -11,7 +11,7 @@ import java.util.Optional;
 
 /**
  * Loads an entity by its natural identifier.
- * 
+ *
  * @author Eric Dalquist
  * @author Steve Ebersole
  *
@@ -29,7 +29,7 @@ public interface NaturalIdLoadAccess<T> {
 
 	/**
 	 * Add a NaturalId attribute value.
-	 * 
+	 *
 	 * @param attributeName The entity attribute name that is marked as a NaturalId
 	 * @param value The value of the attribute
 	 *
@@ -41,7 +41,7 @@ public interface NaturalIdLoadAccess<T> {
 	 * For entities with mutable natural ids, should Hibernate perform "synchronization" prior to performing
 	 * lookups?  The default is to perform "synchronization" (for correctness).
 	 * <p>
-	 * "synchronization" here indicates updating the natural-id -> pk cross reference maintained as part of the
+	 * "synchronization" here indicates updating the natural-id -&gt; pk cross reference maintained as part of the
 	 * session.  When enabled, prior to performing the lookup, Hibernate will check all entities of the given
 	 * type associated with the session to see if its natural-id values have changed and, if so, update the
 	 * cross reference.  There is a performance impact associated with this, so if application developers are
@@ -72,7 +72,7 @@ public interface NaturalIdLoadAccess<T> {
 	 * {@code null} if there is no such persistent instance.  If the instance is already associated with the session,
 	 * return that instance, initializing it if needed.  This method never returns an uninitialized instance.
 	 *
-	 * @return The persistent instance or {@code null} 
+	 * @return The persistent instance or {@code null}
 	 */
 	T load();
 

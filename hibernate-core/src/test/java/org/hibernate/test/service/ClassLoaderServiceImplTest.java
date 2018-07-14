@@ -31,7 +31,7 @@ import static org.junit.Assert.assertSame;
 
 /**
  * @author Artem V. Navrotskiy
- * @author Emmanuel Bernard <emmanuel@hibernate.org>
+ * @author Emmanuel Bernard &lt;emmanuel@hibernate.org&gt;
  */
 public class ClassLoaderServiceImplTest {
     /**

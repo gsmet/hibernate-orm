@@ -14,7 +14,7 @@ import org.hibernate.boot.spi.MetadataBuildingContext;
 /**
  * Delayed information about an AttributeConverter.  Delayed until we have
  * access to {@link org.hibernate.boot.internal.ClassmateContext} during
- * the MetadataSources -> Metadata process.
+ * the {@code MetadataSources -> Metadata} process.
  *
  * @author Steve Ebersole
  */

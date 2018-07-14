@@ -46,15 +46,15 @@ public interface AuditReader {
 	 * Find an entity by primary key on the given date.  The date specifies restricting
 	 * the result to any entity created on or before the date with the highest revision
 	 * number.
-	 *  
+	 *
 	 * @param cls Class of the entity.
 	 * @param primaryKey Primary key of the entity.
 	 * @param date Date for which to get entity revision.
-	 * 
+	 *
 	 * @return The found entity instance at created on or before the specified date with the highest
 	 *         revision number or null, if an entity with the id had not be created on or before the
 	 *         specified date.
-	 *         
+	 *
 	 * @throws IllegalArgumentException if cls, primaryKey, or date is null.
 	 * @throws NotAuditedException When entities of the given class are not audited.
 	 * @throws RevisionDoesNotExistException If the given date is before the first revision.
@@ -62,7 +62,7 @@ public interface AuditReader {
 	 */
 	<T> T find(Class<T> cls, Object primaryKey, Date date) throws
 			IllegalArgumentException, NotAuditedException, RevisionDoesNotExistException, IllegalStateException;
-	
+
 	/**
 	 * Find an entity by primary key at the given revision with the specified entityName.
 	 *
@@ -160,8 +160,8 @@ public interface AuditReader {
 	/**
 	 * Gets the revision number, that corresponds to the given date. More precisely, returns
 	 * the number of the highest revision, which was created on or before the given date. So:
-	 * <code>getRevisionDate(getRevisionNumberForDate(date)) <= date</code> and
-	 * <code>getRevisionDate(getRevisionNumberForDate(date)+1) > date</code>.
+	 * {@code getRevisionDate(getRevisionNumberForDate(date)) <= date} and
+	 * {@code getRevisionDate(getRevisionNumberForDate(date)+1) > date}.
 	 *
 	 * @param date Date for which to get the revision.
 	 *
@@ -275,8 +275,10 @@ public interface AuditReader {
 	 *
 	 * @return the entityName for the given entity.
 	 * @throws HibernateException if one of the following conditions are satisfied:
+	 * <ul>
 	 * <li>The supplied entity has yet to be returned by this AuditReader instance, e.g. it isn't in the reader's cache.</li>
 	 * <li>The supplied entity, primary key, and revision triplet is not a valid combination.</li>
+	 * </ul>
 	 */
 	String getEntityName(Object primaryKey, Number revision, Object entity)
 			throws HibernateException;

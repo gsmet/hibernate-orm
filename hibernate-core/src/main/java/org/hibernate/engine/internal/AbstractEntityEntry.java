@@ -34,9 +34,9 @@ import org.hibernate.pretty.MessageHelper;
  * A base implementation of EntityEntry
  *
  * @author Gavin King
- * @author Emmanuel Bernard <emmanuel@hibernate.org>
+ * @author Emmanuel Bernard &lt;emmanuel@hibernate.org&gt;
  * @author Gunnar Morling
- * @author Sanne Grinovero  <sanne@hibernate.org>
+ * @author Sanne Grinovero &lt;sanne@hibernate.org&gt;
  */
 public abstract class AbstractEntityEntry implements Serializable, EntityEntry {
 	protected final Serializable id;

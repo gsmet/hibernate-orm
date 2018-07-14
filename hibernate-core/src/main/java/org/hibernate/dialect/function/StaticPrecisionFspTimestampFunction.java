@@ -40,7 +40,7 @@ public class StaticPrecisionFspTimestampFunction extends NoArgSQLFunction {
 	 * @param name The function name
 	 * @param fsp The explicit fractional seconds precision to render
 	 *
-	 * @throws java.lang.IllegalArgumentException if {@code fsp} < 0.
+	 * @throws java.lang.IllegalArgumentException if {@code fsp} &lt; 0.
 	 */
 	public StaticPrecisionFspTimestampFunction(String name, int fsp) {
 		super( name, StandardBasicTypes.TIMESTAMP);

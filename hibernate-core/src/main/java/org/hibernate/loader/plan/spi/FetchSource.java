@@ -53,9 +53,9 @@ public interface FetchSource {
 	 *
 	 * If no EntityReference can be resolved, null is return.
 	 *
-	 *  @return the "current" EntityReference or null if none.
-	 * .
-	 * @see org.hibernate.loader.plan.spi.Fetch#getSource().
+	 * @return the "current" EntityReference or null if none.
+	 *
+	 * @see org.hibernate.loader.plan.spi.Fetch#getSource()
 	 */
 	public EntityReference resolveEntityReference();
 }

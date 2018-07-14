@@ -15,7 +15,7 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 
 /**
- * @author Strong Liu <stliu@hibernate.org>
+ * @author Strong Liu &lt;stliu@hibernate.org&gt;
  */
 @Entity
 public class Importer {

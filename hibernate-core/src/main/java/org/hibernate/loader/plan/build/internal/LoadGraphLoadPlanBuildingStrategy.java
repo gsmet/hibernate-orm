@@ -19,7 +19,7 @@ import org.hibernate.persister.walking.spi.AssociationAttributeDefinition;
 /**
  * Loadplan building strategy for {@link javax.persistence.EntityGraph} is applied in {@code javax.persistence.loadgraph} mode.
  *
- * @author Strong Liu <stliu@hibernate.org>
+ * @author Strong Liu &lt;stliu@hibernate.org&gt;
  */
 public class LoadGraphLoadPlanBuildingStrategy extends AbstractEntityGraphVisitationStrategy {
 	private final GraphNodeImplementor rootEntityGraph;

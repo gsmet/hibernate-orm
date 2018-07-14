@@ -11,7 +11,7 @@ import org.hibernate.engine.spi.EntityEntryExtraState;
 /**
  * Contains optional state from {@link org.hibernate.engine.spi.EntityEntry}.
  *
- * @author Emmanuel Bernard <emmanuel@hibernate.org>
+ * @author Emmanuel Bernard &lt;emmanuel@hibernate.org&gt;
  */
 public class EntityEntryExtraStateHolder implements EntityEntryExtraState {
 	private EntityEntryExtraState next;

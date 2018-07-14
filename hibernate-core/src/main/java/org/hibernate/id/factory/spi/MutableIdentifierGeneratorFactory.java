@@ -12,7 +12,7 @@ import org.hibernate.service.Service;
 /**
  * Let people register strategies
  *
- * @author Emmanuel Bernard <emmanuel@hibernate.org>
+ * @author Emmanuel Bernard &lt;emmanuel@hibernate.org&gt;
  */
 public interface MutableIdentifierGeneratorFactory extends IdentifierGeneratorFactory, Service {
 	public void register(String strategy, Class generatorClass);

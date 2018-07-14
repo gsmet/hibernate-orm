@@ -71,7 +71,7 @@ public final class MessageHelper {
 	 */
 	public static String infoString(
 			EntityPersister persister,
-			Object id, 
+			Object id,
 			SessionFactoryImplementor factory) {
 		StringBuilder s = new StringBuilder();
 		s.append( '[' );
@@ -118,8 +118,8 @@ public final class MessageHelper {
 	 * @return An info string, in the form [FooBar#1]
 	 */
 	public static String infoString(
-			EntityPersister persister, 
-			Object id, 
+			EntityPersister persister,
+			Object id,
 			Type identifierType,
 			SessionFactoryImplementor factory) {
 		StringBuilder s = new StringBuilder();
@@ -149,11 +149,11 @@ public final class MessageHelper {
 	 * @param persister The persister for the entities
 	 * @param ids The entity id values
 	 * @param factory The session factory
-	 * @return An info string, in the form [FooBar#<1,2,3>]
+	 * @return An info string, in the form {@code [FooBar#<1,2,3>]}
 	 */
 	public static String infoString(
-			EntityPersister persister, 
-			Serializable[] ids, 
+			EntityPersister persister,
+			Serializable[] ids,
 			SessionFactoryImplementor factory) {
 		StringBuilder s = new StringBuilder();
 		s.append( '[' );
@@ -225,7 +225,7 @@ public final class MessageHelper {
 
 
 	// collections ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	
+
 	/**
 	 * Generate an info message string relating to a particular managed
 	 * collection.  Attempts to intelligently handle property-refs issues
@@ -237,12 +237,12 @@ public final class MessageHelper {
 	 * @param session The session
 	 * @return An info string, in the form [Foo.bars#1]
 	 */
-	public static String collectionInfoString( 
+	public static String collectionInfoString(
 			CollectionPersister persister,
 			PersistentCollection collection,
 			Serializable collectionKey,
 			SharedSessionContractImplementor session ) {
-		
+
 		StringBuilder s = new StringBuilder();
 		s.append( '[' );
 		if ( persister == null ) {
@@ -251,13 +251,13 @@ public final class MessageHelper {
 		else {
 			s.append( persister.getRole() );
 			s.append( '#' );
-			
+
 			Type ownerIdentifierType = persister.getOwnerEntityPersister()
 					.getIdentifierType();
 			Serializable ownerKey;
 			// TODO: Is it redundant to attempt to use the collectionKey,
 			// or is always using the owner id sufficient?
-			if ( collectionKey.getClass().isAssignableFrom( 
+			if ( collectionKey.getClass().isAssignableFrom(
 					ownerIdentifierType.getReturnedClass() ) ) {
 				ownerKey = collectionKey;
 			}
@@ -266,7 +266,7 @@ public final class MessageHelper {
 				EntityEntry entry = collectionOwner == null ? null : session.getPersistenceContext().getEntry(collectionOwner);
 				ownerKey = entry == null ? null : entry.getId();
 			}
-			s.append( ownerIdentifierType.toLoggableString( 
+			s.append( ownerIdentifierType.toLoggableString(
 					ownerKey, session.getFactory() ) );
 		}
 		s.append( ']' );
@@ -281,11 +281,11 @@ public final class MessageHelper {
 	 * @param persister The persister for the collections
 	 * @param ids The id values of the owners
 	 * @param factory The session factory
-	 * @return An info string, in the form [Foo.bars#<1,2,3>]
+	 * @return An info string, in the form {@code [Foo.bars#<1,2,3>]}
 	 */
 	public static String collectionInfoString(
-			CollectionPersister persister, 
-			Serializable[] ids, 
+			CollectionPersister persister,
+			Serializable[] ids,
 			SessionFactoryImplementor factory) {
 		StringBuilder s = new StringBuilder();
 		s.append( '[' );
@@ -317,8 +317,8 @@ public final class MessageHelper {
 	 * @return An info string, in the form [Foo.bars#1]
 	 */
 	public static String collectionInfoString(
-			CollectionPersister persister, 
-			Serializable id, 
+			CollectionPersister persister,
+			Serializable id,
 			SessionFactoryImplementor factory) {
 		StringBuilder s = new StringBuilder();
 		s.append( '[' );
@@ -340,7 +340,7 @@ public final class MessageHelper {
 
 		return s.toString();
 	}
-	
+
 	private static void addIdToCollectionInfoString(
 			CollectionPersister persister,
 			Serializable id,
@@ -355,7 +355,7 @@ public final class MessageHelper {
 		// may not be the owner key.
 		Type ownerIdentifierType = persister.getOwnerEntityPersister()
 				.getIdentifierType();
-		if ( id.getClass().isAssignableFrom( 
+		if ( id.getClass().isAssignableFrom(
 				ownerIdentifierType.getReturnedClass() ) ) {
 			s.append( ownerIdentifierType.toLoggableString( id, factory ) );
 		}

@@ -286,8 +286,8 @@ public interface EntityPersister extends EntityDefinition {
 	 * Determine whether optimistic locking by column is enabled for this
 	 * entity.
 	 *
-	 * @return True if optimistic locking by column (i.e., <version/> or
-	 * <timestamp/>) is enabled; false otherwise.
+	 * @return True if optimistic locking by column (i.e., {@code <version/>} or
+	 * {@code <timestamp/>}) is enabled; false otherwise.
 	 */
 	boolean isVersioned();
 
@@ -530,7 +530,7 @@ public interface EntityPersister extends EntityDefinition {
 	 * Does this class have a natural id cache
 	 */
 	boolean hasNaturalIdCache();
-	
+
 	/**
 	 * Get the NaturalId cache (optional operation)
 	 */
@@ -798,7 +798,7 @@ public interface EntityPersister extends EntityDefinition {
 	EntityTuplizer getEntityTuplizer();
 
 	BytecodeEnhancementMetadata getInstrumentationMetadata();
-	
+
 	FilterAliasGenerator getFilterAliasGenerator(final String rootAlias);
 
 	/**

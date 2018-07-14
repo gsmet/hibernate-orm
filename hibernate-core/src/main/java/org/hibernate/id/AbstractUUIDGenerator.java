@@ -48,7 +48,7 @@ public abstract class AbstractUUIDGenerator implements IdentifierGenerator {
 
 	/**
 	 * Unique in a millisecond for this JVM instance (unless there
-	 * are > Short.MAX_VALUE instances created in a millisecond)
+	 * are &gt; Short.MAX_VALUE instances created in a millisecond)
 	 */
 	protected short getCount() {
 		synchronized(AbstractUUIDGenerator.class) {

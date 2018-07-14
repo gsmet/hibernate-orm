@@ -25,7 +25,7 @@ import org.jboss.logging.Logger;
  * current timestamp.
  * <p>
  * Note: May/may-not cause issues on dialects which do not properly support
- * a true notion of timestamp (Oracle < 8, for example, where only its DATE
+ * a true notion of timestamp (Oracle &lt; 8, for example, where only its DATE
  * datatype is supported).  Depends on the frequency of DML operations...
  *
  * @author Steve Ebersole

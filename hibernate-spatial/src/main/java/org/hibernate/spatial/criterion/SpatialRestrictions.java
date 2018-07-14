@@ -19,7 +19,7 @@ import com.vividsolutions.jts.geom.Geometry;
  * expressions of the OpenGIS Simple Features Specification for SQL, Revision
  * 1.1. In addition, it provides for a simple spatial <code>filter</code> that
  * works mostly using the spatial index. This corresponds to the Oracle
- * Spatial's "SDO_FILTER" function, or the "&&" operator of PostGIS.
+ * Spatial's "SDO_FILTER" function, or the {@code &&} operator of PostGIS.
  *
  * @author Karel Maesen
  */

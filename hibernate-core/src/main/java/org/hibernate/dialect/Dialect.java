@@ -727,7 +727,7 @@ public abstract class Dialect implements ConversionContext {
 
 	/**
 	 * Retrieves a map of the dialect's registered functions
-	 * (functionName => {@link org.hibernate.dialect.function.SQLFunction}).
+	 * (functionName =&gt; {@link org.hibernate.dialect.function.SQLFunction}).
 	 *
 	 * @return The map of registered functions.
 	 */
@@ -885,7 +885,7 @@ public abstract class Dialect implements ConversionContext {
 	 * Overloaded form of {@link #getCreateSequenceString(String)}, additionally
 	 * taking the initial value and increment size to be applied to the sequence
 	 * definition.
-	 * </p>
+	 * <p>
 	 * The default definition is to suffix {@link #getCreateSequenceString(String)}
 	 * with the string: " start with {initialValue} increment by {incrementSize}" where
 	 * {initialValue} and {incrementSize} are replacement placeholders.  Generally
@@ -1651,7 +1651,7 @@ public abstract class Dialect implements ConversionContext {
 	 * @return The Dialect's preferred SQLExceptionConverter, or null to
 	 * indicate that the default {@link SQLExceptionConverter} should be used.
 	 *
-	 * @see {@link #buildSQLExceptionConversionDelegate()}
+	 * @see #buildSQLExceptionConversionDelegate()
 	 * @deprecated {@link #buildSQLExceptionConversionDelegate()} should be
 	 * overridden instead.
 	 */
@@ -1664,11 +1664,11 @@ public abstract class Dialect implements ConversionContext {
 	 * Build an instance of a {@link SQLExceptionConversionDelegate} for
 	 * interpreting dialect-specific error or SQLState codes.
 	 * <p>
-	 * When {@link #buildSQLExceptionConverter} returns null, the default 
+	 * When {@link #buildSQLExceptionConverter} returns null, the default
 	 * {@link SQLExceptionConverter} is used to interpret SQLState and
 	 * error codes. If this method is overridden to return a non-null value,
 	 * the default {@link SQLExceptionConverter} will use the returned
-	 * {@link SQLExceptionConversionDelegate} in addition to the following 
+	 * {@link SQLExceptionConversionDelegate} in addition to the following
 	 * standard delegates:
 	 * <ol>
 	 *     <li>a "static" delegate based on the JDBC 4 defined SQLException hierarchy;</li>
@@ -2506,7 +2506,7 @@ public abstract class Dialect implements ConversionContext {
 	 * Are subselects supported as the left-hand-side (LHS) of
 	 * IN-predicates.
 	 * <p>
-	 * In other words, is syntax like "... <subquery> IN (1, 2, 3) ..." supported?
+	 * In other words, is syntax like {@code ... <subquery> IN (1, 2, 3) ...} supported?
 	 *
 	 * @return True if subselects can appear as the LHS of an in-predicate;
 	 * false otherwise.

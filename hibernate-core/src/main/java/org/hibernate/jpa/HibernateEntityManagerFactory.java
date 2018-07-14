@@ -60,7 +60,7 @@ public interface HibernateEntityManagerFactory extends EntityManagerFactory, Ser
 	 *
 	 * @deprecated - no longer necessary.  all references can be directly replaced with
 	 * calls to {@link SessionFactoryOptions#getSessionFactoryName()}
-	 * via {@link #getSessionFactory()} -> {@link SessionFactoryImplementor#getSessionFactoryOptions()}
+	 * via {@link #getSessionFactory()} -&gt; {@link SessionFactoryImplementor#getSessionFactoryOptions()}
 	 */
 	@Deprecated
 	default String getEntityManagerFactoryName() {

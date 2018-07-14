@@ -11,7 +11,7 @@ import org.hibernate.jpa.HibernateEntityManagerFactory;
 /**
  * Internal contact for things that have {@link HibernateEntityManagerFactory} access.
  *
- * @author Strong Liu <stliu@hibernate.org>
+ * @author Strong Liu &lt;stliu@hibernate.org&gt;
  *
  * @deprecated (since 5.2) Why do we need an over-arching access to HibernateEntityManagerFactory across
  * multiple contract hierarchies?

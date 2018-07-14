@@ -13,11 +13,11 @@ import org.hibernate.persister.collection.CollectionPersister;
  * Contract for managing transactional and concurrent access to cached collection
  * data.  For cached collection data, all modification actions actually just
  * invalidate the entry(s).  The call sequence here is:
- * {@link #lockItem} -> {@link #remove} -> {@link #unlockItem}
+ * {@link #lockItem} -&gt; {@link #remove} -&gt; {@link #unlockItem}
  * <p>
  * There is another usage pattern that is used to invalidate entries
  * afterQuery performing "bulk" HQL/SQL operations:
- * {@link #lockRegion} -> {@link #removeAll} -> {@link #unlockRegion}
+ * {@link #lockRegion} -&gt; {@link #removeAll} -&gt; {@link #unlockRegion}
  *
  * @author Gavin King
  * @author Steve Ebersole

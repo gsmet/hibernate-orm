@@ -15,7 +15,7 @@ import org.hibernate.type.Type;
 
 /**
  * Represents a "parameter list" binding: aka the binding of a collection of values for a single
- * query parameter.  At some point these need to be "expanded"; see {@link QueryParameterBindingsImpl#expandListValuedParameters(String)}
+ * query parameter.  At some point these need to be "expanded"; see {@link QueryParameterBindingsImpl#expandListValuedParameters(String, org.hibernate.engine.spi.SharedSessionContractImplementor)}
  * for details.
  *
  * @author Steve Ebersole

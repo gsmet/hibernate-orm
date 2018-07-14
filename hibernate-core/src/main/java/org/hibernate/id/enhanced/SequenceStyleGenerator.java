@@ -47,7 +47,8 @@ import org.jboss.logging.Logger;
  * <p>
  * General configuration parameters:
  * <table>
- * 	 <tr>
+ *   <caption>General configuration parameters</caption>
+ *   <tr>
  *     <td><b>NAME</b></td>
  *     <td><b>DEFAULT</b></td>
  *     <td><b>DESCRIPTION</b></td>
@@ -81,7 +82,8 @@ import org.jboss.logging.Logger;
  * <p>
  * Configuration parameters used specifically when the underlying structure is a table:
  * <table>
- * 	 <tr>
+ *   <caption>Configuration parameters used specifically when the underlying structure is a table</caption>
+ *   <tr>
  *     <td><b>NAME</b></td>
  *     <td><b>DEFAULT</b></td>
  *     <td><b>DESCRIPTION</b></td>

@@ -18,7 +18,7 @@ import org.hibernate.type.StandardBasicTypes;
  * An Hibernate 3 SQL dialect for Mimer SQL. This dialect requires Mimer SQL 9.2.1 or later
  * because of the mappings to NCLOB, BINARY, and BINARY VARYING.
  *
- * @author Fredrik lund <fredrik.alund@mimer.se>
+ * @author Fredrik lund &lt;fredrik.alund@mimer.se&gt;
  */
 @SuppressWarnings("deprecation")
 public class MimerSQLDialect extends Dialect {

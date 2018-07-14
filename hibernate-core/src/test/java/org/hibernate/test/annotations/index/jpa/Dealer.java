@@ -10,7 +10,7 @@ import java.io.Serializable;
 import javax.persistence.Embeddable;
 
 /**
- * @author Strong Liu <stliu@hibernate.org>
+ * @author Strong Liu &lt;stliu@hibernate.org&gt;
  */
 @Embeddable
 public class Dealer implements Serializable {

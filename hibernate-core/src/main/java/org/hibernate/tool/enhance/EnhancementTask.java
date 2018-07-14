@@ -37,13 +37,13 @@ import java.util.List;
  * https://github.com/hibernate/hibernate-orm/blob/159bc99a36d86988b61b88ba91eec82cac044e1c/hibernate-core/src/main/java/org/hibernate/tool/enhance/EnhancementTask.java
  * https://github.com/hibernate/hibernate-orm/blob/159bc99a36d86988b61b88ba91eec82cac044e1c/tooling/hibernate-enhance-maven-plugin/src/main/java/org/hibernate/orm/tooling/maven/MavenEnhancePlugin.java
  *
- * <target name="enhance" depends="compile">
- *     <taskdef name="enhance" classname="org.hibernate.tool.enhance.EnhancementTask">
- *         <classpath refid="<some-ant-path-including-hibernate-core-jar>"/>
- *         <classpath path="<your-classes-path>"/>
- *     </taskdef>
- *     <enhance base="${base}" dir="${base}" failOnError="true" enableLazyInitialization="true" enableDirtyTracking="false" enableAssociationManagement="false" enableExtendedEnhancement="false" />
- * </target>
+ * &lt;target name="enhance" depends="compile"&gt;
+ *     &lt;taskdef name="enhance" classname="org.hibernate.tool.enhance.EnhancementTask"&gt;
+ *         &lt;classpath refid="&lt;some-ant-path-including-hibernate-core-jar&gt;"/&gt;
+ *         &lt;classpath path="&lt;your-classes-path&gt;"/&gt;
+ *     &lt;/taskdef&gt;
+ *     &lt;enhance base="${base}" dir="${base}" failOnError="true" enableLazyInitialization="true" enableDirtyTracking="false" enableAssociationManagement="false" enableExtendedEnhancement="false" /&gt;
+ * &lt;/target&gt;
  *
  * @author Luis Barreiro
  * @author Taro App

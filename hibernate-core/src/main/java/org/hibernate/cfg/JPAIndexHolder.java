@@ -13,7 +13,7 @@ import java.util.StringTokenizer;
 import javax.persistence.Index;
 
 /**
- * @author Strong Liu <stliu@hibernate.org>
+ * @author Strong Liu &lt;stliu@hibernate.org&gt;
  */
 public class JPAIndexHolder {
 	private final String name;

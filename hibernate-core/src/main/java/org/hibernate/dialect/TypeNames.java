@@ -15,7 +15,7 @@ import org.hibernate.internal.util.StringHelper;
 
 /**
  * This class maps a type to names.  Associations may be marked with a capacity. Calling the get()
- * method with a type and actual size n will return  the associated name with smallest capacity >= n,
+ * method with a type and actual size n will return  the associated name with smallest capacity &gt;= n,
  * if available and an unmarked default type otherwise.
  * Eg, setting
  * <pre>
@@ -25,10 +25,10 @@ import org.hibernate.internal.util.StringHelper;
  * </pre>
  * will give you back the following:
  * <pre>
- *  names.get( type )         // --> "TEXT" (default)
- *  names.get( type,    100 ) // --> "VARCHAR(100)" (100 is in [0:255])
- *  names.get( type,   1000 ) // --> "LONGVARCHAR(1000)" (1000 is in [256:65534])
- *  names.get( type, 100000 ) // --> "TEXT" (default)
+ *  names.get( type )         // --&gt; "TEXT" (default)
+ *  names.get( type,    100 ) // --&gt; "VARCHAR(100)" (100 is in [0:255])
+ *  names.get( type,   1000 ) // --&gt; "LONGVARCHAR(1000)" (1000 is in [256:65534])
+ *  names.get( type, 100000 ) // --&gt; "TEXT" (default)
  * </pre>
  * On the other hand, simply putting
  * <pre>
@@ -36,9 +36,9 @@ import org.hibernate.internal.util.StringHelper;
  * </pre>
  * would result in
  * <pre>
- *  names.get( type )        // --> "VARCHAR($l)" (will cause trouble)
- *  names.get( type, 100 )   // --> "VARCHAR(100)"
- *  names.get( type, 10000 ) // --> "VARCHAR(10000)"
+ *  names.get( type )        // --&gt; "VARCHAR($l)" (will cause trouble)
+ *  names.get( type, 100 )   // --&gt; "VARCHAR(100)"
+ *  names.get( type, 10000 ) // --&gt; "VARCHAR(10000)"
  * </pre>
  *
  * @author Christoph Beck
@@ -81,7 +81,7 @@ public final class TypeNames {
 	 * @param scale the SQL scale
 	 * @param precision the SQL precision
 	 *
-	 * @return the associated name with smallest capacity >= size, if available and the default type name otherwise
+	 * @return the associated name with smallest capacity &gt;= size, if available and the default type name otherwise
 	 *
 	 * @throws MappingException Indicates that no registrations were made for that typeCode
 	 */

@@ -53,15 +53,12 @@ import static org.hibernate.envers.internal.entities.mapper.relation.query.Query
  * <li>At the same time the <strong>end-revision</strong> field of the <strong>previous</strong> audit row is set to this revision</li>
  * <li>Queries are retrieved using 'between start and end revision', instead of a subquery.</li>
  * </ul>
- * </p>
- * <p>
  * <p>
  * This has a few important consequences that need to be judged against against each other:
  * <ul>
  * <li>Persisting audit information is a bit slower, because an extra row is updated</li>
  * <li>Retrieving audit information is a lot faster</li>
  * </ul>
- * </p>
  *
  * @author Stephanie Pau
  * @author Adam Warski (adam at warski dot org)

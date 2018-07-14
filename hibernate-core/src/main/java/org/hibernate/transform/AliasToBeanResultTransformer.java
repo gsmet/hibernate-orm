@@ -29,9 +29,9 @@ import org.hibernate.property.access.spi.Setter;
  * 			)
  * 			.setResultTransformer( new AliasToBeanResultTransformer(StudentDTO.class) )
  * 			.list();
- * <p>
- *  StudentDTO dto = (StudentDTO)resultWithAliasedBean.get(0);
- * 	</pre>
+ *
+ * StudentDTO dto = (StudentDTO)resultWithAliasedBean.get(0);
+ * </pre>
  *
  * @author max
  */
@@ -70,7 +70,7 @@ public class AliasToBeanResultTransformer extends AliasedTupleSubsetResultTransf
 			else {
 				check( aliases );
 			}
-			
+
 			result = resultClass.newInstance();
 
 			for ( int i = 0; i < aliases.length; i++ ) {

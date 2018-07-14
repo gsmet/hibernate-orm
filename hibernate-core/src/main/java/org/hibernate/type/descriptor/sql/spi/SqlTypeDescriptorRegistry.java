@@ -12,7 +12,7 @@ import org.hibernate.type.descriptor.sql.SqlTypeDescriptor;
 import org.hibernate.type.spi.TypeConfiguration;
 
 /**
- * Basically a map from JDBC type code (int) -> {@link SqlTypeDescriptor}
+ * Basically a map from JDBC type code (int) -&gt; {@link SqlTypeDescriptor}
  *
  * @author Steve Ebersole
  * @author Andrea Boriero

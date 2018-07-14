@@ -13,17 +13,17 @@ import org.hibernate.persister.entity.EntityPersister;
 /**
  * Contract for managing transactional and concurrent access to cached naturalId
  * data.  The expected call sequences related to various operations are:<ul>
- *     <li><b>INSERTS</b> : {@link #insert} -> {@link #afterInsert}</li>
- *     <li><b>UPDATES</b> : {@link #lockItem} -> {@link #remove} -> {@link #update} -> {@link #afterUpdate}</li>
- *     <li><b>DELETES</b> : {@link #lockItem} -> {@link #remove} -> {@link #unlockItem}</li>
- *     <li><b>LOADS</b> : {@link @putFromLoad}</li>
+ *     <li><b>INSERTS</b> : {@link #insert} -&gt; {@link #afterInsert}</li>
+ *     <li><b>UPDATES</b> : {@link #lockItem} -&gt; {@link #remove} -&gt; {@link #update} -&gt; {@link #afterUpdate}</li>
+ *     <li><b>DELETES</b> : {@link #lockItem} -&gt; {@link #remove} -&gt; {@link #unlockItem}</li>
+ *     <li><b>LOADS</b> : {@link #putFromLoad}</li>
  * </ul>
  * Note the special case of <b>UPDATES</b> above.  Because the cache key itself has changed here we need to remove the
  * old entry as well as
  * <p>
  * There is another usage pattern that is used to invalidate entries
  * afterQuery performing "bulk" HQL/SQL operations:
- * {@link #lockRegion} -> {@link #removeAll} -> {@link #unlockRegion}
+ * {@link #lockRegion} -&gt; {@link #removeAll} -&gt; {@link #unlockRegion}
  * <p>
  * IMPORTANT : NaturalIds are not versioned so {@code null} will always be passed to the version parameter to:<ul>
  *     <li>{@link CachedDomainDataAccess#putFromLoad(SharedSessionContractImplementor, Object, Object, Object)}</li>

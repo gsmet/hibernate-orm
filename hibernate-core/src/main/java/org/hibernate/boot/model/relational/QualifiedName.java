@@ -16,7 +16,7 @@ import org.hibernate.boot.model.naming.Identifier;
  * </ol>
  * <p>
  * Also, be careful about the usage of {@link #render}.  If the intention is get get the name
- * as used in the database, the {@link org.hibernate.engine.jdbc.env.spi.JdbcEnvironment} ->
+ * as used in the database, the {@link org.hibernate.engine.jdbc.env.spi.JdbcEnvironment} -&gt;
  * {@link org.hibernate.engine.jdbc.env.spi.QualifiedObjectNameFormatter#format} should be
  * used instead.
  *

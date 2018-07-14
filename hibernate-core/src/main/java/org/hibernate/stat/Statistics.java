@@ -10,7 +10,7 @@ package org.hibernate.stat;
  * Exposes statistics for a particular {@link org.hibernate.SessionFactory}.  Beware of milliseconds metrics, they
  * are dependent of the JVM precision: you may then encounter a 10 ms approximation depending on you OS platform.
  * Please refer to the JVM documentation for more information.
- * 
+ *
  * @author Emmanuel Bernard
  */
 public interface Statistics {
@@ -37,7 +37,7 @@ public interface Statistics {
 
     /**
 	 * find entity statistics per name
-	 * 
+	 *
 	 * @param entityName entity name
 	 * @return EntityStatistics object
 	 */
@@ -45,7 +45,7 @@ public interface Statistics {
 
 	/**
 	 * Get collection statistics per role
-	 * 
+	 *
 	 * @param role collection role
 	 * @return CollectionStatistics
 	 */
@@ -178,7 +178,7 @@ public interface Statistics {
 	long getNaturalIdQueryExecutionMaxTime();
 
 	/**
-	 * Get the region for the maximum naturalId query time 
+	 * Get the region for the maximum naturalId query time
 	 */
 	String getNaturalIdQueryExecutionMaxTimeRegion();
 
@@ -329,7 +329,7 @@ public interface Statistics {
 	long getCloseStatementCount();
 
 	/**
-	 * The number of {@code StaleObjectStateException}s 
+	 * The number of {@code StaleObjectStateException}s
 	 * that occurred
 	 */
 	long getOptimisticFailureCount();
@@ -356,7 +356,7 @@ public interface Statistics {
 	 * @return NaturalIdCacheStatistics
 	 *
 	 * @deprecated (since 5.3) Use {@link #getNaturalIdStatistics} or
-	 * {@link @getDomainDataRegionStatistics} instead depending on need
+	 * {@link #getDomainDataRegionStatistics(String)} instead depending on need
 	 */
 	@Deprecated
 	NaturalIdCacheStatistics getNaturalIdCacheStatistics(String regionName);

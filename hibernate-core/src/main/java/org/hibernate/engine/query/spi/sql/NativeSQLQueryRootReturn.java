@@ -37,7 +37,7 @@ public class NativeSQLQueryRootReturn extends NativeSQLQueryNonScalarReturn {
 	 *
 	 * @param alias The result alias
 	 * @param entityName The entity name.
-	 * @param propertyResults Any user-supplied column->property mappings
+	 * @param propertyResults Any user-supplied column -&gt; property mappings
 	 * @param lockMode The lock mode to apply
 	 */
 	public NativeSQLQueryRootReturn(String alias, String entityName, Map<String,String[]> propertyResults, LockMode lockMode) {

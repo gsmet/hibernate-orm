@@ -86,7 +86,7 @@ public interface EntityTuplizer extends Tuplizer {
 
     /**
      * Inject the identifier value into the given entity.
-     * </p>
+     * <p>
      * Has no effect if the entity does not define an identifier property
      *
      * @param entity The entity to inject with the identifier value.
@@ -100,7 +100,7 @@ public interface EntityTuplizer extends Tuplizer {
 
     /**
      * Inject the identifier value into the given entity.
-     * </p>
+     * <p>
      * Has no effect if the entity does not define an identifier property
      *
      * @param entity The entity to inject with the identifier value.

@@ -15,7 +15,7 @@ import org.hibernate.type.spi.TypeConfiguration;
 import org.jboss.logging.Logger;
 
 /**
- * Basically a map from {@link Class} -> {@link JavaTypeDescriptor}
+ * Basically a map from {@link Class} -&gt; {@link JavaTypeDescriptor}
  *
  * @author Steve Ebersole
  * @author Andrea Boriero

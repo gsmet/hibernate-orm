@@ -7,7 +7,7 @@
 package org.hibernate.jpa.test.procedure;
 
 /**
- * @author Strong Liu <stliu@hibernate.org>
+ * @author Strong Liu &lt;stliu@hibernate.org&gt;
  */
 public class OrmTest extends AbstractStoredProcedureTest{
 	@Override

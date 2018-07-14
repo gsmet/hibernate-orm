@@ -80,7 +80,8 @@ import org.jboss.logging.Logger;
  * <p>
  * Configuration parameters:
  * <table>
- * 	 <tr>
+ *   <caption>Configuration parameters</caption>
+ *   <tr>
  *     <td><b>NAME</b></td>
  *     <td><b>DEFAULT</b></td>
  *     <td><b>DESCRIPTION</b></td>

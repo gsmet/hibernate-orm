@@ -35,7 +35,7 @@ public interface BidirectionalEntityReference extends EntityReference {
 
 	/**
 	 * The query space UID returned using {@link #getQuerySpaceUid()} must
-	 * be the same as returned by {@link #getTargetEntityReference()#getQuerySpaceUid()}
+	 * be the same as returned by {@code .getTargetEntityReference().getQuerySpaceUid()}
 	 *
 	 * @return The query space UID.
 	 */

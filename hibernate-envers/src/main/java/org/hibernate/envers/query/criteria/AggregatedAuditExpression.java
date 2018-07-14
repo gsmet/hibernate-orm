@@ -106,7 +106,8 @@ public class AggregatedAuditExpression implements AuditCriterion, ExtendableCrit
 
 	/**
 	 * Compute aggregated expression in the context of each entity instance separately. Useful for retrieving latest
-	 * revisions of all entities of a particular type.<br/>
+	 * revisions of all entities of a particular type.
+	 * <p>
 	 * Implementation note: Correlates subquery with the outer query by entity id.
 	 *
 	 * @return this (for method chaining).

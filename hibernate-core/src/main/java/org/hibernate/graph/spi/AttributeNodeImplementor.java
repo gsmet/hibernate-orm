@@ -10,7 +10,7 @@ import javax.persistence.AttributeNode;
 import javax.persistence.metamodel.Attribute;
 
 /**
- * @author Strong Liu <stliu@hibernate.org>
+ * @author Strong Liu &lt;stliu@hibernate.org&gt;
  */
 public interface AttributeNodeImplementor<T> extends AttributeNode<T> {
 	public Attribute<?,T> getAttribute();

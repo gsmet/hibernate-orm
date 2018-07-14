@@ -18,7 +18,7 @@ import org.osgi.util.tracker.ServiceTracker;
 
 /**
  * Utilities for dealing with OSGi environments
- * 
+ *
  * @author Brett Meyer
  */
 public class OsgiServiceUtil implements Stoppable {
@@ -36,11 +36,10 @@ public class OsgiServiceUtil implements Stoppable {
 	/**
 	 * Locate all implementors of the given service contract in the given OSGi buindle context. Utilizes
 	 * {@link ServiceTracker} (best practice, automatically handles a lot of boilerplate and error conditions).
-	 * 
+	 *
 	 * @param contract The service contract for which to locate implementors
-	 * @param context The OSGi bundle context
-	 * @param T[] The Java type of the service to locate
-	 * @return All know implementors
+	 * @param <T> The Java type of the service to locate
+	 * @return All known implementors
 	 */
 	public <T> T[] getServiceImpls(Class<T> contract) {
 		T[] services = (T[]) Array.newInstance( contract, 0 );
@@ -61,11 +60,10 @@ public class OsgiServiceUtil implements Stoppable {
 	/**
 	 * Locate the single implementor of the given service contract in the given OSGi buindle context. Utilizes
 	 * {@link ServiceTracker#waitForService(long)}
-	 * 
+	 *
 	 * @param contract The service contract for which to locate implementors
-	 * @param context The OSGi bundle context
-	 * @param T[] The Java type of the service to locate
-	 * @return All know implementors
+	 * @param <T> The Java type of the service to locate
+	 * @return All known implementors
 	 */
 	public <T> T getServiceImpl(Class<T> contract) {
 		final ServiceTracker serviceTracker = getServiceTracker( contract.getName() );

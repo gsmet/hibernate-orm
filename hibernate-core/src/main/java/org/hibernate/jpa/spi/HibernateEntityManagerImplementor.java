@@ -60,7 +60,7 @@ public interface HibernateEntityManagerImplementor extends HibernateEntityManage
 	void markForRollbackOnly();
 
 	/**
-	 * Convert from JPA 2 {@link javax.persistence.LockModeType} & properties into {@link org.hibernate.LockOptions}
+	 * Convert from JPA 2 {@link javax.persistence.LockModeType} and properties into {@link org.hibernate.LockOptions}
 	 *
 	 * @param lockModeType is the requested lock type
 	 * @param properties are the lock properties

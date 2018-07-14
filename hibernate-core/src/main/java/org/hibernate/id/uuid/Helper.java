@@ -83,7 +83,7 @@ public final class Helper {
 	private static short counter = (short) 0;
 
 	/**
-	 * Unique in a millisecond for this JVM instance (unless there are > Short.MAX_VALUE instances created in a
+	 * Unique in a millisecond for this JVM instance (unless there are &gt; Short.MAX_VALUE instances created in a
 	 * millisecond)
 	 */
 	public static short getCountShort() {

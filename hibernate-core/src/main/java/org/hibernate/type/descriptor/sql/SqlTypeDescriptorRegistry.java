@@ -23,7 +23,7 @@ import org.hibernate.type.spi.TypeConfiguration;
 import org.jboss.logging.Logger;
 
 /**
- * Basically a map from JDBC type code (int) -> {@link SqlTypeDescriptor}
+ * Basically a map from JDBC type code (int) -gt; {@link SqlTypeDescriptor}
  *
  * @author Steve Ebersole
  *

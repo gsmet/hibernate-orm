@@ -30,7 +30,7 @@ import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
 
 /**
- * @author Strong Liu <stliu@hibernate.org>
+ * @author Strong Liu &lt;stliu@hibernate.org&gt;
  */
 public abstract class AbstractJPAIndexTest extends BaseNonConfigCoreFunctionalTestCase {
 	@Override

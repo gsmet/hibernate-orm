@@ -13,20 +13,20 @@ import org.hibernate.property.access.spi.Getter;
  * a particular representation of a piece of data, given that
  * representation's {@link org.hibernate.EntityMode} (the entity-mode
  * essentially defining which representation).
- * </p>
+ * <p>
  * If that given piece of data is thought of as a data structure, then a tuplizer
  * is the thing which knows how to<ul>
  * <li>create such a data structure appropriately
  * <li>extract values from and inject values into such a data structure
  * </ul>
- * </p>
+ * <p>
  * For example, a given piece of data might be represented as a POJO class.
  * Here, it's representation and entity-mode is POJO.  Well a tuplizer for POJO
  * entity-modes would know how to<ul>
  * <li>create the data structure by calling the POJO's constructor
  * <li>extract and inject values through getters/setter, or by direct field access, etc
  * </ul>
- * </p>
+ * <p>
  * That same piece of data might also be represented as a DOM structure, using
  * the tuplizer associated with the DOM4J entity-mode, which would generate instances
  * of {@link org.dom4j.Element} as the data structure and know how to access the
@@ -69,7 +69,7 @@ public interface Tuplizer {
 	 * @return The new, empty entity instance.
 	 */
 	public Object instantiate();
-	
+
 	/**
 	 * Is the given object considered an instance of the the entity (acconting
 	 * for entity-mode) managed by this tuplizer.
@@ -82,10 +82,10 @@ public interface Tuplizer {
 
 	/**
 	 * Return the pojo class managed by this tuplizer.
-	 * </p>
+	 * <p>
 	 * Need to determine how to best handle this for the Tuplizers for EntityModes
 	 * other than POJO.
-	 * </p>
+	 * <p>
 	 * todo : be really nice to not have this here since it is essentially pojo specific...
 	 *
 	 * @return The persistent class.

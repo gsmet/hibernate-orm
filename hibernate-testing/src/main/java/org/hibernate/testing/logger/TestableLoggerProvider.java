@@ -18,7 +18,7 @@ import org.jboss.logging.Logger;
  * A {@code LoggerProvider} for JBoss Logger.
  * See also META-INF/services/org.jboss.logging.LoggerProvider
  *
- * @author Sanne Grinovero <sanne@hibernate.org> (C) 2015 Red Hat Inc.
+ * @author Sanne Grinovero &lt;sanne@hibernate.org&gt; (C) 2015 Red Hat Inc.
  */
 public class TestableLoggerProvider implements org.jboss.logging.LoggerProvider {
 

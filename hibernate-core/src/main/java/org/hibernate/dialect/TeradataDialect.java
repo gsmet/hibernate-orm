@@ -25,7 +25,7 @@ import org.hibernate.type.StandardBasicTypes;
  * @author Jay Nance
  */
 public class TeradataDialect extends Dialect implements IdTableSupport {
-	
+
 	private static final int PARAM_LIST_SIZE_LIMIT = 1024;
 
 	/**
@@ -103,7 +103,7 @@ public class TeradataDialect extends Dialect implements IdTableSupport {
 	/**
 	 * Does this dialect support the {@code FOR UPDATE} syntax?
 	 *
-	 * @return empty string ... Teradata does not support <tt>FOR UPDATE<tt> syntax
+	 * @return empty string ... Teradata does not support {@code FOR UPDATE} syntax
 	 */
 	@Override
 	public String getForUpdateString() {
@@ -144,7 +144,7 @@ public class TeradataDialect extends Dialect implements IdTableSupport {
 	public String getDropIdTableCommand() {
 		return "drop table";
 	}
-	
+
 	@Override
 	public String getTruncateIdTableCommand() {
 		return "delete from";

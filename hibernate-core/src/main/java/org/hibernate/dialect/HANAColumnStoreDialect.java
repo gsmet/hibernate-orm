@@ -12,11 +12,13 @@ import org.hibernate.hql.spi.id.global.GlobalTemporaryTableBulkIdStrategy;
 import org.hibernate.hql.spi.id.local.AfterUseAction;
 
 /**
- * An SQL dialect for HANA. <br/>
- * <a href="http://help.sap.com/hana/html/sqlmain.html">SAP HANA Reference</a> <br/>
+ * An SQL dialect for HANA.
+ * <p>
+ * <a href="http://help.sap.com/hana/html/sqlmain.html">SAP HANA Reference</a>
+ * <p>
  * Column tables are created by this dialect when using the auto-ddl feature.
- * 
- * @author Andrew Clemons <andrew.clemons@sap.com>
+ *
+ * @author Andrew Clemons &lt;andrew.clemons@sap.com&gt;
  */
 public class HANAColumnStoreDialect extends AbstractHANADialect {
 

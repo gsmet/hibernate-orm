@@ -22,7 +22,7 @@
  *     <li>
  *         <b>physical</b> - Is the process of applying naming rules to transform the logical
  *         name into the actual (physical) name that will be used in the database.  Rules here
- *         might be things like using standardized abbreviations ("NUMBER" -> "NUM"), applying
+ *         might be things like using standardized abbreviations ("NUMBER" -&gt; "NUM"), applying
  *         identifier length shortening, etc.  See {@link org.hibernate.boot.model.naming.PhysicalNamingStrategy}.
  *     </li>
  * </ol>

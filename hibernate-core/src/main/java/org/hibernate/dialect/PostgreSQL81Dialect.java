@@ -159,7 +159,7 @@ public class PostgreSQL81Dialect extends Dialect {
 		registerFunction( "user", new NoArgSQLFunction("user", StandardBasicTypes.STRING, false) );
 		registerFunction( "current_database", new NoArgSQLFunction("current_database", StandardBasicTypes.STRING, true) );
 		registerFunction( "current_schema", new NoArgSQLFunction("current_schema", StandardBasicTypes.STRING, true) );
-		
+
 		registerFunction( "to_char", new StandardSQLFunction("to_char", StandardBasicTypes.STRING) );
 		registerFunction( "to_date", new StandardSQLFunction("to_date", StandardBasicTypes.DATE) );
 		registerFunction( "to_timestamp", new StandardSQLFunction("to_timestamp", StandardBasicTypes.TIMESTAMP) );
@@ -438,7 +438,7 @@ public class PostgreSQL81Dialect extends Dialect {
 			}
 		}
 	};
-	
+
 	@Override
 	public SQLExceptionConversionDelegate buildSQLExceptionConversionDelegate() {
 		return new SQLExceptionConversionDelegate() {
@@ -481,7 +481,7 @@ public class PostgreSQL81Dialect extends Dialect {
 	}
 
 	/**
-	 * only necessary for postgre < 7.4  See http://anoncvs.postgresql.org/cvsweb.cgi/pgsql/doc/src/sgml/ref/create_sequence.sgml
+	 * Only necessary for PostgreSQL &lt; 7.4  See http://anoncvs.postgresql.org/cvsweb.cgi/pgsql/doc/src/sgml/ref/create_sequence.sgml
 	 * <p>
 	 * {@inheritDoc}
 	 */
@@ -517,7 +517,7 @@ public class PostgreSQL81Dialect extends Dialect {
 					);
 		}
 	}
-	
+
 	// Overridden informational metadata ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 	@Override
@@ -589,12 +589,12 @@ public class PostgreSQL81Dialect extends Dialect {
 	public boolean supportsRowValueConstructorSyntax() {
 		return true;
 	}
-	
+
 	@Override
 	public String getForUpdateNowaitString() {
 		return getForUpdateString() + " nowait ";
 	}
-	
+
 	@Override
 	public String getForUpdateNowaitString(String aliases) {
 		return getForUpdateString( aliases ) + " nowait ";

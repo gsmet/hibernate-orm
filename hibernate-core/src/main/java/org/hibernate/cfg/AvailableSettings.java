@@ -645,11 +645,11 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	/**
 	 * Used to specify the {@link org.hibernate.boot.model.naming.ImplicitNamingStrategy} class to use.  The following
 	 * short-names are defined for this setting:<ul>
-	 *     <li>"default" -> {@link org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl}</li>
-	 *     <li>"jpa" -> {@link org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl}</li>
-	 *     <li>"legacy-jpa" -> {@link org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl}</li>
-	 *     <li>"legacy-hbm" -> {@link org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl}</li>
-	 *     <li>"component-path" -> {@link org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl}</li>
+	 *     <li>"default" -&gt; {@link org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl}</li>
+	 *     <li>"jpa" -&gt; {@link org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl}</li>
+	 *     <li>"legacy-jpa" -&gt; {@link org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl}</li>
+	 *     <li>"legacy-hbm" -&gt; {@link org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl}</li>
+	 *     <li>"component-path" -&gt; {@link org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl}</li>
 	 * </ul>
 	 *
 	 * The default is defined by the ImplicitNamingStrategy registered under the "default" key.  If that happens to
@@ -1742,7 +1742,7 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	/**
 	 * Setting which indicates whether or not to use {@link org.hibernate.dialect.pagination.LimitHandler}
 	 * implementations that sacrifices performance optimizations to allow legacy 4.x limit behavior.
-	 * </p>
+	 * <p>
 	 * Legacy 4.x behavior favored performing pagination in-memory by avoiding the use of the offset
 	 * value, which is overall poor performance.  In 5.x, the limit handler behavior favors performance
 	 * thus if the dialect doesn't support offsets, an exception is thrown instead.
@@ -1759,7 +1759,7 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	 *
 	 * This setting is applied only when the Session is bootstrapped via JPA {@link javax.persistence.EntityManagerFactory}
 	 *
-	 * </p>
+	 * <p>
 	 * Values are: {@code true} indicates the validation should be performed, {@code false} otherwise
 	 * <p>
 	 * The default value is {@code true} when the Session is bootstrapped via JPA {@link javax.persistence.EntityManagerFactory},
@@ -1778,9 +1778,9 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	 * The {@link org.hibernate.query.criteria.LiteralHandlingMode#INLINE} mode will inline literal values as-is.
 	 * To prevent SQL injection, never use {@link org.hibernate.query.criteria.LiteralHandlingMode#INLINE} with String variables.
 	 * Always use constants with the {@link org.hibernate.query.criteria.LiteralHandlingMode#INLINE} mode.
-	 * </p>
+	 * <p>
 	 * Valid options are defined by the {@link org.hibernate.query.criteria.LiteralHandlingMode} enum.
-	 * </p>
+	 * <p>
 	 * The default value is {@link org.hibernate.query.criteria.LiteralHandlingMode#AUTO}
 	 *
 	 * @since 5.2.12
@@ -1911,9 +1911,9 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 	 *
 	 * If the ({@link ImmutableEntityUpdateQueryHandlingMode#EXCEPTION}) mode is used, then a
 	 * {@link HibernateException} is thrown instead.
-	 * </p>
+	 * <p>
 	 * Valid options are defined by the {@link ImmutableEntityUpdateQueryHandlingMode} enum.
-	 * </p>
+	 * <p>
 	 * The default value is {@link ImmutableEntityUpdateQueryHandlingMode#WARNING}
 	 *
 	 * @since 5.2.17
@@ -1923,16 +1923,16 @@ public interface AvailableSettings extends org.hibernate.jpa.AvailableSettings {
 
 	/**
 	 * By default, the IN clause expands to include all bind parameter values.
-	 * </p>
+	 * <p>
 	 * However, for database systems supporting execution plan caching,
 	 * there's a better chance of hitting the cache if the number of possible IN clause parameters lowers.
-	 * </p>
+	 * <p>
 	 * For this reason, we can expand the bind parameters to power-of-two: 4, 8, 16, 32, 64.
 	 * This way, an IN clause with 5, 6, or 7 bind parameters will use the 8 IN clause,
 	 * therefore reusing its execution plan.
-	 * </p>
+	 * <p>
 	 * If you want to activate this feature, you need to set this property to {@code true}.
-	 * </p>
+	 * <p>
 	 * The default value is {@code false}.
 	 *
 	 * @since 5.2.17

@@ -28,7 +28,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
  * <blockquote><pre>
  *     	&#064;OneToMany
  *     	&#064;BatchSize(size = 5) /
- *     	Set<Product> getProducts() { ... };
+ *     	Set&lt;Product&gt; getProducts() { ... };
  * </pre></blockquote>
  * will initialize up to 5 lazy collections of products at a time
  *

@@ -51,6 +51,7 @@ import org.jboss.logging.Logger;
  * {@code Configuration.build()}<br>
  * <br>
  * <table>
+ * <caption>Environment properties</caption>
  * <tr><td><b>property</b></td><td><b>meaning</b></td></tr>
  * <tr>
  *   <td>{@code hibernate.dialect}</td>
@@ -77,6 +78,7 @@ import org.jboss.logging.Logger;
  *     {@code java.sql.DriverManager})
  *   </td>
  * </tr>
+ * <tr>
  *   <td>{@code hibernate.connection.pool_size}</td>
  *   <td>the maximum size of the connection pool (only when using
  *     {@code java.sql.DriverManager})
@@ -129,7 +131,7 @@ import org.jboss.logging.Logger;
  * <tr>
  *   <td>{@code hibernate.session_factory_name}</td>
  *   <td>If set, the factory attempts to bind this name to itself in the
- *   JNDI context. This name is also used to support cross JVM {@code 
+ *   JNDI context. This name is also used to support cross JVM {@code
  *   Session} (de)serialization.</td>
  * </tr>
  * <tr>

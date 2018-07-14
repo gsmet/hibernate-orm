@@ -100,7 +100,7 @@ public class SQLServer2005LimitHandler extends AbstractLimitHandler {
 	 *        , ROW_NUMBER() OVER (ORDER BY CURRENT_TIMESTAMP) as __hibernate_row_nr__
 	 *     FROM ( original_query_with_top_if_order_by_present_and_all_aliased_columns ) inner_query
 	 * )
-	 * SELECT alias_list FROM query WHERE __hibernate_row_nr__ >= offset AND __hibernate_row_nr__ < offset + last
+	 * SELECT alias_list FROM query WHERE __hibernate_row_nr__ &gt;= offset AND __hibernate_row_nr__ &lt; offset + last
 	 * </pre>
 	 *
 	 * When offset equals {@literal 0}, only <code>TOP(?)</code> expression is added to the original query.

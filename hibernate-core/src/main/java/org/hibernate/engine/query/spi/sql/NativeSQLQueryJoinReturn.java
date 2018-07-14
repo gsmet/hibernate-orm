@@ -26,7 +26,7 @@ public class NativeSQLQueryJoinReturn extends NativeSQLQueryNonScalarReturn {
 	 * @param alias The result alias
 	 * @param ownerAlias The owner's result alias
 	 * @param ownerProperty The owner's property representing the thing to be fetched
-	 * @param propertyResults Any user-supplied column->property mappings
+	 * @param propertyResults Any user-supplied column -&gt; property mappings
 	 * @param lockMode The lock mode to apply
 	 */
 	@SuppressWarnings("unchecked")

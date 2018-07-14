@@ -625,7 +625,7 @@ public interface SessionFactoryBuilder {
 	/**
 	 * Hibernate currently accesses results from the JDBC ResultSet by name.  This is known
 	 * to be VERY slow on some drivers, especially older Oracle drivers.  This setting
-	 * allows Hibernate to wrap the ResultSet of the JDBC driver to manage the name->position
+	 * allows Hibernate to wrap the ResultSet of the JDBC driver to manage the name -&gt; position
 	 * resolution itself.
 	 *
 	 * @param enabled {@code true} indicates Hibernate should wrap result sets; {@code false} indicates

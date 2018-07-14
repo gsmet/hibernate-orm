@@ -75,7 +75,7 @@ public abstract class AbstractScannerImpl implements Scanner {
 	}
 
 	/**
-	 * Handle <jar-file/> references from a persistence.xml file.
+	 * Handle {@code <jar-file/>} references from a persistence.xml file.
 	 *
 	 * JPA allows for  to be specific
 	 * @param url

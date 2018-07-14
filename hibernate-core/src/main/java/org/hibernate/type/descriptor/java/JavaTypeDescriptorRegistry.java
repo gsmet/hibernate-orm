@@ -21,7 +21,7 @@ import org.hibernate.type.descriptor.java.spi.RegistryHelper;
 import org.hibernate.type.spi.TypeConfiguration;
 
 /**
- * Basically a map from {@link Class} -> {@link JavaTypeDescriptor}
+ * Basically a map from {@link Class} -&gt; {@link JavaTypeDescriptor}
  *
  * @author Steve Ebersole
  *

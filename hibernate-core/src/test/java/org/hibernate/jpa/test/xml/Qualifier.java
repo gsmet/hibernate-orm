@@ -7,7 +7,7 @@
 package org.hibernate.jpa.test.xml;
 
 /**
- * @author Strong Liu <stliu@hibernate.org>
+ * @author Strong Liu &lt;stliu@hibernate.org&gt;
  */
 public class Qualifier {
 	private Long qualifierId;

@@ -128,7 +128,7 @@ public interface AuditStrategy {
 	 * <p><code>e.revision = (SELECT max(...) ...)</code></p>
 	 * </li>
 	 * <li>for {@link ValidityAuditStrategy} the revision-end column is used:
-	 * <p><code>e.revision <= :revision and (e.endRevision > :revision or e.endRevision is null)</code></p>
+	 * <p>{@code e.revision <= :revision and (e.endRevision > :revision or e.endRevision is null)}</p>
 	 * </li>
 	 * </ul>
 	 *
@@ -167,7 +167,7 @@ public interface AuditStrategy {
 	 * <p><code>e.revision = (SELECT max(...) ...)</code></p>
 	 * </li>
 	 * <li>for {@link ValidityAuditStrategy} the revision-end column is used:
-	 * <p><code>e.revision <= :revision and (e.endRevision > :revision or e.endRevision is null)</code></p>
+	 * <p>{@code e.revision <= :revision and (e.endRevision > :revision or e.endRevision is null)}</p>
 	 * </li>
 	 * </ul>
 	 *

@@ -53,8 +53,8 @@ public class ImportContextImpl implements ImportContext {
 	 * Attempts to handle fqcn with array and generics references.
 	 * <p>
 	 * e.g.
-	 * java.util.Collection<org.marvel.Hulk> imports java.util.Collection and returns Collection
-	 * org.marvel.Hulk[] imports org.marvel.Hulk and returns Hulk
+	 * {@code java.util.Collection<org.marvel.Hulk>} imports java.util.Collection and returns Collection
+	 * {@code org.marvel.Hulk[]} imports org.marvel.Hulk and returns Hulk
 	 *
 	 * @param fqcn Fully qualified class name
 	 *
@@ -63,7 +63,7 @@ public class ImportContextImpl implements ImportContext {
 	public String importType(String fqcn) {
 		String result = fqcn;
 
-		//if(fqcn==null) return "/** (null) **/"; 
+		//if(fqcn==null) return "/** (null) **/";
 
 		String additionalTypePart = null;
 		if ( fqcn.indexOf( '<' ) >= 0 ) {

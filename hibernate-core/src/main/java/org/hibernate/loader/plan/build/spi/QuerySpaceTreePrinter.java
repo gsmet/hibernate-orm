@@ -233,7 +233,7 @@ public class QuerySpaceTreePrinter {
 	 *     <li>query space class name</li>
 	 *     <li>unique ID</li>
 	 *     <li>entity name (for {@link EntityQuerySpace}</li>
-	 *     <li>collection role (for {@link CollectionQuerySpace}</li>	 *
+	 *     <li>collection role (for {@link CollectionQuerySpace}</li>
 	 * </ul>
 	 * @param space The query space
 	 * @return a String containing details about the {@link QuerySpace}

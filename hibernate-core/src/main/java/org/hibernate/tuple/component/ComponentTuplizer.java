@@ -14,10 +14,10 @@ import org.hibernate.tuple.Tuplizer;
 /**
  * Defines further responsibilities regarding tuplization based on
  * a mapped components.
- * </p>
+ * <p>
  * ComponentTuplizer implementations should have the following constructor signature:
  *      (org.hibernate.mapping.Component)
- * 
+ *
  * @author Gavin King
  * @author Steve Ebersole
  */

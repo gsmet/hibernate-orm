@@ -12,7 +12,7 @@ import org.hibernate.boot.model.naming.ObjectNameNormalizer;
  * Describes the context in which the process of building Metadata out of MetadataSources occurs.
  *
  * BindingContext are generally hierarchical getting more specific as we "go
- * down".  E.g.  global -> PU -> document -> mapping
+ * down".  E.g. {@code global -> PU -> document -> mapping}.
  *
  * @author Steve Ebersole
  *

@@ -572,10 +572,10 @@ public class DerbyDialect extends DB2Dialect {
 	 * </pre>
 	 *
 	 * {@link DB2Dialect} returns a {@link org.hibernate.hql.spi.id.global.GlobalTemporaryTableBulkIdStrategy} that
-	 * will make temporary tables created at startup and hence unavailable for subsequent connections.<br/>
-	 * see HHH-10238.
-	 * </p>
-     */
+	 * will make temporary tables created at startup and hence unavailable for subsequent connections.
+	 * <p>
+	 * See HHH-10238.
+	 */
 	@Override
 	public MultiTableBulkIdStrategy getDefaultMultiTableBulkIdStrategy() {
 		return new LocalTemporaryTableBulkIdStrategy(new IdTableSupportStandardImpl() {

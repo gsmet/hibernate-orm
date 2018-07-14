@@ -22,7 +22,7 @@ import org.hibernate.query.spi.ScrollableResultsImplementor;
 import org.hibernate.type.Type;
 
 /**
- * Defines the contract of an HQL->SQL translator.
+ * Defines the contract of an HQL -&gt; SQL translator.
  *
  * @author josh
  */
@@ -133,7 +133,7 @@ public interface QueryTranslator {
 	 * @return Query return types.
 	 */
 	Type[] getReturnTypes();
-	
+
 	/**
 	 * Returns an array of HQL aliases
 	 */

@@ -32,7 +32,7 @@ public class NativeSQLQueryCollectionReturn extends NativeSQLQueryNonScalarRetur
 	 * to be initialized.
 	 * @param ownerProperty The property name (on the owner) which represents
 	 * the collection to be initialized.
-	 * @param propertyResults Any user-supplied column->property mappings
+	 * @param propertyResults Any user-supplied column -&gt; property mappings
 	 * @param lockMode The lock mode to apply to the collection.
 	 */
 	@SuppressWarnings("unchecked")

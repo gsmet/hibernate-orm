@@ -22,7 +22,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * @author Strong Liu <stliu@hibernate.org>
+ * @author Strong Liu &lt;stliu@hibernate.org&gt;
  */
 @SkipForDialect(value = H2Dialect.class, comment = "H2 doesn't support this sql syntax")
 @SkipForDialect(value = SQLServerDialect.class, comment = "mssql doesn't support multiple columns in the 'where' clause of a 'where in' query")

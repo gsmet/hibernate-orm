@@ -80,7 +80,7 @@ public interface QuerySpace {
 	 * <p>
 	 * For all the joins returned here, {@link Join#getLeftHandSide()} should point back to this QuerySpace such that
 	 * <code>
-	 *     space.getJoins().forEach{ join -> join.getLeftHandSide() == space }
+	 *     space.getJoins().forEach{ join -&gt; join.getLeftHandSide() == space }
 	 * </code>
 	 * is true for all.
 	 *

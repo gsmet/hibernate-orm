@@ -18,7 +18,7 @@ import javax.persistence.StoredProcedureParameter;
 import javax.persistence.Table;
 
 /**
- * @author Strong Liu <stliu@hibernate.org>
+ * @author Strong Liu &lt;stliu@hibernate.org&gt;
  */
 @Entity
 @NamedStoredProcedureQueries(

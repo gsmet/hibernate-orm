@@ -11,7 +11,7 @@ import java.sql.SQLException;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * Cache of column-name -> column-index resolutions
+ * Cache of column-name -&gt; column-index resolutions
  *
  * @author Steve Ebersole
  */

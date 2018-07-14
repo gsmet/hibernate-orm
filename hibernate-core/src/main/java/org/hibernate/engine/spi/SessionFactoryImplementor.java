@@ -167,7 +167,7 @@ public interface SessionFactoryImplementor extends Mapping, SessionFactory, Quer
 	CurrentTenantIdentifierResolver getCurrentTenantIdentifierResolver();
 
 	/**
-	 * @deprecated (since 5.2) use {@link #getMetamodel()} -> {@link MetamodelImplementor#getEntityNameResolvers()}
+	 * @deprecated (since 5.2) use {@link #getMetamodel()} -&gt; {@link MetamodelImplementor#getEntityNameResolvers()}
 	 */
 	@Deprecated
 	default Iterable<EntityNameResolver> iterateEntityNameResolvers() {
@@ -277,7 +277,7 @@ public interface SessionFactoryImplementor extends Mapping, SessionFactory, Quer
 	 *
 	 * @return The dialect
 	 *
-	 * @deprecated (since 5.2) instead, use this factory's {{@link #getServiceRegistry()}} ->
+	 * @deprecated (since 5.2) instead, use this factory's {{@link #getServiceRegistry()}} -&gt;
 	 * {@link JdbcServices#getDialect()}
 	 */
 	@Deprecated
@@ -294,7 +294,7 @@ public interface SessionFactoryImplementor extends Mapping, SessionFactory, Quer
 	 *
 	 * @return The SQLExceptionConverter for this SessionFactory.
 	 *
-	 * @deprecated since 5.0; use {@link JdbcServices#getSqlExceptionHelper()} ->
+	 * @deprecated since 5.0; use {@link JdbcServices#getSqlExceptionHelper()} -&gt;
 	 * {@link SqlExceptionHelper#getSqlExceptionConverter()} instead as obtained from {@link #getServiceRegistry()}
 	 */
 	@Deprecated

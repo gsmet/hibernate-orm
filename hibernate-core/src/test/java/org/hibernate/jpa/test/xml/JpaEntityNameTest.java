@@ -18,7 +18,7 @@ import org.hibernate.jpa.test.BaseEntityManagerFunctionalTestCase;
 import org.hibernate.testing.TestForIssue;
 
 /**
- * @author Strong Liu <stliu@hibernate.org>
+ * @author Strong Liu &lt;stliu@hibernate.org&gt;
  */
 @TestForIssue( jiraKey = "HHH-6039, HHH-6100" )
 public class JpaEntityNameTest extends BaseEntityManagerFunctionalTestCase {

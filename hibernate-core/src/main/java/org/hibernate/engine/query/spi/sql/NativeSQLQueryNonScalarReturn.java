@@ -30,7 +30,7 @@ public abstract class NativeSQLQueryNonScalarReturn implements NativeSQLQueryRet
 	 * Constructs some form of non-scalar return descriptor
 	 *
 	 * @param alias The result alias
-	 * @param propertyResults Any user-supplied column->property mappings
+	 * @param propertyResults Any user-supplied column -&gt; property mappings
 	 * @param lockMode The lock mode to apply to the return.
 	 */
 	protected NativeSQLQueryNonScalarReturn(String alias, Map<String,String[]> propertyResults, LockMode lockMode) {
@@ -72,7 +72,7 @@ public abstract class NativeSQLQueryNonScalarReturn implements NativeSQLQueryRet
 	}
 
 	/**
-	 * Retrieve the user-supplied column->property mappings.
+	 * Retrieve the user-supplied column -&gt; property mappings.
 	 *
 	 * @return The property mappings.
 	 */

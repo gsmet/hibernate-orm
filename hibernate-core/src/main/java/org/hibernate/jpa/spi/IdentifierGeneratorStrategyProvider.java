@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * Provide a set of IdentifierGenerator strategies allowing to override the Hibernate Core default ones
  *
- * @author Emmanuel Bernard <emmanuel@hibernate.org>
+ * @author Emmanuel Bernard &lt;emmanuel@hibernate.org&gt;
  */
 public interface IdentifierGeneratorStrategyProvider {
 	/**

@@ -25,10 +25,10 @@ import org.hibernate.mapping.UniqueKey;
  *     </li>
  * </ol>
  *
- * #1 & #2 are preferred, if possible; #3 should be solely a fall-back.
- * 
+ * #1 &amp; #2 are preferred, if possible; #3 should be solely a fall-back.
+ *
  * See HHH-7797.
- * 
+ *
  * @author Brett Meyer
  */
 public interface UniqueDelegate {
@@ -36,7 +36,7 @@ public interface UniqueDelegate {
 	 * Get the fragment that can be used to make a column unique as part of its column definition.
 	 * <p>
 	 * This is intended for dialects which do not support unique constraints
-	 * 
+	 *
 	 * @param column The column to which to apply the unique
 	 *
 	 * @return The fragment (usually "unique"), empty string indicates the uniqueness will be indicated using a
