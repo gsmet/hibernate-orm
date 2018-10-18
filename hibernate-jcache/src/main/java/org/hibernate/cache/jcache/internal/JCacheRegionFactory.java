@@ -6,8 +6,10 @@
  */
 package org.hibernate.cache.jcache.internal;
 
+import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.List;
 import java.util.Map;
 import javax.cache.Cache;
@@ -31,8 +33,8 @@ import org.hibernate.cache.spi.support.DomainDataStorageAccess;
 import org.hibernate.cache.spi.support.RegionFactoryTemplate;
 import org.hibernate.cache.spi.support.RegionNameQualifier;
 import org.hibernate.cache.spi.support.StorageAccess;
-import org.hibernate.cache.spi.support.DomainDataRegionImpl;
 import org.hibernate.engine.spi.SessionFactoryImplementor;
+import org.hibernate.internal.util.ConfigHelper;
 
 /**
  * @author Alex Snaps
@@ -227,10 +229,12 @@ public class JCacheRegionFactory extends RegionFactoryTemplate {
 		}
 
 		try {
-			return new URI( cacheManagerUri );
+			URL resourceURL = ConfigHelper.resolveUrl( cacheManagerUri );
+
+			return resourceURL.toURI();
 		}
-		catch ( URISyntaxException e ) {
-			throw new CacheException( "Couldn't create URI from " + cacheManagerUri, e );
+		catch (MalformedURLException | URISyntaxException e) {
+			throw new CacheException( "Couldn't load URI from " + cacheManagerUri, e );
 		}
 	}
 
