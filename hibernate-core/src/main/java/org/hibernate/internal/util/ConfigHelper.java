@@ -27,9 +27,6 @@ import org.hibernate.internal.CoreMessageLogger;
 public final class ConfigHelper {
 	private static final CoreMessageLogger LOG = CoreLogging.messageLogger( ConfigHelper.class );
 
-	private static final String URL_SCHEME_SUFFIX = "://";
-	private static final String CLASS_PATH_SCHEME = "classpath" + URL_SCHEME_SUFFIX;
-
 	/**
 	 * Try to locate a local URL representing the incoming path.  The first attempt
 	 * assumes that the incoming path is an actual URL string (file://, etc).  If this
@@ -164,56 +161,5 @@ public final class ConfigHelper {
 		}
 
 		return stream;
-	}
-
-	public static URL getUserResourceAsURL(String resource) {
-		boolean hasLeadingSlash = resource.startsWith( "/" );
-		String stripped = hasLeadingSlash ? resource.substring( 1 ) : resource;
-
-		URL url = null;
-
-		ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-		if ( classLoader != null ) {
-			url = classLoader.getResource( resource );
-			if ( url == null && hasLeadingSlash ) {
-				url = classLoader.getResource( stripped );
-			}
-		}
-
-		if ( url == null ) {
-			url = Environment.class.getClassLoader().getResource( resource );
-		}
-		if ( url == null && hasLeadingSlash ) {
-			url = Environment.class.getClassLoader().getResource( stripped );
-		}
-
-		if ( url == null ) {
-			throw new HibernateException( resource + " not found" );
-		}
-
-		return url;
-	}
-
-	/**
-	 * Resolves resources based on the provided URL locator.
-	 *
-	 * @param resourcePath resource path encoded as {@link String}
-	 * @return resource {@link URL}
-	 * @throws MalformedURLException the URL {@link String} cannot be parsed
-	 */
-	public static URL resolveUrl(String resourcePath) throws MalformedURLException {
-		if ( resourcePath == null ) {
-			return null;
-		}
-
-		if ( resourcePath.startsWith( CLASS_PATH_SCHEME ) ) {
-			String path = resourcePath.substring( CLASS_PATH_SCHEME.length() );
-			return Thread.currentThread().getContextClassLoader().getResource( path );
-		}
-		if (resourcePath.contains( URL_SCHEME_SUFFIX )) {
-			return new URL( resourcePath );
-		}
-
-		return getUserResourceAsURL(resourcePath);
 	}
 }
