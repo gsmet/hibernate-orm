@@ -198,38 +198,36 @@ public class JCacheRegionFactory extends RegionFactoryTemplate {
 	@SuppressWarnings("WeakerAccess")
 	protected CacheManager resolveCacheManager(SessionFactoryOptions settings, Map properties) {
 		final Object explicitCacheManager = properties.get( ConfigSettings.CACHE_MANAGER );
+
+		ClassLoaderService classLoaderService = settings.getServiceRegistry()
+				.getService( ClassLoaderService.class );
+
 		if ( explicitCacheManager != null ) {
-			return useExplicitCacheManager( settings, explicitCacheManager );
+			return useExplicitCacheManager( classLoaderService, explicitCacheManager );
 		}
 
-		final CachingProvider cachingProvider = getCachingProvider( properties );
+		final CachingProvider cachingProvider = getCachingProvider( classLoaderService, properties );
 		final CacheManager cacheManager;
-		final URI cacheManagerUri = getUri( settings, properties );
-		if ( cacheManagerUri != null ) {
 
-			cacheManager = cachingProvider.getCacheManager( cacheManagerUri, getClassLoader( cachingProvider ));
-		}
-		else {
-			cacheManager = cachingProvider.getCacheManager();
-		}
+		final URI cacheManagerUri = getUri( classLoaderService, properties );
+
+		cacheManager = classLoaderService.workWithClassLoader(
+			classLoader -> cachingProvider.getCacheManager(
+					cacheManagerUri != null ? cacheManagerUri : cachingProvider.getDefaultURI(),
+					classLoader
+			)
+		);
+
 		return cacheManager;
 	}
 
-	@SuppressWarnings("WeakerAccess")
-	protected ClassLoader getClassLoader(CachingProvider cachingProvider) {
-		// todo (5.3) : shouldn't this use Hibernate's AggregatedClassLoader?
-		return cachingProvider.getDefaultClassLoader();
-	}
-
-	protected URI getUri(SessionFactoryOptions settings, Map properties) {
+	protected URI getUri(ClassLoaderService classLoaderService, Map properties) {
 		String cacheManagerUri = getProp( properties, ConfigSettings.CONFIG_URI );
 		if ( cacheManagerUri == null ) {
 			return null;
 		}
 
-		URL url = settings.getServiceRegistry()
-				.getService( ClassLoaderService.class )
-				.locateResource( cacheManagerUri );
+		URL url = classLoaderService.locateResource( cacheManagerUri );
 
 		if ( url == null ) {
 			throw new CacheException( "Couldn't load URI from " + cacheManagerUri );
@@ -248,20 +246,24 @@ public class JCacheRegionFactory extends RegionFactoryTemplate {
 	}
 
 	@SuppressWarnings("WeakerAccess")
-	protected CachingProvider getCachingProvider(final Map properties){
+	protected CachingProvider getCachingProvider(ClassLoaderService classLoaderService, final Map properties){
 		final CachingProvider cachingProvider;
 		final String provider = getProp( properties, ConfigSettings.PROVIDER );
 		if ( provider != null ) {
-			cachingProvider = Caching.getCachingProvider( provider );
+			cachingProvider = classLoaderService.workWithClassLoader(
+					classLoader -> Caching.getCachingProvider( provider, classLoader )
+			);
 		}
 		else {
-			cachingProvider = Caching.getCachingProvider();
+			cachingProvider = classLoaderService.workWithClassLoader(
+					classLoader -> Caching.getCachingProvider( classLoader )
+			);
 		}
 		return cachingProvider;
 	}
 
 	@SuppressWarnings("unchecked")
-	private CacheManager useExplicitCacheManager(SessionFactoryOptions settings, Object setting) {
+	private CacheManager useExplicitCacheManager(ClassLoaderService classLoaderService, Object setting) {
 		if ( setting instanceof CacheManager ) {
 			return (CacheManager) setting;
 		}
@@ -271,8 +273,7 @@ public class JCacheRegionFactory extends RegionFactoryTemplate {
 			cacheManagerClass = (Class<? extends CacheManager>) setting;
 		}
 		else {
-			cacheManagerClass = settings.getServiceRegistry().getService( ClassLoaderService.class )
-					.classForName( setting.toString() );
+			cacheManagerClass = classLoaderService.classForName( setting.toString() );
 		}
 
 		try {
